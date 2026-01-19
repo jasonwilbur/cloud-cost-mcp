@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.DS_Store
+*.log
+.env
+.env.*
+*.pem
+*.key
+.idea/
+.vscode/
+*.tgz
+coverage/
+.nyc_output/
+.mcpregistry_*
+mcp-publisher

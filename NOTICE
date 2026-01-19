@@ -1,0 +1,15 @@
+Cloud Cost MCP
+Copyright 2026 Jason Wilbur
+
+This product includes software developed by Jason Wilbur (https://jasonwilbur.com).
+
+Licensed under the Apache License, Version 2.0.
+
+Third-Party Data Sources:
+- AWS Pricing: https://aws.amazon.com/pricing/
+- Azure Retail Prices API: https://prices.azure.com/api/retail/prices
+- Google Cloud Pricing: https://cloud.google.com/pricing
+- Oracle Cloud Price List: https://www.oracle.com/cloud/price-list/
+
+Pricing data is provided for informational purposes only. Always verify current
+pricing on the official cloud provider websites before making purchasing decisions.

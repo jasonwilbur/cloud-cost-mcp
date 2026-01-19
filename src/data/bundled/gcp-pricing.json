@@ -1,0 +1,383 @@
+{
+  "metadata": {
+    "provider": "gcp",
+    "lastUpdated": "2026-01-18T00:00:00Z",
+    "source": "Google Cloud Pricing (us-central1)",
+    "version": "1.0.0",
+    "totalProducts": 45,
+    "currency": "USD",
+    "notes": "On-demand pricing with sustained use discounts (up to 30% auto-applied). Committed use discounts available."
+  },
+  "compute": [
+    {
+      "provider": "gcp",
+      "name": "e2-micro",
+      "displayName": "E2 Micro (Shared Core)",
+      "vcpus": 0.25,
+      "memoryGB": 1,
+      "hourlyPrice": 0.0084,
+      "monthlyPrice": 6.13,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "x86",
+      "notes": "Shared-core, great for small workloads"
+    },
+    {
+      "provider": "gcp",
+      "name": "e2-small",
+      "displayName": "E2 Small (Shared Core)",
+      "vcpus": 0.5,
+      "memoryGB": 2,
+      "hourlyPrice": 0.0168,
+      "monthlyPrice": 12.26,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "x86"
+    },
+    {
+      "provider": "gcp",
+      "name": "e2-medium",
+      "displayName": "E2 Medium (Shared Core)",
+      "vcpus": 1,
+      "memoryGB": 4,
+      "hourlyPrice": 0.0335,
+      "monthlyPrice": 24.46,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "x86"
+    },
+    {
+      "provider": "gcp",
+      "name": "e2-standard-2",
+      "displayName": "E2 Standard 2",
+      "vcpus": 2,
+      "memoryGB": 8,
+      "hourlyPrice": 0.067,
+      "monthlyPrice": 48.91,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "x86"
+    },
+    {
+      "provider": "gcp",
+      "name": "e2-standard-4",
+      "displayName": "E2 Standard 4",
+      "vcpus": 4,
+      "memoryGB": 16,
+      "hourlyPrice": 0.134,
+      "monthlyPrice": 97.82,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "x86"
+    },
+    {
+      "provider": "gcp",
+      "name": "e2-standard-8",
+      "displayName": "E2 Standard 8",
+      "vcpus": 8,
+      "memoryGB": 32,
+      "hourlyPrice": 0.268,
+      "monthlyPrice": 195.64,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "x86"
+    },
+    {
+      "provider": "gcp",
+      "name": "n2-standard-2",
+      "displayName": "N2 Standard 2",
+      "vcpus": 2,
+      "memoryGB": 8,
+      "hourlyPrice": 0.0971,
+      "monthlyPrice": 70.88,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "x86",
+      "notes": "Intel Cascade Lake, higher performance than E2"
+    },
+    {
+      "provider": "gcp",
+      "name": "n2-standard-4",
+      "displayName": "N2 Standard 4",
+      "vcpus": 4,
+      "memoryGB": 16,
+      "hourlyPrice": 0.1942,
+      "monthlyPrice": 141.77,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "x86"
+    },
+    {
+      "provider": "gcp",
+      "name": "n2-standard-8",
+      "displayName": "N2 Standard 8",
+      "vcpus": 8,
+      "memoryGB": 32,
+      "hourlyPrice": 0.3885,
+      "monthlyPrice": 283.61,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "x86"
+    },
+    {
+      "provider": "gcp",
+      "name": "t2a-standard-2",
+      "displayName": "T2A Standard 2 (ARM - Tau)",
+      "vcpus": 2,
+      "memoryGB": 8,
+      "hourlyPrice": 0.077,
+      "monthlyPrice": 56.21,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "arm",
+      "notes": "Ampere Altra ARM-based Tau VM"
+    },
+    {
+      "provider": "gcp",
+      "name": "t2a-standard-4",
+      "displayName": "T2A Standard 4 (ARM - Tau)",
+      "vcpus": 4,
+      "memoryGB": 16,
+      "hourlyPrice": 0.154,
+      "monthlyPrice": 112.42,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "arm"
+    },
+    {
+      "provider": "gcp",
+      "name": "c2-standard-4",
+      "displayName": "C2 Standard 4 (Compute Optimized)",
+      "vcpus": 4,
+      "memoryGB": 16,
+      "hourlyPrice": 0.2088,
+      "monthlyPrice": 152.42,
+      "region": "us-central1",
+      "category": "compute",
+      "architecture": "x86"
+    },
+    {
+      "provider": "gcp",
+      "name": "c2-standard-8",
+      "displayName": "C2 Standard 8 (Compute Optimized)",
+      "vcpus": 8,
+      "memoryGB": 32,
+      "hourlyPrice": 0.4176,
+      "monthlyPrice": 304.85,
+      "region": "us-central1",
+      "category": "compute",
+      "architecture": "x86"
+    },
+    {
+      "provider": "gcp",
+      "name": "n2-highmem-2",
+      "displayName": "N2 High-Mem 2 (Memory Optimized)",
+      "vcpus": 2,
+      "memoryGB": 16,
+      "hourlyPrice": 0.131,
+      "monthlyPrice": 95.63,
+      "region": "us-central1",
+      "category": "memory",
+      "architecture": "x86"
+    },
+    {
+      "provider": "gcp",
+      "name": "n2-highmem-4",
+      "displayName": "N2 High-Mem 4 (Memory Optimized)",
+      "vcpus": 4,
+      "memoryGB": 32,
+      "hourlyPrice": 0.262,
+      "monthlyPrice": 191.26,
+      "region": "us-central1",
+      "category": "memory",
+      "architecture": "x86"
+    },
+    {
+      "provider": "gcp",
+      "name": "n2-highmem-8",
+      "displayName": "N2 High-Mem 8 (Memory Optimized)",
+      "vcpus": 8,
+      "memoryGB": 64,
+      "hourlyPrice": 0.524,
+      "monthlyPrice": 382.52,
+      "region": "us-central1",
+      "category": "memory",
+      "architecture": "x86"
+    },
+    {
+      "provider": "gcp",
+      "name": "a2-highgpu-1g",
+      "displayName": "A2 High-GPU 1 (A100)",
+      "vcpus": 12,
+      "memoryGB": 85,
+      "hourlyPrice": 3.673,
+      "monthlyPrice": 2681.29,
+      "region": "us-central1",
+      "category": "gpu",
+      "architecture": "x86",
+      "gpuCount": 1,
+      "gpuType": "NVIDIA A100 40GB"
+    },
+    {
+      "provider": "gcp",
+      "name": "n1-standard-4-t4",
+      "displayName": "N1 Standard 4 + T4 GPU",
+      "vcpus": 4,
+      "memoryGB": 15,
+      "hourlyPrice": 0.54,
+      "monthlyPrice": 394.20,
+      "region": "us-central1",
+      "category": "gpu",
+      "architecture": "x86",
+      "gpuCount": 1,
+      "gpuType": "NVIDIA T4",
+      "notes": "N1 + 1x T4 attached"
+    }
+  ],
+  "storage": [
+    {
+      "provider": "gcp",
+      "name": "Cloud Storage Standard",
+      "type": "object",
+      "tier": "hot",
+      "pricePerGBMonth": 0.020,
+      "region": "us-central1",
+      "redundancy": "Multi-region",
+      "notes": "US multi-region"
+    },
+    {
+      "provider": "gcp",
+      "name": "Cloud Storage Standard (Regional)",
+      "type": "object",
+      "tier": "hot",
+      "pricePerGBMonth": 0.020,
+      "region": "us-central1",
+      "redundancy": "Regional"
+    },
+    {
+      "provider": "gcp",
+      "name": "Cloud Storage Nearline",
+      "type": "object",
+      "tier": "cool",
+      "pricePerGBMonth": 0.010,
+      "region": "us-central1",
+      "notes": "30-day minimum"
+    },
+    {
+      "provider": "gcp",
+      "name": "Cloud Storage Coldline",
+      "type": "object",
+      "tier": "cold",
+      "pricePerGBMonth": 0.004,
+      "region": "us-central1",
+      "notes": "90-day minimum"
+    },
+    {
+      "provider": "gcp",
+      "name": "Cloud Storage Archive",
+      "type": "archive",
+      "tier": "archive",
+      "pricePerGBMonth": 0.0012,
+      "region": "us-central1",
+      "notes": "365-day minimum"
+    },
+    {
+      "provider": "gcp",
+      "name": "Persistent Disk SSD",
+      "type": "block",
+      "tier": "hot",
+      "pricePerGBMonth": 0.17,
+      "region": "us-central1",
+      "notes": "Zonal SSD"
+    },
+    {
+      "provider": "gcp",
+      "name": "Persistent Disk Balanced",
+      "type": "block",
+      "tier": "hot",
+      "pricePerGBMonth": 0.10,
+      "region": "us-central1",
+      "notes": "Balanced performance/cost"
+    },
+    {
+      "provider": "gcp",
+      "name": "Filestore Basic HDD",
+      "type": "file",
+      "tier": "cool",
+      "pricePerGBMonth": 0.20,
+      "region": "us-central1",
+      "notes": "1TB minimum"
+    }
+  ],
+  "egress": {
+    "provider": "gcp",
+    "freeGBPerMonth": 200,
+    "tiers": [
+      { "upToGB": 1024, "pricePerGB": 0.12 },
+      { "upToGB": 10240, "pricePerGB": 0.11 },
+      { "upToGB": -1, "pricePerGB": 0.08 }
+    ],
+    "notes": "200GB/month free (as of March 2024). Premium tier pricing shown."
+  },
+  "kubernetes": {
+    "provider": "gcp",
+    "name": "GKE",
+    "controlPlaneHourly": 0.10,
+    "controlPlaneMonthly": 73.00,
+    "workerNodeIncluded": false,
+    "notes": "$0.10/hr per cluster. One zonal cluster free per account. Autopilot: pay per pod."
+  },
+  "database": [
+    {
+      "provider": "gcp",
+      "name": "Cloud SQL PostgreSQL db-f1-micro",
+      "type": "relational",
+      "engine": "PostgreSQL",
+      "vcpus": 0.6,
+      "memoryGB": 0.6,
+      "hourlyPrice": 0.0105,
+      "monthlyPrice": 7.67,
+      "notes": "Shared-core, dev/test"
+    },
+    {
+      "provider": "gcp",
+      "name": "Cloud SQL PostgreSQL db-custom-2-8192",
+      "type": "relational",
+      "engine": "PostgreSQL",
+      "vcpus": 2,
+      "memoryGB": 8,
+      "hourlyPrice": 0.0950,
+      "monthlyPrice": 69.35,
+      "notes": "Custom machine type"
+    },
+    {
+      "provider": "gcp",
+      "name": "Cloud SQL MySQL db-custom-4-16384",
+      "type": "relational",
+      "engine": "MySQL",
+      "vcpus": 4,
+      "memoryGB": 16,
+      "hourlyPrice": 0.19,
+      "monthlyPrice": 138.70,
+      "notes": "Custom machine type"
+    },
+    {
+      "provider": "gcp",
+      "name": "Cloud Spanner",
+      "type": "relational",
+      "engine": "Spanner",
+      "hourlyPrice": 0.9,
+      "monthlyPrice": 657.00,
+      "notes": "Per node-hour, globally distributed"
+    },
+    {
+      "provider": "gcp",
+      "name": "Firestore",
+      "type": "nosql",
+      "engine": "Document",
+      "hourlyPrice": 0.0,
+      "monthlyPrice": 0.0,
+      "notes": "$0.18/100K doc reads, $0.18/GB stored"
+    }
+  ]
+}

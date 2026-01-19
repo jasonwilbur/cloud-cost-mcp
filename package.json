@@ -1,0 +1,57 @@
+{
+  "name": "cloud-cost-mcp",
+  "version": "1.1.0",
+  "description": "Multi-cloud pricing comparison MCP server for AWS, Azure, GCP, and OCI",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "cloud-cost-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc && npm run copy-data",
+    "copy-data": "mkdir -p dist/data/bundled && cp src/data/bundled/*.json dist/data/bundled/",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "cloud",
+    "pricing",
+    "cost",
+    "aws",
+    "azure",
+    "gcp",
+    "oci",
+    "comparison",
+    "finops",
+    "claude"
+  ],
+  "author": {
+    "name": "Jason Wilbur",
+    "url": "https://jasonwilbur.com"
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jasonwilbur/cloud-cost-mcp"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "NOTICE"
+  ]
+}

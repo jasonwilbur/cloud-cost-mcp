@@ -1,0 +1,290 @@
+{
+  "metadata": {
+    "provider": "oci",
+    "lastUpdated": "2026-01-18T00:00:00Z",
+    "source": "Oracle Cloud Price List API",
+    "version": "1.0.0",
+    "totalProducts": 40,
+    "currency": "USD",
+    "notes": "Uniform global pricing across all commercial regions. 10TB/month free egress. Always Free tier available."
+  },
+  "compute": [
+    {
+      "provider": "oci",
+      "name": "VM.Standard.E5.Flex",
+      "displayName": "E5 Flex (AMD EPYC)",
+      "vcpus": 1,
+      "memoryGB": 1,
+      "hourlyPrice": 0.015,
+      "monthlyPrice": 10.95,
+      "region": "all",
+      "category": "general",
+      "architecture": "x86",
+      "notes": "Flexible shape: $0.015/OCPU/hr + $0.0015/GB/hr. Price shown is per OCPU+GB."
+    },
+    {
+      "provider": "oci",
+      "name": "VM.Standard.E5.Flex-2-8",
+      "displayName": "E5 Flex 2 OCPU / 8 GB",
+      "vcpus": 2,
+      "memoryGB": 8,
+      "hourlyPrice": 0.042,
+      "monthlyPrice": 30.66,
+      "region": "all",
+      "category": "general",
+      "architecture": "x86"
+    },
+    {
+      "provider": "oci",
+      "name": "VM.Standard.E5.Flex-4-16",
+      "displayName": "E5 Flex 4 OCPU / 16 GB",
+      "vcpus": 4,
+      "memoryGB": 16,
+      "hourlyPrice": 0.084,
+      "monthlyPrice": 61.32,
+      "region": "all",
+      "category": "general",
+      "architecture": "x86"
+    },
+    {
+      "provider": "oci",
+      "name": "VM.Standard.E5.Flex-8-32",
+      "displayName": "E5 Flex 8 OCPU / 32 GB",
+      "vcpus": 8,
+      "memoryGB": 32,
+      "hourlyPrice": 0.168,
+      "monthlyPrice": 122.64,
+      "region": "all",
+      "category": "general",
+      "architecture": "x86"
+    },
+    {
+      "provider": "oci",
+      "name": "VM.Standard.A1.Flex",
+      "displayName": "A1 Flex (Ampere ARM)",
+      "vcpus": 1,
+      "memoryGB": 6,
+      "hourlyPrice": 0.01,
+      "monthlyPrice": 7.30,
+      "region": "all",
+      "category": "general",
+      "architecture": "arm",
+      "notes": "Ampere Altra ARM, $0.01/OCPU/hr + free 1GB/OCPU. 4 OCPUs Always Free!"
+    },
+    {
+      "provider": "oci",
+      "name": "VM.Standard.A1.Flex-2-12",
+      "displayName": "A1 Flex 2 OCPU / 12 GB",
+      "vcpus": 2,
+      "memoryGB": 12,
+      "hourlyPrice": 0.02,
+      "monthlyPrice": 14.60,
+      "region": "all",
+      "category": "general",
+      "architecture": "arm"
+    },
+    {
+      "provider": "oci",
+      "name": "VM.Standard.A1.Flex-4-24",
+      "displayName": "A1 Flex 4 OCPU / 24 GB",
+      "vcpus": 4,
+      "memoryGB": 24,
+      "hourlyPrice": 0.04,
+      "monthlyPrice": 29.20,
+      "region": "all",
+      "category": "general",
+      "architecture": "arm",
+      "notes": "This config is Always Free!"
+    },
+    {
+      "provider": "oci",
+      "name": "VM.Standard.E4.Flex-2-8",
+      "displayName": "E4 Flex 2 OCPU / 8 GB",
+      "vcpus": 2,
+      "memoryGB": 8,
+      "hourlyPrice": 0.05,
+      "monthlyPrice": 36.50,
+      "region": "all",
+      "category": "general",
+      "architecture": "x86",
+      "notes": "Previous gen, still available"
+    },
+    {
+      "provider": "oci",
+      "name": "VM.Standard3.Flex-4-16",
+      "displayName": "Standard3 Flex 4 OCPU / 16 GB",
+      "vcpus": 4,
+      "memoryGB": 16,
+      "hourlyPrice": 0.108,
+      "monthlyPrice": 78.84,
+      "region": "all",
+      "category": "general",
+      "architecture": "x86",
+      "notes": "Intel Ice Lake"
+    },
+    {
+      "provider": "oci",
+      "name": "VM.Optimized3.Flex-4-32",
+      "displayName": "Optimized3 Flex 4 OCPU / 32 GB",
+      "vcpus": 4,
+      "memoryGB": 32,
+      "hourlyPrice": 0.10,
+      "monthlyPrice": 73.00,
+      "region": "all",
+      "category": "compute",
+      "architecture": "x86",
+      "notes": "High-frequency Intel, optimized for compute"
+    },
+    {
+      "provider": "oci",
+      "name": "VM.GPU.A10.1",
+      "displayName": "GPU A10 (1x NVIDIA A10)",
+      "vcpus": 15,
+      "memoryGB": 240,
+      "hourlyPrice": 1.65,
+      "monthlyPrice": 1204.50,
+      "region": "all",
+      "category": "gpu",
+      "architecture": "x86",
+      "gpuCount": 1,
+      "gpuType": "NVIDIA A10"
+    },
+    {
+      "provider": "oci",
+      "name": "BM.GPU.A100-v2.8",
+      "displayName": "GPU A100 Bare Metal (8x A100)",
+      "vcpus": 128,
+      "memoryGB": 2048,
+      "hourlyPrice": 20.00,
+      "monthlyPrice": 14600.00,
+      "region": "all",
+      "category": "gpu",
+      "architecture": "x86",
+      "gpuCount": 8,
+      "gpuType": "NVIDIA A100 80GB"
+    }
+  ],
+  "storage": [
+    {
+      "provider": "oci",
+      "name": "Object Storage Standard",
+      "type": "object",
+      "tier": "hot",
+      "pricePerGBMonth": 0.0255,
+      "region": "all",
+      "notes": "First 10GB free, no egress charges within OCI"
+    },
+    {
+      "provider": "oci",
+      "name": "Object Storage Infrequent Access",
+      "type": "object",
+      "tier": "cool",
+      "pricePerGBMonth": 0.01,
+      "region": "all",
+      "notes": "31-day minimum"
+    },
+    {
+      "provider": "oci",
+      "name": "Object Storage Archive",
+      "type": "archive",
+      "tier": "archive",
+      "pricePerGBMonth": 0.00255,
+      "region": "all",
+      "notes": "90-day minimum, 4-hour retrieval"
+    },
+    {
+      "provider": "oci",
+      "name": "Block Volume Balanced",
+      "type": "block",
+      "tier": "hot",
+      "pricePerGBMonth": 0.0255,
+      "region": "all",
+      "notes": "10-25K IOPS, balanced performance"
+    },
+    {
+      "provider": "oci",
+      "name": "Block Volume Higher Performance",
+      "type": "block",
+      "tier": "hot",
+      "pricePerGBMonth": 0.0340,
+      "region": "all",
+      "notes": "25-35K IOPS, higher performance"
+    },
+    {
+      "provider": "oci",
+      "name": "Block Volume Ultra High Performance",
+      "type": "block",
+      "tier": "hot",
+      "pricePerGBMonth": 0.0510,
+      "region": "all",
+      "notes": "Up to 225K IOPS"
+    },
+    {
+      "provider": "oci",
+      "name": "File Storage",
+      "type": "file",
+      "tier": "hot",
+      "pricePerGBMonth": 0.30,
+      "region": "all",
+      "notes": "NFS, no minimum"
+    }
+  ],
+  "egress": {
+    "provider": "oci",
+    "freeGBPerMonth": 10240,
+    "tiers": [
+      { "upToGB": -1, "pricePerGB": 0.0085 }
+    ],
+    "notes": "10TB/month FREE egress (100x more than AWS/Azure/GCP). After free tier: $0.0085/GB flat."
+  },
+  "kubernetes": {
+    "provider": "oci",
+    "name": "OKE",
+    "controlPlaneHourly": 0.0,
+    "controlPlaneMonthly": 0.0,
+    "workerNodeIncluded": false,
+    "notes": "FREE control plane! Enhanced cluster: $0.10/hr. Only pay for worker node compute."
+  },
+  "database": [
+    {
+      "provider": "oci",
+      "name": "Autonomous Database Serverless (ATP)",
+      "type": "serverless",
+      "engine": "Oracle",
+      "hourlyPrice": 0.0,
+      "monthlyPrice": 0.0,
+      "notes": "$1.6534/ECPU/hr + $25/TB storage. 20GB Always Free."
+    },
+    {
+      "provider": "oci",
+      "name": "MySQL HeatWave",
+      "type": "relational",
+      "engine": "MySQL",
+      "vcpus": 1,
+      "memoryGB": 8,
+      "hourlyPrice": 0.0336,
+      "monthlyPrice": 24.53,
+      "notes": "Per OCPU, HeatWave acceleration available"
+    },
+    {
+      "provider": "oci",
+      "name": "PostgreSQL 2 OCPU",
+      "type": "relational",
+      "engine": "PostgreSQL",
+      "vcpus": 2,
+      "memoryGB": 32,
+      "hourlyPrice": 0.1246,
+      "monthlyPrice": 90.96,
+      "notes": "Fully managed PostgreSQL"
+    },
+    {
+      "provider": "oci",
+      "name": "NoSQL Database",
+      "type": "nosql",
+      "engine": "NoSQL",
+      "hourlyPrice": 0.0,
+      "monthlyPrice": 0.0,
+      "notes": "Pay per read/write units. 25GB Always Free."
+    }
+  ]
+}

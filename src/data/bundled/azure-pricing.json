@@ -1,0 +1,367 @@
+{
+  "metadata": {
+    "provider": "azure",
+    "lastUpdated": "2026-01-18T00:00:00Z",
+    "source": "Azure Retail Prices API (eastus)",
+    "version": "1.0.0",
+    "totalProducts": 45,
+    "currency": "USD",
+    "notes": "Pay-as-you-go pricing. Reserved instances available at 30-70% discount."
+  },
+  "compute": [
+    {
+      "provider": "azure",
+      "name": "Standard_B1s",
+      "displayName": "B1s (Burstable)",
+      "vcpus": 1,
+      "memoryGB": 1,
+      "hourlyPrice": 0.0104,
+      "monthlyPrice": 7.59,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "notes": "Burstable, ideal for dev/test"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_B2s",
+      "displayName": "B2s (Burstable)",
+      "vcpus": 2,
+      "memoryGB": 4,
+      "hourlyPrice": 0.0416,
+      "monthlyPrice": 30.37,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_B2ms",
+      "displayName": "B2ms (Burstable)",
+      "vcpus": 2,
+      "memoryGB": 8,
+      "hourlyPrice": 0.0832,
+      "monthlyPrice": 60.74,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D2s_v5",
+      "displayName": "D2s v5 (General Purpose)",
+      "vcpus": 2,
+      "memoryGB": 8,
+      "hourlyPrice": 0.096,
+      "monthlyPrice": 70.08,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D4s_v5",
+      "displayName": "D4s v5 (General Purpose)",
+      "vcpus": 4,
+      "memoryGB": 16,
+      "hourlyPrice": 0.192,
+      "monthlyPrice": 140.16,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D8s_v5",
+      "displayName": "D8s v5 (General Purpose)",
+      "vcpus": 8,
+      "memoryGB": 32,
+      "hourlyPrice": 0.384,
+      "monthlyPrice": 280.32,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D2ps_v5",
+      "displayName": "D2ps v5 (ARM - Ampere)",
+      "vcpus": 2,
+      "memoryGB": 8,
+      "hourlyPrice": 0.077,
+      "monthlyPrice": 56.21,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "arm",
+      "notes": "Ampere Altra ARM-based, ~20% lower cost"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D4ps_v5",
+      "displayName": "D4ps v5 (ARM - Ampere)",
+      "vcpus": 4,
+      "memoryGB": 16,
+      "hourlyPrice": 0.154,
+      "monthlyPrice": 112.42,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "arm"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D8ps_v5",
+      "displayName": "D8ps v5 (ARM - Ampere)",
+      "vcpus": 8,
+      "memoryGB": 32,
+      "hourlyPrice": 0.308,
+      "monthlyPrice": 224.84,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "arm"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_F2s_v2",
+      "displayName": "F2s v2 (Compute Optimized)",
+      "vcpus": 2,
+      "memoryGB": 4,
+      "hourlyPrice": 0.085,
+      "monthlyPrice": 62.05,
+      "region": "eastus",
+      "category": "compute",
+      "architecture": "x86"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_F4s_v2",
+      "displayName": "F4s v2 (Compute Optimized)",
+      "vcpus": 4,
+      "memoryGB": 8,
+      "hourlyPrice": 0.169,
+      "monthlyPrice": 123.37,
+      "region": "eastus",
+      "category": "compute",
+      "architecture": "x86"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_F8s_v2",
+      "displayName": "F8s v2 (Compute Optimized)",
+      "vcpus": 8,
+      "memoryGB": 16,
+      "hourlyPrice": 0.338,
+      "monthlyPrice": 246.74,
+      "region": "eastus",
+      "category": "compute",
+      "architecture": "x86"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_E2s_v5",
+      "displayName": "E2s v5 (Memory Optimized)",
+      "vcpus": 2,
+      "memoryGB": 16,
+      "hourlyPrice": 0.126,
+      "monthlyPrice": 91.98,
+      "region": "eastus",
+      "category": "memory",
+      "architecture": "x86"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_E4s_v5",
+      "displayName": "E4s v5 (Memory Optimized)",
+      "vcpus": 4,
+      "memoryGB": 32,
+      "hourlyPrice": 0.252,
+      "monthlyPrice": 183.96,
+      "region": "eastus",
+      "category": "memory",
+      "architecture": "x86"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_E8s_v5",
+      "displayName": "E8s v5 (Memory Optimized)",
+      "vcpus": 8,
+      "memoryGB": 64,
+      "hourlyPrice": 0.504,
+      "monthlyPrice": 367.92,
+      "region": "eastus",
+      "category": "memory",
+      "architecture": "x86"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_NC24ads_A100_v4",
+      "displayName": "NC24ads A100 v4 (GPU)",
+      "vcpus": 24,
+      "memoryGB": 220,
+      "hourlyPrice": 3.673,
+      "monthlyPrice": 2681.29,
+      "region": "eastus",
+      "category": "gpu",
+      "architecture": "x86",
+      "gpuCount": 1,
+      "gpuType": "NVIDIA A100",
+      "notes": "1x NVIDIA A100 80GB"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_NC4as_T4_v3",
+      "displayName": "NC4as T4 v3 (GPU - T4)",
+      "vcpus": 4,
+      "memoryGB": 28,
+      "hourlyPrice": 0.526,
+      "monthlyPrice": 383.98,
+      "region": "eastus",
+      "category": "gpu",
+      "architecture": "x86",
+      "gpuCount": 1,
+      "gpuType": "NVIDIA T4"
+    }
+  ],
+  "storage": [
+    {
+      "provider": "azure",
+      "name": "Blob Hot",
+      "type": "object",
+      "tier": "hot",
+      "pricePerGBMonth": 0.0184,
+      "region": "eastus",
+      "redundancy": "LRS",
+      "notes": "Locally redundant, first 50TB"
+    },
+    {
+      "provider": "azure",
+      "name": "Blob Hot (GRS)",
+      "type": "object",
+      "tier": "hot",
+      "pricePerGBMonth": 0.0368,
+      "region": "eastus",
+      "redundancy": "GRS",
+      "notes": "Geo-redundant storage"
+    },
+    {
+      "provider": "azure",
+      "name": "Blob Cool",
+      "type": "object",
+      "tier": "cool",
+      "pricePerGBMonth": 0.01,
+      "region": "eastus",
+      "redundancy": "LRS",
+      "notes": "Min 30 days"
+    },
+    {
+      "provider": "azure",
+      "name": "Blob Cold",
+      "type": "object",
+      "tier": "cold",
+      "pricePerGBMonth": 0.0045,
+      "region": "eastus",
+      "redundancy": "LRS",
+      "notes": "Min 90 days"
+    },
+    {
+      "provider": "azure",
+      "name": "Blob Archive",
+      "type": "archive",
+      "tier": "archive",
+      "pricePerGBMonth": 0.00099,
+      "region": "eastus",
+      "redundancy": "LRS",
+      "notes": "Hours to rehydrate"
+    },
+    {
+      "provider": "azure",
+      "name": "Premium SSD v2",
+      "type": "block",
+      "tier": "hot",
+      "pricePerGBMonth": 0.08,
+      "region": "eastus",
+      "notes": "Per GB, IOPS/throughput billed separately"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard SSD E10",
+      "type": "block",
+      "tier": "hot",
+      "pricePerGBMonth": 0.075,
+      "region": "eastus",
+      "notes": "128GB disk, 500 IOPS"
+    },
+    {
+      "provider": "azure",
+      "name": "Azure Files Premium",
+      "type": "file",
+      "tier": "hot",
+      "pricePerGBMonth": 0.16,
+      "region": "eastus",
+      "notes": "Premium SSD-backed file shares"
+    }
+  ],
+  "egress": {
+    "provider": "azure",
+    "freeGBPerMonth": 100,
+    "tiers": [
+      { "upToGB": 10240, "pricePerGB": 0.087 },
+      { "upToGB": 51200, "pricePerGB": 0.083 },
+      { "upToGB": 153600, "pricePerGB": 0.07 },
+      { "upToGB": 512000, "pricePerGB": 0.05 },
+      { "upToGB": -1, "pricePerGB": 0.05 }
+    ],
+    "notes": "First 100GB/month free (Zone 1 - Americas/Europe)"
+  },
+  "kubernetes": {
+    "provider": "azure",
+    "name": "AKS",
+    "controlPlaneHourly": 0.0,
+    "controlPlaneMonthly": 0.0,
+    "workerNodeIncluded": false,
+    "notes": "FREE control plane! Only pay for worker node VMs. Uptime SLA tier: $0.10/hr/cluster"
+  },
+  "database": [
+    {
+      "provider": "azure",
+      "name": "Azure SQL Basic",
+      "type": "relational",
+      "engine": "SQL Server",
+      "vcpus": 0,
+      "memoryGB": 0,
+      "hourlyPrice": 0.0067,
+      "monthlyPrice": 4.90,
+      "notes": "5 DTUs, 2GB storage included"
+    },
+    {
+      "provider": "azure",
+      "name": "Azure SQL S1",
+      "type": "relational",
+      "engine": "SQL Server",
+      "vcpus": 0,
+      "memoryGB": 0,
+      "hourlyPrice": 0.02,
+      "monthlyPrice": 14.60,
+      "notes": "20 DTUs, 250GB max"
+    },
+    {
+      "provider": "azure",
+      "name": "Azure Database for PostgreSQL Flexible 2vCore",
+      "type": "relational",
+      "engine": "PostgreSQL",
+      "vcpus": 2,
+      "memoryGB": 8,
+      "hourlyPrice": 0.102,
+      "monthlyPrice": 74.46,
+      "notes": "Burstable tier"
+    },
+    {
+      "provider": "azure",
+      "name": "Cosmos DB Serverless",
+      "type": "serverless",
+      "engine": "NoSQL",
+      "hourlyPrice": 0.0,
+      "monthlyPrice": 0.0,
+      "notes": "$0.25/million RUs + $0.25/GB storage"
+    }
+  ]
+}

@@ -1,0 +1,379 @@
+{
+  "metadata": {
+    "provider": "aws",
+    "lastUpdated": "2026-01-18T00:00:00Z",
+    "source": "AWS Pricing (us-east-1)",
+    "version": "1.0.0",
+    "totalProducts": 50,
+    "currency": "USD",
+    "notes": "Prices are for on-demand instances in us-east-1. Reserved instances available at 30-60% discount."
+  },
+  "compute": [
+    {
+      "provider": "aws",
+      "name": "t3.micro",
+      "displayName": "T3 Micro (Burstable)",
+      "vcpus": 2,
+      "memoryGB": 1,
+      "hourlyPrice": 0.0104,
+      "monthlyPrice": 7.59,
+      "region": "us-east-1",
+      "category": "general",
+      "architecture": "x86",
+      "notes": "Burstable performance, ideal for low-traffic websites"
+    },
+    {
+      "provider": "aws",
+      "name": "t3.small",
+      "displayName": "T3 Small (Burstable)",
+      "vcpus": 2,
+      "memoryGB": 2,
+      "hourlyPrice": 0.0208,
+      "monthlyPrice": 15.18,
+      "region": "us-east-1",
+      "category": "general",
+      "architecture": "x86"
+    },
+    {
+      "provider": "aws",
+      "name": "t3.medium",
+      "displayName": "T3 Medium (Burstable)",
+      "vcpus": 2,
+      "memoryGB": 4,
+      "hourlyPrice": 0.0416,
+      "monthlyPrice": 30.37,
+      "region": "us-east-1",
+      "category": "general",
+      "architecture": "x86"
+    },
+    {
+      "provider": "aws",
+      "name": "t3.large",
+      "displayName": "T3 Large (Burstable)",
+      "vcpus": 2,
+      "memoryGB": 8,
+      "hourlyPrice": 0.0832,
+      "monthlyPrice": 60.74,
+      "region": "us-east-1",
+      "category": "general",
+      "architecture": "x86"
+    },
+    {
+      "provider": "aws",
+      "name": "t3.xlarge",
+      "displayName": "T3 XLarge (Burstable)",
+      "vcpus": 4,
+      "memoryGB": 16,
+      "hourlyPrice": 0.1664,
+      "monthlyPrice": 121.47,
+      "region": "us-east-1",
+      "category": "general",
+      "architecture": "x86"
+    },
+    {
+      "provider": "aws",
+      "name": "m6i.large",
+      "displayName": "M6i Large (General Purpose)",
+      "vcpus": 2,
+      "memoryGB": 8,
+      "hourlyPrice": 0.096,
+      "monthlyPrice": 70.08,
+      "region": "us-east-1",
+      "category": "general",
+      "architecture": "x86"
+    },
+    {
+      "provider": "aws",
+      "name": "m6i.xlarge",
+      "displayName": "M6i XLarge (General Purpose)",
+      "vcpus": 4,
+      "memoryGB": 16,
+      "hourlyPrice": 0.192,
+      "monthlyPrice": 140.16,
+      "region": "us-east-1",
+      "category": "general",
+      "architecture": "x86"
+    },
+    {
+      "provider": "aws",
+      "name": "m6i.2xlarge",
+      "displayName": "M6i 2XLarge (General Purpose)",
+      "vcpus": 8,
+      "memoryGB": 32,
+      "hourlyPrice": 0.384,
+      "monthlyPrice": 280.32,
+      "region": "us-east-1",
+      "category": "general",
+      "architecture": "x86"
+    },
+    {
+      "provider": "aws",
+      "name": "m6g.large",
+      "displayName": "M6g Large (Graviton ARM)",
+      "vcpus": 2,
+      "memoryGB": 8,
+      "hourlyPrice": 0.077,
+      "monthlyPrice": 56.21,
+      "region": "us-east-1",
+      "category": "general",
+      "architecture": "arm",
+      "notes": "AWS Graviton2 ARM-based, 20% lower cost than x86"
+    },
+    {
+      "provider": "aws",
+      "name": "m6g.xlarge",
+      "displayName": "M6g XLarge (Graviton ARM)",
+      "vcpus": 4,
+      "memoryGB": 16,
+      "hourlyPrice": 0.154,
+      "monthlyPrice": 112.42,
+      "region": "us-east-1",
+      "category": "general",
+      "architecture": "arm"
+    },
+    {
+      "provider": "aws",
+      "name": "m6g.2xlarge",
+      "displayName": "M6g 2XLarge (Graviton ARM)",
+      "vcpus": 8,
+      "memoryGB": 32,
+      "hourlyPrice": 0.308,
+      "monthlyPrice": 224.84,
+      "region": "us-east-1",
+      "category": "general",
+      "architecture": "arm"
+    },
+    {
+      "provider": "aws",
+      "name": "c6i.large",
+      "displayName": "C6i Large (Compute Optimized)",
+      "vcpus": 2,
+      "memoryGB": 4,
+      "hourlyPrice": 0.085,
+      "monthlyPrice": 62.05,
+      "region": "us-east-1",
+      "category": "compute",
+      "architecture": "x86"
+    },
+    {
+      "provider": "aws",
+      "name": "c6i.xlarge",
+      "displayName": "C6i XLarge (Compute Optimized)",
+      "vcpus": 4,
+      "memoryGB": 8,
+      "hourlyPrice": 0.17,
+      "monthlyPrice": 124.10,
+      "region": "us-east-1",
+      "category": "compute",
+      "architecture": "x86"
+    },
+    {
+      "provider": "aws",
+      "name": "c6i.2xlarge",
+      "displayName": "C6i 2XLarge (Compute Optimized)",
+      "vcpus": 8,
+      "memoryGB": 16,
+      "hourlyPrice": 0.34,
+      "monthlyPrice": 248.20,
+      "region": "us-east-1",
+      "category": "compute",
+      "architecture": "x86"
+    },
+    {
+      "provider": "aws",
+      "name": "r6i.large",
+      "displayName": "R6i Large (Memory Optimized)",
+      "vcpus": 2,
+      "memoryGB": 16,
+      "hourlyPrice": 0.126,
+      "monthlyPrice": 91.98,
+      "region": "us-east-1",
+      "category": "memory",
+      "architecture": "x86"
+    },
+    {
+      "provider": "aws",
+      "name": "r6i.xlarge",
+      "displayName": "R6i XLarge (Memory Optimized)",
+      "vcpus": 4,
+      "memoryGB": 32,
+      "hourlyPrice": 0.252,
+      "monthlyPrice": 183.96,
+      "region": "us-east-1",
+      "category": "memory",
+      "architecture": "x86"
+    },
+    {
+      "provider": "aws",
+      "name": "r6i.2xlarge",
+      "displayName": "R6i 2XLarge (Memory Optimized)",
+      "vcpus": 8,
+      "memoryGB": 64,
+      "hourlyPrice": 0.504,
+      "monthlyPrice": 367.92,
+      "region": "us-east-1",
+      "category": "memory",
+      "architecture": "x86"
+    },
+    {
+      "provider": "aws",
+      "name": "p4d.24xlarge",
+      "displayName": "P4d 24XLarge (GPU - A100)",
+      "vcpus": 96,
+      "memoryGB": 1152,
+      "hourlyPrice": 32.77,
+      "monthlyPrice": 23922.10,
+      "region": "us-east-1",
+      "category": "gpu",
+      "architecture": "x86",
+      "gpuCount": 8,
+      "gpuType": "NVIDIA A100",
+      "notes": "8x NVIDIA A100 40GB GPUs"
+    },
+    {
+      "provider": "aws",
+      "name": "g5.xlarge",
+      "displayName": "G5 XLarge (GPU - A10G)",
+      "vcpus": 4,
+      "memoryGB": 16,
+      "hourlyPrice": 1.006,
+      "monthlyPrice": 734.38,
+      "region": "us-east-1",
+      "category": "gpu",
+      "architecture": "x86",
+      "gpuCount": 1,
+      "gpuType": "NVIDIA A10G"
+    }
+  ],
+  "storage": [
+    {
+      "provider": "aws",
+      "name": "S3 Standard",
+      "type": "object",
+      "tier": "hot",
+      "pricePerGBMonth": 0.023,
+      "region": "us-east-1",
+      "redundancy": "Multi-AZ",
+      "notes": "First 50TB/month"
+    },
+    {
+      "provider": "aws",
+      "name": "S3 Intelligent-Tiering",
+      "type": "object",
+      "tier": "hot",
+      "pricePerGBMonth": 0.023,
+      "region": "us-east-1",
+      "redundancy": "Multi-AZ",
+      "notes": "Auto-moves to cheaper tiers based on access patterns"
+    },
+    {
+      "provider": "aws",
+      "name": "S3 Standard-IA",
+      "type": "object",
+      "tier": "cool",
+      "pricePerGBMonth": 0.0125,
+      "region": "us-east-1",
+      "redundancy": "Multi-AZ",
+      "notes": "Infrequent Access, min 30 days"
+    },
+    {
+      "provider": "aws",
+      "name": "S3 Glacier Instant",
+      "type": "archive",
+      "tier": "cold",
+      "pricePerGBMonth": 0.004,
+      "region": "us-east-1",
+      "redundancy": "Multi-AZ",
+      "notes": "Millisecond retrieval"
+    },
+    {
+      "provider": "aws",
+      "name": "S3 Glacier Deep Archive",
+      "type": "archive",
+      "tier": "archive",
+      "pricePerGBMonth": 0.00099,
+      "region": "us-east-1",
+      "redundancy": "Multi-AZ",
+      "notes": "12+ hour retrieval, lowest cost"
+    },
+    {
+      "provider": "aws",
+      "name": "EBS gp3",
+      "type": "block",
+      "tier": "hot",
+      "pricePerGBMonth": 0.08,
+      "region": "us-east-1",
+      "notes": "General purpose SSD, 3000 IOPS baseline"
+    },
+    {
+      "provider": "aws",
+      "name": "EBS io2",
+      "type": "block",
+      "tier": "hot",
+      "pricePerGBMonth": 0.125,
+      "region": "us-east-1",
+      "notes": "Provisioned IOPS SSD, up to 64K IOPS"
+    },
+    {
+      "provider": "aws",
+      "name": "EFS Standard",
+      "type": "file",
+      "tier": "hot",
+      "pricePerGBMonth": 0.30,
+      "region": "us-east-1",
+      "notes": "Shared file system, elastic"
+    }
+  ],
+  "egress": {
+    "provider": "aws",
+    "freeGBPerMonth": 100,
+    "tiers": [
+      { "upToGB": 10240, "pricePerGB": 0.09 },
+      { "upToGB": 51200, "pricePerGB": 0.085 },
+      { "upToGB": 153600, "pricePerGB": 0.07 },
+      { "upToGB": -1, "pricePerGB": 0.05 }
+    ],
+    "notes": "First 100GB/month free as of Dec 2023"
+  },
+  "kubernetes": {
+    "provider": "aws",
+    "name": "EKS",
+    "controlPlaneHourly": 0.10,
+    "controlPlaneMonthly": 73.00,
+    "workerNodeIncluded": false,
+    "notes": "$0.10/hr per cluster, worker nodes billed separately as EC2"
+  },
+  "database": [
+    {
+      "provider": "aws",
+      "name": "RDS MySQL db.t3.micro",
+      "type": "relational",
+      "engine": "MySQL",
+      "vcpus": 2,
+      "memoryGB": 1,
+      "hourlyPrice": 0.017,
+      "monthlyPrice": 12.41,
+      "notes": "Single-AZ, Free Tier eligible"
+    },
+    {
+      "provider": "aws",
+      "name": "RDS PostgreSQL db.t3.medium",
+      "type": "relational",
+      "engine": "PostgreSQL",
+      "vcpus": 2,
+      "memoryGB": 4,
+      "hourlyPrice": 0.068,
+      "monthlyPrice": 49.64,
+      "notes": "Single-AZ"
+    },
+    {
+      "provider": "aws",
+      "name": "Aurora Serverless v2",
+      "type": "serverless",
+      "engine": "MySQL/PostgreSQL",
+      "hourlyPrice": 0.12,
+      "monthlyPrice": 87.60,
+      "notes": "Per ACU-hour, scales 0.5 to 128 ACUs"
+    }
+  ]
+}
