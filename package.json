@@ -1,6 +1,6 @@
 {
   "name": "cloud-cost-mcp",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Multi-cloud pricing comparison MCP server for AWS, Azure, GCP, and OCI",
   "type": "module",
   "main": "dist/index.js",
@@ -13,6 +13,7 @@
     "copy-data": "mkdir -p dist/data/bundled && cp src/data/bundled/*.json dist/data/bundled/",
     "start": "node dist/index.js",
     "dev": "tsc --watch",
+    "fetch-data": "npx tsx scripts/fetch-pricing-data.ts",
     "prepublishOnly": "npm run build"
   },
   "keywords": [
