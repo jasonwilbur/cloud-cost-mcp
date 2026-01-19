@@ -2,6 +2,8 @@
 
 Multi-cloud pricing comparison MCP server for AWS, Azure, GCP, and OCI. Compare compute, storage, egress, and Kubernetes costs across all major cloud providers with a single query.
 
+> **⚠️ DISCLAIMER**: All pricing data is retrieved from publicly available APIs and data sources including [instances.vantage.sh](https://instances.vantage.sh), Azure Retail Prices API, and Oracle Cloud Price List API. This data is provided for informational and estimation purposes only. **Cloud pricing changes frequently and may vary by region, account type, commitment terms, and other factors.** Users are solely responsible for verifying all pricing information directly with cloud providers before making any purchasing or architectural decisions. The authors make no warranties about the accuracy, completeness, or timeliness of this data.
+
 ## Features
 
 - **Comprehensive Coverage**: 2,700+ instance types across all providers
