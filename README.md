@@ -78,6 +78,15 @@ Once installed, just ask Claude:
 ```
 "Quick estimate for a medium API server"
 "Compare all clouds for a kubernetes-cluster preset"
+"Estimate cost for gpu-training-large preset"
+```
+
+### GPU Pricing (OCI)
+```
+"List all available GPU shapes"
+"Compare A100 vs H100 GPU pricing"
+"What GPU should I use for ML training with 80GB memory?"
+"Get details for BM.GPU.H100.8"
 ```
 
 ### Migration Planning
@@ -104,6 +113,8 @@ Once installed, just ask Claude:
 | `quick_estimate` | Instant comparison for common presets |
 | `estimate_migration_savings` | Calculate migration savings |
 | `list_presets` | List available deployment presets |
+
+**Available presets**: `small-web-app`, `medium-api-server`, `large-database`, `ml-training`, `kubernetes-cluster`, `data-lake`, `high-egress-cdn`, `high-traffic-web`, `gpu-inference`, `gpu-training-small`, `gpu-training-large`
 
 ### Data Management Tools
 | Tool | Description |
@@ -143,6 +154,16 @@ Once installed, just ask Claude:
 |------|-------------|
 | `refresh_oci_pricing` | Fetch live OCI pricing (public API) |
 | `list_oci_categories` | List OCI service categories |
+
+### GPU Tools (OCI)
+| Tool | Description |
+|------|-------------|
+| `list_gpu_shapes` | List GPU shapes with filtering by model, use case, price |
+| `get_gpu_shape_details` | Get detailed specs and pricing for a GPU shape |
+| `compare_gpu_shapes` | Compare multiple GPU shapes side-by-side |
+| `recommend_gpu_shape` | Get GPU recommendation based on workload type |
+
+**Available GPU shapes**: A10, A100 80GB, H100 80GB, H200 141GB, L40S, MI300X
 
 #### Status
 | Tool | Description |
