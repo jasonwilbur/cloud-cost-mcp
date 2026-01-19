@@ -1,6 +1,6 @@
 {
   "name": "cloud-cost-mcp",
-  "version": "1.1.1",
+  "version": "1.2.1",
   "description": "Multi-cloud pricing comparison MCP server for AWS, Azure, GCP, and OCI",
   "type": "module",
   "main": "dist/index.js",

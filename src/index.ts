@@ -46,6 +46,14 @@ import {
   estimateMigrationSavings,
 } from './tools/calculator.js';
 
+// Import GPU tools
+import {
+  listGPUShapes,
+  getGPUShapeDetails,
+  compareGPUShapes,
+  recommendGPUShape,
+} from './tools/gpu.js';
+
 // Import data functions
 import {
   getDataFreshness,
@@ -82,7 +90,7 @@ import {
 const server = new Server(
   {
     name: 'cloud-cost-mcp',
-    version: '1.1.0',
+    version: '1.2.1',
   },
   {
     capabilities: {
@@ -244,13 +252,17 @@ const TOOLS = [
   },
   {
     name: 'quick_estimate',
-    description: 'Get instant cost comparison for common deployment presets.',
+    description: 'Get instant cost comparison for common deployment presets including GPU workloads.',
     inputSchema: {
       type: 'object' as const,
       properties: {
         preset: {
           type: 'string',
-          enum: ['small-web-app', 'medium-api-server', 'large-database', 'ml-training', 'kubernetes-cluster', 'data-lake', 'high-egress-cdn'],
+          enum: [
+            'small-web-app', 'medium-api-server', 'large-database', 'ml-training',
+            'kubernetes-cluster', 'data-lake', 'high-egress-cdn', 'high-traffic-web',
+            'gpu-inference', 'gpu-training-small', 'gpu-training-large'
+          ],
           description: 'Deployment preset name',
         },
       },
@@ -582,6 +594,83 @@ const TOOLS = [
       properties: {},
     },
   },
+
+  // GPU Tools (OCI)
+  {
+    name: 'list_gpu_shapes',
+    description: 'List OCI GPU shapes with pricing. Filter by GPU model (A10, A100, H100, H200, L40S, MI300X) or use case (inference, training).',
+    inputSchema: {
+      type: 'object' as const,
+      properties: {
+        gpuModel: {
+          type: 'string',
+          description: 'Filter by GPU model (e.g., "A100", "H100", "MI300X")',
+        },
+        useCase: {
+          type: 'string',
+          enum: ['inference', 'training', 'graphics', 'general'],
+          description: 'Filter by intended use case',
+        },
+        maxPricePerHour: {
+          type: 'number',
+          description: 'Maximum hourly price filter',
+        },
+      },
+    },
+  },
+  {
+    name: 'get_gpu_shape_details',
+    description: 'Get detailed specifications and pricing for a specific OCI GPU shape.',
+    inputSchema: {
+      type: 'object' as const,
+      properties: {
+        shapeFamily: {
+          type: 'string',
+          description: 'GPU shape family (e.g., "BM.GPU.H100.8", "BM.GPU.A100-v2.8", "VM.GPU.A10.1")',
+        },
+      },
+      required: ['shapeFamily'],
+    },
+  },
+  {
+    name: 'compare_gpu_shapes',
+    description: 'Compare multiple OCI GPU shapes side-by-side on specs, pricing, and price-per-GPU metrics.',
+    inputSchema: {
+      type: 'object' as const,
+      properties: {
+        shapes: {
+          type: 'array',
+          items: { type: 'string' },
+          description: 'GPU shape families to compare (e.g., ["BM.GPU.A10.4", "BM.GPU.A100-v2.8", "BM.GPU.H100.8"])',
+        },
+      },
+      required: ['shapes'],
+    },
+  },
+  {
+    name: 'recommend_gpu_shape',
+    description: 'Get GPU shape recommendation based on workload requirements and budget.',
+    inputSchema: {
+      type: 'object' as const,
+      properties: {
+        workloadType: {
+          type: 'string',
+          enum: ['inference', 'training', 'fine-tuning', 'data-science'],
+          description: 'Type of AI/ML workload',
+        },
+        minGPUMemoryGB: {
+          type: 'number',
+          description: 'Minimum GPU memory needed per GPU (e.g., 24, 40, 80)',
+        },
+        budget: {
+          type: 'string',
+          enum: ['low', 'medium', 'high'],
+          description: 'Budget constraint (low: <$5/hr, medium: <$20/hr, high: unlimited)',
+        },
+      },
+      required: ['workloadType'],
+    },
+  },
 ];
 
 // Handle list tools request
@@ -748,6 +837,28 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
           categories: await getAzureCategories(),
           note: 'Azure VM categories with count of instance types',
         };
+        break;
+
+      // GPU Tools (OCI)
+      case 'list_gpu_shapes':
+        result = listGPUShapes({
+          gpuModel: typedArgs.gpuModel,
+          useCase: typedArgs.useCase,
+          maxPricePerHour: typedArgs.maxPricePerHour,
+        });
+        break;
+      case 'get_gpu_shape_details':
+        result = getGPUShapeDetails(typedArgs.shapeFamily);
+        break;
+      case 'compare_gpu_shapes':
+        result = compareGPUShapes(typedArgs.shapes);
+        break;
+      case 'recommend_gpu_shape':
+        result = recommendGPUShape({
+          workloadType: typedArgs.workloadType,
+          minGPUMemoryGB: typedArgs.minGPUMemoryGB,
+          budget: typedArgs.budget,
+        });
         break;
 
       default:

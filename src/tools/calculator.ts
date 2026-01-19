@@ -204,67 +204,131 @@ export function calculateWorkloadCost(spec: WorkloadSpec): WorkloadComparisonRes
 /**
  * Quick estimate for common deployment presets
  */
-export function quickEstimate(preset: string): WorkloadComparisonResult {
-  const presets: Record<string, WorkloadSpec> = {
+export function quickEstimate(preset: string): WorkloadComparisonResult & { presetDescription?: string } {
+  const presets: Record<string, { spec: WorkloadSpec; description: string }> = {
     'small-web-app': {
-      compute: { vcpus: 2, memoryGB: 4, count: 1 },
-      storage: { blockGB: 50 },
-      egress: { monthlyGB: 100 },
+      spec: {
+        compute: { vcpus: 2, memoryGB: 4, count: 1 },
+        storage: { blockGB: 50 },
+        egress: { monthlyGB: 100 },
+      },
+      description: 'Basic web application with single instance',
     },
     'medium-api-server': {
-      compute: { vcpus: 4, memoryGB: 16, count: 2 },
-      storage: { blockGB: 200, objectGB: 100 },
-      egress: { monthlyGB: 500 },
+      spec: {
+        compute: { vcpus: 4, memoryGB: 16, count: 2 },
+        storage: { blockGB: 200, objectGB: 100 },
+        egress: { monthlyGB: 500 },
+      },
+      description: 'API server with load balancing and moderate storage',
     },
     'large-database': {
-      compute: { vcpus: 8, memoryGB: 64, count: 1 },
-      storage: { blockGB: 1000 },
-      egress: { monthlyGB: 200 },
+      spec: {
+        compute: { vcpus: 8, memoryGB: 64, count: 1 },
+        storage: { blockGB: 1000 },
+        egress: { monthlyGB: 200 },
+      },
+      description: 'High-memory database server with 1TB storage',
     },
     'ml-training': {
-      compute: { vcpus: 8, memoryGB: 32, count: 2 },
-      storage: { objectGB: 500 },
-      egress: { monthlyGB: 1000 },
+      spec: {
+        compute: { vcpus: 8, memoryGB: 32, count: 2 },
+        storage: { objectGB: 500 },
+        egress: { monthlyGB: 1000 },
+      },
+      description: 'CPU-based ML training cluster (no GPU)',
     },
     'kubernetes-cluster': {
-      kubernetes: { nodeCount: 3, nodeVcpus: 4, nodeMemoryGB: 16 },
-      storage: { blockGB: 300 },
-      egress: { monthlyGB: 500 },
+      spec: {
+        kubernetes: { nodeCount: 3, nodeVcpus: 4, nodeMemoryGB: 16 },
+        storage: { blockGB: 300 },
+        egress: { monthlyGB: 500 },
+      },
+      description: 'Standard 3-node Kubernetes cluster',
     },
     'data-lake': {
-      compute: { vcpus: 4, memoryGB: 16, count: 2 },
-      storage: { objectGB: 5000 },
-      egress: { monthlyGB: 2000 },
+      spec: {
+        compute: { vcpus: 16, memoryGB: 128, count: 1 },
+        storage: { objectGB: 100000 },
+        egress: { monthlyGB: 5000 },
+      },
+      description: 'Object storage-heavy analytics workload (100TB)',
     },
     'high-egress-cdn': {
-      compute: { vcpus: 2, memoryGB: 4, count: 2 },
-      storage: { objectGB: 200 },
-      egress: { monthlyGB: 10000 },
+      spec: {
+        compute: { vcpus: 2, memoryGB: 4, count: 2 },
+        storage: { objectGB: 200 },
+        egress: { monthlyGB: 10000 },
+      },
+      description: 'CDN origin servers with 10TB/month egress',
+    },
+    // GPU Presets (using equivalent vCPU/memory for cost estimation)
+    'gpu-inference': {
+      spec: {
+        compute: { vcpus: 64, memoryGB: 1024, count: 1 },
+        storage: { blockGB: 500, objectGB: 1000 },
+        egress: { monthlyGB: 2000 },
+      },
+      description: 'GPU inference server (BM.GPU.A10.4 equivalent: $2.95/hr)',
+    },
+    'gpu-training-small': {
+      spec: {
+        compute: { vcpus: 128, memoryGB: 2048, count: 1 },
+        storage: { blockGB: 2000, objectGB: 5000 },
+        egress: { monthlyGB: 5000 },
+      },
+      description: 'GPU training (BM.GPU.A100-v2.8 equivalent: $17/hr, ~200hrs/month)',
+    },
+    'gpu-training-large': {
+      spec: {
+        compute: { vcpus: 112, memoryGB: 2048, count: 1 },
+        storage: { blockGB: 10000, objectGB: 50000 },
+        egress: { monthlyGB: 10000 },
+      },
+      description: 'Large-scale GPU training (BM.GPU.H100.8 equivalent: $36/hr)',
+    },
+    'high-traffic-web': {
+      spec: {
+        compute: { vcpus: 8, memoryGB: 64, count: 4 },
+        storage: { blockGB: 500, objectGB: 2000 },
+        egress: { monthlyGB: 10000 },
+      },
+      description: 'Load-balanced web tier with 4 instances and CDN',
     },
   };
 
-  const spec = presets[preset];
-  if (!spec) {
+  const presetConfig = presets[preset];
+  if (!presetConfig) {
     throw new Error(
       `Unknown preset: ${preset}. Available presets: ${Object.keys(presets).join(', ')}`
     );
   }
 
-  return calculateWorkloadCost(spec);
+  const result = calculateWorkloadCost(presetConfig.spec);
+  return {
+    ...result,
+    presetDescription: presetConfig.description,
+  };
 }
 
 /**
  * Get available presets
  */
-export function getAvailablePresets(): Array<{ name: string; description: string }> {
+export function getAvailablePresets(): Array<{ name: string; description: string; category: string }> {
   return [
-    { name: 'small-web-app', description: '2 vCPU, 4GB RAM, 50GB storage, 100GB egress' },
-    { name: 'medium-api-server', description: '2x 4 vCPU, 16GB RAM, 200GB block + 100GB object, 500GB egress' },
-    { name: 'large-database', description: '8 vCPU, 64GB RAM, 1TB storage, 200GB egress' },
-    { name: 'ml-training', description: '2x 8 vCPU, 32GB RAM, 500GB object storage, 1TB egress' },
-    { name: 'kubernetes-cluster', description: '3 nodes × 4 vCPU × 16GB, 300GB storage, 500GB egress' },
-    { name: 'data-lake', description: '2x 4 vCPU, 16GB RAM, 5TB object storage, 2TB egress' },
-    { name: 'high-egress-cdn', description: '2x 2 vCPU, 4GB RAM, 200GB object, 10TB egress (shows OCI advantage)' },
+    // Standard presets
+    { name: 'small-web-app', description: '2 vCPU, 4GB RAM, 50GB storage, 100GB egress', category: 'web' },
+    { name: 'medium-api-server', description: '2x 4 vCPU, 16GB RAM, 200GB block + 100GB object, 500GB egress', category: 'web' },
+    { name: 'high-traffic-web', description: '4x 8 vCPU, 64GB RAM, 500GB block + 2TB object, 10TB egress', category: 'web' },
+    { name: 'large-database', description: '8 vCPU, 64GB RAM, 1TB storage, 200GB egress', category: 'database' },
+    { name: 'kubernetes-cluster', description: '3 nodes × 4 vCPU × 16GB, 300GB storage, 500GB egress', category: 'kubernetes' },
+    { name: 'data-lake', description: '16 vCPU, 128GB RAM, 100TB object storage, 5TB egress', category: 'analytics' },
+    { name: 'high-egress-cdn', description: '2x 2 vCPU, 4GB RAM, 200GB object, 10TB egress (shows OCI advantage)', category: 'networking' },
+    // GPU presets
+    { name: 'ml-training', description: 'CPU-based: 2x 8 vCPU, 32GB RAM, 500GB object storage, 1TB egress', category: 'ml' },
+    { name: 'gpu-inference', description: 'GPU inference: A10 equivalent (64 vCPU, 1TB RAM, ~$2.95/hr GPU cost)', category: 'gpu' },
+    { name: 'gpu-training-small', description: 'GPU training: A100 equivalent (128 vCPU, 2TB RAM, ~$17/hr GPU cost)', category: 'gpu' },
+    { name: 'gpu-training-large', description: 'Large GPU training: H100 equivalent (112 vCPU, 2TB RAM, ~$36/hr GPU cost)', category: 'gpu' },
   ];
 }
 

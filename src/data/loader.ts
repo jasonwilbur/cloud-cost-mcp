@@ -14,6 +14,7 @@ import type {
   StoragePricing,
   EgressPricing,
   DataFreshnessInfo,
+  GPUPricing,
 } from '../types.js';
 import { pricingCache, CACHE_KEYS } from './cache.js';
 
@@ -175,4 +176,41 @@ export function getAllDatabasePricing() {
     gcp: allData.gcp.database || [],
     oci: allData.oci.database || [],
   };
+}
+
+/**
+ * Get GPU pricing data (currently OCI only)
+ */
+export function getGPUPricing(type?: string): GPUPricing[] {
+  const cached = pricingCache.get<GPUPricing[]>('GPU_PRICING');
+  let pricing: GPUPricing[];
+
+  if (cached) {
+    pricing = cached;
+  } else {
+    const ociData = getProviderData('oci');
+    pricing = ociData.gpu || [];
+    pricingCache.set('GPU_PRICING', pricing, 60);
+  }
+
+  if (type) {
+    return pricing.filter(
+      (p) =>
+        p.type === type ||
+        p.gpuModel.toLowerCase().includes(type.toLowerCase()) ||
+        p.shapeFamily.toLowerCase().includes(type.toLowerCase())
+    );
+  }
+
+  return pricing;
+}
+
+/**
+ * Get GPU shape by family name
+ */
+export function getGPUShapeByFamily(shapeFamily: string): GPUPricing | undefined {
+  const pricing = getGPUPricing();
+  return pricing.find(
+    (p) => p.shapeFamily.toLowerCase() === shapeFamily.toLowerCase()
+  );
 }

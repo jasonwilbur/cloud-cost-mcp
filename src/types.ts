@@ -9,6 +9,39 @@ export type ComputeCategory = 'general' | 'compute' | 'memory' | 'storage' | 'gp
 
 export type StorageTier = 'hot' | 'cool' | 'cold' | 'archive';
 
+// GPU Types
+export type GPUType = 'nvidia-a10' | 'nvidia-a100' | 'nvidia-h100' | 'nvidia-h200' |
+                      'nvidia-l40s' | 'nvidia-b200' | 'amd-mi300x';
+
+export type GPUUseCase = 'inference' | 'training' | 'graphics' | 'general';
+
+// GPU Pricing Interface
+export interface GPUPricing {
+  service: 'gpu';
+  shapeFamily: string;
+  type: GPUType;
+  name: string;
+  description: string;
+  gpuCount: number;
+  gpuModel: string;
+  gpuMemoryGB: number;
+  ocpus: number;
+  memoryGB: number;
+  pricePerHour: number;
+  currency: 'USD';
+  useCase: GPUUseCase;
+  partNumber?: string;
+  notes?: string;
+}
+
+// Workload Preset Types
+export type WorkloadPresetType =
+  | 'small-web-app' | 'medium-api-server' | 'large-database'
+  | 'ml-training' | 'kubernetes-cluster' | 'data-lake' | 'high-egress-cdn'
+  // GPU presets
+  | 'gpu-inference' | 'gpu-training-small' | 'gpu-training-large'
+  | 'high-traffic-web';
+
 // Metadata for bundled pricing data
 export interface PricingMetadata {
   provider: CloudProvider;
@@ -141,6 +174,7 @@ export interface ProviderPricingData {
   egress: EgressPricing;
   kubernetes?: KubernetesPricing;
   database?: DatabasePricing[];
+  gpu?: GPUPricing[];
 }
 
 // Combined pricing data for all providers
