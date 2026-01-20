@@ -4,7 +4,7 @@
     "lastUpdated": "2026-01-20T00:00:00Z",
     "source": "Oracle Cloud Infrastructure Pricing API",
     "sourceUrl": "https://apexapps.oracle.com/pls/apex/cetools/api/v1/products/",
-    "version": "1.2.5",
+    "version": "1.2.7",
     "totalProducts": 602,
     "totalCategories": 109,
     "currency": "USD",
@@ -720,131 +720,27 @@
   ],
   "serverless": [
     {
-      "service": "serverless",
-      "type": "functions-invocations",
-      "description": "OCI Functions - Per invocation charge",
-      "unit": "invocation",
-      "pricePerUnit": 2e-07,
-      "currency": "USD",
-      "freePerMonth": 2000000,
-      "notes": "First 2 million invocations/month free. $0.20 per million after."
-    },
-    {
-      "service": "serverless",
-      "type": "functions-execution",
-      "description": "OCI Functions - Execution time (GB-seconds)",
-      "unit": "GB-second",
-      "pricePerUnit": 1.417e-05,
-      "currency": "USD",
-      "freePerMonth": 400000,
-      "notes": "First 400K GB-seconds/month free. Memory \u00d7 execution time."
-    },
-    {
-      "service": "serverless",
-      "type": "api-gateway",
-      "description": "API Gateway - Per API call charge",
-      "unit": "million calls",
-      "pricePerUnit": 3,
-      "currency": "USD",
-      "freePerMonth": 2000000,
-      "notes": "First 2M calls/month free. $1.50/million at 1B+ calls."
-    },
-    {
-      "service": "serverless",
-      "type": "events",
-      "description": "OCI Events - Event routing service",
-      "unit": "million events",
-      "pricePerUnit": 1,
-      "currency": "USD",
-      "freePerMonth": 1000000,
-      "notes": "First 1M events/month free. Routes events to Functions, Streaming, Notifications."
-    },
-    {
-      "service": "serverless",
-      "type": "queue",
-      "description": "OCI Queue - Message queue service",
-      "unit": "million requests",
-      "pricePerUnit": 0.5,
-      "currency": "USD",
-      "freePerMonth": 1000000,
-      "notes": "First 1M requests/month free. Fully managed message queuing."
-    },
-    {
-      "service": "serverless",
-      "type": "streaming-storage",
-      "description": "OCI Streaming - Data storage",
-      "unit": "GB per hour",
-      "pricePerUnit": 0.025,
-      "currency": "USD",
-      "notes": "Kafka-compatible streaming. Per GB of data stored."
-    },
-    {
-      "service": "serverless",
-      "type": "streaming-requests",
-      "description": "OCI Streaming - PUT/GET requests",
-      "unit": "GB transferred",
-      "pricePerUnit": 0.025,
-      "currency": "USD",
-      "notes": "Per GB of data transferred (PUT or GET)."
-    },
-    {
-      "service": "serverless",
-      "type": "streaming-partitions",
-      "description": "OCI Streaming - Partition hours",
-      "unit": "partition per hour",
-      "pricePerUnit": 0.0278,
-      "currency": "USD",
-      "notes": "Per partition-hour. Each partition supports 1 MB/s write, 2 MB/s read."
+      "name": "OCI Functions",
+      "type": "serverless",
+      "pricePerMillion": 0.2,
+      "pricePerGBSecond": 1.417e-05,
+      "freeInvocations": 2000000,
+      "freeGBSeconds": 400000,
+      "notes": "Generous free tier"
     }
   ],
   "containers": [
     {
-      "service": "containers",
-      "type": "container-instances-a1-ocpu",
-      "description": "Container Instances - Ampere A1 OCPU",
-      "unit": "OCPU per hour",
-      "pricePerUnit": 0.01,
-      "currency": "USD",
-      "freePerMonth": 3000,
-      "notes": "Same as VM.Standard.A1.Flex pricing. First 3000 OCPU-hours/month free."
+      "name": "Container Instances OCPU",
+      "type": "container-serverless",
+      "pricePerHour": 0.0225,
+      "notes": "Per OCPU-hour"
     },
     {
-      "service": "containers",
-      "type": "container-instances-a1-memory",
-      "description": "Container Instances - Ampere A1 Memory",
-      "unit": "GB per hour",
-      "pricePerUnit": 0.0006,
-      "currency": "USD",
-      "freePerMonth": 18000,
-      "notes": "Same as VM.Standard.A1.Flex pricing. First 18000 GB-hours/month free."
-    },
-    {
-      "service": "containers",
-      "type": "container-instances-e4-ocpu",
-      "description": "Container Instances - E4 Flex OCPU",
-      "unit": "OCPU per hour",
-      "pricePerUnit": 0.025,
-      "currency": "USD",
-      "notes": "Same as VM.Standard.E4.Flex pricing."
-    },
-    {
-      "service": "containers",
-      "type": "container-instances-e4-memory",
-      "description": "Container Instances - E4 Flex Memory",
-      "unit": "GB per hour",
-      "pricePerUnit": 0.0015,
-      "currency": "USD",
-      "notes": "Same as VM.Standard.E4.Flex pricing."
-    },
-    {
-      "service": "containers",
-      "type": "container-registry",
-      "description": "Container Registry (OCIR) - Image storage",
-      "unit": "GB per month",
-      "pricePerUnit": 0.0255,
-      "currency": "USD",
-      "freeGB": 5,
-      "notes": "First 5 GB free. Same as Object Storage pricing. 500 repos max."
+      "name": "Container Instances Memory",
+      "type": "container-serverless",
+      "pricePerHour": 0.0015,
+      "notes": "Per GB-hour"
     }
   ],
   "observability": [
@@ -11503,6 +11399,143 @@
       "minMemoryGB": 2048,
       "maxMemoryGB": 2048,
       "notes": "8x NVIDIA A100 80GB GPUs. High-performance AI/ML workloads."
+    }
+  ],
+  "loadBalancers": [
+    {
+      "name": "Flexible Load Balancer 10Mbps",
+      "type": "load-balancer",
+      "hourlyPrice": 0.0108,
+      "monthlyPrice": 7.88,
+      "notes": "10 Mbps minimum"
+    },
+    {
+      "name": "Flexible Load Balancer 100Mbps",
+      "type": "load-balancer",
+      "hourlyPrice": 0.0432,
+      "monthlyPrice": 31.54,
+      "notes": "Medium workloads"
+    },
+    {
+      "name": "Flexible Load Balancer 400Mbps",
+      "type": "load-balancer",
+      "hourlyPrice": 0.1728,
+      "monthlyPrice": 126.14,
+      "notes": "High throughput"
+    },
+    {
+      "name": "Network Load Balancer",
+      "type": "load-balancer",
+      "hourlyPrice": 0.0,
+      "monthlyPrice": 0.0,
+      "notes": "FREE - Layer 4 load balancing"
+    }
+  ],
+  "natGateway": [
+    {
+      "name": "NAT Gateway",
+      "type": "nat-gateway",
+      "hourlyPrice": 0.0108,
+      "monthlyPrice": 7.88,
+      "dataProcessingPerGB": 0.0085,
+      "notes": "Much cheaper than AWS/Azure!"
+    }
+  ],
+  "apiGateway": [
+    {
+      "name": "API Gateway",
+      "type": "api-gateway",
+      "pricePerMillion": 1.5,
+      "freeRequests": 1000000,
+      "notes": "First 1M calls free"
+    }
+  ],
+  "messaging": [
+    {
+      "name": "Queue Service",
+      "type": "message-queue",
+      "pricePerGB": 0.025,
+      "notes": "Per GB of messages stored"
+    },
+    {
+      "name": "Streaming",
+      "type": "streaming",
+      "pricePerHour": 0.0252,
+      "storagePerGB": 0.0255,
+      "notes": "Kafka-compatible"
+    },
+    {
+      "name": "Events Service",
+      "type": "event-bus",
+      "pricePerMillion": 0.0,
+      "notes": "FREE"
+    }
+  ],
+  "secrets": [
+    {
+      "name": "Vault Secrets",
+      "type": "secrets",
+      "pricePerVersion": 0.0,
+      "notes": "FREE for secrets"
+    },
+    {
+      "name": "Vault Keys Software",
+      "type": "kms",
+      "pricePerVersion": 0.53,
+      "notes": "Per key version/month"
+    },
+    {
+      "name": "Vault Keys HSM",
+      "type": "kms",
+      "pricePerVersion": 2.14,
+      "notes": "Hardware security module"
+    }
+  ],
+  "dns": [
+    {
+      "name": "DNS Zone",
+      "type": "dns",
+      "pricePerZone": 0.5,
+      "notes": "$0.50/zone/month"
+    },
+    {
+      "name": "DNS Queries",
+      "type": "dns",
+      "pricePerMillion": 0.2,
+      "notes": "Per million queries"
+    },
+    {
+      "name": "Traffic Management",
+      "type": "dns",
+      "pricePerMillion": 0.5,
+      "notes": "Health checks + steering"
+    }
+  ],
+  "monitoring": [
+    {
+      "name": "Monitoring",
+      "type": "monitoring",
+      "pricePerMetric": 0.0,
+      "notes": "FREE - First 500M datapoints"
+    },
+    {
+      "name": "Logging Ingestion",
+      "type": "logging",
+      "pricePerGB": 0.0,
+      "freeGB": 10,
+      "notes": "First 10GB/month FREE"
+    },
+    {
+      "name": "Logging Storage",
+      "type": "logging",
+      "pricePerGB": 0.0255,
+      "notes": "Per GB/month stored"
+    },
+    {
+      "name": "Application Performance Monitoring",
+      "type": "apm",
+      "pricePerHour": 0.02,
+      "notes": "Per tracing event-hour"
     }
   ]
 }

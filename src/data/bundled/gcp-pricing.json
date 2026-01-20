@@ -3,7 +3,7 @@
     "provider": "gcp",
     "lastUpdated": "2026-01-20T00:00:00Z",
     "source": "instances.vantage.sh + manual curation",
-    "version": "1.2.5",
+    "version": "1.2.7",
     "totalProducts": 329,
     "currency": "USD",
     "notes": "GCP pricing with predefined + custom machine types"
@@ -4320,6 +4320,212 @@
       "hourlyPrice": 0.65,
       "monthlyPrice": 474.5,
       "notes": "Per node, wide-column store"
+    }
+  ],
+  "serverless": [
+    {
+      "name": "Cloud Functions 1st Gen",
+      "type": "serverless",
+      "pricePerMillion": 0.4,
+      "pricePerGBSecond": 2.5e-06,
+      "pricePerGHzSecond": 1e-05,
+      "freeInvocations": 2000000,
+      "notes": "2M invocations free"
+    },
+    {
+      "name": "Cloud Functions 2nd Gen",
+      "type": "serverless",
+      "pricePerMillion": 0.4,
+      "pricePerVCPUSecond": 2.4e-05,
+      "pricePerGBSecond": 2.5e-06,
+      "notes": "Built on Cloud Run"
+    },
+    {
+      "name": "Cloud Run",
+      "type": "serverless",
+      "pricePerVCPUSecond": 2.4e-05,
+      "pricePerGBSecond": 2.5e-06,
+      "freeVCPUSeconds": 180000,
+      "freeGBSeconds": 360000,
+      "notes": "Generous free tier"
+    }
+  ],
+  "loadBalancers": [
+    {
+      "name": "HTTP(S) Load Balancing",
+      "type": "load-balancer",
+      "hourlyPrice": 0.025,
+      "monthlyPrice": 18.25,
+      "dataPrice": 0.008,
+      "notes": "Global, + $0.008/GB"
+    },
+    {
+      "name": "Network Load Balancing",
+      "type": "load-balancer",
+      "hourlyPrice": 0.025,
+      "monthlyPrice": 18.25,
+      "dataPrice": 0.008,
+      "notes": "Regional"
+    },
+    {
+      "name": "Internal Load Balancing",
+      "type": "load-balancer",
+      "hourlyPrice": 0.025,
+      "monthlyPrice": 18.25,
+      "notes": "Internal traffic only"
+    }
+  ],
+  "natGateway": [
+    {
+      "name": "Cloud NAT",
+      "type": "nat-gateway",
+      "hourlyPrice": 0.044,
+      "monthlyPrice": 32.12,
+      "dataProcessingPerGB": 0.045,
+      "notes": "$0.044/hr + $0.045/GB"
+    }
+  ],
+  "cdn": [
+    {
+      "name": "Cloud CDN",
+      "type": "cdn",
+      "pricePerGB": 0.08,
+      "cacheEgressPrice": 0.02,
+      "notes": "$0.08/GB origin, $0.02/GB cache"
+    },
+    {
+      "name": "Media CDN",
+      "type": "cdn",
+      "pricePerGB": 0.05,
+      "notes": "Optimized for video streaming"
+    }
+  ],
+  "apiGateway": [
+    {
+      "name": "API Gateway",
+      "type": "api-gateway",
+      "pricePerMillion": 3.0,
+      "freeRequests": 2000000,
+      "notes": "First 2M calls free"
+    },
+    {
+      "name": "Apigee X",
+      "type": "api-gateway",
+      "monthlyPrice": 4350.0,
+      "notes": "Enterprise API management"
+    }
+  ],
+  "containers": [
+    {
+      "name": "Cloud Run vCPU",
+      "type": "container-serverless",
+      "pricePerVCPUSecond": 2.4e-05,
+      "pricePerVCPUHour": 0.0864,
+      "notes": "Per vCPU-second"
+    },
+    {
+      "name": "Cloud Run Memory",
+      "type": "container-serverless",
+      "pricePerGBSecond": 2.5e-06,
+      "pricePerGBHour": 0.009,
+      "notes": "Per GiB-second"
+    },
+    {
+      "name": "Cloud Run Requests",
+      "type": "container-serverless",
+      "pricePerMillion": 0.4,
+      "notes": "Per million requests"
+    }
+  ],
+  "messaging": [
+    {
+      "name": "Pub/Sub",
+      "type": "pub-sub",
+      "pricePerTB": 40.0,
+      "freeGB": 10,
+      "notes": "First 10GB/month free"
+    },
+    {
+      "name": "Cloud Tasks",
+      "type": "task-queue",
+      "pricePerMillion": 0.4,
+      "freeOperations": 1000000,
+      "notes": "First 1M operations free"
+    },
+    {
+      "name": "Eventarc",
+      "type": "event-bus",
+      "pricePerMillion": 0.0,
+      "notes": "Free (charges for Pub/Sub underneath)"
+    }
+  ],
+  "secrets": [
+    {
+      "name": "Secret Manager",
+      "type": "secrets",
+      "pricePerVersion": 0.06,
+      "pricePerAccess": 0.03,
+      "unit": "per 10K accesses",
+      "freeVersions": 6,
+      "notes": "6 active versions free"
+    },
+    {
+      "name": "Cloud KMS",
+      "type": "kms",
+      "pricePerKey": 0.06,
+      "pricePerOperation": 0.03,
+      "unit": "per 10K operations",
+      "notes": "$0.06/key version/month"
+    },
+    {
+      "name": "Cloud KMS HSM",
+      "type": "kms",
+      "pricePerKey": 1.0,
+      "pricePerOperation": 0.03,
+      "notes": "Hardware security module"
+    }
+  ],
+  "dns": [
+    {
+      "name": "Cloud DNS Zone",
+      "type": "dns",
+      "pricePerZone": 0.2,
+      "notes": "$0.20/zone/month"
+    },
+    {
+      "name": "Cloud DNS Queries",
+      "type": "dns",
+      "pricePerMillion": 0.4,
+      "notes": "Per million queries"
+    }
+  ],
+  "monitoring": [
+    {
+      "name": "Cloud Monitoring",
+      "type": "monitoring",
+      "pricePerMB": 0.258,
+      "freeAllotmentMB": 150,
+      "notes": "150MB free/month for most metrics"
+    },
+    {
+      "name": "Cloud Logging Ingestion",
+      "type": "logging",
+      "pricePerGB": 0.5,
+      "freeGB": 50,
+      "notes": "First 50GB/month free"
+    },
+    {
+      "name": "Cloud Logging Storage",
+      "type": "logging",
+      "pricePerGB": 0.01,
+      "notes": "$0.01/GB/month retained"
+    },
+    {
+      "name": "Cloud Trace",
+      "type": "tracing",
+      "pricePerMillion": 0.2,
+      "freeSpans": 2500000,
+      "notes": "First 2.5M spans free"
     }
   ]
 }

@@ -1,9 +1,9 @@
 {
   "metadata": {
     "provider": "azure",
-    "lastUpdated": "2026-01-20T16:37:20.611Z",
+    "lastUpdated": "2026-01-20T00:00:00Z",
     "source": "instances.vantage.sh + manual curation",
-    "version": "1.2.2",
+    "version": "1.2.7",
     "totalProducts": 1128,
     "currency": "USD",
     "notes": "Comprehensive Azure VM pricing from vantage.sh"
@@ -14786,6 +14786,250 @@
       "hourlyPrice": 0.008,
       "monthlyPrice": 5.84,
       "notes": "Per 100 RU/s provisioned"
+    }
+  ],
+  "serverless": [
+    {
+      "name": "Azure Functions Consumption",
+      "type": "serverless",
+      "pricePerExecution": 2e-07,
+      "pricePerGBSecond": 1.6e-05,
+      "freeExecutions": 1000000,
+      "freeGBSeconds": 400000,
+      "notes": "First 1M executions and 400K GB-s free"
+    },
+    {
+      "name": "Azure Functions Premium",
+      "type": "serverless",
+      "pricePerVCPU": 0.173,
+      "pricePerGB": 0.0123,
+      "unit": "per hour",
+      "notes": "Pre-warmed instances, VNET support"
+    }
+  ],
+  "loadBalancers": [
+    {
+      "name": "Azure Load Balancer Basic",
+      "type": "load-balancer",
+      "hourlyPrice": 0.0,
+      "monthlyPrice": 0.0,
+      "notes": "Free for basic tier"
+    },
+    {
+      "name": "Azure Load Balancer Standard",
+      "type": "load-balancer",
+      "hourlyPrice": 0.025,
+      "monthlyPrice": 18.25,
+      "rulesPrice": 0.01,
+      "notes": "$0.025/hr + $0.01/rule/hr"
+    },
+    {
+      "name": "Application Gateway Basic",
+      "type": "load-balancer",
+      "hourlyPrice": 0.025,
+      "monthlyPrice": 18.25,
+      "dataPrice": 0.008,
+      "notes": "+ $0.008/GB processed"
+    },
+    {
+      "name": "Application Gateway WAF v2",
+      "type": "load-balancer",
+      "hourlyPrice": 0.443,
+      "monthlyPrice": 323.39,
+      "capacityUnitPrice": 0.0144,
+      "notes": "Web Application Firewall"
+    }
+  ],
+  "natGateway": [
+    {
+      "name": "NAT Gateway",
+      "type": "nat-gateway",
+      "hourlyPrice": 0.045,
+      "monthlyPrice": 32.85,
+      "dataProcessingPerGB": 0.045,
+      "notes": "$0.045/hr + $0.045/GB"
+    }
+  ],
+  "cdn": [
+    {
+      "name": "Azure CDN Standard Microsoft",
+      "type": "cdn",
+      "pricePerGB": 0.081,
+      "notes": "First 10TB/month"
+    },
+    {
+      "name": "Azure CDN Standard Verizon",
+      "type": "cdn",
+      "pricePerGB": 0.081,
+      "notes": "First 10TB/month"
+    },
+    {
+      "name": "Azure Front Door",
+      "type": "cdn",
+      "hourlyPrice": 0.025,
+      "pricePerGB": 0.16,
+      "notes": "Global load balancing + CDN"
+    }
+  ],
+  "apiGateway": [
+    {
+      "name": "API Management Consumption",
+      "type": "api-gateway",
+      "pricePerMillion": 3.5,
+      "freeRequests": 1000000,
+      "notes": "First 1M calls free"
+    },
+    {
+      "name": "API Management Developer",
+      "type": "api-gateway",
+      "monthlyPrice": 49.56,
+      "notes": "Non-production, no SLA"
+    },
+    {
+      "name": "API Management Basic",
+      "type": "api-gateway",
+      "monthlyPrice": 152.61,
+      "notes": "Production, 99.95% SLA"
+    },
+    {
+      "name": "API Management Standard",
+      "type": "api-gateway",
+      "monthlyPrice": 685.73,
+      "notes": "Higher scale"
+    }
+  ],
+  "containers": [
+    {
+      "name": "Container Instances vCPU",
+      "type": "container-serverless",
+      "pricePerSecond": 1.3e-05,
+      "pricePerHour": 0.0468,
+      "notes": "Per vCPU-second"
+    },
+    {
+      "name": "Container Instances Memory",
+      "type": "container-serverless",
+      "pricePerSecond": 1.4e-06,
+      "pricePerHour": 0.00504,
+      "notes": "Per GB-second"
+    },
+    {
+      "name": "Container Apps vCPU",
+      "type": "container-serverless",
+      "pricePerSecond": 2.4e-05,
+      "notes": "Serverless Kubernetes"
+    },
+    {
+      "name": "Container Apps Memory",
+      "type": "container-serverless",
+      "pricePerSecond": 3e-06,
+      "notes": "Serverless Kubernetes"
+    }
+  ],
+  "messaging": [
+    {
+      "name": "Service Bus Basic",
+      "type": "message-queue",
+      "pricePerMillion": 0.05,
+      "notes": "Queues only"
+    },
+    {
+      "name": "Service Bus Standard",
+      "type": "message-queue",
+      "monthlyBase": 10.0,
+      "pricePerMillion": 0.8,
+      "notes": "Topics + queues"
+    },
+    {
+      "name": "Service Bus Premium",
+      "type": "message-queue",
+      "monthlyPrice": 677.08,
+      "notes": "Per messaging unit"
+    },
+    {
+      "name": "Event Grid",
+      "type": "event-bus",
+      "pricePerMillion": 0.6,
+      "freeOperations": 100000,
+      "notes": "First 100K operations free"
+    },
+    {
+      "name": "Event Hubs Basic",
+      "type": "streaming",
+      "hourlyPrice": 0.015,
+      "notes": "Per throughput unit"
+    }
+  ],
+  "secrets": [
+    {
+      "name": "Key Vault Secrets",
+      "type": "secrets",
+      "pricePerOperation": 0.03,
+      "unit": "per 10K operations",
+      "notes": "Secrets, keys, certificates"
+    },
+    {
+      "name": "Key Vault Keys Software",
+      "type": "kms",
+      "pricePerOperation": 0.03,
+      "unit": "per 10K operations",
+      "notes": "Software-protected keys"
+    },
+    {
+      "name": "Key Vault Keys HSM",
+      "type": "kms",
+      "pricePerKey": 1.0,
+      "pricePerOperation": 0.03,
+      "notes": "$1/key/month + operations"
+    }
+  ],
+  "dns": [
+    {
+      "name": "Azure DNS Zone",
+      "type": "dns",
+      "pricePerZone": 0.5,
+      "notes": "$0.50/zone/month"
+    },
+    {
+      "name": "Azure DNS Queries",
+      "type": "dns",
+      "pricePerMillion": 0.4,
+      "notes": "First 1B queries"
+    },
+    {
+      "name": "Traffic Manager",
+      "type": "dns",
+      "pricePerMillion": 0.54,
+      "endpointPrice": 0.36,
+      "notes": "DNS-based load balancing"
+    }
+  ],
+  "monitoring": [
+    {
+      "name": "Azure Monitor Metrics",
+      "type": "monitoring",
+      "pricePerMetric": 0.258,
+      "notes": "Per custom metric time series"
+    },
+    {
+      "name": "Azure Monitor Logs Ingestion",
+      "type": "logging",
+      "pricePerGB": 2.76,
+      "notes": "Pay-as-you-go"
+    },
+    {
+      "name": "Azure Monitor Logs Retention",
+      "type": "logging",
+      "pricePerGB": 0.1,
+      "freeRetentionDays": 31,
+      "notes": "First 31 days free"
+    },
+    {
+      "name": "Application Insights",
+      "type": "apm",
+      "pricePerGB": 2.76,
+      "freeGB": 5,
+      "notes": "First 5GB/month free"
     }
   ]
 }

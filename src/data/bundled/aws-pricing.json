@@ -1,9 +1,9 @@
 {
   "metadata": {
     "provider": "aws",
-    "lastUpdated": "2026-01-20T16:37:18.385Z",
+    "lastUpdated": "2026-01-20T00:00:00Z",
     "source": "instances.vantage.sh + manual curation",
-    "version": "1.2.5",
+    "version": "1.2.7",
     "totalProducts": 2322,
     "currency": "USD",
     "notes": "Comprehensive AWS pricing: EC2, RDS, ElastiCache, Redshift, OpenSearch"
@@ -26723,6 +26723,249 @@
       "hourlyPrice": 17.572,
       "monthlyPrice": 12827.56,
       "notes": "Storage optimized"
+    }
+  ],
+  "serverless": [
+    {
+      "name": "Lambda",
+      "type": "serverless",
+      "pricePerRequest": 2e-07,
+      "pricePerGBSecond": 1.66667e-05,
+      "freeRequests": 1000000,
+      "freeGBSeconds": 400000,
+      "notes": "First 1M requests and 400K GB-seconds free/month"
+    },
+    {
+      "name": "Lambda@Edge",
+      "type": "serverless",
+      "pricePerRequest": 6e-07,
+      "pricePerGBSecond": 5.001e-05,
+      "notes": "Run at CloudFront edge locations"
+    }
+  ],
+  "loadBalancers": [
+    {
+      "name": "Application Load Balancer",
+      "type": "load-balancer",
+      "hourlyPrice": 0.0225,
+      "monthlyPrice": 16.43,
+      "lcuPrice": 0.008,
+      "notes": "$0.008 per LCU-hour"
+    },
+    {
+      "name": "Network Load Balancer",
+      "type": "load-balancer",
+      "hourlyPrice": 0.0225,
+      "monthlyPrice": 16.43,
+      "lcuPrice": 0.006,
+      "notes": "$0.006 per NLCU-hour"
+    },
+    {
+      "name": "Gateway Load Balancer",
+      "type": "load-balancer",
+      "hourlyPrice": 0.0125,
+      "monthlyPrice": 9.13,
+      "lcuPrice": 0.004,
+      "notes": "$0.004 per GLCU-hour"
+    },
+    {
+      "name": "Classic Load Balancer",
+      "type": "load-balancer",
+      "hourlyPrice": 0.025,
+      "monthlyPrice": 18.25,
+      "notes": "Legacy, + $0.008/GB data"
+    }
+  ],
+  "natGateway": [
+    {
+      "name": "NAT Gateway",
+      "type": "nat-gateway",
+      "hourlyPrice": 0.045,
+      "monthlyPrice": 32.85,
+      "dataProcessingPerGB": 0.045,
+      "notes": "$0.045/hr + $0.045/GB processed"
+    }
+  ],
+  "cdn": [
+    {
+      "name": "CloudFront",
+      "type": "cdn",
+      "pricePerGB": 0.085,
+      "pricePerRequest": 1e-07,
+      "freeGB": 1024,
+      "notes": "First 1TB free, then $0.085/GB (US/EU)"
+    }
+  ],
+  "apiGateway": [
+    {
+      "name": "API Gateway REST",
+      "type": "api-gateway",
+      "pricePerMillion": 3.5,
+      "freeRequests": 1000000,
+      "notes": "First 1M requests free, then $3.50/million"
+    },
+    {
+      "name": "API Gateway HTTP",
+      "type": "api-gateway",
+      "pricePerMillion": 1.0,
+      "notes": "Lower cost for simple HTTP APIs"
+    },
+    {
+      "name": "API Gateway WebSocket",
+      "type": "api-gateway",
+      "pricePerMillion": 1.0,
+      "connectionMinutePrice": 2.5e-07,
+      "notes": "$1/million messages + connection minutes"
+    }
+  ],
+  "containers": [
+    {
+      "name": "Fargate vCPU",
+      "type": "container-serverless",
+      "pricePerHour": 0.04048,
+      "unit": "per vCPU-hour",
+      "notes": "Serverless containers"
+    },
+    {
+      "name": "Fargate Memory",
+      "type": "container-serverless",
+      "pricePerHour": 0.004445,
+      "unit": "per GB-hour",
+      "notes": "Serverless containers"
+    },
+    {
+      "name": "Fargate Spot vCPU",
+      "type": "container-serverless",
+      "pricePerHour": 0.012144,
+      "unit": "per vCPU-hour",
+      "notes": "Up to 70% savings"
+    },
+    {
+      "name": "Fargate Spot Memory",
+      "type": "container-serverless",
+      "pricePerHour": 0.0013335,
+      "unit": "per GB-hour",
+      "notes": "Up to 70% savings"
+    }
+  ],
+  "messaging": [
+    {
+      "name": "SQS Standard",
+      "type": "message-queue",
+      "pricePerMillion": 0.4,
+      "freeRequests": 1000000,
+      "notes": "First 1M requests free"
+    },
+    {
+      "name": "SQS FIFO",
+      "type": "message-queue",
+      "pricePerMillion": 0.5,
+      "notes": "Exactly-once processing"
+    },
+    {
+      "name": "SNS",
+      "type": "pub-sub",
+      "pricePerMillion": 0.5,
+      "freePublishes": 1000000,
+      "notes": "First 1M publishes free"
+    },
+    {
+      "name": "SNS SMS",
+      "type": "notification",
+      "pricePerMessage": 0.00645,
+      "notes": "US pricing, varies by country"
+    },
+    {
+      "name": "EventBridge",
+      "type": "event-bus",
+      "pricePerMillion": 1.0,
+      "notes": "Serverless event bus"
+    }
+  ],
+  "secrets": [
+    {
+      "name": "Secrets Manager",
+      "type": "secrets",
+      "pricePerSecret": 0.4,
+      "pricePerAPICall": 0.05,
+      "unit": "per 10K API calls",
+      "notes": "$0.40/secret/month + $0.05/10K calls"
+    },
+    {
+      "name": "KMS",
+      "type": "kms",
+      "pricePerKey": 1.0,
+      "pricePerRequest": 0.03,
+      "unit": "per 10K requests",
+      "freeRequests": 20000,
+      "notes": "$1/key/month, 20K free requests"
+    },
+    {
+      "name": "Parameter Store Standard",
+      "type": "config",
+      "pricePerParameter": 0.0,
+      "notes": "Free for standard parameters"
+    },
+    {
+      "name": "Parameter Store Advanced",
+      "type": "config",
+      "pricePerParameter": 0.05,
+      "notes": "$0.05/parameter/month"
+    }
+  ],
+  "dns": [
+    {
+      "name": "Route 53 Hosted Zone",
+      "type": "dns",
+      "pricePerZone": 0.5,
+      "notes": "$0.50/hosted zone/month"
+    },
+    {
+      "name": "Route 53 Queries",
+      "type": "dns",
+      "pricePerMillion": 0.4,
+      "notes": "Standard queries, first 1B"
+    },
+    {
+      "name": "Route 53 Health Checks",
+      "type": "dns",
+      "pricePerCheck": 0.5,
+      "notes": "$0.50/health check/month (basic)"
+    }
+  ],
+  "monitoring": [
+    {
+      "name": "CloudWatch Metrics",
+      "type": "monitoring",
+      "pricePerMetric": 0.3,
+      "freeMetrics": 10,
+      "notes": "First 10 custom metrics free"
+    },
+    {
+      "name": "CloudWatch Logs Ingestion",
+      "type": "logging",
+      "pricePerGB": 0.5,
+      "notes": "$0.50/GB ingested"
+    },
+    {
+      "name": "CloudWatch Logs Storage",
+      "type": "logging",
+      "pricePerGB": 0.03,
+      "notes": "$0.03/GB/month stored"
+    },
+    {
+      "name": "CloudWatch Alarms",
+      "type": "monitoring",
+      "pricePerAlarm": 0.1,
+      "freeAlarms": 10,
+      "notes": "First 10 alarms free"
+    },
+    {
+      "name": "X-Ray Traces",
+      "type": "tracing",
+      "pricePerMillion": 5.0,
+      "freeTraces": 100000,
+      "notes": "First 100K traces free"
     }
   ]
 }
