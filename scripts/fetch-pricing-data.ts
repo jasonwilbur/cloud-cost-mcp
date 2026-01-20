@@ -4,10 +4,10 @@
  * Run: npx ts-node scripts/fetch-pricing-data.ts
  *
  * Data sources:
- * - AWS: instances.vantage.sh (1,147 EC2 + 353 RDS)
+ * - AWS: instances.vantage.sh (EC2, RDS, ElastiCache, Redshift, OpenSearch)
  * - Azure: instances.vantage.sh (1,199 VMs)
  * - GCP: instances.vantage.sh (287 instances)
- * - OCI: Already comprehensive in bundled data
+ * - OCI: Already comprehensive in bundled data (602 products)
  */
 
 import { writeFileSync, readFileSync } from 'fs';
@@ -20,6 +20,9 @@ const BUNDLED_DIR = join(__dirname, '..', 'src', 'data', 'bundled');
 // API endpoints
 const AWS_EC2_URL = 'https://instances.vantage.sh/instances.json';
 const AWS_RDS_URL = 'https://instances.vantage.sh/rds/instances.json';
+const AWS_ELASTICACHE_URL = 'https://instances.vantage.sh/cache/instances.json';
+const AWS_REDSHIFT_URL = 'https://instances.vantage.sh/redshift/instances.json';
+const AWS_OPENSEARCH_URL = 'https://instances.vantage.sh/opensearch/instances.json';
 const AZURE_URL = 'https://instances.vantage.sh/azure/instances.json';
 const GCP_URL = 'https://instances.vantage.sh/gcp/instances.json';
 
@@ -151,6 +154,117 @@ async function fetchAWSData() {
   console.log(`  Processed ${database.length} RDS instances`);
 
   return { compute, database };
+}
+
+// ============= AWS ElastiCache =============
+async function fetchAWSElastiCache(): Promise<DatabasePricing[]> {
+  console.log('Fetching AWS ElastiCache data...');
+  const response = await fetch(AWS_ELASTICACHE_URL);
+  const data = await response.json() as any[];
+
+  console.log(`  Found ${data.length} ElastiCache instance types`);
+
+  const cache: DatabasePricing[] = [];
+  const engines = ['Redis', 'Memcached'];
+
+  for (const item of data) {
+    const regionPricing = item.pricing?.[AWS_REGION];
+    if (!regionPricing) continue;
+
+    for (const engine of engines) {
+      const enginePricing = regionPricing[engine];
+      if (!enginePricing?.ondemand) continue;
+
+      const hourlyPrice = parseFloat(enginePricing.ondemand);
+      if (isNaN(hourlyPrice) || hourlyPrice <= 0) continue;
+
+      cache.push({
+        provider: 'aws',
+        name: `ElastiCache ${item.instance_type} (${engine})`,
+        type: 'cache',
+        engine,
+        vcpus: undefined,
+        memoryGB: parseFloat(item.memory) || 0,
+        hourlyPrice,
+        monthlyPrice: Math.round(hourlyPrice * 730 * 100) / 100,
+        notes: `${item.family || 'Standard'}`,
+      });
+    }
+  }
+
+  cache.sort((a, b) => a.monthlyPrice - b.monthlyPrice);
+  console.log(`  Processed ${cache.length} ElastiCache instances`);
+  return cache;
+}
+
+// ============= AWS Redshift =============
+async function fetchAWSRedshift(): Promise<DatabasePricing[]> {
+  console.log('Fetching AWS Redshift data...');
+  const response = await fetch(AWS_REDSHIFT_URL);
+  const data = await response.json() as any[];
+
+  console.log(`  Found ${data.length} Redshift node types`);
+
+  const warehouse: DatabasePricing[] = [];
+
+  for (const item of data) {
+    const regionPricing = item.pricing?.[AWS_REGION];
+    if (!regionPricing?.ondemand) continue;
+
+    const hourlyPrice = parseFloat(regionPricing.ondemand);
+    if (isNaN(hourlyPrice) || hourlyPrice <= 0) continue;
+
+    warehouse.push({
+      provider: 'aws',
+      name: `Redshift ${item.instance_type}`,
+      type: 'data-warehouse',
+      engine: 'Redshift',
+      vcpus: parseInt(item.ecu) || undefined,
+      memoryGB: parseFloat(item.memory) || 0,
+      hourlyPrice,
+      monthlyPrice: Math.round(hourlyPrice * 730 * 100) / 100,
+      notes: `${item.family || 'Standard'}, I/O: ${item.io || 'N/A'}`,
+    });
+  }
+
+  warehouse.sort((a, b) => a.monthlyPrice - b.monthlyPrice);
+  console.log(`  Processed ${warehouse.length} Redshift nodes`);
+  return warehouse;
+}
+
+// ============= AWS OpenSearch =============
+async function fetchAWSOpenSearch(): Promise<DatabasePricing[]> {
+  console.log('Fetching AWS OpenSearch data...');
+  const response = await fetch(AWS_OPENSEARCH_URL);
+  const data = await response.json() as any[];
+
+  console.log(`  Found ${data.length} OpenSearch instance types`);
+
+  const search: DatabasePricing[] = [];
+
+  for (const item of data) {
+    const regionPricing = item.pricing?.[AWS_REGION];
+    if (!regionPricing?.ondemand) continue;
+
+    const hourlyPrice = parseFloat(regionPricing.ondemand);
+    if (isNaN(hourlyPrice) || hourlyPrice <= 0) continue;
+
+    search.push({
+      provider: 'aws',
+      name: `OpenSearch ${item.instance_type}`,
+      type: 'search',
+      engine: 'OpenSearch',
+      vcpus: parseInt(item.ecu) || undefined,
+      memoryGB: parseFloat(item.memory) || 0,
+      hourlyPrice,
+      monthlyPrice: Math.round(hourlyPrice * 730 * 100) / 100,
+      notes: `${item.family || 'Standard'}`,
+    });
+  }
+
+  search.sort((a, b) => a.monthlyPrice - b.monthlyPrice);
+  console.log(`  Processed ${search.length} OpenSearch instances`);
+  return search;
 }
 
 // ============= Azure =============
@@ -311,17 +425,29 @@ async function main() {
   console.log('=== Cloud Cost MCP - Pricing Data Fetcher ===\n');
 
   try {
-    // Fetch AWS
+    // Fetch AWS (EC2, RDS, ElastiCache, Redshift, OpenSearch)
     const awsData = await fetchAWSData();
+    const elasticache = await fetchAWSElastiCache();
+    const redshift = await fetchAWSRedshift();
+    const opensearch = await fetchAWSOpenSearch();
+
+    // Combine all database services
+    const allDatabase = [
+      ...awsData.database,
+      ...elasticache,
+      ...redshift,
+      ...opensearch,
+    ];
+
     const awsBundle = {
       metadata: {
         provider: 'aws',
         lastUpdated: new Date().toISOString(),
         source: 'instances.vantage.sh + manual curation',
-        version: '1.2.2',
-        totalProducts: awsData.compute.length + awsData.database.length + AWS_STORAGE.length,
+        version: '1.2.5',
+        totalProducts: awsData.compute.length + allDatabase.length + AWS_STORAGE.length,
         currency: 'USD',
-        notes: 'Comprehensive EC2 and RDS pricing from vantage.sh'
+        notes: 'Comprehensive AWS pricing: EC2, RDS, ElastiCache, Redshift, OpenSearch'
       },
       compute: awsData.compute,
       storage: AWS_STORAGE,
@@ -344,14 +470,14 @@ async function main() {
         workerNodeIncluded: false,
         notes: '$0.10/hr per cluster for control plane. Worker nodes billed separately.'
       },
-      database: awsData.database,
+      database: allDatabase,
     };
 
     writeFileSync(
       join(BUNDLED_DIR, 'aws-pricing.json'),
       JSON.stringify(awsBundle, null, 2)
     );
-    console.log(`\nSaved AWS: ${awsData.compute.length} compute, ${awsData.database.length} database\n`);
+    console.log(`\nSaved AWS: ${awsData.compute.length} compute, ${allDatabase.length} database (RDS: ${awsData.database.length}, ElastiCache: ${elasticache.length}, Redshift: ${redshift.length}, OpenSearch: ${opensearch.length})\n`);
 
     // Fetch Azure
     const azureData = await fetchAzureData();

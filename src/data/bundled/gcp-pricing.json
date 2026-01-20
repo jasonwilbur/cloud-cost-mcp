@@ -1,7 +1,7 @@
 {
   "metadata": {
     "provider": "gcp",
-    "lastUpdated": "2026-01-19T21:16:16.734Z",
+    "lastUpdated": "2026-01-20T16:37:20.961Z",
     "source": "instances.vantage.sh + manual curation",
     "version": "1.2.2",
     "totalProducts": 295,

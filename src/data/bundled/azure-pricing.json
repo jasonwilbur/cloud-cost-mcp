@@ -1,7 +1,7 @@
 {
   "metadata": {
     "provider": "azure",
-    "lastUpdated": "2026-01-19T21:16:16.654Z",
+    "lastUpdated": "2026-01-20T16:37:20.611Z",
     "source": "instances.vantage.sh + manual curation",
     "version": "1.2.2",
     "totalProducts": 1128,
@@ -2273,19 +2273,6 @@
     },
     {
       "provider": "azure",
-      "name": "F4",
-      "displayName": "F4 (computeoptimized)",
-      "vcpus": 4,
-      "memoryGB": 8,
-      "hourlyPrice": 0.199,
-      "monthlyPrice": 145.27,
-      "region": "eastus",
-      "category": "compute",
-      "architecture": "x86",
-      "notes": "f-series"
-    },
-    {
-      "provider": "azure",
       "name": "F4s",
       "displayName": "F4s (computeoptimized)",
       "vcpus": 4,
@@ -2465,19 +2452,6 @@
       "category": "general",
       "architecture": "x86",
       "notes": "dcdsv3-series"
-    },
-    {
-      "provider": "azure",
-      "name": "E4-2s v6",
-      "displayName": "E4-2s v6 (memoryoptimized)",
-      "vcpus": 4,
-      "memoryGB": 32,
-      "hourlyPrice": 0.226,
-      "monthlyPrice": 164.98,
-      "region": "eastus",
-      "category": "memory",
-      "architecture": "x86",
-      "notes": "esv6-series"
     },
     {
       "provider": "azure",
@@ -2738,6 +2712,19 @@
       "category": "general",
       "architecture": "x86",
       "notes": "a-series"
+    },
+    {
+      "provider": "azure",
+      "name": "E4-2s v6",
+      "displayName": "E4-2s v6 (memoryoptimized)",
+      "vcpus": 4,
+      "memoryGB": 32,
+      "hourlyPrice": 0.252,
+      "monthlyPrice": 183.96,
+      "region": "eastus",
+      "category": "memory",
+      "architecture": "x86",
+      "notes": "esv6-series"
     },
     {
       "provider": "azure",
@@ -3483,6 +3470,19 @@
     },
     {
       "provider": "azure",
+      "name": "F4",
+      "displayName": "F4 (computeoptimized)",
+      "vcpus": 4,
+      "memoryGB": 8,
+      "hourlyPrice": 0.358,
+      "monthlyPrice": 261.34,
+      "region": "eastus",
+      "category": "compute",
+      "architecture": "x86",
+      "notes": "f-series"
+    },
+    {
+      "provider": "azure",
       "name": "F4ams v6",
       "displayName": "F4ams v6 (computeoptimized)",
       "vcpus": 4,
@@ -3844,19 +3844,6 @@
       "category": "memory",
       "architecture": "x86",
       "notes": "ebdsv6-series"
-    },
-    {
-      "provider": "azure",
-      "name": "F8",
-      "displayName": "F8 (computeoptimized)",
-      "vcpus": 8,
-      "memoryGB": 16,
-      "hourlyPrice": 0.398,
-      "monthlyPrice": 290.54,
-      "region": "eastus",
-      "category": "compute",
-      "architecture": "x86",
-      "notes": "f-series"
     },
     {
       "provider": "azure",
@@ -4342,6 +4329,19 @@
     },
     {
       "provider": "azure",
+      "name": "E8-4s v6",
+      "displayName": "E8-4s v6 (memoryoptimized)",
+      "vcpus": 8,
+      "memoryGB": 64,
+      "hourlyPrice": 0.504,
+      "monthlyPrice": 367.92,
+      "region": "eastus",
+      "category": "memory",
+      "architecture": "x86",
+      "notes": "esv6-series"
+    },
+    {
+      "provider": "azure",
       "name": "E8as v4",
       "displayName": "E8as v4 (memoryoptimized)",
       "vcpus": 8,
@@ -4483,19 +4483,6 @@
       "architecture": "x86",
       "gpuCount": 1,
       "notes": "ncast4v3-series"
-    },
-    {
-      "provider": "azure",
-      "name": "E8-4s v6",
-      "displayName": "E8-4s v6 (memoryoptimized)",
-      "vcpus": 8,
-      "memoryGB": 64,
-      "hourlyPrice": 0.529,
-      "monthlyPrice": 386.17,
-      "region": "eastus",
-      "category": "memory",
-      "architecture": "x86",
-      "notes": "esv6-series"
     },
     {
       "provider": "azure",
@@ -5554,6 +5541,19 @@
     },
     {
       "provider": "azure",
+      "name": "F16",
+      "displayName": "F16 (computeoptimized)",
+      "vcpus": 16,
+      "memoryGB": 32,
+      "hourlyPrice": 0.796,
+      "monthlyPrice": 581.08,
+      "region": "eastus",
+      "category": "compute",
+      "architecture": "x86",
+      "notes": "f-series"
+    },
+    {
+      "provider": "azure",
       "name": "F16s",
       "displayName": "F16s (computeoptimized)",
       "vcpus": 16,
@@ -5642,6 +5642,19 @@
       "category": "memory",
       "architecture": "x86",
       "notes": "endsv6-series"
+    },
+    {
+      "provider": "azure",
+      "name": "F8",
+      "displayName": "F8 (computeoptimized)",
+      "vcpus": 8,
+      "memoryGB": 16,
+      "hourlyPrice": 0.872,
+      "monthlyPrice": 636.56,
+      "region": "eastus",
+      "category": "compute",
+      "architecture": "x86",
+      "notes": "f-series"
     },
     {
       "provider": "azure",
@@ -6025,6 +6038,19 @@
     },
     {
       "provider": "azure",
+      "name": "E16-8s v6",
+      "displayName": "E16-8s v6 (memoryoptimized)",
+      "vcpus": 16,
+      "memoryGB": 128,
+      "hourlyPrice": 1.008,
+      "monthlyPrice": 735.84,
+      "region": "eastus",
+      "category": "memory",
+      "architecture": "x86",
+      "notes": "esv6-series"
+    },
+    {
+      "provider": "azure",
       "name": "E16as v4",
       "displayName": "E16as v4 (memoryoptimized)",
       "vcpus": 16,
@@ -6139,19 +6165,6 @@
       "category": "memory",
       "architecture": "x86",
       "notes": "epsv5-series"
-    },
-    {
-      "provider": "azure",
-      "name": "E16-8s v6",
-      "displayName": "E16-8s v6 (memoryoptimized)",
-      "vcpus": 16,
-      "memoryGB": 128,
-      "hourlyPrice": 1.048,
-      "monthlyPrice": 765.04,
-      "region": "eastus",
-      "category": "memory",
-      "architecture": "x86",
-      "notes": "esv6-series"
     },
     {
       "provider": "azure",
@@ -7078,19 +7091,6 @@
       "category": "general",
       "architecture": "x86",
       "notes": "dlsv6-series"
-    },
-    {
-      "provider": "azure",
-      "name": "F16",
-      "displayName": "F16 (computeoptimized)",
-      "vcpus": 16,
-      "memoryGB": 32,
-      "hourlyPrice": 1.432,
-      "monthlyPrice": 1045.36,
-      "region": "eastus",
-      "category": "compute",
-      "architecture": "x86",
-      "notes": "f-series"
     },
     {
       "provider": "azure",
@@ -8255,6 +8255,19 @@
     },
     {
       "provider": "azure",
+      "name": "E32-8s v6",
+      "displayName": "E32-8s v6 (memoryoptimized)",
+      "vcpus": 32,
+      "memoryGB": 256,
+      "hourlyPrice": 2.016,
+      "monthlyPrice": 1471.68,
+      "region": "eastus",
+      "category": "memory",
+      "architecture": "x86",
+      "notes": "esv6-series"
+    },
+    {
+      "provider": "azure",
       "name": "E32as v4",
       "displayName": "E32as v4 (memoryoptimized)",
       "vcpus": 32,
@@ -8462,19 +8475,6 @@
       "category": "general",
       "architecture": "x86",
       "notes": "ecadsv5-series"
-    },
-    {
-      "provider": "azure",
-      "name": "E32-8s v6",
-      "displayName": "E32-8s v6 (memoryoptimized)",
-      "vcpus": 32,
-      "memoryGB": 256,
-      "hourlyPrice": 2.117,
-      "monthlyPrice": 1545.41,
-      "region": "eastus",
-      "category": "memory",
-      "architecture": "x86",
-      "notes": "esv6-series"
     },
     {
       "provider": "azure",
@@ -9193,19 +9193,6 @@
       "category": "general",
       "architecture": "x86",
       "notes": "dldsv6-series"
-    },
-    {
-      "provider": "azure",
-      "name": "FX24-6ms v2",
-      "displayName": "FX24-6ms v2 (memoryoptimized)",
-      "vcpus": 24,
-      "memoryGB": 504,
-      "hourlyPrice": 2.656,
-      "monthlyPrice": 1938.88,
-      "region": "eastus",
-      "category": "memory",
-      "architecture": "x86",
-      "notes": "fxmsv2-series"
     },
     {
       "provider": "azure",
@@ -10303,6 +10290,19 @@
     },
     {
       "provider": "azure",
+      "name": "FX24-6ms v2",
+      "displayName": "FX24-6ms v2 (memoryoptimized)",
+      "vcpus": 24,
+      "memoryGB": 504,
+      "hourlyPrice": 3.282,
+      "monthlyPrice": 2395.86,
+      "region": "eastus",
+      "category": "memory",
+      "architecture": "x86",
+      "notes": "fxmsv2-series"
+    },
+    {
+      "provider": "azure",
       "name": "FX24mds v2",
       "displayName": "FX24mds v2 (computeoptimized)",
       "vcpus": 24,
@@ -10550,19 +10550,6 @@
     },
     {
       "provider": "azure",
-      "name": "FX32-8ms v2",
-      "displayName": "FX32-8ms v2 (memoryoptimized)",
-      "vcpus": 32,
-      "memoryGB": 672,
-      "hourlyPrice": 3.541,
-      "monthlyPrice": 2584.93,
-      "region": "eastus",
-      "category": "memory",
-      "architecture": "x86",
-      "notes": "fxmsv2-series"
-    },
-    {
-      "provider": "azure",
       "name": "FX32ms v2",
       "displayName": "FX32ms v2 (computeoptimized)",
       "vcpus": 32,
@@ -10743,6 +10730,19 @@
       "category": "storage",
       "architecture": "x86",
       "notes": "laosv4-series"
+    },
+    {
+      "provider": "azure",
+      "name": "E64-32s v6",
+      "displayName": "E64-32s v6 (memoryoptimized)",
+      "vcpus": 32,
+      "memoryGB": 512,
+      "hourlyPrice": 3.629,
+      "monthlyPrice": 2649.17,
+      "region": "eastus",
+      "category": "memory",
+      "architecture": "x86",
+      "notes": "esv6-series"
     },
     {
       "provider": "azure",
@@ -11296,19 +11296,6 @@
     },
     {
       "provider": "azure",
-      "name": "E64-32s v6",
-      "displayName": "E64-32s v6 (memoryoptimized)",
-      "vcpus": 32,
-      "memoryGB": 512,
-      "hourlyPrice": 4.192,
-      "monthlyPrice": 3060.16,
-      "region": "eastus",
-      "category": "memory",
-      "architecture": "x86",
-      "notes": "esv6-series"
-    },
-    {
-      "provider": "azure",
       "name": "E64ads v5",
       "displayName": "E64ads v5 (memoryoptimized)",
       "vcpus": 64,
@@ -11476,6 +11463,19 @@
       "category": "compute",
       "architecture": "x86",
       "notes": "fasv7-series"
+    },
+    {
+      "provider": "azure",
+      "name": "FX32-8ms v2",
+      "displayName": "FX32-8ms v2 (memoryoptimized)",
+      "vcpus": 32,
+      "memoryGB": 672,
+      "hourlyPrice": 4.377,
+      "monthlyPrice": 3195.21,
+      "region": "eastus",
+      "category": "memory",
+      "architecture": "x86",
+      "notes": "fxmsv2-series"
     },
     {
       "provider": "azure",
@@ -12301,19 +12301,6 @@
     },
     {
       "provider": "azure",
-      "name": "E96-48s v6",
-      "displayName": "E96-48s v6 (memoryoptimized)",
-      "vcpus": 96,
-      "memoryGB": 768,
-      "hourlyPrice": 5.722,
-      "monthlyPrice": 4177.06,
-      "region": "eastus",
-      "category": "memory",
-      "architecture": "x86",
-      "notes": "esv6-series"
-    },
-    {
-      "provider": "azure",
       "name": "E96as v6",
       "displayName": "E96as v6 (memoryoptimized)",
       "vcpus": 96,
@@ -12363,19 +12350,6 @@
       "category": "compute",
       "architecture": "x86",
       "notes": "faldsv7-series"
-    },
-    {
-      "provider": "azure",
-      "name": "F64-32ams v7",
-      "displayName": "F64-32ams v7 (memoryoptimized)",
-      "vcpus": 64,
-      "memoryGB": 512,
-      "hourlyPrice": 5.728,
-      "monthlyPrice": 4181.44,
-      "region": "eastus",
-      "category": "memory",
-      "architecture": "x86",
-      "notes": "famsv7-series"
     },
     {
       "provider": "azure",
@@ -12663,6 +12637,19 @@
       "category": "memory",
       "architecture": "x86",
       "notes": "ebdsv6-series"
+    },
+    {
+      "provider": "azure",
+      "name": "E96-48s v6",
+      "displayName": "E96-48s v6 (memoryoptimized)",
+      "vcpus": 96,
+      "memoryGB": 768,
+      "hourlyPrice": 6.288,
+      "monthlyPrice": 4590.24,
+      "region": "eastus",
+      "category": "memory",
+      "architecture": "x86",
+      "notes": "esv6-series"
     },
     {
       "provider": "azure",
@@ -12976,6 +12963,19 @@
       "category": "general",
       "architecture": "x86",
       "notes": "ecadsv6-series"
+    },
+    {
+      "provider": "azure",
+      "name": "F64-32ams v7",
+      "displayName": "F64-32ams v7 (memoryoptimized)",
+      "vcpus": 64,
+      "memoryGB": 512,
+      "hourlyPrice": 6.977,
+      "monthlyPrice": 5093.21,
+      "region": "eastus",
+      "category": "memory",
+      "architecture": "x86",
+      "notes": "famsv7-series"
     },
     {
       "provider": "azure",
@@ -13531,19 +13531,6 @@
     },
     {
       "provider": "azure",
-      "name": "E128-64s v6",
-      "displayName": "E128-64s v6 (memoryoptimized)",
-      "vcpus": 128,
-      "memoryGB": 1024,
-      "hourlyPrice": 9.293,
-      "monthlyPrice": 6783.89,
-      "region": "eastus",
-      "category": "memory",
-      "architecture": "x86",
-      "notes": "esv6-series"
-    },
-    {
-      "provider": "azure",
       "name": "E128ads v7",
       "displayName": "E128ads v7 (memoryoptimized)",
       "vcpus": 128,
@@ -13726,6 +13713,19 @@
     },
     {
       "provider": "azure",
+      "name": "E128-64s v6",
+      "displayName": "E128-64s v6 (memoryoptimized)",
+      "vcpus": 128,
+      "memoryGB": 1024,
+      "hourlyPrice": 10.465,
+      "monthlyPrice": 7639.45,
+      "region": "eastus",
+      "category": "memory",
+      "architecture": "x86",
+      "notes": "esv6-series"
+    },
+    {
+      "provider": "azure",
       "name": "E128ds v6",
       "displayName": "E128ds v6 (memoryoptimized)",
       "vcpus": 128,
@@ -13736,6 +13736,19 @@
       "category": "memory",
       "architecture": "x86",
       "notes": "edsv6-series"
+    },
+    {
+      "provider": "azure",
+      "name": "FX96-48ms v2",
+      "displayName": "FX96-48ms v2 (memoryoptimized)",
+      "vcpus": 96,
+      "memoryGB": 1832,
+      "hourlyPrice": 10.623,
+      "monthlyPrice": 7754.79,
+      "region": "eastus",
+      "category": "memory",
+      "architecture": "x86",
+      "notes": "fxmsv2-series"
     },
     {
       "provider": "azure",
@@ -13817,6 +13830,19 @@
     },
     {
       "provider": "azure",
+      "name": "M128",
+      "displayName": "M128 (memoryoptimized)",
+      "vcpus": 128,
+      "memoryGB": 2048,
+      "hourlyPrice": 11.71,
+      "monthlyPrice": 8548.3,
+      "region": "eastus",
+      "category": "memory",
+      "architecture": "x86",
+      "notes": "m-series"
+    },
+    {
+      "provider": "azure",
       "name": "M128bds v3",
       "displayName": "M128bds v3 (memoryoptimized)",
       "vcpus": 128,
@@ -13893,19 +13919,6 @@
       "category": "memory",
       "architecture": "x86",
       "notes": "msv2-series"
-    },
-    {
-      "provider": "azure",
-      "name": "FX96-48ms v2",
-      "displayName": "FX96-48ms v2 (memoryoptimized)",
-      "vcpus": 96,
-      "memoryGB": 1832,
-      "hourlyPrice": 13.13,
-      "monthlyPrice": 9584.9,
-      "region": "eastus",
-      "category": "memory",
-      "architecture": "x86",
-      "notes": "fxmsv2-series"
     },
     {
       "provider": "azure",
@@ -14052,6 +14065,19 @@
       "category": "memory",
       "architecture": "x86",
       "notes": "mdsv2-series"
+    },
+    {
+      "provider": "azure",
+      "name": "M176-88bds v3",
+      "displayName": "M176-88bds v3 (memoryoptimized)",
+      "vcpus": 176,
+      "memoryGB": 1536,
+      "hourlyPrice": 16.11,
+      "monthlyPrice": 11760.3,
+      "region": "eastus",
+      "category": "memory",
+      "architecture": "x86",
+      "notes": "mbdsv3-series"
     },
     {
       "provider": "azure",
@@ -14222,19 +14248,6 @@
       "category": "memory",
       "architecture": "x86",
       "notes": "mdsv3-series"
-    },
-    {
-      "provider": "azure",
-      "name": "M128",
-      "displayName": "M128 (memoryoptimized)",
-      "vcpus": 128,
-      "memoryGB": 2048,
-      "hourlyPrice": 26.688,
-      "monthlyPrice": 19482.24,
-      "region": "eastus",
-      "category": "memory",
-      "architecture": "x86",
-      "notes": "m-series"
     },
     {
       "provider": "azure",
@@ -14419,19 +14432,6 @@
       "category": "memory",
       "architecture": "x86",
       "notes": "msv3-series"
-    },
-    {
-      "provider": "azure",
-      "name": "M176-88bds v3",
-      "displayName": "M176-88bds v3 (memoryoptimized)",
-      "vcpus": 176,
-      "memoryGB": 1536,
-      "hourlyPrice": 62.83,
-      "monthlyPrice": 45865.9,
-      "region": "eastus",
-      "category": "memory",
-      "architecture": "x86",
-      "notes": "mbdsv3-series"
     },
     {
       "provider": "azure",
