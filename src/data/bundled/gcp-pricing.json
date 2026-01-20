@@ -1,12 +1,12 @@
 {
   "metadata": {
     "provider": "gcp",
-    "lastUpdated": "2026-01-20T16:37:20.961Z",
+    "lastUpdated": "2026-01-20T00:00:00Z",
     "source": "instances.vantage.sh + manual curation",
-    "version": "1.2.2",
-    "totalProducts": 295,
+    "version": "1.2.5",
+    "totalProducts": 329,
     "currency": "USD",
-    "notes": "Comprehensive GCP Compute Engine pricing from vantage.sh"
+    "notes": "GCP pricing with predefined + custom machine types"
   },
   "compute": [
     {
@@ -193,6 +193,19 @@
     },
     {
       "provider": "gcp",
+      "name": "custom-1-4096",
+      "displayName": "Custom (1 vCPU / 4 GB)",
+      "vcpus": 1,
+      "memoryGB": 4,
+      "hourlyPrice": 0.0486,
+      "monthlyPrice": 35.45,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "x86",
+      "notes": "Custom machine type"
+    },
+    {
+      "provider": "gcp",
       "name": "e2-highcpu-2",
       "displayName": "E2 High CPU 2 (Compute optimized)",
       "vcpus": 2,
@@ -229,6 +242,19 @@
       "category": "compute",
       "architecture": "x86",
       "notes": "current"
+    },
+    {
+      "provider": "gcp",
+      "name": "n2-custom-1-4096",
+      "displayName": "N2 Custom (1 vCPU / 4 GB)",
+      "vcpus": 1,
+      "memoryGB": 4,
+      "hourlyPrice": 0.0538,
+      "monthlyPrice": 39.29,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "x86",
+      "notes": "N2 custom machine type"
     },
     {
       "provider": "gcp",
@@ -479,6 +505,19 @@
     },
     {
       "provider": "gcp",
+      "name": "custom-2-8192",
+      "displayName": "Custom (2 vCPU / 8 GB)",
+      "vcpus": 2,
+      "memoryGB": 8,
+      "hourlyPrice": 0.0971,
+      "monthlyPrice": 70.9,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "x86",
+      "notes": "Custom machine type"
+    },
+    {
+      "provider": "gcp",
       "name": "e2-highcpu-4",
       "displayName": "E2 High CPU 4 (Compute optimized)",
       "vcpus": 4,
@@ -502,6 +541,19 @@
       "category": "compute",
       "architecture": "x86",
       "notes": "current"
+    },
+    {
+      "provider": "gcp",
+      "name": "n2-custom-2-8192",
+      "displayName": "N2 Custom (2 vCPU / 8 GB)",
+      "vcpus": 2,
+      "memoryGB": 8,
+      "hourlyPrice": 0.1076,
+      "monthlyPrice": 78.57,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "x86",
+      "notes": "N2 custom machine type"
     },
     {
       "provider": "gcp",
@@ -832,6 +884,19 @@
     },
     {
       "provider": "gcp",
+      "name": "custom-4-16384",
+      "displayName": "Custom (4 vCPU / 16 GB)",
+      "vcpus": 4,
+      "memoryGB": 16,
+      "hourlyPrice": 0.1942,
+      "monthlyPrice": 141.79,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "x86",
+      "notes": "Custom machine type"
+    },
+    {
+      "provider": "gcp",
       "name": "e2-highcpu-8",
       "displayName": "E2 High CPU 8 (Compute optimized)",
       "vcpus": 8,
@@ -868,6 +933,19 @@
       "category": "general",
       "architecture": "x86",
       "notes": "current"
+    },
+    {
+      "provider": "gcp",
+      "name": "n2-custom-4-16384",
+      "displayName": "N2 Custom (4 vCPU / 16 GB)",
+      "vcpus": 4,
+      "memoryGB": 16,
+      "hourlyPrice": 0.2153,
+      "monthlyPrice": 157.14,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "x86",
+      "notes": "N2 custom machine type"
     },
     {
       "provider": "gcp",
@@ -959,6 +1037,19 @@
       "category": "compute",
       "architecture": "x86",
       "notes": "current"
+    },
+    {
+      "provider": "gcp",
+      "name": "custom-4-32768",
+      "displayName": "Custom (4 vCPU / 32 GB)",
+      "vcpus": 4,
+      "memoryGB": 32,
+      "hourlyPrice": 0.262,
+      "monthlyPrice": 191.28,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "x86",
+      "notes": "Custom machine type"
     },
     {
       "provider": "gcp",
@@ -1063,6 +1154,19 @@
       "category": "compute",
       "architecture": "x86",
       "notes": "current"
+    },
+    {
+      "provider": "gcp",
+      "name": "n2-custom-4-32768",
+      "displayName": "N2 Custom (4 vCPU / 32 GB)",
+      "vcpus": 4,
+      "memoryGB": 32,
+      "hourlyPrice": 0.2904,
+      "monthlyPrice": 212.03,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "x86",
+      "notes": "N2 custom machine type"
     },
     {
       "provider": "gcp",
@@ -1237,6 +1341,19 @@
     },
     {
       "provider": "gcp",
+      "name": "custom-8-32768",
+      "displayName": "Custom (8 vCPU / 32 GB)",
+      "vcpus": 8,
+      "memoryGB": 32,
+      "hourlyPrice": 0.3885,
+      "monthlyPrice": 283.58,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "x86",
+      "notes": "Custom machine type"
+    },
+    {
+      "provider": "gcp",
       "name": "e2-highcpu-16",
       "displayName": "E2 High CPU 16 (Compute optimized)",
       "vcpus": 16,
@@ -1299,6 +1416,19 @@
       "category": "compute",
       "architecture": "x86",
       "notes": "current"
+    },
+    {
+      "provider": "gcp",
+      "name": "n2-custom-8-32768",
+      "displayName": "N2 Custom (8 vCPU / 32 GB)",
+      "vcpus": 8,
+      "memoryGB": 32,
+      "hourlyPrice": 0.4305,
+      "monthlyPrice": 314.29,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "x86",
+      "notes": "N2 custom machine type"
     },
     {
       "provider": "gcp",
@@ -1421,6 +1551,19 @@
     },
     {
       "provider": "gcp",
+      "name": "custom-8-65536",
+      "displayName": "Custom (8 vCPU / 64 GB)",
+      "vcpus": 8,
+      "memoryGB": 64,
+      "hourlyPrice": 0.5241,
+      "monthlyPrice": 382.56,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "x86",
+      "notes": "Custom machine type"
+    },
+    {
+      "provider": "gcp",
       "name": "n2-standard-16",
       "displayName": "N2 Standard 16 (General purpose)",
       "vcpus": 16,
@@ -1509,6 +1652,19 @@
       "category": "compute",
       "architecture": "x86",
       "notes": "current"
+    },
+    {
+      "provider": "gcp",
+      "name": "n2-custom-8-65536",
+      "displayName": "N2 Custom (8 vCPU / 64 GB)",
+      "vcpus": 8,
+      "memoryGB": 64,
+      "hourlyPrice": 0.5809,
+      "monthlyPrice": 424.05,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "x86",
+      "notes": "N2 custom machine type"
     },
     {
       "provider": "gcp",
@@ -1698,6 +1854,19 @@
     },
     {
       "provider": "gcp",
+      "name": "custom-16-65536",
+      "displayName": "Custom (16 vCPU / 64 GB)",
+      "vcpus": 16,
+      "memoryGB": 64,
+      "hourlyPrice": 0.7769,
+      "monthlyPrice": 567.17,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "x86",
+      "notes": "Custom machine type"
+    },
+    {
+      "provider": "gcp",
       "name": "e2-highcpu-32",
       "displayName": "E2 High CPU 32 (Compute optimized)",
       "vcpus": 32,
@@ -1747,6 +1916,19 @@
       "category": "memory",
       "architecture": "x86",
       "notes": "current"
+    },
+    {
+      "provider": "gcp",
+      "name": "n2-custom-16-65536",
+      "displayName": "N2 Custom (16 vCPU / 64 GB)",
+      "vcpus": 16,
+      "memoryGB": 64,
+      "hourlyPrice": 0.8611,
+      "monthlyPrice": 628.57,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "x86",
+      "notes": "N2 custom machine type"
     },
     {
       "provider": "gcp",
@@ -1882,6 +2064,19 @@
     },
     {
       "provider": "gcp",
+      "name": "custom-16-131072",
+      "displayName": "Custom (16 vCPU / 128 GB)",
+      "vcpus": 16,
+      "memoryGB": 128,
+      "hourlyPrice": 1.0481,
+      "monthlyPrice": 765.12,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "x86",
+      "notes": "Custom machine type"
+    },
+    {
+      "provider": "gcp",
       "name": "n2-standard-32",
       "displayName": "N2 Standard 32 (General purpose)",
       "vcpus": 32,
@@ -1985,6 +2180,19 @@
       "category": "compute",
       "architecture": "x86",
       "notes": "current"
+    },
+    {
+      "provider": "gcp",
+      "name": "n2-custom-16-131072",
+      "displayName": "N2 Custom (16 vCPU / 128 GB)",
+      "vcpus": 16,
+      "memoryGB": 128,
+      "hourlyPrice": 1.1618,
+      "monthlyPrice": 848.11,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "x86",
+      "notes": "N2 custom machine type"
     },
     {
       "provider": "gcp",
@@ -2228,6 +2436,19 @@
     },
     {
       "provider": "gcp",
+      "name": "custom-32-131072",
+      "displayName": "Custom (32 vCPU / 128 GB)",
+      "vcpus": 32,
+      "memoryGB": 128,
+      "hourlyPrice": 1.5539,
+      "monthlyPrice": 1134.34,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "x86",
+      "notes": "Custom machine type"
+    },
+    {
+      "provider": "gcp",
       "name": "n2-standard-48",
       "displayName": "N2 Standard 48 (General purpose)",
       "vcpus": 48,
@@ -2316,6 +2537,19 @@
       "category": "compute",
       "architecture": "x86",
       "notes": "current"
+    },
+    {
+      "provider": "gcp",
+      "name": "n2-custom-32-131072",
+      "displayName": "N2 Custom (32 vCPU / 128 GB)",
+      "vcpus": 32,
+      "memoryGB": 128,
+      "hourlyPrice": 1.7221,
+      "monthlyPrice": 1257.14,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "x86",
+      "notes": "N2 custom machine type"
     },
     {
       "provider": "gcp",
@@ -2490,6 +2724,19 @@
     },
     {
       "provider": "gcp",
+      "name": "custom-32-262144",
+      "displayName": "Custom (32 vCPU / 256 GB)",
+      "vcpus": 32,
+      "memoryGB": 256,
+      "hourlyPrice": 2.0962,
+      "monthlyPrice": 1530.24,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "x86",
+      "notes": "Custom machine type"
+    },
+    {
+      "provider": "gcp",
       "name": "n2-standard-64",
       "displayName": "N2 Standard 64 (General purpose)",
       "vcpus": 64,
@@ -2606,6 +2853,19 @@
       "category": "compute",
       "architecture": "x86",
       "notes": "current"
+    },
+    {
+      "provider": "gcp",
+      "name": "n2-custom-32-262144",
+      "displayName": "N2 Custom (32 vCPU / 256 GB)",
+      "vcpus": 32,
+      "memoryGB": 256,
+      "hourlyPrice": 2.3236,
+      "monthlyPrice": 1696.22,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "x86",
+      "notes": "N2 custom machine type"
     },
     {
       "provider": "gcp",
@@ -2847,6 +3107,19 @@
     },
     {
       "provider": "gcp",
+      "name": "custom-64-262144",
+      "displayName": "Custom (64 vCPU / 256 GB)",
+      "vcpus": 64,
+      "memoryGB": 256,
+      "hourlyPrice": 3.1078,
+      "monthlyPrice": 2268.68,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "x86",
+      "notes": "Custom machine type"
+    },
+    {
+      "provider": "gcp",
       "name": "n2-standard-96",
       "displayName": "N2 Standard 96 (General purpose)",
       "vcpus": 96,
@@ -2951,6 +3224,19 @@
     },
     {
       "provider": "gcp",
+      "name": "n2-custom-64-262144",
+      "displayName": "N2 Custom (64 vCPU / 256 GB)",
+      "vcpus": 64,
+      "memoryGB": 256,
+      "hourlyPrice": 3.4442,
+      "monthlyPrice": 2514.28,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "x86",
+      "notes": "N2 custom machine type"
+    },
+    {
+      "provider": "gcp",
       "name": "g2-standard-96",
       "displayName": "G2 Standard 96 (Accelerator optimized)",
       "vcpus": 96,
@@ -3028,6 +3314,19 @@
       "category": "compute",
       "architecture": "x86",
       "notes": "current"
+    },
+    {
+      "provider": "gcp",
+      "name": "custom-64-524288",
+      "displayName": "Custom (64 vCPU / 512 GB)",
+      "vcpus": 64,
+      "memoryGB": 512,
+      "hourlyPrice": 4.1924,
+      "monthlyPrice": 3060.49,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "x86",
+      "notes": "Custom machine type"
     },
     {
       "provider": "gcp",
@@ -3150,6 +3449,32 @@
     },
     {
       "provider": "gcp",
+      "name": "n2-custom-64-524288",
+      "displayName": "N2 Custom (64 vCPU / 512 GB)",
+      "vcpus": 64,
+      "memoryGB": 512,
+      "hourlyPrice": 4.6472,
+      "monthlyPrice": 3392.43,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "x86",
+      "notes": "N2 custom machine type"
+    },
+    {
+      "provider": "gcp",
+      "name": "custom-96-393216",
+      "displayName": "Custom (96 vCPU / 384 GB)",
+      "vcpus": 96,
+      "memoryGB": 384,
+      "hourlyPrice": 4.6617,
+      "monthlyPrice": 3403.01,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "x86",
+      "notes": "Custom machine type"
+    },
+    {
+      "provider": "gcp",
       "name": "a3-highgpu-4g",
       "displayName": "A3 Highgpu 4g (Accelerator optimized)",
       "vcpus": 104,
@@ -3162,6 +3487,19 @@
       "gpuCount": 4,
       "gpuType": "nvidia-h100-80gb",
       "notes": "current"
+    },
+    {
+      "provider": "gcp",
+      "name": "n2-custom-96-393216",
+      "displayName": "N2 Custom (96 vCPU / 384 GB)",
+      "vcpus": 96,
+      "memoryGB": 384,
+      "hourlyPrice": 5.1663,
+      "monthlyPrice": 3771.43,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "x86",
+      "notes": "N2 custom machine type"
     },
     {
       "provider": "gcp",
@@ -3281,6 +3619,19 @@
       "category": "memory",
       "architecture": "x86",
       "notes": "current"
+    },
+    {
+      "provider": "gcp",
+      "name": "custom-128-524288",
+      "displayName": "Custom (128 vCPU / 512 GB)",
+      "vcpus": 128,
+      "memoryGB": 512,
+      "hourlyPrice": 6.2156,
+      "monthlyPrice": 4537.35,
+      "region": "us-central1",
+      "category": "general",
+      "architecture": "x86",
+      "notes": "Custom machine type"
     },
     {
       "provider": "gcp",
