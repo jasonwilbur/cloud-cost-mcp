@@ -4,12 +4,14 @@
     "lastUpdated": "2026-01-20T00:00:00Z",
     "source": "Oracle Cloud Infrastructure Pricing API",
     "sourceUrl": "https://apexapps.oracle.com/pls/apex/cetools/api/v1/products/",
-    "version": "1.3.2",
+    "version": "1.3.3",
     "totalProducts": 602,
     "totalCategories": 109,
     "currency": "USD",
-    "notes": "Comprehensive OCI pricing with 600+ products, structured PaaS services.",
-    "totalComputeConfigs": 154
+    "notes": "Comprehensive OCI pricing: 518 structured services from 602 raw API products",
+    "totalComputeConfigs": 154,
+    "structuredServices": 518,
+    "rawProducts": 602
   },
   "compute": [
     {
@@ -1051,6 +1053,91 @@
       "pricePerUnit": 0,
       "currency": "USD",
       "notes": "FREE - Private path to OCI services without internet."
+    },
+    {
+      "service": "fastconnect-1g",
+      "name": "FastConnect 1 Gbps",
+      "pricePerPort": 0.2125,
+      "status": "active",
+      "notes": "Per port/hour"
+    },
+    {
+      "service": "fastconnect-10g",
+      "name": "FastConnect 10 Gbps",
+      "pricePerPort": 1.275,
+      "status": "active",
+      "notes": "Per port/hour"
+    },
+    {
+      "service": "fastconnect-100g",
+      "name": "FastConnect 100 Gbps",
+      "pricePerPort": 10.75,
+      "status": "active",
+      "notes": "Per port/hour"
+    },
+    {
+      "service": "fastconnect-400g",
+      "name": "FastConnect 400 Gbps",
+      "pricePerPort": 20.0,
+      "status": "active",
+      "notes": "Per port/hour"
+    },
+    {
+      "service": "dns",
+      "name": "DNS Queries",
+      "pricePerMillion": 0.85,
+      "status": "active",
+      "notes": "Per million queries"
+    },
+    {
+      "service": "dns-traffic-mgmt",
+      "name": "DNS Traffic Management",
+      "pricePerMillion": 4.0,
+      "status": "active",
+      "notes": "Geo/health routing"
+    },
+    {
+      "service": "nat-gateway",
+      "name": "NAT Gateway",
+      "pricePerHour": 0.0,
+      "pricePerGB": 0.0,
+      "status": "active",
+      "notes": "First 10TB free egress"
+    },
+    {
+      "service": "service-gateway",
+      "name": "Service Gateway",
+      "pricePerHour": 0.0,
+      "status": "active",
+      "notes": "Free"
+    },
+    {
+      "service": "drg",
+      "name": "Dynamic Routing Gateway",
+      "pricePerHour": 0.0,
+      "status": "active",
+      "notes": "Free"
+    },
+    {
+      "service": "local-peering",
+      "name": "Local Peering Gateway",
+      "pricePerHour": 0.0,
+      "status": "active",
+      "notes": "Free"
+    },
+    {
+      "service": "remote-peering",
+      "name": "Remote Peering Connection",
+      "pricePerHour": 0.0,
+      "status": "active",
+      "notes": "Free"
+    },
+    {
+      "service": "vpn",
+      "name": "Site-to-Site VPN",
+      "pricePerHour": 0.0,
+      "status": "active",
+      "notes": "Free"
     }
   ],
   "kubernetes": [
@@ -8543,6 +8630,41 @@
       "pricePerUnit": 0.05,
       "currency": "USD",
       "partNumber": "B95375"
+    },
+    {
+      "service": "media-flow-sd",
+      "name": "Media Flow SD Transcoding",
+      "pricePerMinute": 0.001,
+      "status": "active",
+      "notes": "SD output"
+    },
+    {
+      "service": "media-flow-hd",
+      "name": "Media Flow HD Transcoding",
+      "pricePerMinute": 0.003,
+      "status": "active",
+      "notes": "HD output"
+    },
+    {
+      "service": "media-flow-4k",
+      "name": "Media Flow 4K Transcoding",
+      "pricePerMinute": 0.012,
+      "status": "active",
+      "notes": "4K output"
+    },
+    {
+      "service": "media-flow-8k",
+      "name": "Media Flow 8K Transcoding",
+      "pricePerMinute": 0.036,
+      "status": "active",
+      "notes": "8K output"
+    },
+    {
+      "service": "media-streams",
+      "name": "Media Streams",
+      "pricePerGB": 0.05,
+      "status": "active",
+      "notes": "Live/VOD streaming"
     }
   ],
   "vmware": [
@@ -8985,6 +9107,48 @@
       "pricePerUnit": 0.0739,
       "currency": "USD",
       "partNumber": "B97113"
+    },
+    {
+      "service": "ocvs-e5-hourly",
+      "name": "VMware Solution E5.48 Hourly",
+      "pricePerNode": 16.6617,
+      "status": "active",
+      "notes": "AMD EPYC, hourly"
+    },
+    {
+      "service": "ocvs-e5-1yr",
+      "name": "VMware Solution E5.48 1-Year",
+      "pricePerNode": 13.1604,
+      "status": "active",
+      "notes": "1 year commitment"
+    },
+    {
+      "service": "ocvs-e5-3yr",
+      "name": "VMware Solution E5.48 3-Year",
+      "pricePerNode": 10.398,
+      "status": "active",
+      "notes": "3 year commitment"
+    },
+    {
+      "service": "ocvs-x9-hourly",
+      "name": "VMware Solution X9.120 Hourly",
+      "pricePerNode": 10.1075,
+      "status": "active",
+      "notes": "Intel, hourly"
+    },
+    {
+      "service": "ocvs-dense-hourly",
+      "name": "VMware Solution DenseIO Hourly",
+      "pricePerNode": 20.2151,
+      "status": "active",
+      "notes": "NVMe storage"
+    },
+    {
+      "service": "ocvs-gpu-a10",
+      "name": "VMware Solution GPU A10",
+      "pricePerNode": 16.0,
+      "status": "active",
+      "notes": "GPU enabled"
     }
   ],
   "governance": [
@@ -9188,6 +9352,55 @@
       "pricePerUnit": 0.0005,
       "currency": "USD",
       "partNumber": "B109375"
+    },
+    {
+      "service": "exadata-x11m-db",
+      "name": "Exadata X11M Database Server",
+      "pricePerHour": 2.9032,
+      "status": "active",
+      "notes": "Latest generation"
+    },
+    {
+      "service": "exadata-x11m-storage",
+      "name": "Exadata X11M Storage Server",
+      "pricePerHour": 2.9032,
+      "status": "active",
+      "notes": "Storage expansion"
+    },
+    {
+      "service": "exadata-x9m-quarter",
+      "name": "Exadata X9M Quarter Rack",
+      "pricePerHour": 14.5162,
+      "status": "active",
+      "notes": "Entry Exadata"
+    },
+    {
+      "service": "exadata-base",
+      "name": "Exadata Base System",
+      "pricePerHour": 10.7527,
+      "status": "active",
+      "notes": "Base infrastructure"
+    },
+    {
+      "service": "exascale-ecpu",
+      "name": "Exadata Exascale ECPU",
+      "pricePerECPU": 0.336,
+      "status": "active",
+      "notes": "Elastic Exadata"
+    },
+    {
+      "service": "exascale-storage",
+      "name": "Exascale Smart Storage",
+      "pricePerGB": 0.1156,
+      "status": "active",
+      "notes": "Per GB/month"
+    },
+    {
+      "service": "exascale-filesystem",
+      "name": "Exascale VM Filesystem",
+      "pricePerGB": 0.0425,
+      "status": "active",
+      "notes": "Per GB/month"
     }
   ],
   "cache": [
@@ -12065,6 +12278,508 @@
       "pricePerOCPU": 0.0,
       "status": "active",
       "notes": "Notebooks free, pay for compute"
+    }
+  ],
+  "blockchain": [
+    {
+      "service": "blockchain-standard",
+      "name": "Blockchain Platform Standard",
+      "pricePerOCPU": 0.215,
+      "status": "active",
+      "notes": "Hyperledger Fabric"
+    },
+    {
+      "service": "blockchain-enterprise",
+      "name": "Blockchain Platform Enterprise",
+      "pricePerOCPU": 0.4301,
+      "status": "active",
+      "notes": "Full features"
+    },
+    {
+      "service": "blockchain-digital-assets",
+      "name": "Blockchain Digital Assets",
+      "pricePerOCPU": 1.0161,
+      "status": "active",
+      "notes": "NFT/Token platform"
+    }
+  ],
+  "iot": [
+    {
+      "service": "iot-platform",
+      "name": "IoT Platform",
+      "pricePerECPU": 0.37,
+      "status": "active",
+      "notes": "Device management"
+    },
+    {
+      "service": "iot-storage",
+      "name": "IoT Platform Storage",
+      "pricePerGB": 0.039,
+      "status": "active",
+      "notes": "Per GB/month"
+    }
+  ],
+  "java": [
+    {
+      "service": "weblogic-enterprise",
+      "name": "WebLogic Server Enterprise",
+      "pricePerOCPU": 0.2581,
+      "status": "active",
+      "notes": "Java EE"
+    },
+    {
+      "service": "weblogic-suite",
+      "name": "WebLogic Server Suite",
+      "pricePerOCPU": 0.4646,
+      "status": "active",
+      "notes": "Full WebLogic"
+    },
+    {
+      "service": "weblogic-oke",
+      "name": "WebLogic on OKE",
+      "pricePerOCPU": 0.2581,
+      "status": "active",
+      "notes": "Kubernetes deployment"
+    }
+  ],
+  "middleware": [
+    {
+      "service": "tuxedo",
+      "name": "Oracle Tuxedo",
+      "pricePerOCPU": 0.5433,
+      "status": "active",
+      "notes": "Transaction processing"
+    },
+    {
+      "service": "tuxedo-enterprise",
+      "name": "Oracle Tuxedo Enterprise",
+      "pricePerOCPU": 0.8149,
+      "status": "active",
+      "notes": "Full features"
+    },
+    {
+      "service": "tuxedo-mainframe",
+      "name": "Tuxedo Mainframe Modernization",
+      "pricePerOCPU": 1.0866,
+      "status": "active",
+      "notes": "COBOL/mainframe"
+    },
+    {
+      "service": "soa-suite",
+      "name": "SOA Suite",
+      "pricePerOCPU": 0.7231,
+      "status": "active",
+      "notes": "Service-oriented architecture"
+    },
+    {
+      "service": "soa-b2b",
+      "name": "SOA Suite with B2B/EDI",
+      "pricePerOCPU": 1.2071,
+      "status": "active",
+      "notes": "EDI support"
+    }
+  ],
+  "cloudAtCustomer": [
+    {
+      "service": "c3-compute-e6",
+      "name": "Cloud@Customer Compute E6",
+      "pricePerOCPU": 0.0255,
+      "status": "active",
+      "notes": "On-premises compute"
+    },
+    {
+      "service": "c3-compute-e6-commit",
+      "name": "Cloud@Customer E6 Committed",
+      "pricePerOCPU": 0.0045,
+      "status": "active",
+      "notes": "Resource commitment"
+    },
+    {
+      "service": "c3-gpu-l40s",
+      "name": "Cloud@Customer GPU L40S",
+      "pricePerGPU": 3.5,
+      "status": "active",
+      "notes": "On-premises GPU"
+    },
+    {
+      "service": "c3-autonomous",
+      "name": "Cloud@Customer Autonomous DB",
+      "pricePerECPU": 0.336,
+      "status": "active",
+      "notes": "Autonomous on-prem"
+    },
+    {
+      "service": "c3-exadata",
+      "name": "Cloud@Customer Exadata",
+      "pricePerECPU": 0.336,
+      "status": "active",
+      "notes": "Exadata on-prem"
+    }
+  ],
+  "generativeAI": [
+    {
+      "service": "genai-cohere-command-r-plus",
+      "name": "Cohere Command R+",
+      "pricePerInputToken": 0.003,
+      "pricePerOutputToken": 0.015,
+      "status": "active",
+      "notes": "Per 1K tokens"
+    },
+    {
+      "service": "genai-cohere-command-r",
+      "name": "Cohere Command R",
+      "pricePerInputToken": 0.0005,
+      "pricePerOutputToken": 0.0015,
+      "status": "active",
+      "notes": "Per 1K tokens"
+    },
+    {
+      "service": "genai-cohere-embed",
+      "name": "Cohere Embed v3",
+      "pricePerToken": 0.0001,
+      "status": "active",
+      "notes": "Embeddings"
+    },
+    {
+      "service": "genai-llama-3-1-70b",
+      "name": "Meta Llama 3.1 70B",
+      "pricePerToken": 0.0009,
+      "status": "active",
+      "notes": "Per 1K tokens"
+    },
+    {
+      "service": "genai-llama-3-1-405b",
+      "name": "Meta Llama 3.1 405B",
+      "pricePerToken": 0.00252,
+      "status": "active",
+      "notes": "Per 1K tokens"
+    },
+    {
+      "service": "genai-dedicated-cohere",
+      "name": "Cohere Dedicated",
+      "pricePerUnit": 24.0,
+      "status": "active",
+      "notes": "AI Unit/hour"
+    },
+    {
+      "service": "genai-dedicated-llama",
+      "name": "Llama Dedicated",
+      "pricePerUnit": 24.0,
+      "status": "active",
+      "notes": "AI Unit/hour"
+    },
+    {
+      "service": "genai-agents",
+      "name": "Generative AI Agents",
+      "pricePerTransaction": 0.0003,
+      "status": "active",
+      "notes": "RAG agents"
+    },
+    {
+      "service": "genai-agents-storage",
+      "name": "AI Agents Knowledge Base",
+      "pricePerGB": 0.0084,
+      "status": "active",
+      "notes": "Vector storage/hour"
+    }
+  ],
+  "identity": [
+    {
+      "service": "idcs-enterprise",
+      "name": "Identity Cloud Enterprise User",
+      "pricePerUser": 3.2,
+      "status": "active",
+      "notes": "Per user/month"
+    },
+    {
+      "service": "idcs-consumer",
+      "name": "Identity Cloud Consumer User",
+      "pricePerUser": 0.016,
+      "status": "active",
+      "notes": "Per user/month"
+    },
+    {
+      "service": "idcs-enterprise-byol",
+      "name": "Identity Cloud Enterprise BYOL",
+      "pricePerUser": 0.8,
+      "status": "active",
+      "notes": "Bring license"
+    },
+    {
+      "service": "access-governance",
+      "name": "Access Governance OCI",
+      "pricePerUser": 0.1,
+      "status": "active",
+      "notes": "Per workforce user/month"
+    },
+    {
+      "service": "access-governance-oracle",
+      "name": "Access Governance Oracle Workloads",
+      "pricePerUser": 2.0,
+      "status": "active",
+      "notes": "Oracle apps"
+    }
+  ],
+  "digitalAssistant": [
+    {
+      "service": "digital-assistant",
+      "name": "Oracle Digital Assistant",
+      "pricePerRequest": 0.0232,
+      "status": "active",
+      "notes": "Chatbot per request/hour"
+    }
+  ],
+  "search": [
+    {
+      "service": "opensearch",
+      "name": "Search with OpenSearch",
+      "pricePerNode": 0.25,
+      "status": "active",
+      "notes": "HA cluster node/hour"
+    }
+  ],
+  "secureDesktops": [
+    {
+      "service": "secure-desktops",
+      "name": "Secure Desktops",
+      "pricePerDesktop": 20.0,
+      "status": "active",
+      "notes": "VDI per desktop/month"
+    }
+  ],
+  "webcenter": [
+    {
+      "service": "webcenter-portal",
+      "name": "WebCenter Portal",
+      "pricePerOCPU": 1.39,
+      "status": "active",
+      "notes": "Enterprise portal"
+    },
+    {
+      "service": "webcenter-content",
+      "name": "WebCenter Content",
+      "pricePerOCPU": 1.39,
+      "status": "active",
+      "notes": "Content management"
+    },
+    {
+      "service": "webcenter-sites",
+      "name": "WebCenter Sites",
+      "pricePerOCPU": 0.695,
+      "status": "active",
+      "notes": "Web experience"
+    },
+    {
+      "service": "webcenter-imaging",
+      "name": "WebCenter Imaging",
+      "pricePerOCPU": 0.6394,
+      "status": "active",
+      "notes": "Document imaging"
+    }
+  ],
+  "rovingEdge": [
+    {
+      "service": "roving-edge-compute",
+      "name": "Roving Edge Device Compute",
+      "pricePerDay": 80.0,
+      "status": "active",
+      "notes": "Edge compute"
+    },
+    {
+      "service": "roving-edge-gpu",
+      "name": "Roving Edge Device GPU",
+      "pricePerDay": 100.0,
+      "status": "active",
+      "notes": "Edge GPU"
+    },
+    {
+      "service": "roving-edge-storage",
+      "name": "Roving Edge Storage",
+      "pricePerDay": 95.0,
+      "status": "active",
+      "notes": "Edge storage"
+    }
+  ],
+  "timesten": [
+    {
+      "service": "timesten-cache-x86",
+      "name": "TimesTen Cache x86",
+      "pricePerOCPU": 0.2151,
+      "status": "active",
+      "notes": "In-memory cache"
+    },
+    {
+      "service": "timesten-cache-arm",
+      "name": "TimesTen Cache ARM",
+      "pricePerOCPU": 0.1076,
+      "status": "active",
+      "notes": "ARM-based"
+    },
+    {
+      "service": "timesten-sor-x86",
+      "name": "TimesTen System of Record x86",
+      "pricePerOCPU": 0.4301,
+      "status": "active",
+      "notes": "In-memory DB"
+    },
+    {
+      "service": "timesten-sor-arm",
+      "name": "TimesTen System of Record ARM",
+      "pricePerOCPU": 0.2151,
+      "status": "active",
+      "notes": "ARM-based"
+    }
+  ],
+  "essbase": [
+    {
+      "service": "essbase",
+      "name": "Essbase",
+      "pricePerOCPU": 1.3129,
+      "status": "active",
+      "notes": "Multidimensional analytics"
+    }
+  ],
+  "mac": [
+    {
+      "service": "mac-m2-pro",
+      "name": "Managed Mac M2 Pro",
+      "pricePerHour": 0.74,
+      "status": "active",
+      "notes": "Apple Silicon"
+    },
+    {
+      "service": "mac-m3-ultra",
+      "name": "Managed Mac M3 Ultra",
+      "pricePerHour": 2.32,
+      "status": "active",
+      "notes": "256GB RAM"
+    },
+    {
+      "service": "mac-m4-pro",
+      "name": "Managed Mac M4 Pro",
+      "pricePerHour": 1.1,
+      "status": "active",
+      "notes": "4TB storage"
+    }
+  ],
+  "email": [
+    {
+      "service": "email-delivery",
+      "name": "Email Delivery",
+      "pricePerThousand": 0.0,
+      "status": "active",
+      "notes": "First 3,100 free/day"
+    }
+  ],
+  "loadBalancer": [
+    {
+      "service": "lb-flexible",
+      "name": "Flexible Load Balancer",
+      "pricePerHour": 0.0,
+      "pricePerMbps": 0.0,
+      "status": "active",
+      "notes": "Free base, pay bandwidth"
+    },
+    {
+      "service": "lb-network",
+      "name": "Network Load Balancer",
+      "pricePerHour": 0.0,
+      "status": "active",
+      "notes": "Free, Layer 4"
+    }
+  ],
+  "recovery": [
+    {
+      "service": "recovery-service",
+      "name": "Autonomous Recovery Service",
+      "pricePerGB": 0.0306,
+      "status": "active",
+      "notes": "Database backup"
+    },
+    {
+      "service": "recovery-zero-loss",
+      "name": "Zero Data Loss Recovery",
+      "pricePerGB": 0.04,
+      "status": "active",
+      "notes": "Real-time protection"
+    },
+    {
+      "service": "disaster-recovery",
+      "name": "Full Stack Disaster Recovery",
+      "pricePerECPU": 0.0032,
+      "status": "active",
+      "notes": "DR orchestration"
+    }
+  ],
+  "batch": [
+    {
+      "service": "batch",
+      "name": "OCI Batch",
+      "pricePerHour": 0.0,
+      "status": "active",
+      "notes": "Free, pay for compute"
+    }
+  ],
+  "dataIntegrator": [
+    {
+      "service": "odi",
+      "name": "Oracle Data Integrator",
+      "pricePerOCPU": 0.7742,
+      "status": "active",
+      "notes": "ETL tool"
+    },
+    {
+      "service": "odi-byol",
+      "name": "Oracle Data Integrator BYOL",
+      "pricePerOCPU": 0.1935,
+      "status": "active",
+      "notes": "Bring license"
+    }
+  ],
+  "databaseBackup": [
+    {
+      "service": "db-backup-object",
+      "name": "Database Backup to Object Storage",
+      "pricePerGB": 0.0051,
+      "status": "active",
+      "notes": "Per GB/month"
+    },
+    {
+      "service": "db-backup-archive",
+      "name": "Database Backup to Archive",
+      "pricePerGB": 0.0005,
+      "status": "active",
+      "notes": "Per GB/month"
+    },
+    {
+      "service": "db-backup-s3",
+      "name": "Database Backup to Amazon S3",
+      "pricePerGB": 0.051,
+      "status": "active",
+      "notes": "Cross-cloud"
+    }
+  ],
+  "databaseManagement": [
+    {
+      "service": "db-management-cloud",
+      "name": "Database Management for Cloud DBs",
+      "pricePerECPU": 0.025,
+      "status": "active",
+      "notes": "Performance insights"
+    },
+    {
+      "service": "db-management-external",
+      "name": "Database Management External",
+      "pricePerCore": 0.05,
+      "status": "active",
+      "notes": "On-prem DBs"
+    },
+    {
+      "service": "sql-watch",
+      "name": "SQL Performance Watch",
+      "pricePerCore": 40.0,
+      "status": "active",
+      "notes": "Per core/month"
     }
   ]
 }
