@@ -3,10 +3,10 @@
     "provider": "gcp",
     "lastUpdated": "2026-01-20T00:00:00Z",
     "source": "instances.vantage.sh + manual curation",
-    "version": "1.2.8",
-    "totalProducts": 329,
+    "version": "1.3.0",
+    "totalProducts": 360,
     "currency": "USD",
-    "notes": "GCP pricing with n2d correction (vantage.sh had 10x error)"
+    "notes": "Comprehensive GCP pricing with full database coverage."
   },
   "compute": [
     {
@@ -15,12 +15,13 @@
       "displayName": "N2D High CPU 2 (Compute optimized)",
       "vcpus": 2,
       "memoryGB": 2,
-      "hourlyPrice": 0.062376,
-      "monthlyPrice": 45.5,
+      "hourlyPrice": 0.0062376,
+      "monthlyPrice": 4.55,
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
-      "notes": "current (price corrected)"
+      "status": "active",
+      "notes": "current"
     },
     {
       "provider": "gcp",
@@ -28,12 +29,13 @@
       "displayName": "N2D Standard 2 (General purpose)",
       "vcpus": 2,
       "memoryGB": 8,
-      "hourlyPrice": 0.084492,
-      "monthlyPrice": 61.7,
+      "hourlyPrice": 0.0084492,
+      "monthlyPrice": 6.17,
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
-      "notes": "current (price corrected)"
+      "status": "active",
+      "notes": "current"
     },
     {
       "provider": "gcp",
@@ -41,12 +43,13 @@
       "displayName": "N2D High Memory 2 (Memory optimized)",
       "vcpus": 2,
       "memoryGB": 16,
-      "hourlyPrice": 0.11398,
-      "monthlyPrice": 83.2,
+      "hourlyPrice": 0.011398,
+      "monthlyPrice": 8.32,
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
-      "notes": "current (price corrected)"
+      "status": "active",
+      "notes": "current"
     },
     {
       "provider": "gcp",
@@ -54,12 +57,13 @@
       "displayName": "N2D High CPU 4 (Compute optimized)",
       "vcpus": 4,
       "memoryGB": 4,
-      "hourlyPrice": 0.124752,
-      "monthlyPrice": 91.1,
+      "hourlyPrice": 0.0124752,
+      "monthlyPrice": 9.11,
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
-      "notes": "current (price corrected)"
+      "status": "active",
+      "notes": "current"
     },
     {
       "provider": "gcp",
@@ -67,12 +71,13 @@
       "displayName": "N2D Standard 4 (General purpose)",
       "vcpus": 4,
       "memoryGB": 16,
-      "hourlyPrice": 0.168984,
-      "monthlyPrice": 123.4,
+      "hourlyPrice": 0.0168984,
+      "monthlyPrice": 12.34,
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
-      "notes": "current (price corrected)"
+      "status": "active",
+      "notes": "current"
     },
     {
       "provider": "gcp",
@@ -80,12 +85,13 @@
       "displayName": "N2D High Memory 4 (Memory optimized)",
       "vcpus": 4,
       "memoryGB": 32,
-      "hourlyPrice": 0.22796,
-      "monthlyPrice": 166.4,
+      "hourlyPrice": 0.022796,
+      "monthlyPrice": 16.64,
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
-      "notes": "current (price corrected)"
+      "status": "active",
+      "notes": "current"
     },
     {
       "provider": "gcp",
@@ -93,12 +99,13 @@
       "displayName": "N2D High CPU 8 (Compute optimized)",
       "vcpus": 8,
       "memoryGB": 8,
-      "hourlyPrice": 0.249504,
-      "monthlyPrice": 182.1,
+      "hourlyPrice": 0.0249504,
+      "monthlyPrice": 18.21,
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
-      "notes": "current (price corrected)"
+      "status": "active",
+      "notes": "current"
     },
     {
       "provider": "gcp",
@@ -106,12 +113,13 @@
       "displayName": "N2D Standard 8 (General purpose)",
       "vcpus": 8,
       "memoryGB": 32,
-      "hourlyPrice": 0.337968,
-      "monthlyPrice": 246.7,
+      "hourlyPrice": 0.0337968,
+      "monthlyPrice": 24.67,
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
-      "notes": "current (price corrected)"
+      "status": "active",
+      "notes": "current"
     },
     {
       "provider": "gcp",
@@ -124,6 +132,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "arm",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -137,6 +146,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -150,6 +160,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -158,12 +169,13 @@
       "displayName": "N2D High Memory 8 (Memory optimized)",
       "vcpus": 8,
       "memoryGB": 64,
-      "hourlyPrice": 0.45592,
-      "monthlyPrice": 332.8,
+      "hourlyPrice": 0.045592,
+      "monthlyPrice": 33.28,
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
-      "notes": "current (price corrected)"
+      "status": "active",
+      "notes": "current"
     },
     {
       "provider": "gcp",
@@ -176,6 +188,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -189,20 +202,8 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "legacy",
       "notes": "current"
-    },
-    {
-      "provider": "gcp",
-      "name": "custom-1-4096",
-      "displayName": "Custom (1 vCPU / 4 GB)",
-      "vcpus": 1,
-      "memoryGB": 4,
-      "hourlyPrice": 0.0486,
-      "monthlyPrice": 35.45,
-      "region": "us-central1",
-      "category": "general",
-      "architecture": "x86",
-      "notes": "Custom machine type"
     },
     {
       "provider": "gcp",
@@ -215,6 +216,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -228,6 +230,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -236,25 +239,13 @@
       "displayName": "N2D High CPU 16 (Compute optimized)",
       "vcpus": 16,
       "memoryGB": 16,
-      "hourlyPrice": 0.499008,
-      "monthlyPrice": 364.3,
+      "hourlyPrice": 0.0499008,
+      "monthlyPrice": 36.43,
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
-      "notes": "current (price corrected)"
-    },
-    {
-      "provider": "gcp",
-      "name": "n2-custom-1-4096",
-      "displayName": "N2 Custom (1 vCPU / 4 GB)",
-      "vcpus": 1,
-      "memoryGB": 4,
-      "hourlyPrice": 0.0538,
-      "monthlyPrice": 39.29,
-      "region": "us-central1",
-      "category": "general",
-      "architecture": "x86",
-      "notes": "N2 custom machine type"
+      "status": "active",
+      "notes": "current"
     },
     {
       "provider": "gcp",
@@ -267,6 +258,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -280,6 +272,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -293,6 +286,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -306,6 +300,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -314,12 +309,13 @@
       "displayName": "N2D Standard 16 (General purpose)",
       "vcpus": 16,
       "memoryGB": 64,
-      "hourlyPrice": 0.675936,
-      "monthlyPrice": 493.4,
+      "hourlyPrice": 0.0675936,
+      "monthlyPrice": 49.34,
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
-      "notes": "current (price corrected)"
+      "status": "active",
+      "notes": "current"
     },
     {
       "provider": "gcp",
@@ -332,6 +328,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -345,6 +342,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "legacy",
       "notes": "current"
     },
     {
@@ -358,6 +356,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -371,6 +370,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -384,6 +384,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -397,6 +398,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "arm",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -410,6 +412,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -423,6 +426,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -436,6 +440,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -449,6 +454,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -462,6 +468,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -470,12 +477,13 @@
       "displayName": "N2D High Memory 16 (Memory optimized)",
       "vcpus": 16,
       "memoryGB": 128,
-      "hourlyPrice": 0.91184,
-      "monthlyPrice": 665.6,
+      "hourlyPrice": 0.091184,
+      "monthlyPrice": 66.56,
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
-      "notes": "current (price corrected)"
+      "status": "active",
+      "notes": "current"
     },
     {
       "provider": "gcp",
@@ -488,6 +496,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -501,20 +510,8 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "legacy",
       "notes": "current"
-    },
-    {
-      "provider": "gcp",
-      "name": "custom-2-8192",
-      "displayName": "Custom (2 vCPU / 8 GB)",
-      "vcpus": 2,
-      "memoryGB": 8,
-      "hourlyPrice": 0.0971,
-      "monthlyPrice": 70.9,
-      "region": "us-central1",
-      "category": "general",
-      "architecture": "x86",
-      "notes": "Custom machine type"
     },
     {
       "provider": "gcp",
@@ -527,6 +524,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -535,25 +533,13 @@
       "displayName": "N2D High CPU 32 (Compute optimized)",
       "vcpus": 32,
       "memoryGB": 32,
-      "hourlyPrice": 0.998016,
-      "monthlyPrice": 728.6,
+      "hourlyPrice": 0.0998016,
+      "monthlyPrice": 72.86,
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
-      "notes": "current (price corrected)"
-    },
-    {
-      "provider": "gcp",
-      "name": "n2-custom-2-8192",
-      "displayName": "N2 Custom (2 vCPU / 8 GB)",
-      "vcpus": 2,
-      "memoryGB": 8,
-      "hourlyPrice": 0.1076,
-      "monthlyPrice": 78.57,
-      "region": "us-central1",
-      "category": "general",
-      "architecture": "x86",
-      "notes": "N2 custom machine type"
+      "status": "active",
+      "notes": "current"
     },
     {
       "provider": "gcp",
@@ -566,6 +552,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -579,6 +566,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "legacy",
       "notes": "current"
     },
     {
@@ -592,6 +580,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -605,6 +594,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -618,6 +608,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -631,6 +622,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -639,12 +631,13 @@
       "displayName": "N2D Standard 32 (General purpose)",
       "vcpus": 32,
       "memoryGB": 128,
-      "hourlyPrice": 1.351872,
-      "monthlyPrice": 986.9,
+      "hourlyPrice": 0.1351872,
+      "monthlyPrice": 98.69,
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
-      "notes": "current (price corrected)"
+      "status": "active",
+      "notes": "current"
     },
     {
       "provider": "gcp",
@@ -657,6 +650,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -670,6 +664,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -683,6 +678,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "legacy",
       "notes": "current"
     },
     {
@@ -696,6 +692,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -711,6 +708,7 @@
       "architecture": "x86",
       "gpuCount": 1,
       "gpuType": "nvidia-l4",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -724,6 +722,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -737,6 +736,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -745,12 +745,13 @@
       "displayName": "N2D High CPU 48 (Compute optimized)",
       "vcpus": 48,
       "memoryGB": 48,
-      "hourlyPrice": 1.497024,
-      "monthlyPrice": 1092.8,
+      "hourlyPrice": 0.1497024,
+      "monthlyPrice": 109.28,
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
-      "notes": "current (price corrected)"
+      "status": "active",
+      "notes": "current"
     },
     {
       "provider": "gcp",
@@ -763,6 +764,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "arm",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -776,6 +778,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -789,6 +792,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -802,6 +806,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -815,6 +820,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -828,6 +834,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -836,12 +843,13 @@
       "displayName": "N2D High Memory 32 (Memory optimized)",
       "vcpus": 32,
       "memoryGB": 256,
-      "hourlyPrice": 1.82368,
-      "monthlyPrice": 1331.3,
+      "hourlyPrice": 0.182368,
+      "monthlyPrice": 133.13,
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
-      "notes": "current (price corrected)"
+      "status": "active",
+      "notes": "current"
     },
     {
       "provider": "gcp",
@@ -854,6 +862,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "legacy",
       "notes": "current"
     },
     {
@@ -867,6 +876,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -880,20 +890,8 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
-    },
-    {
-      "provider": "gcp",
-      "name": "custom-4-16384",
-      "displayName": "Custom (4 vCPU / 16 GB)",
-      "vcpus": 4,
-      "memoryGB": 16,
-      "hourlyPrice": 0.1942,
-      "monthlyPrice": 141.79,
-      "region": "us-central1",
-      "category": "general",
-      "architecture": "x86",
-      "notes": "Custom machine type"
     },
     {
       "provider": "gcp",
@@ -906,6 +904,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -914,12 +913,13 @@
       "displayName": "N2D High CPU 64 (Compute optimized)",
       "vcpus": 64,
       "memoryGB": 64,
-      "hourlyPrice": 1.996032,
-      "monthlyPrice": 1457.1,
+      "hourlyPrice": 0.1996032,
+      "monthlyPrice": 145.71,
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
-      "notes": "current (price corrected)"
+      "status": "active",
+      "notes": "current"
     },
     {
       "provider": "gcp",
@@ -927,25 +927,13 @@
       "displayName": "N2D Standard 48 (General purpose)",
       "vcpus": 48,
       "memoryGB": 192,
-      "hourlyPrice": 2.027808,
-      "monthlyPrice": 1480.3,
+      "hourlyPrice": 0.2027808,
+      "monthlyPrice": 148.03,
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
-      "notes": "current (price corrected)"
-    },
-    {
-      "provider": "gcp",
-      "name": "n2-custom-4-16384",
-      "displayName": "N2 Custom (4 vCPU / 16 GB)",
-      "vcpus": 4,
-      "memoryGB": 16,
-      "hourlyPrice": 0.2153,
-      "monthlyPrice": 157.14,
-      "region": "us-central1",
-      "category": "general",
-      "architecture": "x86",
-      "notes": "N2 custom machine type"
+      "status": "active",
+      "notes": "current"
     },
     {
       "provider": "gcp",
@@ -958,6 +946,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -971,6 +960,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "legacy",
       "notes": "current"
     },
     {
@@ -984,6 +974,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -997,6 +988,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1010,6 +1002,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1018,12 +1011,13 @@
       "displayName": "N2D High CPU 80 (Compute optimized)",
       "vcpus": 80,
       "memoryGB": 80,
-      "hourlyPrice": 2.49504,
-      "monthlyPrice": 1821.4,
+      "hourlyPrice": 0.249504,
+      "monthlyPrice": 182.14,
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
-      "notes": "current (price corrected)"
+      "status": "active",
+      "notes": "current"
     },
     {
       "provider": "gcp",
@@ -1036,20 +1030,8 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
-    },
-    {
-      "provider": "gcp",
-      "name": "custom-4-32768",
-      "displayName": "Custom (4 vCPU / 32 GB)",
-      "vcpus": 4,
-      "memoryGB": 32,
-      "hourlyPrice": 0.262,
-      "monthlyPrice": 191.28,
-      "region": "us-central1",
-      "category": "general",
-      "architecture": "x86",
-      "notes": "Custom machine type"
     },
     {
       "provider": "gcp",
@@ -1062,6 +1044,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1075,6 +1058,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1083,12 +1067,13 @@
       "displayName": "N2D Standard 64 (General purpose)",
       "vcpus": 64,
       "memoryGB": 256,
-      "hourlyPrice": 2.703744,
-      "monthlyPrice": 1973.7,
+      "hourlyPrice": 0.2703744,
+      "monthlyPrice": 197.37,
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
-      "notes": "current (price corrected)"
+      "status": "active",
+      "notes": "current"
     },
     {
       "provider": "gcp",
@@ -1096,12 +1081,13 @@
       "displayName": "N2D High Memory 48 (Memory optimized)",
       "vcpus": 48,
       "memoryGB": 384,
-      "hourlyPrice": 2.73552,
-      "monthlyPrice": 1996.9,
+      "hourlyPrice": 0.273552,
+      "monthlyPrice": 199.69,
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
-      "notes": "current (price corrected)"
+      "status": "active",
+      "notes": "current"
     },
     {
       "provider": "gcp",
@@ -1114,6 +1100,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1127,6 +1114,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1140,6 +1128,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "legacy",
       "notes": "current"
     },
     {
@@ -1153,20 +1142,8 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
-    },
-    {
-      "provider": "gcp",
-      "name": "n2-custom-4-32768",
-      "displayName": "N2 Custom (4 vCPU / 32 GB)",
-      "vcpus": 4,
-      "memoryGB": 32,
-      "hourlyPrice": 0.2904,
-      "monthlyPrice": 212.03,
-      "region": "us-central1",
-      "category": "general",
-      "architecture": "x86",
-      "notes": "N2 custom machine type"
     },
     {
       "provider": "gcp",
@@ -1181,6 +1158,7 @@
       "architecture": "x86",
       "gpuCount": 1,
       "gpuType": "nvidia-l4",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1189,12 +1167,13 @@
       "displayName": "N2D High CPU 96 (Compute optimized)",
       "vcpus": 96,
       "memoryGB": 96,
-      "hourlyPrice": 2.994048,
-      "monthlyPrice": 2185.7,
+      "hourlyPrice": 0.2994048,
+      "monthlyPrice": 218.57,
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
-      "notes": "current (price corrected)"
+      "status": "active",
+      "notes": "current"
     },
     {
       "provider": "gcp",
@@ -1207,6 +1186,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "arm",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1220,6 +1200,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1228,12 +1209,13 @@
       "displayName": "N2D Standard 80 (General purpose)",
       "vcpus": 80,
       "memoryGB": 320,
-      "hourlyPrice": 3.37968,
-      "monthlyPrice": 2467.2,
+      "hourlyPrice": 0.337968,
+      "monthlyPrice": 246.72,
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
-      "notes": "current (price corrected)"
+      "status": "active",
+      "notes": "current"
     },
     {
       "provider": "gcp",
@@ -1246,6 +1228,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1259,6 +1242,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1272,6 +1256,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1285,6 +1270,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1293,12 +1279,13 @@
       "displayName": "N2D High Memory 64 (Memory optimized)",
       "vcpus": 64,
       "memoryGB": 512,
-      "hourlyPrice": 3.64736,
-      "monthlyPrice": 2662.6,
+      "hourlyPrice": 0.364736,
+      "monthlyPrice": 266.26,
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
-      "notes": "current (price corrected)"
+      "status": "active",
+      "notes": "current"
     },
     {
       "provider": "gcp",
@@ -1311,6 +1298,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "legacy",
       "notes": "current"
     },
     {
@@ -1324,6 +1312,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1337,20 +1326,8 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
-    },
-    {
-      "provider": "gcp",
-      "name": "custom-8-32768",
-      "displayName": "Custom (8 vCPU / 32 GB)",
-      "vcpus": 8,
-      "memoryGB": 32,
-      "hourlyPrice": 0.3885,
-      "monthlyPrice": 283.58,
-      "region": "us-central1",
-      "category": "general",
-      "architecture": "x86",
-      "notes": "Custom machine type"
     },
     {
       "provider": "gcp",
@@ -1363,6 +1340,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1371,12 +1349,13 @@
       "displayName": "N2D High CPU 128 (Compute optimized)",
       "vcpus": 128,
       "memoryGB": 128,
-      "hourlyPrice": 3.992064,
-      "monthlyPrice": 2914.2,
+      "hourlyPrice": 0.3992064,
+      "monthlyPrice": 291.42,
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
-      "notes": "current (price corrected)"
+      "status": "active",
+      "notes": "current"
     },
     {
       "provider": "gcp",
@@ -1384,12 +1363,13 @@
       "displayName": "N2D Standard 96 (General purpose)",
       "vcpus": 96,
       "memoryGB": 384,
-      "hourlyPrice": 4.055616,
-      "monthlyPrice": 2960.6,
+      "hourlyPrice": 0.4055616,
+      "monthlyPrice": 296.06,
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
-      "notes": "current (price corrected)"
+      "status": "active",
+      "notes": "current"
     },
     {
       "provider": "gcp",
@@ -1402,6 +1382,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1415,20 +1396,8 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
-    },
-    {
-      "provider": "gcp",
-      "name": "n2-custom-8-32768",
-      "displayName": "N2 Custom (8 vCPU / 32 GB)",
-      "vcpus": 8,
-      "memoryGB": 32,
-      "hourlyPrice": 0.4305,
-      "monthlyPrice": 314.29,
-      "region": "us-central1",
-      "category": "general",
-      "architecture": "x86",
-      "notes": "N2 custom machine type"
     },
     {
       "provider": "gcp",
@@ -1441,6 +1410,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1456,6 +1426,7 @@
       "architecture": "x86",
       "gpuCount": 1,
       "gpuType": "nvidia-l4",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1469,6 +1440,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1477,12 +1449,13 @@
       "displayName": "N2D High Memory 80 (Memory optimized)",
       "vcpus": 80,
       "memoryGB": 640,
-      "hourlyPrice": 4.5592,
-      "monthlyPrice": 3328.2,
+      "hourlyPrice": 0.45592,
+      "monthlyPrice": 332.82,
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
-      "notes": "current (price corrected)"
+      "status": "active",
+      "notes": "current"
     },
     {
       "provider": "gcp",
@@ -1495,6 +1468,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "legacy",
       "notes": "current"
     },
     {
@@ -1508,6 +1482,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1521,6 +1496,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1534,6 +1510,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1547,20 +1524,8 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
-    },
-    {
-      "provider": "gcp",
-      "name": "custom-8-65536",
-      "displayName": "Custom (8 vCPU / 64 GB)",
-      "vcpus": 8,
-      "memoryGB": 64,
-      "hourlyPrice": 0.5241,
-      "monthlyPrice": 382.56,
-      "region": "us-central1",
-      "category": "general",
-      "architecture": "x86",
-      "notes": "Custom machine type"
     },
     {
       "provider": "gcp",
@@ -1573,6 +1538,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1586,6 +1552,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1594,12 +1561,13 @@
       "displayName": "N2D Standard 128 (General purpose)",
       "vcpus": 128,
       "memoryGB": 512,
-      "hourlyPrice": 5.407488,
-      "monthlyPrice": 3947.5,
+      "hourlyPrice": 0.5407488,
+      "monthlyPrice": 394.75,
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
-      "notes": "current (price corrected)"
+      "status": "active",
+      "notes": "current"
     },
     {
       "provider": "gcp",
@@ -1607,12 +1575,13 @@
       "displayName": "N2D High Memory 96 (Memory optimized)",
       "vcpus": 96,
       "memoryGB": 768,
-      "hourlyPrice": 5.47104,
-      "monthlyPrice": 3993.9,
+      "hourlyPrice": 0.547104,
+      "monthlyPrice": 399.39,
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
-      "notes": "current (price corrected)"
+      "status": "active",
+      "notes": "current"
     },
     {
       "provider": "gcp",
@@ -1625,6 +1594,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1638,6 +1608,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "legacy",
       "notes": "current"
     },
     {
@@ -1651,20 +1622,8 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
-    },
-    {
-      "provider": "gcp",
-      "name": "n2-custom-8-65536",
-      "displayName": "N2 Custom (8 vCPU / 64 GB)",
-      "vcpus": 8,
-      "memoryGB": 64,
-      "hourlyPrice": 0.5809,
-      "monthlyPrice": 424.05,
-      "region": "us-central1",
-      "category": "general",
-      "architecture": "x86",
-      "notes": "N2 custom machine type"
     },
     {
       "provider": "gcp",
@@ -1679,6 +1638,7 @@
       "architecture": "x86",
       "gpuCount": 1,
       "gpuType": "nvidia-l4",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1692,6 +1652,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "arm",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1705,6 +1666,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1718,6 +1680,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1731,6 +1694,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1739,12 +1703,13 @@
       "displayName": "N2D High CPU 224 (Compute optimized)",
       "vcpus": 224,
       "memoryGB": 224,
-      "hourlyPrice": 6.986112,
-      "monthlyPrice": 5099.9,
+      "hourlyPrice": 0.6986112,
+      "monthlyPrice": 509.99,
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
-      "notes": "current (price corrected)"
+      "status": "active",
+      "notes": "current"
     },
     {
       "provider": "gcp",
@@ -1757,6 +1722,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1770,6 +1736,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1783,6 +1750,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1798,6 +1766,7 @@
       "architecture": "x86",
       "gpuCount": 1,
       "gpuType": "nvidia-tesla-a100",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1811,6 +1780,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1824,6 +1794,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "legacy",
       "notes": "current"
     },
     {
@@ -1837,6 +1808,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1850,20 +1822,8 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
-    },
-    {
-      "provider": "gcp",
-      "name": "custom-16-65536",
-      "displayName": "Custom (16 vCPU / 64 GB)",
-      "vcpus": 16,
-      "memoryGB": 64,
-      "hourlyPrice": 0.7769,
-      "monthlyPrice": 567.17,
-      "region": "us-central1",
-      "category": "general",
-      "architecture": "x86",
-      "notes": "Custom machine type"
     },
     {
       "provider": "gcp",
@@ -1876,6 +1836,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1889,6 +1850,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1902,6 +1864,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1915,20 +1878,8 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
-    },
-    {
-      "provider": "gcp",
-      "name": "n2-custom-16-65536",
-      "displayName": "N2 Custom (16 vCPU / 64 GB)",
-      "vcpus": 16,
-      "memoryGB": 64,
-      "hourlyPrice": 0.8611,
-      "monthlyPrice": 628.57,
-      "region": "us-central1",
-      "category": "general",
-      "architecture": "x86",
-      "notes": "N2 custom machine type"
     },
     {
       "provider": "gcp",
@@ -1941,6 +1892,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1956,6 +1908,7 @@
       "architecture": "x86",
       "gpuCount": 2,
       "gpuType": "nvidia-l4",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1969,6 +1922,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -1977,12 +1931,13 @@
       "displayName": "N2D Standard 224 (General purpose)",
       "vcpus": 224,
       "memoryGB": 896,
-      "hourlyPrice": 9.463104,
-      "monthlyPrice": 6908.1,
+      "hourlyPrice": 0.9463104,
+      "monthlyPrice": 690.81,
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
-      "notes": "current (price corrected)"
+      "status": "active",
+      "notes": "current"
     },
     {
       "provider": "gcp",
@@ -1995,6 +1950,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "legacy",
       "notes": "current"
     },
     {
@@ -2008,6 +1964,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2021,6 +1978,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2034,6 +1992,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2047,6 +2006,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2060,20 +2020,8 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
-    },
-    {
-      "provider": "gcp",
-      "name": "custom-16-131072",
-      "displayName": "Custom (16 vCPU / 128 GB)",
-      "vcpus": 16,
-      "memoryGB": 128,
-      "hourlyPrice": 1.0481,
-      "monthlyPrice": 765.12,
-      "region": "us-central1",
-      "category": "general",
-      "architecture": "x86",
-      "notes": "Custom machine type"
     },
     {
       "provider": "gcp",
@@ -2086,6 +2034,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2099,6 +2048,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2114,6 +2064,7 @@
       "architecture": "x86",
       "gpuCount": 1,
       "gpuType": "nvidia-a100-80gb",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2127,6 +2078,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2140,6 +2092,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "legacy",
       "notes": "current"
     },
     {
@@ -2153,6 +2106,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2166,6 +2120,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2179,20 +2134,8 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
-    },
-    {
-      "provider": "gcp",
-      "name": "n2-custom-16-131072",
-      "displayName": "N2 Custom (16 vCPU / 128 GB)",
-      "vcpus": 16,
-      "memoryGB": 128,
-      "hourlyPrice": 1.1618,
-      "monthlyPrice": 848.11,
-      "region": "us-central1",
-      "category": "general",
-      "architecture": "x86",
-      "notes": "N2 custom machine type"
     },
     {
       "provider": "gcp",
@@ -2207,6 +2150,7 @@
       "architecture": "x86",
       "gpuCount": 1,
       "gpuType": "nvidia-l4",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2220,6 +2164,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "arm",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2235,6 +2180,7 @@
       "architecture": "x86",
       "gpuCount": 1,
       "gpuType": "nvidia-h100-80gb",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2248,6 +2194,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2261,6 +2208,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2274,6 +2222,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2287,6 +2236,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2300,6 +2250,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2313,6 +2264,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2326,6 +2278,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2341,6 +2294,7 @@
       "architecture": "x86",
       "gpuCount": 2,
       "gpuType": "nvidia-tesla-a100",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2354,6 +2308,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2367,6 +2322,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2380,6 +2336,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2393,6 +2350,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "legacy",
       "notes": "current"
     },
     {
@@ -2406,6 +2364,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2419,6 +2378,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2432,20 +2392,8 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
-    },
-    {
-      "provider": "gcp",
-      "name": "custom-32-131072",
-      "displayName": "Custom (32 vCPU / 128 GB)",
-      "vcpus": 32,
-      "memoryGB": 128,
-      "hourlyPrice": 1.5539,
-      "monthlyPrice": 1134.34,
-      "region": "us-central1",
-      "category": "general",
-      "architecture": "x86",
-      "notes": "Custom machine type"
     },
     {
       "provider": "gcp",
@@ -2458,6 +2406,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2471,6 +2420,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2484,6 +2434,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2497,6 +2448,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2510,6 +2462,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2523,6 +2476,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2536,20 +2490,8 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
-    },
-    {
-      "provider": "gcp",
-      "name": "n2-custom-32-131072",
-      "displayName": "N2 Custom (32 vCPU / 128 GB)",
-      "vcpus": 32,
-      "memoryGB": 128,
-      "hourlyPrice": 1.7221,
-      "monthlyPrice": 1257.14,
-      "region": "us-central1",
-      "category": "general",
-      "architecture": "x86",
-      "notes": "N2 custom machine type"
     },
     {
       "provider": "gcp",
@@ -2562,6 +2504,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2577,6 +2520,7 @@
       "architecture": "x86",
       "gpuCount": 4,
       "gpuType": "nvidia-l4",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2590,6 +2534,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2603,6 +2548,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "arm",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2616,6 +2562,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2629,6 +2576,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "legacy",
       "notes": "current"
     },
     {
@@ -2642,6 +2590,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2655,6 +2604,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2668,6 +2618,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2681,6 +2632,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2694,6 +2646,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2707,6 +2660,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2720,20 +2674,8 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
-    },
-    {
-      "provider": "gcp",
-      "name": "custom-32-262144",
-      "displayName": "Custom (32 vCPU / 256 GB)",
-      "vcpus": 32,
-      "memoryGB": 256,
-      "hourlyPrice": 2.0962,
-      "monthlyPrice": 1530.24,
-      "region": "us-central1",
-      "category": "general",
-      "architecture": "x86",
-      "notes": "Custom machine type"
     },
     {
       "provider": "gcp",
@@ -2746,6 +2688,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2761,6 +2704,7 @@
       "architecture": "x86",
       "gpuCount": 2,
       "gpuType": "nvidia-a100-80gb",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2774,6 +2718,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2787,6 +2732,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2800,6 +2746,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2813,6 +2760,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "legacy",
       "notes": "current"
     },
     {
@@ -2826,6 +2774,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2839,6 +2788,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2852,20 +2802,8 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
-    },
-    {
-      "provider": "gcp",
-      "name": "n2-custom-32-262144",
-      "displayName": "N2 Custom (32 vCPU / 256 GB)",
-      "vcpus": 32,
-      "memoryGB": 256,
-      "hourlyPrice": 2.3236,
-      "monthlyPrice": 1696.22,
-      "region": "us-central1",
-      "category": "general",
-      "architecture": "x86",
-      "notes": "N2 custom machine type"
     },
     {
       "provider": "gcp",
@@ -2880,6 +2818,7 @@
       "architecture": "x86",
       "gpuCount": 2,
       "gpuType": "nvidia-h100-80gb",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2893,6 +2832,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2906,6 +2846,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2919,6 +2860,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2932,6 +2874,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2945,6 +2888,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2958,6 +2902,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2971,6 +2916,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2984,6 +2930,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -2997,6 +2944,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3010,6 +2958,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3023,6 +2972,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3038,6 +2988,7 @@
       "architecture": "x86",
       "gpuCount": 4,
       "gpuType": "nvidia-tesla-a100",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3051,6 +3002,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3064,6 +3016,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3077,6 +3030,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3090,6 +3044,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "legacy",
       "notes": "current"
     },
     {
@@ -3103,20 +3058,8 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
-    },
-    {
-      "provider": "gcp",
-      "name": "custom-64-262144",
-      "displayName": "Custom (64 vCPU / 256 GB)",
-      "vcpus": 64,
-      "memoryGB": 256,
-      "hourlyPrice": 3.1078,
-      "monthlyPrice": 2268.68,
-      "region": "us-central1",
-      "category": "general",
-      "architecture": "x86",
-      "notes": "Custom machine type"
     },
     {
       "provider": "gcp",
@@ -3129,6 +3072,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3142,6 +3086,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3155,6 +3100,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3168,6 +3114,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3181,6 +3128,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3194,6 +3142,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3207,6 +3156,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3220,20 +3170,8 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "legacy",
       "notes": "current"
-    },
-    {
-      "provider": "gcp",
-      "name": "n2-custom-64-262144",
-      "displayName": "N2 Custom (64 vCPU / 256 GB)",
-      "vcpus": 64,
-      "memoryGB": 256,
-      "hourlyPrice": 3.4442,
-      "monthlyPrice": 2514.28,
-      "region": "us-central1",
-      "category": "general",
-      "architecture": "x86",
-      "notes": "N2 custom machine type"
     },
     {
       "provider": "gcp",
@@ -3248,6 +3186,7 @@
       "architecture": "x86",
       "gpuCount": 8,
       "gpuType": "nvidia-l4",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3261,6 +3200,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3274,6 +3214,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3287,6 +3228,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3300,6 +3242,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "legacy",
       "notes": "current"
     },
     {
@@ -3313,20 +3256,8 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
-    },
-    {
-      "provider": "gcp",
-      "name": "custom-64-524288",
-      "displayName": "Custom (64 vCPU / 512 GB)",
-      "vcpus": 64,
-      "memoryGB": 512,
-      "hourlyPrice": 4.1924,
-      "monthlyPrice": 3060.49,
-      "region": "us-central1",
-      "category": "general",
-      "architecture": "x86",
-      "notes": "Custom machine type"
     },
     {
       "provider": "gcp",
@@ -3339,6 +3270,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3354,6 +3286,7 @@
       "architecture": "x86",
       "gpuCount": 4,
       "gpuType": "nvidia-a100-80gb",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3367,6 +3300,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3380,6 +3314,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3393,6 +3328,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3406,6 +3342,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3419,6 +3356,7 @@
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
+      "status": "legacy",
       "notes": "current"
     },
     {
@@ -3432,6 +3370,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3445,33 +3384,8 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
-    },
-    {
-      "provider": "gcp",
-      "name": "n2-custom-64-524288",
-      "displayName": "N2 Custom (64 vCPU / 512 GB)",
-      "vcpus": 64,
-      "memoryGB": 512,
-      "hourlyPrice": 4.6472,
-      "monthlyPrice": 3392.43,
-      "region": "us-central1",
-      "category": "general",
-      "architecture": "x86",
-      "notes": "N2 custom machine type"
-    },
-    {
-      "provider": "gcp",
-      "name": "custom-96-393216",
-      "displayName": "Custom (96 vCPU / 384 GB)",
-      "vcpus": 96,
-      "memoryGB": 384,
-      "hourlyPrice": 4.6617,
-      "monthlyPrice": 3403.01,
-      "region": "us-central1",
-      "category": "general",
-      "architecture": "x86",
-      "notes": "Custom machine type"
     },
     {
       "provider": "gcp",
@@ -3486,20 +3400,8 @@
       "architecture": "x86",
       "gpuCount": 4,
       "gpuType": "nvidia-h100-80gb",
+      "status": "active",
       "notes": "current"
-    },
-    {
-      "provider": "gcp",
-      "name": "n2-custom-96-393216",
-      "displayName": "N2 Custom (96 vCPU / 384 GB)",
-      "vcpus": 96,
-      "memoryGB": 384,
-      "hourlyPrice": 5.1663,
-      "monthlyPrice": 3771.43,
-      "region": "us-central1",
-      "category": "general",
-      "architecture": "x86",
-      "notes": "N2 custom machine type"
     },
     {
       "provider": "gcp",
@@ -3512,6 +3414,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "legacy",
       "notes": "current"
     },
     {
@@ -3525,6 +3428,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3538,6 +3442,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "legacy",
       "notes": "current"
     },
     {
@@ -3551,6 +3456,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3566,6 +3472,7 @@
       "architecture": "x86",
       "gpuCount": 8,
       "gpuType": "nvidia-tesla-a100",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3579,6 +3486,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3592,6 +3500,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3605,6 +3514,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3618,20 +3528,8 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
-    },
-    {
-      "provider": "gcp",
-      "name": "custom-128-524288",
-      "displayName": "Custom (128 vCPU / 512 GB)",
-      "vcpus": 128,
-      "memoryGB": 512,
-      "hourlyPrice": 6.2156,
-      "monthlyPrice": 4537.35,
-      "region": "us-central1",
-      "category": "general",
-      "architecture": "x86",
-      "notes": "Custom machine type"
     },
     {
       "provider": "gcp",
@@ -3644,6 +3542,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3657,6 +3556,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3670,6 +3570,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3683,6 +3584,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3696,6 +3598,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3709,6 +3612,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3724,6 +3628,7 @@
       "architecture": "x86",
       "gpuCount": 16,
       "gpuType": "nvidia-tesla-a100",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3739,6 +3644,7 @@
       "architecture": "x86",
       "gpuCount": 8,
       "gpuType": "nvidia-a100-80gb",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3752,6 +3658,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3765,6 +3672,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3778,6 +3686,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3791,6 +3700,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3804,6 +3714,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3817,6 +3728,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "legacy",
       "notes": "current"
     },
     {
@@ -3830,6 +3742,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3843,6 +3756,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3858,6 +3772,7 @@
       "architecture": "x86",
       "gpuCount": 8,
       "gpuType": "nvidia-h100-80gb",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3873,6 +3788,7 @@
       "architecture": "x86",
       "gpuCount": 8,
       "gpuType": "nvidia-h100-80gb",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3888,6 +3804,7 @@
       "architecture": "x86",
       "gpuCount": 8,
       "gpuType": "nvidia-h100-80gb",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3903,6 +3820,7 @@
       "architecture": "x86",
       "gpuCount": 8,
       "gpuType": "nvidia-h100-mega-80gb",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3916,6 +3834,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "legacy",
       "notes": "current"
     },
     {
@@ -3929,6 +3848,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3942,6 +3862,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3955,6 +3876,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3970,6 +3892,7 @@
       "architecture": "x86",
       "gpuCount": 8,
       "gpuType": "nvidia-h200-141gb",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3985,6 +3908,7 @@
       "architecture": "x86",
       "gpuCount": 8,
       "gpuType": "nvidia-h200-141gb",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -3998,6 +3922,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -4011,6 +3936,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -4024,6 +3950,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -4037,6 +3964,7 @@
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -4050,6 +3978,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -4063,6 +3992,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -4076,6 +4006,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -4089,6 +4020,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -4102,6 +4034,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -4115,6 +4048,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -4128,6 +4062,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "active",
       "notes": "current"
     },
     {
@@ -4141,6 +4076,7 @@
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
+      "status": "legacy",
       "notes": "current"
     }
   ],
@@ -4248,284 +4184,740 @@
   "database": [
     {
       "provider": "gcp",
-      "name": "Cloud SQL PostgreSQL",
+      "name": "Cloud SQL PostgreSQL db-f1-micro",
+      "type": "relational",
+      "engine": "PostgreSQL",
+      "vcpus": 0.6,
+      "memoryGB": 0.6,
+      "hourlyPrice": 0.0095,
+      "monthlyPrice": 6.94,
+      "status": "legacy",
+      "notes": "Shared-core, burstable"
+    },
+    {
+      "provider": "gcp",
+      "name": "Cloud SQL PostgreSQL db-g1-small",
+      "type": "relational",
+      "engine": "PostgreSQL",
+      "vcpus": 0.5,
+      "memoryGB": 1.7,
+      "hourlyPrice": 0.0255,
+      "monthlyPrice": 18.62,
+      "status": "legacy",
+      "notes": "Shared-core"
+    },
+    {
+      "provider": "gcp",
+      "name": "Cloud SQL PostgreSQL db-n1-standard-1",
+      "type": "relational",
+      "engine": "PostgreSQL",
+      "vcpus": 1,
+      "memoryGB": 3.75,
+      "hourlyPrice": 0.0965,
+      "monthlyPrice": 70.45,
+      "status": "legacy",
+      "notes": "N1 generation"
+    },
+    {
+      "provider": "gcp",
+      "name": "Cloud SQL PostgreSQL db-custom-1-3840",
       "type": "relational",
       "engine": "PostgreSQL",
       "vcpus": 1,
       "memoryGB": 3.75,
       "hourlyPrice": 0.0413,
       "monthlyPrice": 30.15,
-      "notes": "db-f1-micro"
+      "status": "active",
+      "notes": "Custom machine type"
     },
     {
       "provider": "gcp",
-      "name": "Cloud SQL PostgreSQL",
+      "name": "Cloud SQL PostgreSQL db-custom-2-7680",
       "type": "relational",
       "engine": "PostgreSQL",
       "vcpus": 2,
-      "memoryGB": 8,
-      "hourlyPrice": 0.1238,
-      "monthlyPrice": 90.37,
-      "notes": "db-custom-2-8192"
+      "memoryGB": 7.5,
+      "hourlyPrice": 0.0826,
+      "monthlyPrice": 60.3,
+      "status": "active",
+      "notes": "Custom machine type"
     },
     {
       "provider": "gcp",
-      "name": "Cloud SQL MySQL",
+      "name": "Cloud SQL PostgreSQL db-custom-2-13312",
+      "type": "relational",
+      "engine": "PostgreSQL",
+      "vcpus": 2,
+      "memoryGB": 13,
+      "hourlyPrice": 0.1238,
+      "monthlyPrice": 90.37,
+      "status": "active",
+      "notes": "High memory"
+    },
+    {
+      "provider": "gcp",
+      "name": "Cloud SQL PostgreSQL db-custom-4-15360",
+      "type": "relational",
+      "engine": "PostgreSQL",
+      "vcpus": 4,
+      "memoryGB": 15,
+      "hourlyPrice": 0.1652,
+      "monthlyPrice": 120.6,
+      "status": "active",
+      "notes": "Custom machine type"
+    },
+    {
+      "provider": "gcp",
+      "name": "Cloud SQL PostgreSQL db-custom-4-26624",
+      "type": "relational",
+      "engine": "PostgreSQL",
+      "vcpus": 4,
+      "memoryGB": 26,
+      "hourlyPrice": 0.2476,
+      "monthlyPrice": 180.75,
+      "status": "active",
+      "notes": "High memory"
+    },
+    {
+      "provider": "gcp",
+      "name": "Cloud SQL PostgreSQL db-custom-8-30720",
+      "type": "relational",
+      "engine": "PostgreSQL",
+      "vcpus": 8,
+      "memoryGB": 30,
+      "hourlyPrice": 0.3304,
+      "monthlyPrice": 241.19,
+      "status": "active",
+      "notes": "Custom machine type"
+    },
+    {
+      "provider": "gcp",
+      "name": "Cloud SQL PostgreSQL db-custom-8-53248",
+      "type": "relational",
+      "engine": "PostgreSQL",
+      "vcpus": 8,
+      "memoryGB": 52,
+      "hourlyPrice": 0.4952,
+      "monthlyPrice": 361.5,
+      "status": "active",
+      "notes": "High memory"
+    },
+    {
+      "provider": "gcp",
+      "name": "Cloud SQL PostgreSQL db-custom-16-61440",
+      "type": "relational",
+      "engine": "PostgreSQL",
+      "vcpus": 16,
+      "memoryGB": 60,
+      "hourlyPrice": 0.6608,
+      "monthlyPrice": 482.38,
+      "status": "active",
+      "notes": "Custom machine type"
+    },
+    {
+      "provider": "gcp",
+      "name": "Cloud SQL PostgreSQL db-custom-32-122880",
+      "type": "relational",
+      "engine": "PostgreSQL",
+      "vcpus": 32,
+      "memoryGB": 120,
+      "hourlyPrice": 1.3216,
+      "monthlyPrice": 964.77,
+      "status": "active",
+      "notes": "Custom machine type"
+    },
+    {
+      "provider": "gcp",
+      "name": "Cloud SQL PostgreSQL db-custom-64-245760",
+      "type": "relational",
+      "engine": "PostgreSQL",
+      "vcpus": 64,
+      "memoryGB": 240,
+      "hourlyPrice": 2.6432,
+      "monthlyPrice": 1929.54,
+      "status": "active",
+      "notes": "Custom machine type"
+    },
+    {
+      "provider": "gcp",
+      "name": "Cloud SQL PostgreSQL db-custom-96-368640",
+      "type": "relational",
+      "engine": "PostgreSQL",
+      "vcpus": 96,
+      "memoryGB": 360,
+      "hourlyPrice": 3.9648,
+      "monthlyPrice": 2894.3,
+      "status": "active",
+      "notes": "Maximum size"
+    },
+    {
+      "provider": "gcp",
+      "name": "Cloud SQL MySQL db-f1-micro",
+      "type": "relational",
+      "engine": "MySQL",
+      "vcpus": 0.6,
+      "memoryGB": 0.6,
+      "hourlyPrice": 0.0095,
+      "monthlyPrice": 6.94,
+      "status": "legacy",
+      "notes": "Shared-core, burstable"
+    },
+    {
+      "provider": "gcp",
+      "name": "Cloud SQL MySQL db-g1-small",
+      "type": "relational",
+      "engine": "MySQL",
+      "vcpus": 0.5,
+      "memoryGB": 1.7,
+      "hourlyPrice": 0.0255,
+      "monthlyPrice": 18.62,
+      "status": "legacy",
+      "notes": "Shared-core"
+    },
+    {
+      "provider": "gcp",
+      "name": "Cloud SQL MySQL db-custom-1-3840",
       "type": "relational",
       "engine": "MySQL",
       "vcpus": 1,
       "memoryGB": 3.75,
       "hourlyPrice": 0.0413,
       "monthlyPrice": 30.15,
-      "notes": "db-f1-micro"
+      "status": "active",
+      "notes": "Custom machine type"
     },
     {
       "provider": "gcp",
-      "name": "Cloud SQL MySQL",
+      "name": "Cloud SQL MySQL db-custom-2-7680",
       "type": "relational",
       "engine": "MySQL",
       "vcpus": 2,
-      "memoryGB": 8,
-      "hourlyPrice": 0.1238,
-      "monthlyPrice": 90.37,
-      "notes": "db-custom-2-8192"
+      "memoryGB": 7.5,
+      "hourlyPrice": 0.0826,
+      "monthlyPrice": 60.3,
+      "status": "active",
+      "notes": "Custom machine type"
     },
     {
       "provider": "gcp",
-      "name": "Cloud Spanner",
+      "name": "Cloud SQL MySQL db-custom-4-15360",
+      "type": "relational",
+      "engine": "MySQL",
+      "vcpus": 4,
+      "memoryGB": 15,
+      "hourlyPrice": 0.1652,
+      "monthlyPrice": 120.6,
+      "status": "active",
+      "notes": "Custom machine type"
+    },
+    {
+      "provider": "gcp",
+      "name": "Cloud SQL MySQL db-custom-8-30720",
+      "type": "relational",
+      "engine": "MySQL",
+      "vcpus": 8,
+      "memoryGB": 30,
+      "hourlyPrice": 0.3304,
+      "monthlyPrice": 241.19,
+      "status": "active",
+      "notes": "Custom machine type"
+    },
+    {
+      "provider": "gcp",
+      "name": "Cloud SQL MySQL db-custom-16-61440",
+      "type": "relational",
+      "engine": "MySQL",
+      "vcpus": 16,
+      "memoryGB": 60,
+      "hourlyPrice": 0.6608,
+      "monthlyPrice": 482.38,
+      "status": "active",
+      "notes": "Custom machine type"
+    },
+    {
+      "provider": "gcp",
+      "name": "Cloud SQL MySQL db-custom-32-122880",
+      "type": "relational",
+      "engine": "MySQL",
+      "vcpus": 32,
+      "memoryGB": 120,
+      "hourlyPrice": 1.3216,
+      "monthlyPrice": 964.77,
+      "status": "active",
+      "notes": "Custom machine type"
+    },
+    {
+      "provider": "gcp",
+      "name": "Cloud SQL SQL Server db-custom-1-3840 Express",
+      "type": "relational",
+      "engine": "SQL Server",
+      "vcpus": 1,
+      "memoryGB": 3.75,
+      "hourlyPrice": 0.0413,
+      "monthlyPrice": 30.15,
+      "status": "active",
+      "notes": "Express Edition (free license)"
+    },
+    {
+      "provider": "gcp",
+      "name": "Cloud SQL SQL Server db-custom-2-7680 Web",
+      "type": "relational",
+      "engine": "SQL Server",
+      "vcpus": 2,
+      "memoryGB": 7.5,
+      "hourlyPrice": 0.1426,
+      "monthlyPrice": 104.1,
+      "status": "active",
+      "notes": "Web Edition"
+    },
+    {
+      "provider": "gcp",
+      "name": "Cloud SQL SQL Server db-custom-4-15360 Standard",
+      "type": "relational",
+      "engine": "SQL Server",
+      "vcpus": 4,
+      "memoryGB": 15,
+      "hourlyPrice": 0.5652,
+      "monthlyPrice": 412.6,
+      "status": "active",
+      "notes": "Standard Edition"
+    },
+    {
+      "provider": "gcp",
+      "name": "Cloud SQL SQL Server db-custom-8-30720 Standard",
+      "type": "relational",
+      "engine": "SQL Server",
+      "vcpus": 8,
+      "memoryGB": 30,
+      "hourlyPrice": 1.1304,
+      "monthlyPrice": 825.19,
+      "status": "active",
+      "notes": "Standard Edition"
+    },
+    {
+      "provider": "gcp",
+      "name": "Cloud SQL SQL Server db-custom-16-61440 Enterprise",
+      "type": "relational",
+      "engine": "SQL Server",
+      "vcpus": 16,
+      "memoryGB": 60,
+      "hourlyPrice": 4.2608,
+      "monthlyPrice": 3110.38,
+      "status": "active",
+      "notes": "Enterprise Edition"
+    },
+    {
+      "provider": "gcp",
+      "name": "AlloyDB 2 vCPU",
+      "type": "relational",
+      "engine": "AlloyDB",
+      "vcpus": 2,
+      "memoryGB": 16,
+      "hourlyPrice": 0.1284,
+      "monthlyPrice": 93.73,
+      "status": "active",
+      "notes": "PostgreSQL-compatible, 4x faster"
+    },
+    {
+      "provider": "gcp",
+      "name": "AlloyDB 4 vCPU",
+      "type": "relational",
+      "engine": "AlloyDB",
+      "vcpus": 4,
+      "memoryGB": 32,
+      "hourlyPrice": 0.2568,
+      "monthlyPrice": 187.46,
+      "status": "active",
+      "notes": "PostgreSQL-compatible, 4x faster"
+    },
+    {
+      "provider": "gcp",
+      "name": "AlloyDB 8 vCPU",
+      "type": "relational",
+      "engine": "AlloyDB",
+      "vcpus": 8,
+      "memoryGB": 64,
+      "hourlyPrice": 0.5136,
+      "monthlyPrice": 374.93,
+      "status": "active",
+      "notes": "PostgreSQL-compatible, 4x faster"
+    },
+    {
+      "provider": "gcp",
+      "name": "AlloyDB 16 vCPU",
+      "type": "relational",
+      "engine": "AlloyDB",
+      "vcpus": 16,
+      "memoryGB": 128,
+      "hourlyPrice": 1.0272,
+      "monthlyPrice": 749.86,
+      "status": "active",
+      "notes": "PostgreSQL-compatible, 4x faster"
+    },
+    {
+      "provider": "gcp",
+      "name": "AlloyDB 32 vCPU",
+      "type": "relational",
+      "engine": "AlloyDB",
+      "vcpus": 32,
+      "memoryGB": 256,
+      "hourlyPrice": 2.0544,
+      "monthlyPrice": 1499.71,
+      "status": "active",
+      "notes": "PostgreSQL-compatible, 4x faster"
+    },
+    {
+      "provider": "gcp",
+      "name": "AlloyDB 64 vCPU",
+      "type": "relational",
+      "engine": "AlloyDB",
+      "vcpus": 64,
+      "memoryGB": 512,
+      "hourlyPrice": 4.1088,
+      "monthlyPrice": 2999.42,
+      "status": "active",
+      "notes": "PostgreSQL-compatible, 4x faster"
+    },
+    {
+      "provider": "gcp",
+      "name": "Cloud Spanner Regional 100 PU",
       "type": "relational",
       "engine": "Spanner",
-      "vcpus": 1,
-      "memoryGB": 0,
-      "hourlyPrice": 0.9,
-      "monthlyPrice": 657,
-      "notes": "Per node, globally distributed"
+      "hourlyPrice": 0.09,
+      "monthlyPrice": 65.7,
+      "status": "active",
+      "notes": "100 Processing Units, regional"
     },
     {
       "provider": "gcp",
-      "name": "Firestore",
+      "name": "Cloud Spanner Regional 1000 PU (1 node)",
+      "type": "relational",
+      "engine": "Spanner",
+      "hourlyPrice": 0.9,
+      "monthlyPrice": 657.0,
+      "status": "active",
+      "notes": "1000 PU = 1 node, regional"
+    },
+    {
+      "provider": "gcp",
+      "name": "Cloud Spanner Regional 3 nodes",
+      "type": "relational",
+      "engine": "Spanner",
+      "hourlyPrice": 2.7,
+      "monthlyPrice": 1971.0,
+      "status": "active",
+      "notes": "3 nodes, regional"
+    },
+    {
+      "provider": "gcp",
+      "name": "Cloud Spanner Multi-region 1 node",
+      "type": "relational",
+      "engine": "Spanner",
+      "hourlyPrice": 2.7,
+      "monthlyPrice": 1971.0,
+      "status": "active",
+      "notes": "1 node, multi-region (3x regional)"
+    },
+    {
+      "provider": "gcp",
+      "name": "Cloud Spanner Multi-region 3 nodes",
+      "type": "relational",
+      "engine": "Spanner",
+      "hourlyPrice": 8.1,
+      "monthlyPrice": 5913.0,
+      "status": "active",
+      "notes": "3 nodes, multi-region"
+    },
+    {
+      "provider": "gcp",
+      "name": "Memorystore Redis Basic 1GB",
+      "type": "cache",
+      "engine": "Redis",
+      "memoryGB": 1,
+      "hourlyPrice": 0.016,
+      "monthlyPrice": 11.68,
+      "status": "active",
+      "notes": "Basic tier, no HA"
+    },
+    {
+      "provider": "gcp",
+      "name": "Memorystore Redis Basic 5GB",
+      "type": "cache",
+      "engine": "Redis",
+      "memoryGB": 5,
+      "hourlyPrice": 0.08,
+      "monthlyPrice": 58.4,
+      "status": "active",
+      "notes": "Basic tier, no HA"
+    },
+    {
+      "provider": "gcp",
+      "name": "Memorystore Redis Basic 10GB",
+      "type": "cache",
+      "engine": "Redis",
+      "memoryGB": 10,
+      "hourlyPrice": 0.16,
+      "monthlyPrice": 116.8,
+      "status": "active",
+      "notes": "Basic tier, no HA"
+    },
+    {
+      "provider": "gcp",
+      "name": "Memorystore Redis Standard 1GB",
+      "type": "cache",
+      "engine": "Redis",
+      "memoryGB": 1,
+      "hourlyPrice": 0.049,
+      "monthlyPrice": 35.77,
+      "status": "active",
+      "notes": "Standard tier with HA"
+    },
+    {
+      "provider": "gcp",
+      "name": "Memorystore Redis Standard 5GB",
+      "type": "cache",
+      "engine": "Redis",
+      "memoryGB": 5,
+      "hourlyPrice": 0.245,
+      "monthlyPrice": 178.85,
+      "status": "active",
+      "notes": "Standard tier with HA"
+    },
+    {
+      "provider": "gcp",
+      "name": "Memorystore Redis Standard 10GB",
+      "type": "cache",
+      "engine": "Redis",
+      "memoryGB": 10,
+      "hourlyPrice": 0.49,
+      "monthlyPrice": 357.7,
+      "status": "active",
+      "notes": "Standard tier with HA"
+    },
+    {
+      "provider": "gcp",
+      "name": "Memorystore Redis Standard 35GB",
+      "type": "cache",
+      "engine": "Redis",
+      "memoryGB": 35,
+      "hourlyPrice": 1.715,
+      "monthlyPrice": 1251.95,
+      "status": "active",
+      "notes": "Standard tier with HA"
+    },
+    {
+      "provider": "gcp",
+      "name": "Memorystore Redis Standard 100GB",
+      "type": "cache",
+      "engine": "Redis",
+      "memoryGB": 100,
+      "hourlyPrice": 4.9,
+      "monthlyPrice": 3577.0,
+      "status": "active",
+      "notes": "Standard tier with HA"
+    },
+    {
+      "provider": "gcp",
+      "name": "Memorystore Redis Cluster 13GB (3 shards)",
+      "type": "cache",
+      "engine": "Redis",
+      "memoryGB": 13,
+      "hourlyPrice": 0.539,
+      "monthlyPrice": 393.47,
+      "status": "active",
+      "notes": "Cluster mode, 3 shards"
+    },
+    {
+      "provider": "gcp",
+      "name": "Memorystore Memcached 1 node 1GB",
+      "type": "cache",
+      "engine": "Memcached",
+      "memoryGB": 1,
+      "hourlyPrice": 0.023,
+      "monthlyPrice": 16.79,
+      "status": "active",
+      "notes": "1 node"
+    },
+    {
+      "provider": "gcp",
+      "name": "Memorystore Memcached 3 nodes 3GB",
+      "type": "cache",
+      "engine": "Memcached",
+      "memoryGB": 3,
+      "hourlyPrice": 0.069,
+      "monthlyPrice": 50.37,
+      "status": "active",
+      "notes": "3 nodes"
+    },
+    {
+      "provider": "gcp",
+      "name": "Memorystore Memcached 5 nodes 5GB",
+      "type": "cache",
+      "engine": "Memcached",
+      "memoryGB": 5,
+      "hourlyPrice": 0.115,
+      "monthlyPrice": 83.95,
+      "status": "active",
+      "notes": "5 nodes"
+    },
+    {
+      "provider": "gcp",
+      "name": "Firestore Native",
       "type": "nosql",
       "engine": "Firestore",
-      "hourlyPrice": 0,
-      "monthlyPrice": 0,
-      "notes": "$0.18/100K reads, $0.18/100K writes"
+      "hourlyPrice": 0.0,
+      "monthlyPrice": 0.0,
+      "status": "active",
+      "notes": "$0.18/100K reads, $0.18/100K writes, $0.02/100K deletes"
     },
     {
       "provider": "gcp",
-      "name": "Bigtable",
+      "name": "Firestore Datastore Mode",
+      "type": "nosql",
+      "engine": "Datastore",
+      "hourlyPrice": 0.0,
+      "monthlyPrice": 0.0,
+      "status": "active",
+      "notes": "Legacy Datastore API, same pricing"
+    },
+    {
+      "provider": "gcp",
+      "name": "Bigtable Development 1 node",
+      "type": "nosql",
+      "engine": "Bigtable",
+      "hourlyPrice": 0.0,
+      "monthlyPrice": 0.0,
+      "status": "active",
+      "notes": "Development instance, no SLA, free"
+    },
+    {
+      "provider": "gcp",
+      "name": "Bigtable Production 3 nodes",
       "type": "nosql",
       "engine": "Bigtable",
       "vcpus": 3,
-      "memoryGB": 0,
-      "hourlyPrice": 0.65,
-      "monthlyPrice": 474.5,
-      "notes": "Per node, wide-column store"
-    }
-  ],
-  "serverless": [
-    {
-      "name": "Cloud Functions 1st Gen",
-      "type": "serverless",
-      "pricePerMillion": 0.4,
-      "pricePerGBSecond": 2.5e-06,
-      "pricePerGHzSecond": 1e-05,
-      "freeInvocations": 2000000,
-      "notes": "2M invocations free"
+      "hourlyPrice": 1.95,
+      "monthlyPrice": 1423.5,
+      "status": "active",
+      "notes": "Minimum production, $0.65/node/hr"
     },
     {
-      "name": "Cloud Functions 2nd Gen",
-      "type": "serverless",
-      "pricePerMillion": 0.4,
-      "pricePerVCPUSecond": 2.4e-05,
-      "pricePerGBSecond": 2.5e-06,
-      "notes": "Built on Cloud Run"
+      "provider": "gcp",
+      "name": "Bigtable Production 5 nodes",
+      "type": "nosql",
+      "engine": "Bigtable",
+      "vcpus": 5,
+      "hourlyPrice": 3.25,
+      "monthlyPrice": 2372.5,
+      "status": "active",
+      "notes": "5 nodes, $0.65/node/hr"
     },
     {
-      "name": "Cloud Run",
-      "type": "serverless",
-      "pricePerVCPUSecond": 2.4e-05,
-      "pricePerGBSecond": 2.5e-06,
-      "freeVCPUSeconds": 180000,
-      "freeGBSeconds": 360000,
-      "notes": "Generous free tier"
-    }
-  ],
-  "loadBalancers": [
-    {
-      "name": "HTTP(S) Load Balancing",
-      "type": "load-balancer",
-      "hourlyPrice": 0.025,
-      "monthlyPrice": 18.25,
-      "dataPrice": 0.008,
-      "notes": "Global, + $0.008/GB"
+      "provider": "gcp",
+      "name": "Bigtable Production 10 nodes",
+      "type": "nosql",
+      "engine": "Bigtable",
+      "vcpus": 10,
+      "hourlyPrice": 6.5,
+      "monthlyPrice": 4745.0,
+      "status": "active",
+      "notes": "10 nodes, $0.65/node/hr"
     },
     {
-      "name": "Network Load Balancing",
-      "type": "load-balancer",
-      "hourlyPrice": 0.025,
-      "monthlyPrice": 18.25,
-      "dataPrice": 0.008,
-      "notes": "Regional"
+      "provider": "gcp",
+      "name": "BigQuery On-Demand",
+      "type": "data-warehouse",
+      "engine": "BigQuery",
+      "hourlyPrice": 0.0,
+      "monthlyPrice": 0.0,
+      "status": "active",
+      "notes": "$6.25 per TB scanned, first 1TB/mo free"
     },
     {
-      "name": "Internal Load Balancing",
-      "type": "load-balancer",
-      "hourlyPrice": 0.025,
-      "monthlyPrice": 18.25,
-      "notes": "Internal traffic only"
-    }
-  ],
-  "natGateway": [
-    {
-      "name": "Cloud NAT",
-      "type": "nat-gateway",
-      "hourlyPrice": 0.044,
-      "monthlyPrice": 32.12,
-      "dataProcessingPerGB": 0.045,
-      "notes": "$0.044/hr + $0.045/GB"
-    }
-  ],
-  "cdn": [
-    {
-      "name": "Cloud CDN",
-      "type": "cdn",
-      "pricePerGB": 0.08,
-      "cacheEgressPrice": 0.02,
-      "notes": "$0.08/GB origin, $0.02/GB cache"
+      "provider": "gcp",
+      "name": "BigQuery Flat-Rate 100 slots",
+      "type": "data-warehouse",
+      "engine": "BigQuery",
+      "hourlyPrice": 2.74,
+      "monthlyPrice": 2000.0,
+      "status": "active",
+      "notes": "100 slots, flex pricing"
     },
     {
-      "name": "Media CDN",
-      "type": "cdn",
-      "pricePerGB": 0.05,
-      "notes": "Optimized for video streaming"
-    }
-  ],
-  "apiGateway": [
-    {
-      "name": "API Gateway",
-      "type": "api-gateway",
-      "pricePerMillion": 3.0,
-      "freeRequests": 2000000,
-      "notes": "First 2M calls free"
+      "provider": "gcp",
+      "name": "BigQuery Flat-Rate 500 slots",
+      "type": "data-warehouse",
+      "engine": "BigQuery",
+      "hourlyPrice": 13.7,
+      "monthlyPrice": 10000.0,
+      "status": "active",
+      "notes": "500 slots, flex pricing"
     },
     {
-      "name": "Apigee X",
-      "type": "api-gateway",
-      "monthlyPrice": 4350.0,
-      "notes": "Enterprise API management"
-    }
-  ],
-  "containers": [
-    {
-      "name": "Cloud Run vCPU",
-      "type": "container-serverless",
-      "pricePerVCPUSecond": 2.4e-05,
-      "pricePerVCPUHour": 0.0864,
-      "notes": "Per vCPU-second"
+      "provider": "gcp",
+      "name": "BigQuery Editions Standard 100 slots",
+      "type": "data-warehouse",
+      "engine": "BigQuery",
+      "hourlyPrice": 4.0,
+      "monthlyPrice": 2920.0,
+      "status": "active",
+      "notes": "Standard edition, autoscaling"
     },
     {
-      "name": "Cloud Run Memory",
-      "type": "container-serverless",
-      "pricePerGBSecond": 2.5e-06,
-      "pricePerGBHour": 0.009,
-      "notes": "Per GiB-second"
+      "provider": "gcp",
+      "name": "BigQuery Editions Enterprise 100 slots",
+      "type": "data-warehouse",
+      "engine": "BigQuery",
+      "hourlyPrice": 6.0,
+      "monthlyPrice": 4380.0,
+      "status": "active",
+      "notes": "Enterprise edition, more features"
     },
     {
-      "name": "Cloud Run Requests",
-      "type": "container-serverless",
-      "pricePerMillion": 0.4,
-      "notes": "Per million requests"
-    }
-  ],
-  "messaging": [
-    {
-      "name": "Pub/Sub",
-      "type": "pub-sub",
-      "pricePerTB": 40.0,
-      "freeGB": 10,
-      "notes": "First 10GB/month free"
+      "provider": "gcp",
+      "name": "BigQuery Editions Enterprise Plus 100 slots",
+      "type": "data-warehouse",
+      "engine": "BigQuery",
+      "hourlyPrice": 10.0,
+      "monthlyPrice": 7300.0,
+      "status": "active",
+      "notes": "Enterprise Plus, all features"
     },
     {
-      "name": "Cloud Tasks",
-      "type": "task-queue",
-      "pricePerMillion": 0.4,
-      "freeOperations": 1000000,
-      "notes": "First 1M operations free"
+      "provider": "gcp",
+      "name": "Cloud SQL Enterprise Plus PostgreSQL 4 vCPU",
+      "type": "relational",
+      "engine": "PostgreSQL",
+      "vcpus": 4,
+      "memoryGB": 32,
+      "hourlyPrice": 0.4,
+      "monthlyPrice": 292.0,
+      "status": "active",
+      "notes": "Enterprise Plus, 99.99% SLA"
     },
     {
-      "name": "Eventarc",
-      "type": "event-bus",
-      "pricePerMillion": 0.0,
-      "notes": "Free (charges for Pub/Sub underneath)"
-    }
-  ],
-  "secrets": [
-    {
-      "name": "Secret Manager",
-      "type": "secrets",
-      "pricePerVersion": 0.06,
-      "pricePerAccess": 0.03,
-      "unit": "per 10K accesses",
-      "freeVersions": 6,
-      "notes": "6 active versions free"
+      "provider": "gcp",
+      "name": "Cloud SQL Enterprise Plus PostgreSQL 8 vCPU",
+      "type": "relational",
+      "engine": "PostgreSQL",
+      "vcpus": 8,
+      "memoryGB": 64,
+      "hourlyPrice": 0.8,
+      "monthlyPrice": 584.0,
+      "status": "active",
+      "notes": "Enterprise Plus, 99.99% SLA"
     },
     {
-      "name": "Cloud KMS",
-      "type": "kms",
-      "pricePerKey": 0.06,
-      "pricePerOperation": 0.03,
-      "unit": "per 10K operations",
-      "notes": "$0.06/key version/month"
-    },
-    {
-      "name": "Cloud KMS HSM",
-      "type": "kms",
-      "pricePerKey": 1.0,
-      "pricePerOperation": 0.03,
-      "notes": "Hardware security module"
-    }
-  ],
-  "dns": [
-    {
-      "name": "Cloud DNS Zone",
-      "type": "dns",
-      "pricePerZone": 0.2,
-      "notes": "$0.20/zone/month"
-    },
-    {
-      "name": "Cloud DNS Queries",
-      "type": "dns",
-      "pricePerMillion": 0.4,
-      "notes": "Per million queries"
-    }
-  ],
-  "monitoring": [
-    {
-      "name": "Cloud Monitoring",
-      "type": "monitoring",
-      "pricePerMB": 0.258,
-      "freeAllotmentMB": 150,
-      "notes": "150MB free/month for most metrics"
-    },
-    {
-      "name": "Cloud Logging Ingestion",
-      "type": "logging",
-      "pricePerGB": 0.5,
-      "freeGB": 50,
-      "notes": "First 50GB/month free"
-    },
-    {
-      "name": "Cloud Logging Storage",
-      "type": "logging",
-      "pricePerGB": 0.01,
-      "notes": "$0.01/GB/month retained"
-    },
-    {
-      "name": "Cloud Trace",
-      "type": "tracing",
-      "pricePerMillion": 0.2,
-      "freeSpans": 2500000,
-      "notes": "First 2.5M spans free"
+      "provider": "gcp",
+      "name": "Cloud SQL Enterprise Plus PostgreSQL 16 vCPU",
+      "type": "relational",
+      "engine": "PostgreSQL",
+      "vcpus": 16,
+      "memoryGB": 128,
+      "hourlyPrice": 1.6,
+      "monthlyPrice": 1168.0,
+      "status": "active",
+      "notes": "Enterprise Plus, 99.99% SLA"
     }
   ]
 }

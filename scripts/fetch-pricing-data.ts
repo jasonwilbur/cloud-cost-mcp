@@ -31,6 +31,9 @@ const AWS_REGION = 'us-east-1';
 const AZURE_REGION = 'us-east'; // vantage.sh uses 'us-east' not 'eastus'
 const GCP_REGION = 'us-central1';
 
+// SKU Status - tracks whether a SKU is currently available for new deployments
+type SKUStatus = 'active' | 'deprecated' | 'legacy' | 'preview';
+
 interface ComputeInstance {
   provider: string;
   name: string;
@@ -44,6 +47,8 @@ interface ComputeInstance {
   architecture?: string;
   gpuCount?: number;
   gpuType?: string;
+  status?: SKUStatus;        // active, deprecated, legacy, preview
+  deprecatedDate?: string;   // When SKU was deprecated (ISO date)
   notes?: string;
 }
 
@@ -89,6 +94,29 @@ async function fetchAWSData() {
     const category = mapAWSCategory(item.family);
     const architecture = item.arch?.includes('arm64') ? 'arm' : 'x86';
 
+    // Determine SKU status based on instance generation
+    let status: SKUStatus = 'active';
+    const instanceType = item.instance_type || '';
+
+    // Legacy/older generation instances
+    // t1, m1, m2, c1, cc1, cc2, cg1 - very old
+    if (instanceType.match(/^(t1|m1|m2|c1|cc1|cc2|cg1)\./)) {
+      status = 'deprecated';
+    }
+    // Previous generations that still work but have newer versions
+    // t2 (t3/t4g exist), m3 (m5/m6/m7 exist), m4 (m5/m6/m7 exist), etc.
+    else if (instanceType.match(/^(t2|m3|m4|c3|c4|r3|r4|i2|d2)\./)) {
+      status = 'legacy';
+    }
+    // g2 and g3 GPUs are older (g4/g5 exist)
+    else if (instanceType.match(/^(g2|g3)\./)) {
+      status = 'legacy';
+    }
+    // p2 GPUs are older (p3/p4/p5 exist)
+    else if (instanceType.match(/^p2\./)) {
+      status = 'legacy';
+    }
+
     compute.push({
       provider: 'aws',
       name: item.instance_type,
@@ -101,6 +129,7 @@ async function fetchAWSData() {
       category,
       architecture,
       gpuCount: item.GPU || undefined,
+      status,
       notes: item.physical_processor || undefined,
     });
   }
@@ -267,46 +296,112 @@ async function fetchAWSOpenSearch(): Promise<DatabasePricing[]> {
   return search;
 }
 
-// ============= Azure =============
+// ============= Azure (Official Retail Prices API) =============
 async function fetchAzureData() {
-  console.log('Fetching Azure data...');
-  const response = await fetch(AZURE_URL);
-  const data = await response.json() as any[];
-
-  console.log(`  Found ${data.length} Azure VM types`);
+  console.log('Fetching Azure data from official Retail Prices API...');
 
   const compute: ComputeInstance[] = [];
+  const seenSkus = new Set<string>();
 
-  for (const item of data) {
-    const pricing = item.pricing?.[AZURE_REGION];
-    // Azure pricing is nested: pricing.region.linux.ondemand
-    const linuxPricing = pricing?.linux;
-    if (!linuxPricing?.ondemand) continue;
+  // Fetch VMs from official Azure Retail Prices API (Linux only to avoid Windows duplicates)
+  let nextLink: string | null =
+    `https://prices.azure.com/api/retail/prices?api-version=2023-01-01-preview&$filter=serviceName eq 'Virtual Machines' and armRegionName eq 'eastus' and priceType eq 'Consumption'`;
 
-    const hourlyPrice = parseFloat(linuxPricing.ondemand);
-    if (isNaN(hourlyPrice) || hourlyPrice <= 0) continue;
+  let pageCount = 0;
+  const maxPages = 50; // Increased limit for more coverage
 
-    const category = mapAzureCategory(item.category);
-    const vmName = item.pretty_name || item.name || 'Unknown';
+  while (nextLink && pageCount < maxPages) {
+    const response = await fetch(nextLink);
+    const data = await response.json() as any;
+    pageCount++;
 
-    compute.push({
-      provider: 'azure',
-      name: vmName,
-      displayName: `${vmName} (${item.category || 'General'})`,
-      vcpus: item.vcpu || item.vcpus || 0, // vantage uses 'vcpu'
-      memoryGB: item.memory || 0,
-      hourlyPrice,
-      monthlyPrice: Math.round(hourlyPrice * 730 * 100) / 100,
-      region: 'eastus', // Store as standard Azure region name
-      category,
-      architecture: vmName.toLowerCase().includes('arm') || vmName.toLowerCase().includes('psv') ? 'arm' : 'x86',
-      gpuCount: parseInt(item.GPU) || undefined,
-      notes: item.family ? `${item.family}-series` : undefined,
-    });
+    for (const item of data.Items || []) {
+      // Skip spot, low priority, reserved, Windows (to avoid duplicates)
+      if (item.skuName?.includes('Spot') ||
+          item.skuName?.includes('Low Priority') ||
+          item.productName?.includes('Windows') ||
+          item.type !== 'Consumption') continue;
+
+      // Skip duplicates - use armSkuName as unique key
+      const skuKey = item.armSkuName || item.skuName;
+      if (!skuKey || seenSkus.has(skuKey)) continue;
+      seenSkus.add(skuKey);
+
+      const hourlyPrice = item.retailPrice || 0;
+      if (hourlyPrice <= 0) continue;
+
+      // Parse vCPUs from SKU name (e.g., Standard_D4s_v5 -> 4)
+      const skuName = item.armSkuName || item.skuName || 'Unknown';
+      const vcpuMatch = skuName.match(/_[A-Z](\d+)/i);
+      const vcpus = vcpuMatch ? parseInt(vcpuMatch[1]) : 0;
+
+      // Estimate memory from SKU naming conventions
+      let memoryGB = 0;
+      if (skuName.includes('_E') || skuName.includes('_M')) memoryGB = vcpus * 8; // Memory optimized
+      else if (skuName.includes('_D') || skuName.includes('_B')) memoryGB = vcpus * 4; // General purpose
+      else if (skuName.includes('_F') || skuName.includes('_H')) memoryGB = vcpus * 2; // Compute/HPC
+      else if (skuName.includes('_L')) memoryGB = vcpus * 8; // Storage optimized
+      else if (skuName.includes('_N')) memoryGB = vcpus * 6; // GPU
+      else memoryGB = vcpus * 4; // Default
+
+      const category = mapAzureCategory(item.productName || '');
+
+      // Determine SKU status based on various signals
+      let status: SKUStatus = 'active';
+      let deprecatedDate: string | undefined;
+
+      // Check if SKU has an end date (deprecated)
+      if (item.effectiveEndDate) {
+        const endDate = new Date(item.effectiveEndDate);
+        if (endDate < new Date()) {
+          status = 'deprecated';
+          deprecatedDate = item.effectiveEndDate;
+        }
+      }
+
+      // Check for preview SKUs
+      if (skuName.toLowerCase().includes('preview') ||
+          item.productName?.toLowerCase().includes('preview')) {
+        status = 'preview';
+      }
+
+      // Legacy patterns: older generation SKUs (v1, v2 when v5 exists, etc.)
+      if (skuName.includes('_v1') || skuName.includes('_v2')) {
+        // Check if this is truly legacy (newer versions likely exist)
+        if (!skuName.includes('NV') && !skuName.includes('NC')) { // NV/NC v2 are still current for GPU
+          status = status === 'active' ? 'legacy' : status;
+        }
+      }
+      // A-series and Basic tier are legacy
+      if (skuName.match(/^Standard_A\d/) || skuName.includes('Basic')) {
+        status = 'legacy';
+      }
+
+      compute.push({
+        provider: 'azure',
+        name: skuName,
+        displayName: `${skuName} (${item.productName?.replace('Virtual Machines ', '').split(' ')[0] || 'General'})`,
+        vcpus,
+        memoryGB,
+        hourlyPrice,
+        monthlyPrice: Math.round(hourlyPrice * 730 * 100) / 100,
+        region: 'eastus',
+        category,
+        architecture: skuName.toLowerCase().includes('p') && !skuName.toLowerCase().includes('hp') ? 'arm' : 'x86',
+        status,
+        deprecatedDate,
+        notes: item.productName || '',
+      });
+    }
+
+    nextLink = data.NextPageLink || null;
+    if (pageCount % 10 === 0) {
+      console.log(`  Fetched ${compute.length} VMs (page ${pageCount})...`);
+    }
   }
 
   compute.sort((a, b) => a.monthlyPrice - b.monthlyPrice);
-  console.log(`  Processed ${compute.length} Azure VMs with pricing`);
+  console.log(`  Processed ${compute.length} Azure VMs from official API`);
 
   return { compute };
 }
@@ -333,6 +428,18 @@ async function fetchGCPData() {
     const category = mapGCPCategory(item.family);
     const instanceName = item.instance_type || item.name || 'Unknown';
 
+    // Determine SKU status based on instance generation
+    let status: SKUStatus = 'active';
+
+    // n1 instances are older generation (n2/e2/c2/c3 are newer)
+    if (instanceName.startsWith('n1-')) {
+      status = 'legacy';
+    }
+    // f1-micro and g1-small are shared-core legacy
+    else if (instanceName === 'f1-micro' || instanceName === 'g1-small') {
+      status = 'legacy';
+    }
+
     compute.push({
       provider: 'gcp',
       name: instanceName,
@@ -346,6 +453,7 @@ async function fetchGCPData() {
       architecture: instanceName.toLowerCase().includes('t2a') ? 'arm' : 'x86',
       gpuCount: item.GPU || undefined,
       gpuType: item.GPU_model || undefined,
+      status,
       notes: item.generation || undefined,
     });
   }
@@ -479,17 +587,18 @@ async function main() {
     );
     console.log(`\nSaved AWS: ${awsData.compute.length} compute, ${allDatabase.length} database (RDS: ${awsData.database.length}, ElastiCache: ${elasticache.length}, Redshift: ${redshift.length}, OpenSearch: ${opensearch.length})\n`);
 
-    // Fetch Azure
+    // Fetch Azure (Official API)
     const azureData = await fetchAzureData();
     const azureBundle = {
       metadata: {
         provider: 'azure',
         lastUpdated: new Date().toISOString(),
-        source: 'instances.vantage.sh + manual curation',
-        version: '1.2.2',
+        source: 'Azure Retail Prices API (official)',
+        sourceUrl: 'https://prices.azure.com/api/retail/prices',
+        version: '1.2.9',
         totalProducts: azureData.compute.length + AZURE_STORAGE.length,
         currency: 'USD',
-        notes: 'Comprehensive Azure VM pricing from vantage.sh'
+        notes: 'Official Azure pricing from Microsoft Retail Prices API'
       },
       compute: azureData.compute,
       storage: AZURE_STORAGE,

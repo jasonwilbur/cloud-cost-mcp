@@ -9,6 +9,9 @@ export type ComputeCategory = 'general' | 'compute' | 'memory' | 'storage' | 'gp
 
 export type StorageTier = 'hot' | 'cool' | 'cold' | 'archive';
 
+// SKU Status - tracks whether a SKU is currently available
+export type SKUStatus = 'active' | 'deprecated' | 'legacy' | 'preview';
+
 // GPU Types
 export type GPUType = 'nvidia-a10' | 'nvidia-a100' | 'nvidia-h100' | 'nvidia-h200' |
                       'nvidia-l40s' | 'nvidia-b200' | 'amd-mi300x';
@@ -66,6 +69,8 @@ export interface ComputeInstance {
   architecture?: 'x86' | 'arm';
   gpuCount?: number;
   gpuType?: string;
+  status?: SKUStatus;        // active, deprecated, legacy, preview
+  deprecatedDate?: string;   // When SKU was deprecated (ISO date)
   notes?: string;
 }
 
@@ -114,6 +119,7 @@ export interface DatabasePricing {
   memoryGB?: number;
   hourlyPrice: number;
   monthlyPrice: number;
+  status?: SKUStatus;        // active, deprecated, legacy, preview
   notes?: string;
 }
 

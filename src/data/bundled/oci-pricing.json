@@ -4,12 +4,12 @@
     "lastUpdated": "2026-01-20T00:00:00Z",
     "source": "Oracle Cloud Infrastructure Pricing API",
     "sourceUrl": "https://apexapps.oracle.com/pls/apex/cetools/api/v1/products/",
-    "version": "1.2.7",
+    "version": "1.3.2",
     "totalProducts": 602,
     "totalCategories": 109,
     "currency": "USD",
-    "notes": "OCI pricing with expanded compute configurations. 602 products from Oracle API + pre-calculated VM sizes.",
-    "totalComputeConfigs": 130
+    "notes": "Comprehensive OCI pricing with 600+ products, structured PaaS services.",
+    "totalComputeConfigs": 154
   },
   "compute": [
     {
@@ -27,7 +27,8 @@
       "minMemoryGB": 1,
       "maxMemoryGB": 1024,
       "memoryPerOCPURatio": 64,
-      "notes": "Memory can be 1-64 GB per OCPU. Previous generation, still widely used."
+      "notes": "Memory can be 1-64 GB per OCPU. Previous generation, still widely used.",
+      "status": "active"
     },
     {
       "service": "compute",
@@ -44,7 +45,8 @@
       "minMemoryGB": 1,
       "maxMemoryGB": 1049,
       "memoryPerOCPURatio": 64,
-      "notes": "Memory can be 1-64 GB per OCPU. Recommended for new deployments."
+      "notes": "Memory can be 1-64 GB per OCPU. Recommended for new deployments.",
+      "status": "active"
     },
     {
       "service": "compute",
@@ -65,7 +67,8 @@
       "minMemoryGB": 1,
       "maxMemoryGB": 1049,
       "memoryPerOCPURatio": 64,
-      "notes": "Memory can be 1-64 GB per OCPU. Latest AMD generation, recommended for new deployments."
+      "notes": "Memory can be 1-64 GB per OCPU. Latest AMD generation, recommended for new deployments.",
+      "status": "active"
     },
     {
       "service": "compute",
@@ -82,7 +85,8 @@
       "minMemoryGB": 1,
       "maxMemoryGB": 512,
       "memoryPerOCPURatio": 64,
-      "notes": "Arm-based. Best value for compatible workloads. Free tier includes 4 OCPUs + 24GB."
+      "notes": "Arm-based. Best value for compatible workloads. Free tier includes 4 OCPUs + 24GB.",
+      "status": "active"
     },
     {
       "service": "compute",
@@ -103,7 +107,8 @@
       "minMemoryGB": 1,
       "maxMemoryGB": 512,
       "memoryPerOCPURatio": 64,
-      "notes": "Arm-based. Improved performance over A1."
+      "notes": "Arm-based. Improved performance over A1.",
+      "status": "active"
     },
     {
       "service": "compute",
@@ -124,7 +129,8 @@
       "minMemoryGB": 1,
       "maxMemoryGB": 512,
       "memoryPerOCPURatio": 64,
-      "notes": "Arm-based. NVIDIA Grace CPU for AI/ML workloads."
+      "notes": "Arm-based. NVIDIA Grace CPU for AI/ML workloads.",
+      "status": "active"
     },
     {
       "service": "compute",
@@ -141,7 +147,8 @@
       "minMemoryGB": 1,
       "maxMemoryGB": 512,
       "memoryPerOCPURatio": 64,
-      "notes": "Intel-based option. Memory can be 1-64 GB per OCPU."
+      "notes": "Intel-based option. Memory can be 1-64 GB per OCPU.",
+      "status": "active"
     },
     {
       "service": "compute",
@@ -158,7 +165,8 @@
       "minMemoryGB": 1,
       "maxMemoryGB": 256,
       "memoryPerOCPURatio": 14,
-      "notes": "Higher clock speed, optimized for latency-sensitive workloads."
+      "notes": "Higher clock speed, optimized for latency-sensitive workloads.",
+      "status": "active"
     },
     {
       "service": "compute",
@@ -175,7 +183,8 @@
       "minMemoryGB": 128,
       "maxMemoryGB": 512,
       "localStorageGB": 6400,
-      "notes": "Includes local NVMe storage. 6.4 TB at 8 OCPU, scales with shape."
+      "notes": "Includes local NVMe storage. 6.4 TB at 8 OCPU, scales with shape.",
+      "status": "active"
     },
     {
       "service": "compute",
@@ -191,7 +200,8 @@
       "maxOCPU": 128,
       "minMemoryGB": 2048,
       "maxMemoryGB": 2048,
-      "notes": "Fixed-shape bare metal. Memory included in instance price."
+      "notes": "Fixed-shape bare metal. Memory included in instance price.",
+      "status": "active"
     },
     {
       "service": "compute",
@@ -207,7 +217,8 @@
       "maxOCPU": 192,
       "minMemoryGB": 2304,
       "maxMemoryGB": 2304,
-      "notes": "Latest generation bare metal. Memory included in instance price."
+      "notes": "Latest generation bare metal. Memory included in instance price.",
+      "status": "active"
     },
     {
       "service": "compute",
@@ -223,7 +234,8 @@
       "maxOCPU": 160,
       "minMemoryGB": 1024,
       "maxMemoryGB": 1024,
-      "notes": "Arm bare metal. Best value for Arm-compatible workloads."
+      "notes": "Arm bare metal. Best value for Arm-compatible workloads.",
+      "status": "active"
     },
     {
       "service": "compute",
@@ -240,7 +252,9 @@
       "maxOCPU": 64,
       "minMemoryGB": 1024,
       "maxMemoryGB": 1024,
-      "notes": "4x NVIDIA A10 Tensor Core GPUs. Good for inference workloads."
+      "notes": "4x NVIDIA A10 Tensor Core GPUs. Good for inference workloads.",
+      "status": "active",
+      "pricePerHour": 8.0
     },
     {
       "service": "compute",
@@ -257,7 +271,9 @@
       "maxOCPU": 112,
       "minMemoryGB": 2048,
       "maxMemoryGB": 2048,
-      "notes": "8x NVIDIA H100 80GB HBM3 GPUs. Premium AI/ML training workloads."
+      "notes": "8x NVIDIA H100 80GB HBM3 GPUs. Premium AI/ML training workloads.",
+      "status": "active",
+      "pricePerHour": 80.0
     },
     {
       "service": "compute",
@@ -274,123 +290,330 @@
       "maxOCPU": 128,
       "minMemoryGB": 2048,
       "maxMemoryGB": 2048,
-      "notes": "8x NVIDIA A100 80GB GPUs. High-performance AI/ML workloads."
+      "notes": "8x NVIDIA A100 80GB GPUs. High-performance AI/ML workloads.",
+      "status": "active",
+      "pricePerHour": 32.0
+    },
+    {
+      "shapeFamily": "VM.Standard.E2.Flex",
+      "type": "flexible-vm",
+      "name": "AMD EPYC 7551 Flex",
+      "description": "2nd Gen AMD EPYC (legacy)",
+      "minOCPU": 1,
+      "maxOCPU": 64,
+      "ocpuPrice": 0.03,
+      "memoryPricePerGB": 0.0015,
+      "minMemoryGB": 1,
+      "maxMemoryGB": 1024,
+      "memoryPerOCPU": "1-64 GB",
+      "currency": "USD",
+      "notes": "Legacy - consider E4/E5/E6 for new deployments",
+      "status": "legacy"
+    },
+    {
+      "shapeFamily": "VM.Standard.E3.Flex",
+      "type": "flexible-vm",
+      "name": "AMD EPYC 7742 Flex",
+      "description": "3rd Gen AMD EPYC (legacy)",
+      "minOCPU": 1,
+      "maxOCPU": 64,
+      "ocpuPrice": 0.025,
+      "memoryPricePerGB": 0.0015,
+      "minMemoryGB": 1,
+      "maxMemoryGB": 1024,
+      "memoryPerOCPU": "1-64 GB",
+      "currency": "USD",
+      "notes": "Legacy - consider E4/E5/E6 for new deployments",
+      "status": "legacy"
+    },
+    {
+      "shapeFamily": "VM.Standard2.1",
+      "type": "fixed-vm",
+      "name": "Standard2.1",
+      "description": "Intel Xeon Platinum 8167M (legacy)",
+      "ocpus": 1,
+      "memoryGB": 15,
+      "pricePerHour": 0.0638,
+      "currency": "USD",
+      "notes": "Legacy fixed shape - consider Standard3.Flex",
+      "status": "legacy"
+    },
+    {
+      "shapeFamily": "VM.Standard2.2",
+      "type": "fixed-vm",
+      "name": "Standard2.2",
+      "description": "Intel Xeon Platinum 8167M (legacy)",
+      "ocpus": 2,
+      "memoryGB": 30,
+      "pricePerHour": 0.1276,
+      "currency": "USD",
+      "notes": "Legacy fixed shape - consider Standard3.Flex",
+      "status": "legacy"
+    },
+    {
+      "shapeFamily": "VM.Standard2.4",
+      "type": "fixed-vm",
+      "name": "Standard2.4",
+      "description": "Intel Xeon Platinum 8167M (legacy)",
+      "ocpus": 4,
+      "memoryGB": 60,
+      "pricePerHour": 0.2552,
+      "currency": "USD",
+      "notes": "Legacy fixed shape - consider Standard3.Flex",
+      "status": "legacy"
+    },
+    {
+      "shapeFamily": "VM.Standard2.8",
+      "type": "fixed-vm",
+      "name": "Standard2.8",
+      "description": "Intel Xeon Platinum 8167M (legacy)",
+      "ocpus": 8,
+      "memoryGB": 120,
+      "pricePerHour": 0.5104,
+      "currency": "USD",
+      "notes": "Legacy fixed shape - consider Standard3.Flex",
+      "status": "legacy"
+    },
+    {
+      "shapeFamily": "VM.Standard2.16",
+      "type": "fixed-vm",
+      "name": "Standard2.16",
+      "description": "Intel Xeon Platinum 8167M (legacy)",
+      "ocpus": 16,
+      "memoryGB": 240,
+      "pricePerHour": 1.0208,
+      "currency": "USD",
+      "notes": "Legacy fixed shape - consider Standard3.Flex",
+      "status": "legacy"
+    },
+    {
+      "shapeFamily": "VM.Standard2.24",
+      "type": "fixed-vm",
+      "name": "Standard2.24",
+      "description": "Intel Xeon Platinum 8167M (legacy)",
+      "ocpus": 24,
+      "memoryGB": 320,
+      "pricePerHour": 1.5312,
+      "currency": "USD",
+      "notes": "Legacy fixed shape - consider Standard3.Flex",
+      "status": "legacy"
+    },
+    {
+      "shapeFamily": "BM.GPU.L40S.4",
+      "type": "bare-metal-gpu",
+      "name": "NVIDIA L40S Bare Metal",
+      "description": "4x NVIDIA L40S GPUs for inference and graphics",
+      "gpuCount": 4,
+      "gpuModel": "NVIDIA L40S",
+      "gpuMemoryGB": 48,
+      "ocpus": 64,
+      "memoryGB": 1024,
+      "pricePerHour": 14.0,
+      "currency": "USD",
+      "notes": "Per GPU pricing, 4 GPUs total",
+      "status": "active"
+    },
+    {
+      "shapeFamily": "BM.GPU.MI300X.8",
+      "type": "bare-metal-gpu",
+      "name": "AMD MI300X Bare Metal",
+      "description": "8x AMD Instinct MI300X GPUs for AI training",
+      "gpuCount": 8,
+      "gpuModel": "AMD MI300X",
+      "gpuMemoryGB": 192,
+      "ocpus": 128,
+      "memoryGB": 2048,
+      "pricePerHour": 48.0,
+      "currency": "USD",
+      "notes": "AMD GPU for AI/ML workloads",
+      "status": "active"
+    },
+    {
+      "shapeFamily": "BM.GPU.H200.8",
+      "type": "bare-metal-gpu",
+      "name": "NVIDIA H200 Bare Metal",
+      "description": "8x NVIDIA H200 GPUs for large-scale AI",
+      "gpuCount": 8,
+      "gpuModel": "NVIDIA H200",
+      "gpuMemoryGB": 141,
+      "ocpus": 112,
+      "memoryGB": 2048,
+      "pricePerHour": 80.0,
+      "currency": "USD",
+      "notes": "Next-gen GPU with HBM3e memory",
+      "status": "active"
+    },
+    {
+      "shapeFamily": "BM.GPU.B200.8",
+      "type": "bare-metal-gpu",
+      "name": "NVIDIA B200 Bare Metal",
+      "description": "8x NVIDIA B200 Blackwell GPUs",
+      "gpuCount": 8,
+      "gpuModel": "NVIDIA B200",
+      "gpuMemoryGB": 192,
+      "ocpus": 128,
+      "memoryGB": 2048,
+      "pricePerHour": 112.0,
+      "currency": "USD",
+      "notes": "Blackwell architecture - preview",
+      "status": "preview"
+    },
+    {
+      "shapeFamily": "BM.GPU.GB200.8",
+      "type": "bare-metal-gpu",
+      "name": "NVIDIA GB200 Superchip",
+      "description": "NVIDIA GB200 Grace Blackwell Superchip",
+      "gpuCount": 8,
+      "gpuModel": "NVIDIA GB200",
+      "gpuMemoryGB": 192,
+      "ocpus": 72,
+      "memoryGB": 480,
+      "pricePerHour": 112.0,
+      "currency": "USD",
+      "notes": "Grace Blackwell Superchip - preview",
+      "status": "preview"
+    },
+    {
+      "shapeFamily": "BM.GPU2.2",
+      "type": "bare-metal-gpu",
+      "name": "NVIDIA P100 Bare Metal",
+      "description": "2x NVIDIA Tesla P100 GPUs (legacy)",
+      "gpuCount": 2,
+      "gpuModel": "NVIDIA P100",
+      "gpuMemoryGB": 16,
+      "ocpus": 28,
+      "memoryGB": 192,
+      "pricePerHour": 2.55,
+      "currency": "USD",
+      "notes": "Legacy - consider A10/A100 for new deployments",
+      "status": "legacy"
+    },
+    {
+      "shapeFamily": "BM.GPU3.8",
+      "type": "bare-metal-gpu",
+      "name": "NVIDIA V100 Bare Metal",
+      "description": "8x NVIDIA Tesla V100 GPUs (legacy)",
+      "gpuCount": 8,
+      "gpuModel": "NVIDIA V100",
+      "gpuMemoryGB": 16,
+      "ocpus": 52,
+      "memoryGB": 768,
+      "pricePerHour": 23.6,
+      "currency": "USD",
+      "notes": "Legacy - consider A100/H100 for new deployments",
+      "status": "legacy"
+    },
+    {
+      "shapeFamily": "BM.GPU.MI355X.8",
+      "type": "bare-metal-gpu",
+      "name": "AMD MI355X Bare Metal",
+      "description": "8x AMD Instinct MI355X GPUs",
+      "gpuCount": 8,
+      "gpuModel": "AMD MI355X",
+      "gpuMemoryGB": 256,
+      "ocpus": 128,
+      "memoryGB": 2048,
+      "pricePerHour": 68.8,
+      "currency": "USD",
+      "notes": "Next-gen AMD GPU",
+      "status": "preview"
+    },
+    {
+      "shapeFamily": "BM.GPU.GB300.8",
+      "type": "bare-metal-gpu",
+      "name": "NVIDIA GB300 Superchip",
+      "description": "NVIDIA GB300 Grace Blackwell",
+      "gpuCount": 8,
+      "gpuModel": "NVIDIA GB300",
+      "gpuMemoryGB": 288,
+      "ocpus": 72,
+      "memoryGB": 480,
+      "pricePerHour": 144.0,
+      "currency": "USD",
+      "notes": "Latest Blackwell architecture - preview",
+      "status": "preview"
     }
   ],
   "storage": [
     {
-      "service": "storage",
-      "storageType": "block-volume",
-      "type": "block-storage-basic",
-      "description": "Block Volume - Lower Cost storage tier",
-      "unit": "GB per month",
-      "pricePerUnit": 0.0255,
-      "currency": "USD",
-      "performanceTier": "Lower Cost",
-      "minCapacityGB": 50,
-      "maxCapacityGB": 32768,
-      "notes": "2 VPUs/GB. Up to 3K IOPS, 24 MB/s throughput per volume."
+      "service": "block-volume",
+      "name": "Block Volume",
+      "type": "block",
+      "pricePerGB": 0.0255,
+      "status": "active",
+      "notes": "Default performance"
     },
     {
-      "service": "storage",
-      "storageType": "block-volume",
-      "type": "block-storage-balanced",
-      "description": "Block Volume - Balanced performance (default)",
-      "unit": "GB per month",
-      "pricePerUnit": 0.0255,
-      "currency": "USD",
-      "performanceTier": "Balanced",
-      "minCapacityGB": 50,
-      "maxCapacityGB": 32768,
-      "notes": "10 VPUs/GB included. Up to 25K IOPS, 480 MB/s throughput."
-    },
-    {
-      "service": "storage",
-      "storageType": "block-volume-performance",
-      "type": "block-storage-vpu",
-      "description": "Block Volume Performance Units (VPU) - Additional performance",
-      "unit": "GB per month",
+      "service": "block-volume-perf",
+      "name": "Block Volume Performance",
+      "type": "block",
       "pricePerUnit": 0.0017,
-      "currency": "USD",
-      "notes": "Per VPU per GB/month. 10 VPUs = Balanced, 20 VPUs = Higher Performance."
+      "status": "active",
+      "notes": "Per VPU per GB"
     },
     {
-      "service": "storage",
-      "storageType": "block-volume",
-      "type": "block-storage-high-performance",
-      "description": "Block Volume - Higher Performance tier",
-      "unit": "GB per month",
-      "pricePerUnit": 0.0425,
-      "currency": "USD",
-      "performanceTier": "Higher Performance",
-      "minCapacityGB": 50,
-      "maxCapacityGB": 32768,
-      "notes": "20 VPUs/GB. Up to 35K IOPS, 480 MB/s throughput. Includes VPU cost."
+      "service": "block-volume-backup",
+      "name": "Block Volume Backup",
+      "type": "block",
+      "pricePerGB": 0.0255,
+      "status": "active",
+      "notes": "Incremental backups"
     },
     {
-      "service": "storage",
-      "storageType": "block-volume",
-      "type": "block-storage-ultra-high",
-      "description": "Block Volume - Ultra High Performance tier",
-      "unit": "GB per month",
-      "pricePerUnit": 0.0765,
-      "currency": "USD",
-      "performanceTier": "Ultra High Performance",
-      "minCapacityGB": 50,
-      "maxCapacityGB": 32768,
-      "notes": "30-120 VPUs/GB. Up to 225K IOPS, 2.68 GB/s throughput."
+      "service": "object-storage",
+      "name": "Object Storage Standard",
+      "type": "object",
+      "pricePerGB": 0.0255,
+      "status": "active",
+      "notes": "First 10GB free"
     },
     {
-      "service": "storage",
-      "storageType": "object-storage-standard",
-      "type": "object-storage",
-      "description": "Object Storage - Standard tier for frequent access",
-      "unit": "GB per month",
-      "pricePerUnit": 0.0255,
-      "currency": "USD",
-      "notes": "First 10 GB free. Includes 50K free requests/month."
+      "service": "object-storage-ia",
+      "name": "Object Storage Infrequent Access",
+      "type": "object",
+      "pricePerGB": 0.01,
+      "status": "active",
+      "notes": "Cool storage"
     },
     {
-      "service": "storage",
-      "storageType": "object-storage-infrequent",
-      "type": "object-storage-ia",
-      "description": "Object Storage - Infrequent Access tier",
-      "unit": "GB per month",
-      "pricePerUnit": 0.01,
-      "currency": "USD",
-      "notes": "For data accessed less than once per month. 31-day minimum storage."
+      "service": "archive-storage",
+      "name": "Archive Storage",
+      "type": "archive",
+      "pricePerGB": 0.00255,
+      "status": "active",
+      "notes": "Cold storage"
     },
     {
-      "service": "storage",
-      "storageType": "object-storage-archive",
-      "type": "object-storage-archive",
-      "description": "Object Storage - Archive tier for long-term retention",
-      "unit": "GB per month",
-      "pricePerUnit": 0.00255,
-      "currency": "USD",
-      "notes": "90-day minimum storage. ~1 hour restore time. Best for compliance data."
+      "service": "file-storage",
+      "name": "File Storage",
+      "type": "file",
+      "pricePerGB": 0.3,
+      "status": "active",
+      "notes": "NFS compatible"
     },
     {
-      "service": "storage",
-      "storageType": "file-storage",
-      "type": "file-storage",
-      "description": "File Storage - NFS-compatible shared filesystem",
-      "unit": "GB per month",
-      "pricePerUnit": 0.0425,
-      "currency": "USD",
-      "notes": "Elastic capacity. Supports NFSv3. Multi-AD replication available."
+      "service": "file-storage-perf",
+      "name": "File Storage High Performance",
+      "type": "file",
+      "pricePerUnit": 0.3,
+      "status": "active",
+      "notes": "Performance mount target"
     },
     {
-      "service": "storage",
-      "storageType": "boot-volume",
-      "type": "boot-volume",
-      "description": "Boot Volume - OS disk for compute instances",
-      "unit": "GB per month",
-      "pricePerUnit": 0.0255,
-      "currency": "USD",
-      "minCapacityGB": 47,
-      "maxCapacityGB": 32768,
-      "notes": "Same pricing as block volume. Default 47 GB for most images."
+      "service": "zfs-storage",
+      "name": "ZFS Storage",
+      "type": "file",
+      "pricePerHour": 1.85,
+      "status": "active",
+      "notes": "HA ZFS appliance"
+    },
+    {
+      "service": "lustre-storage",
+      "name": "Lustre File Storage",
+      "type": "file",
+      "pricePerGB": 0.086,
+      "status": "active",
+      "notes": "HPC file system"
     }
   ],
   "database": [
@@ -549,6 +772,168 @@
       "currency": "USD",
       "licenseIncluded": true,
       "notes": "Quarter rack minimum. Best for mission-critical OLTP/analytics."
+    },
+    {
+      "service": "autonomous-transaction-processing",
+      "name": "Autonomous Transaction Processing",
+      "type": "serverless",
+      "pricePerECPU": 0.336,
+      "pricePerGB": 0.0255,
+      "status": "active",
+      "notes": "ECPU per hour"
+    },
+    {
+      "service": "autonomous-transaction-processing-byol",
+      "name": "Autonomous Transaction Processing BYOL",
+      "type": "serverless",
+      "pricePerECPU": 0.0807,
+      "pricePerGB": 0.0255,
+      "status": "active",
+      "notes": "Bring Your Own License"
+    },
+    {
+      "service": "autonomous-data-warehouse",
+      "name": "Autonomous Data Warehouse",
+      "type": "serverless",
+      "pricePerECPU": 0.336,
+      "pricePerGB": 0.0255,
+      "status": "active",
+      "notes": "ECPU per hour"
+    },
+    {
+      "service": "autonomous-data-warehouse-byol",
+      "name": "Autonomous Data Warehouse BYOL",
+      "type": "serverless",
+      "pricePerECPU": 0.0807,
+      "pricePerGB": 0.0255,
+      "status": "active",
+      "notes": "Bring Your Own License"
+    },
+    {
+      "service": "autonomous-json",
+      "name": "Autonomous JSON Database",
+      "type": "serverless",
+      "pricePerECPU": 0.0807,
+      "pricePerGB": 0.0255,
+      "status": "active",
+      "notes": "JSON document store"
+    },
+    {
+      "service": "autonomous-json-free",
+      "name": "Autonomous JSON Database Free",
+      "type": "serverless",
+      "pricePerECPU": 0.0,
+      "pricePerGB": 0.0,
+      "status": "active",
+      "notes": "Always Free tier"
+    },
+    {
+      "service": "autonomous-ai",
+      "name": "Autonomous AI Database",
+      "type": "serverless",
+      "pricePerECPU": 0.336,
+      "pricePerGB": 0.0255,
+      "status": "active",
+      "notes": "AI/ML optimized"
+    },
+    {
+      "service": "autonomous-ai-byol",
+      "name": "Autonomous AI Database BYOL",
+      "type": "serverless",
+      "pricePerECPU": 0.0807,
+      "pricePerGB": 0.0255,
+      "status": "active",
+      "notes": "Bring Your Own License"
+    },
+    {
+      "service": "mysql-heatwave",
+      "name": "MySQL HeatWave",
+      "type": "relational",
+      "pricePerECPU": 0.0366,
+      "pricePerGB": 0.04,
+      "status": "active",
+      "notes": "MySQL with HeatWave analytics"
+    },
+    {
+      "service": "mysql-heatwave-cluster",
+      "name": "MySQL HeatWave Cluster",
+      "type": "relational",
+      "pricePerUnit": 0.011,
+      "status": "active",
+      "notes": "HeatWave node per hour"
+    },
+    {
+      "service": "mysql-heatwave-free",
+      "name": "MySQL HeatWave Free",
+      "type": "relational",
+      "pricePerECPU": 0.0,
+      "status": "active",
+      "notes": "Always Free tier"
+    },
+    {
+      "service": "postgresql",
+      "name": "Database with PostgreSQL",
+      "type": "relational",
+      "pricePerOCPU": 0.098,
+      "pricePerGB": 0.072,
+      "status": "active",
+      "notes": "Managed PostgreSQL"
+    },
+    {
+      "service": "nosql-on-demand",
+      "name": "NoSQL Database On-Demand",
+      "type": "nosql",
+      "pricePerWriteUnit": 0.1254,
+      "pricePerReadUnit": 0.0064,
+      "pricePerGB": 0.066,
+      "status": "active",
+      "notes": "Serverless NoSQL"
+    },
+    {
+      "service": "nosql-provisioned",
+      "name": "NoSQL Database Provisioned",
+      "type": "nosql",
+      "pricePerWriteUnit": 0.0627,
+      "pricePerReadUnit": 0.0032,
+      "pricePerGB": 0.033,
+      "status": "active",
+      "notes": "Provisioned capacity"
+    },
+    {
+      "service": "base-db-standard",
+      "name": "Base Database Standard Edition",
+      "type": "relational",
+      "pricePerECPU": 0.0538,
+      "pricePerGB": 0.0595,
+      "status": "active",
+      "notes": "Oracle Standard Edition"
+    },
+    {
+      "service": "base-db-enterprise",
+      "name": "Base Database Enterprise Edition",
+      "type": "relational",
+      "pricePerECPU": 0.1075,
+      "pricePerGB": 0.0595,
+      "status": "active",
+      "notes": "Oracle Enterprise Edition"
+    },
+    {
+      "service": "base-db-high-perf",
+      "name": "Base Database High Performance",
+      "type": "relational",
+      "pricePerECPU": 0.2218,
+      "pricePerGB": 0.0595,
+      "status": "active",
+      "notes": "Enterprise High Performance"
+    },
+    {
+      "service": "base-db-extreme-perf",
+      "name": "Base Database Extreme Performance",
+      "type": "relational",
+      "pricePerECPU": 0.443,
+      "pricePerGB": 0.0595,
+      "status": "active",
+      "notes": "Enterprise Extreme Performance"
     }
   ],
   "networking": [
@@ -720,501 +1105,261 @@
   ],
   "serverless": [
     {
+      "service": "functions",
       "name": "OCI Functions",
       "type": "serverless",
-      "pricePerMillion": 0.2,
+      "pricePerInvocation": 2e-07,
       "pricePerGBSecond": 1.417e-05,
-      "freeInvocations": 2000000,
-      "freeGBSeconds": 400000,
-      "notes": "Generous free tier"
+      "status": "active",
+      "notes": "First 2M invocations free"
+    },
+    {
+      "service": "api-gateway",
+      "name": "API Gateway",
+      "type": "serverless",
+      "pricePerMillion": 3.0,
+      "status": "active",
+      "notes": "Per million API calls"
+    },
+    {
+      "service": "queue",
+      "name": "OCI Queue",
+      "type": "messaging",
+      "pricePerMillion": 0.0,
+      "status": "active",
+      "notes": "Serverless queue, free tier"
+    },
+    {
+      "service": "streaming",
+      "name": "OCI Streaming",
+      "type": "messaging",
+      "pricePerGB": 0.025,
+      "pricePerGBStorage": 0.000292,
+      "status": "active",
+      "notes": "Kafka-compatible streaming"
+    },
+    {
+      "service": "streaming-kafka",
+      "name": "OCI Streaming with Kafka API",
+      "type": "messaging",
+      "pricePerOCPU": 0.1,
+      "status": "active",
+      "notes": "Full Kafka compatibility"
+    },
+    {
+      "service": "events",
+      "name": "OCI Events",
+      "type": "serverless",
+      "pricePerMillion": 0.0,
+      "status": "active",
+      "notes": "Event routing, free"
+    },
+    {
+      "service": "notifications",
+      "name": "OCI Notifications",
+      "type": "messaging",
+      "pricePerMillion": 0.0,
+      "status": "active",
+      "notes": "Pub/sub notifications, free"
     }
   ],
   "containers": [
     {
-      "name": "Container Instances OCPU",
-      "type": "container-serverless",
-      "pricePerHour": 0.0225,
-      "notes": "Per OCPU-hour"
+      "service": "container-instances",
+      "name": "Container Instances",
+      "type": "container",
+      "pricePerOCPU": 0.0225,
+      "pricePerGB": 0.0015,
+      "status": "active",
+      "notes": "Serverless containers"
     },
     {
-      "name": "Container Instances Memory",
-      "type": "container-serverless",
-      "pricePerHour": 0.0015,
-      "notes": "Per GB-hour"
+      "service": "container-registry",
+      "name": "Container Registry",
+      "type": "container",
+      "pricePerGB": 0.0255,
+      "status": "active",
+      "notes": "Docker registry"
+    },
+    {
+      "service": "oke-basic",
+      "name": "OKE Basic Cluster",
+      "type": "kubernetes",
+      "pricePerCluster": 0.0,
+      "status": "active",
+      "notes": "Free control plane"
+    },
+    {
+      "service": "oke-enhanced",
+      "name": "OKE Enhanced Cluster",
+      "type": "kubernetes",
+      "pricePerCluster": 0.1,
+      "status": "active",
+      "notes": "Per cluster per hour"
+    },
+    {
+      "service": "oke-virtual-nodes",
+      "name": "OKE Virtual Nodes",
+      "type": "kubernetes",
+      "pricePerNode": 0.015,
+      "status": "active",
+      "notes": "Serverless Kubernetes nodes"
     }
   ],
   "observability": [
     {
-      "service": "observability",
-      "type": "ops-insights",
-      "name": "OCI - MySQL Database - Oracle Ops Insights for MySQL HeatWave",
-      "description": "OCI - MySQL Database - Oracle Ops Insights for MySQL HeatWave",
-      "unit": "OCPU Per Hour",
-      "pricePerUnit": 0.015,
-      "currency": "USD",
-      "partNumber": "B109358"
+      "service": "monitoring",
+      "name": "OCI Monitoring",
+      "type": "observability",
+      "pricePerMillion": 0.0,
+      "status": "active",
+      "notes": "Metrics, free"
     },
     {
-      "service": "observability",
-      "type": "ops-insights",
-      "name": "OCI - MySQL Database - Oracle Ops Insights for MySQL HeatWave",
-      "description": "OCI - MySQL Database - Oracle Ops Insights for MySQL HeatWave",
-      "unit": "ECPU Per Hour",
-      "pricePerUnit": 0.0075,
-      "currency": "USD",
-      "partNumber": "B109359"
+      "service": "logging",
+      "name": "OCI Logging",
+      "type": "observability",
+      "pricePerGB": 0.0,
+      "status": "active",
+      "notes": "Log storage, free"
     },
     {
-      "service": "observability",
-      "type": "monitoring",
-      "name": "OCI Application Performance Monitoring Service - Stack Monitoring - Enterprise Edition for GPU Infrastructure",
-      "description": "OCI Application Performance Monitoring Service - Stack Monitoring - Enterprise Edition for GPU Infrastructure",
-      "unit": "GPU Monitoring Unit Per Hour",
-      "pricePerUnit": 0.07,
-      "currency": "USD",
-      "partNumber": "B110986"
+      "service": "logging-analytics",
+      "name": "Logging Analytics Active",
+      "type": "observability",
+      "pricePerUnit": 372.0,
+      "status": "active",
+      "notes": "Per storage unit/month"
     },
     {
-      "service": "observability",
-      "type": "ops-insights",
-      "name": "OCI Ops Insights for Warehouse - Instance",
-      "description": "OCI Ops Insights for Warehouse - Instance",
-      "unit": "ECPU Per Hour",
-      "pricePerUnit": 0.2688,
-      "currency": "USD",
-      "partNumber": "B111087"
+      "service": "logging-analytics-archive",
+      "name": "Logging Analytics Archive",
+      "type": "observability",
+      "pricePerHour": 0.02,
+      "status": "active",
+      "notes": "Archive storage"
     },
     {
-      "service": "observability",
-      "type": "monitoring",
-      "name": "Monitoring - Ingestion",
-      "description": "Monitoring - Ingestion",
-      "unit": "Million Datapoints",
-      "pricePerUnit": 0,
-      "currency": "USD",
-      "partNumber": "B90925"
+      "service": "apm-tracing",
+      "name": "APM Tracing",
+      "type": "observability",
+      "pricePerEvents": 0.65,
+      "status": "active",
+      "notes": "Per 100K events/hour"
     },
     {
-      "service": "observability",
-      "type": "monitoring",
-      "name": "Monitoring - Retrieval",
-      "description": "Monitoring - Retrieval",
-      "unit": "Million Datapoints",
-      "pricePerUnit": 0,
-      "currency": "USD",
-      "partNumber": "B90926"
+      "service": "apm-synthetic",
+      "name": "APM Synthetic Monitoring",
+      "type": "observability",
+      "pricePerRun": 0.002,
+      "status": "active",
+      "notes": "Per monitor run"
     },
     {
-      "service": "observability",
-      "type": "notifications",
-      "name": "Notifications - HTTPS Delivery",
-      "description": "Notifications - HTTPS Delivery",
-      "unit": "Million Delivery Operations",
-      "pricePerUnit": 0,
-      "currency": "USD",
-      "partNumber": "B90940"
+      "service": "stack-monitoring",
+      "name": "Stack Monitoring Standard",
+      "type": "observability",
+      "pricePerResources": 0.075,
+      "status": "active",
+      "notes": "Per 10 resources/hour"
     },
     {
-      "service": "observability",
-      "type": "notifications",
-      "name": "Notifications - Email Delivery",
-      "description": "Notifications - Email Delivery",
-      "unit": "1,000 Emails Sent",
-      "pricePerUnit": 0,
-      "currency": "USD",
-      "partNumber": "B90941"
+      "service": "stack-monitoring-ent",
+      "name": "Stack Monitoring Enterprise",
+      "type": "observability",
+      "pricePerResources": 0.38,
+      "status": "active",
+      "notes": "Per 10 resources/hour"
     },
     {
-      "service": "observability",
-      "type": "logging",
-      "name": "OCI - Logging - Storage",
-      "description": "OCI - Logging - Storage",
-      "unit": "Gigabyte Log Storage Per Month",
-      "pricePerUnit": 0,
-      "currency": "USD",
-      "partNumber": "B92593"
-    },
-    {
-      "service": "observability",
-      "type": "log-analytics",
-      "name": "OCI Log Analytics - Archival Storage",
-      "description": "OCI Log Analytics - Archival Storage",
-      "unit": "Logging Analytics Storage Unit Per Hour",
-      "pricePerUnit": 0.02,
-      "currency": "USD",
-      "partNumber": "B92809"
-    },
-    {
-      "service": "observability",
-      "type": "ops-insights",
-      "name": "OCI Ops Insights for Oracle Autonomous Databases - Basic",
-      "description": "OCI Ops Insights for Oracle Autonomous Databases - Basic",
-      "unit": "OCPU Per Hour",
-      "pricePerUnit": 0,
-      "currency": "USD",
-      "partNumber": "B92888"
-    },
-    {
-      "service": "observability",
-      "type": "ops-insights",
-      "name": "OCI Ops Insights for Oracle Cloud Databases",
-      "description": "OCI Ops Insights for Oracle Cloud Databases",
-      "unit": "OCPU Per Hour",
-      "pricePerUnit": 0.015,
-      "currency": "USD",
-      "partNumber": "B92889"
-    },
-    {
-      "service": "observability",
-      "type": "ops-insights",
-      "name": "OCI Ops Insights for External Oracle Databases and Host",
-      "description": "OCI Ops Insights for External Oracle Databases and Host",
-      "unit": "Host CPU Core Per Hour",
-      "pricePerUnit": 0.015,
-      "currency": "USD",
-      "partNumber": "B92890"
-    },
-    {
-      "service": "observability",
-      "type": "apm",
-      "name": "Application Performance Monitoring Service - Tracing Data - Free",
-      "description": "Application Performance Monitoring Service - Tracing Data - Free",
-      "unit": "1,000 Events Per Hour",
-      "pricePerUnit": 0,
-      "currency": "USD",
-      "partNumber": "B92940"
-    },
-    {
-      "service": "observability",
-      "type": "apm",
-      "name": "Application Performance Monitoring Service - Tracing Data",
-      "description": "Application Performance Monitoring Service - Tracing Data",
-      "unit": "100,000 Events Per Hour",
-      "pricePerUnit": 0.65,
-      "currency": "USD",
-      "partNumber": "B92941"
-    },
-    {
-      "service": "observability",
-      "type": "apm",
-      "name": "Application Performance Monitoring Service -  Synthetic Usage",
-      "description": "Application Performance Monitoring Service -  Synthetic Usage",
-      "unit": "10 Monitor Runs Per Hour",
-      "pricePerUnit": 0.02,
-      "currency": "USD",
-      "partNumber": "B92942"
-    },
-    {
-      "service": "observability",
-      "type": "notifications",
-      "name": "Notifications - SMS Outbound to Country Zone 1",
-      "description": "Notifications - SMS Outbound to Country Zone 1",
-      "unit": "Per SMS Message Sent",
-      "pricePerUnit": 0,
-      "currency": "USD",
-      "partNumber": "B93004"
-    },
-    {
-      "service": "observability",
-      "type": "notifications",
-      "name": "Notifications - SMS Outbound to Country Zone 2",
-      "description": "Notifications - SMS Outbound to Country Zone 2",
-      "unit": "Per SMS Message Sent",
-      "pricePerUnit": 0,
-      "currency": "USD",
-      "partNumber": "B93005"
-    },
-    {
-      "service": "observability",
-      "type": "notifications",
-      "name": "Notifications - SMS Outbound to Country Zone 3",
-      "description": "Notifications - SMS Outbound to Country Zone 3",
-      "unit": "Per SMS Message Sent",
-      "pricePerUnit": 0,
-      "currency": "USD",
-      "partNumber": "B93006"
-    },
-    {
-      "service": "observability",
-      "type": "notifications",
-      "name": "Notifications - SMS Outbound to Country Zone 4",
-      "description": "Notifications - SMS Outbound to Country Zone 4",
-      "unit": "Per SMS Message Sent",
-      "pricePerUnit": 0,
-      "currency": "USD",
-      "partNumber": "B93007"
-    },
-    {
-      "service": "observability",
-      "type": "notifications",
-      "name": "Notifications - SMS Outbound to Country Zone 5",
-      "description": "Notifications - SMS Outbound to Country Zone 5",
-      "unit": "Per SMS Message Sent",
-      "pricePerUnit": 0,
-      "currency": "USD",
-      "partNumber": "B93008"
-    },
-    {
-      "service": "observability",
-      "type": "ops-insights",
-      "name": "OCI Ops Insights for Warehouse - Extract",
-      "description": "OCI Ops Insights for Warehouse - Extract",
-      "unit": "Gigabyte Per Month",
-      "pricePerUnit": 2,
-      "currency": "USD",
-      "partNumber": "B93705"
-    },
-    {
-      "service": "observability",
-      "type": "ops-insights",
-      "name": "OCI Ops Insights for Warehouse - Instance",
-      "description": "OCI Ops Insights for Warehouse - Instance",
-      "unit": "OCPU Per Hour",
-      "pricePerUnit": 0.5377,
-      "currency": "USD",
-      "partNumber": "B93706"
-    },
-    {
-      "service": "observability",
-      "type": "monitoring",
-      "name": "OCI - Stack Monitoring - Standard Edition",
-      "description": "OCI - Stack Monitoring - Standard Edition",
-      "unit": "10 Monitored Resources Per Hour",
-      "pricePerUnit": 0.075,
-      "currency": "USD",
-      "partNumber": "B95264"
-    },
-    {
-      "service": "observability",
-      "type": "log-analytics",
-      "name": "OCI Log Analytics - Active Storage",
-      "description": "OCI Log Analytics - Active Storage",
-      "unit": "Logging Analytics Storage Unit Per Month",
-      "pricePerUnit": 372,
-      "currency": "USD",
-      "partNumber": "B95634"
-    },
-    {
-      "service": "observability",
-      "type": "ops-insights",
-      "name": "OCI Ops Insights for Oracle Autonomous Databases - Basic",
-      "description": "OCI Ops Insights for Oracle Autonomous Databases - Basic",
-      "unit": "ECPU Per Hour",
-      "pricePerUnit": 0,
-      "currency": "USD",
-      "partNumber": "B96199"
-    },
-    {
-      "service": "observability",
-      "type": "apm",
-      "name": "OCI - Application Performance Monitoring Service - Synthetic Usage - Free",
-      "description": "OCI - Application Performance Monitoring Service - Synthetic Usage - Free",
-      "unit": "10 Monitor Runs Per Hour",
-      "pricePerUnit": 0,
-      "currency": "USD",
-      "partNumber": "B96629"
-    },
-    {
-      "service": "observability",
-      "type": "ops-insights",
-      "name": "OCI Ops Insights for Oracle Cloud Databases",
-      "description": "OCI Ops Insights for Oracle Cloud Databases",
-      "unit": "ECPU Per Hour",
-      "pricePerUnit": 0.0075,
-      "currency": "USD",
-      "partNumber": "B97140"
-    },
-    {
-      "service": "observability",
-      "type": "monitoring",
-      "name": "OCI - Stack Monitoring - Enterprise Edition",
-      "description": "OCI - Stack Monitoring - Enterprise Edition",
-      "unit": "10 Monitored Resources Per Hour",
-      "pricePerUnit": 0.38,
-      "currency": "USD",
-      "partNumber": "B99259"
+      "service": "ops-insights",
+      "name": "Ops Insights",
+      "type": "observability",
+      "pricePerOCPU": 0.015,
+      "status": "active",
+      "notes": "Performance analysis"
     }
   ],
   "security": [
     {
-      "service": "security",
-      "type": "cloud-guard",
-      "name": "Oracle Cloud Guard Instance Security Enterprise",
-      "description": "Oracle Cloud Guard Instance Security Enterprise",
-      "unit": "Node Per Hour",
-      "pricePerUnit": 0.0069,
-      "currency": "USD",
-      "partNumber": "B108188"
+      "service": "vault",
+      "name": "OCI Vault",
+      "type": "security",
+      "pricePerKey": 0.0,
+      "status": "active",
+      "notes": "Key versions free, vault $3.72/hr"
     },
     {
-      "service": "security",
-      "type": "cloud-guard",
-      "name": "Oracle Cloud Guard Instance Security Standard",
-      "description": "Oracle Cloud Guard Instance Security Standard",
-      "unit": "Node Per Hour",
-      "pricePerUnit": 0,
-      "currency": "USD",
-      "partNumber": "B108189"
+      "service": "vault-private",
+      "name": "OCI Private Vault",
+      "type": "security",
+      "pricePerHour": 3.724,
+      "status": "active",
+      "notes": "Dedicated HSM"
     },
     {
-      "service": "security",
-      "type": "cloud-guard",
-      "name": "Oracle Cloud Guard Instance Security Adhoc Queries Enterprise",
-      "description": "Oracle Cloud Guard Instance Security Adhoc Queries Enterprise",
-      "unit": "Request",
-      "pricePerUnit": 0,
-      "currency": "USD",
-      "partNumber": "B108190"
+      "service": "vault-external",
+      "name": "OCI External Key Management",
+      "type": "security",
+      "pricePerKey": 3.0,
+      "status": "active",
+      "notes": "BYOK per month"
     },
     {
-      "service": "security",
-      "type": "vulnerability-scanning",
-      "name": "OCI - Vulnerability Detection and Patching - External Databases",
-      "description": "OCI - Vulnerability Detection and Patching - External Databases",
-      "unit": "Host CPU Core Per Hour",
-      "pricePerUnit": 0.05,
-      "currency": "USD",
-      "partNumber": "B108764"
+      "service": "cloud-guard",
+      "name": "Cloud Guard",
+      "type": "security",
+      "pricePerNode": 0.0,
+      "status": "active",
+      "notes": "Security posture, free"
     },
     {
-      "service": "security",
-      "type": "vulnerability-scanning",
-      "name": "OCI - Vulnerability Detection and Patching - External Databases BYOL",
-      "description": "OCI - Vulnerability Detection and Patching - External Databases BYOL",
-      "unit": "Host CPU Core Per Hour",
-      "pricePerUnit": 0.025,
-      "currency": "USD",
-      "partNumber": "B108765"
+      "service": "cloud-guard-enterprise",
+      "name": "Cloud Guard Enterprise",
+      "type": "security",
+      "pricePerNode": 0.0069,
+      "status": "active",
+      "notes": "Advanced security"
     },
     {
-      "service": "security",
-      "type": "vault",
-      "name": "OCI - Key Management - Private Vault",
-      "description": "OCI - Key Management - Private Vault",
-      "unit": "Virtual Private Vault Per Hour",
-      "pricePerUnit": 3.724,
-      "currency": "USD",
-      "partNumber": "B90328"
+      "service": "data-safe",
+      "name": "Data Safe",
+      "type": "security",
+      "pricePerTarget": 0.0,
+      "status": "active",
+      "notes": "Database security, free tier"
     },
     {
-      "service": "security",
-      "type": "data-safe",
-      "name": "Data Safe for Database Cloud Service - Audit Record Collection Over 1 Million Records",
-      "description": "Data Safe for Database Cloud Service - Audit Record Collection Over 1 Million Records",
-      "unit": "10,000 Audit Records Per Target Per Month",
-      "pricePerUnit": 0.1,
-      "currency": "USD",
-      "partNumber": "B91631"
+      "service": "data-safe-onprem",
+      "name": "Data Safe for On-Premises",
+      "type": "security",
+      "pricePerTarget": 200.0,
+      "status": "active",
+      "notes": "Per target/month"
     },
     {
-      "service": "security",
-      "type": "data-safe",
-      "name": "Data Safe for Database Cloud Service - Databases",
-      "description": "Data Safe for Database Cloud Service - Databases",
-      "unit": "Each",
-      "pricePerUnit": 0,
-      "currency": "USD",
-      "partNumber": "B91632"
+      "service": "waf",
+      "name": "Web Application Firewall",
+      "type": "security",
+      "pricePerInstance": 0.0,
+      "status": "active",
+      "notes": "WAF, free"
     },
     {
-      "service": "security",
-      "type": "vault",
-      "name": "Key Management Service - Key Versions",
-      "description": "Key Management Service - Key Versions",
-      "unit": "Key Version Per Month",
-      "pricePerUnit": 0,
-      "currency": "USD",
-      "partNumber": "B92092"
+      "service": "network-firewall",
+      "name": "Network Firewall",
+      "type": "security",
+      "pricePerInstance": 2.75,
+      "status": "active",
+      "notes": "Per instance/hour"
     },
     {
-      "service": "security",
-      "type": "data-safe",
-      "name": "Data Safe for On-Premises Databases          on Compute",
-      "description": "Data Safe for On-Premises Databases          on Compute",
-      "unit": "Target Database Per Month",
-      "pricePerUnit": 200,
-      "currency": "USD",
-      "partNumber": "B92733"
-    },
-    {
-      "service": "security",
-      "type": "data-safe",
-      "name": "Data Safe for On-Premises Databases prompt on Compute",
-      "description": "Data Safe for On-Premises Databases prompt on Compute",
-      "unit": "10,000 Audit Records Per Target Per Month",
-      "pricePerUnit": 0.1,
-      "currency": "USD",
-      "partNumber": "B92734"
-    },
-    {
-      "service": "security",
-      "type": "other",
-      "name": "Oracle Threat Intelligence Service",
-      "description": "Oracle Threat Intelligence Service",
-      "unit": "API Calls",
-      "pricePerUnit": 0,
-      "currency": "USD",
-      "partNumber": "B94173"
-    },
-    {
-      "service": "security",
-      "type": "waf",
-      "name": "Web Application Firewall - Requests",
-      "description": "Web Application Firewall - Requests",
-      "unit": "1,000,000 Incoming Requests Per Month",
-      "pricePerUnit": 0,
-      "currency": "USD",
-      "partNumber": "B94277"
-    },
-    {
-      "service": "security",
-      "type": "waf",
-      "name": "Web Application Firewall - Instance",
-      "description": "Web Application Firewall - Instance",
-      "unit": "Instance Per Month",
-      "pricePerUnit": 0,
-      "currency": "USD",
-      "partNumber": "B94579"
-    },
-    {
-      "service": "security",
-      "type": "network-firewall",
-      "name": "Network Firewall Instance",
-      "description": "Network Firewall Instance",
-      "unit": "Instance Per Hour",
-      "pricePerUnit": 2.75,
-      "currency": "USD",
-      "partNumber": "B95403"
-    },
-    {
-      "service": "security",
-      "type": "network-firewall",
-      "name": "Network Firewall Data Processing",
-      "description": "Network Firewall Data Processing",
-      "unit": "Gigabyte (GB) of Data Processed",
-      "pricePerUnit": 0,
-      "currency": "USD",
-      "partNumber": "B95404"
-    },
-    {
-      "service": "security",
-      "type": "vault",
-      "name": "OCI - External Key Management",
-      "description": "OCI - External Key Management",
-      "unit": "Key Version Per Month",
-      "pricePerUnit": 3,
-      "currency": "USD",
-      "partNumber": "B98100"
-    },
-    {
-      "service": "security",
-      "type": "vault",
-      "name": "OCI - Dedicated Key Management (Minimum 3 HSM Partitions)",
-      "description": "OCI - Dedicated Key Management (Minimum 3 HSM Partitions)",
-      "unit": "HSM Partition Per Hour",
-      "pricePerUnit": 1.75,
-      "currency": "USD",
-      "partNumber": "B99597"
+      "service": "bastion",
+      "name": "OCI Bastion",
+      "type": "security",
+      "pricePerSession": 0.0,
+      "status": "active",
+      "notes": "SSH/RDP proxy, free"
     }
   ],
   "dataAnalytics": [
@@ -7421,368 +7566,161 @@
   },
   "integration": [
     {
-      "service": "integration",
-      "type": "integration-cloud",
-      "name": "Oracle Integration Cloud Service - Healthcare",
-      "description": "Oracle Integration Cloud Service - Healthcare",
-      "unit": "5K Messages Per Hour",
-      "pricePerUnit": 1.9355,
-      "currency": "USD",
-      "partNumber": "B109559"
+      "service": "oic-standard",
+      "name": "Oracle Integration Cloud Standard",
+      "type": "integration",
+      "pricePerMessage": 0.6452,
+      "status": "active",
+      "notes": "Per 5K messages/hour"
     },
     {
-      "service": "integration",
-      "type": "streaming",
-      "name": "OCI Streaming With Apache Kafka",
-      "description": "OCI Streaming With Apache Kafka",
-      "unit": "OCPU Per Hour",
-      "pricePerUnit": 0.1,
-      "currency": "USD",
-      "partNumber": "B110500"
+      "service": "oic-enterprise",
+      "name": "Oracle Integration Cloud Enterprise",
+      "type": "integration",
+      "pricePerMessage": 1.2903,
+      "status": "active",
+      "notes": "Per 5K messages/hour"
     },
     {
-      "service": "integration",
-      "type": "data-integration",
-      "name": "Oracle Data Integrator Cloud Service",
-      "description": "Oracle Data Integrator Cloud Service",
-      "unit": "OCPU Per Hour",
-      "pricePerUnit": 0.7742,
-      "currency": "USD",
-      "partNumber": "B88299"
+      "service": "oic-healthcare",
+      "name": "Oracle Integration Cloud Healthcare",
+      "type": "integration",
+      "pricePerMessage": 1.9355,
+      "status": "active",
+      "notes": "HL7/FHIR support"
     },
     {
-      "service": "integration",
-      "type": "data-integration",
-      "name": "Oracle Data Integrator Cloud Service - BYOL",
-      "description": "Oracle Data Integrator Cloud Service - BYOL",
-      "unit": "OCPU Per Hour",
-      "pricePerUnit": 0.1935,
-      "currency": "USD",
-      "partNumber": "B88406"
-    },
-    {
-      "service": "integration",
-      "type": "integration-cloud",
-      "name": "Oracle Integration Cloud Service - Standard",
-      "description": "Oracle Integration Cloud Service - Standard",
-      "unit": "5K Messages Per Hour",
-      "pricePerUnit": 0.6452,
-      "currency": "USD",
-      "partNumber": "B89639"
-    },
-    {
-      "service": "integration",
-      "type": "integration-cloud",
-      "name": "Oracle Integration Cloud Service - Enterprise",
-      "description": "Oracle Integration Cloud Service - Enterprise",
-      "unit": "5K Messages Per Hour",
-      "pricePerUnit": 1.2903,
-      "currency": "USD",
-      "partNumber": "B89640"
-    },
-    {
-      "service": "integration",
-      "type": "integration-cloud",
-      "name": "Oracle Integration Cloud Service - Standard - BYOL",
-      "description": "Oracle Integration Cloud Service - Standard - BYOL",
-      "unit": "20K Messages Per Hour",
-      "pricePerUnit": 0.3226,
-      "currency": "USD",
-      "partNumber": "B89643"
-    },
-    {
-      "service": "integration",
-      "type": "integration-cloud",
-      "name": "Oracle Integration Cloud Service - Enterprise - BYOL",
-      "description": "Oracle Integration Cloud Service - Enterprise - BYOL",
-      "unit": "20K Messages Per Hour",
-      "pricePerUnit": 0.3226,
-      "currency": "USD",
-      "partNumber": "B89644"
-    },
-    {
-      "service": "integration",
-      "type": "streaming",
-      "name": "Streaming - PUT or GET",
-      "description": "Streaming - PUT or GET",
-      "unit": "Gigabytes of Data Transferred",
-      "pricePerUnit": 0.025,
-      "currency": "USD",
-      "partNumber": "B90938"
-    },
-    {
-      "service": "integration",
-      "type": "streaming",
-      "name": "Streaming - Storage",
-      "description": "Streaming - Storage",
-      "unit": "Gigabytes Per Hour",
-      "pricePerUnit": 0.0002,
-      "currency": "USD",
-      "partNumber": "B90939"
-    },
-    {
-      "service": "integration",
-      "type": "integration-cloud",
-      "name": "Oracle SOA Suite for OCI",
-      "description": "Oracle SOA Suite for OCI",
-      "unit": "OCPU Per Hour",
-      "pricePerUnit": 0.7231,
-      "currency": "USD",
-      "partNumber": "B92450"
-    },
-    {
-      "service": "integration",
-      "type": "integration-cloud",
-      "name": "Oracle SOA Suite for OCI - with B2B Adapter for EDI",
-      "description": "Oracle SOA Suite for OCI - with B2B Adapter for EDI",
-      "unit": "OCPU Per Hour",
-      "pricePerUnit": 1.2071,
-      "currency": "USD",
-      "partNumber": "B92451"
-    },
-    {
-      "service": "integration",
-      "type": "data-integration",
-      "name": "OCI Data Integration - Workspace Usage",
-      "description": "OCI Data Integration - Workspace Usage",
-      "unit": "Workspace Usage Per Hour",
-      "pricePerUnit": 0.16,
-      "currency": "USD",
-      "partNumber": "B92598"
-    },
-    {
-      "service": "integration",
-      "type": "data-integration",
-      "name": "OCI Data Integration - Data Processed",
-      "description": "OCI Data Integration - Data Processed",
-      "unit": "Gigabyte of Data Processed Per Hour",
-      "pricePerUnit": 0.04,
-      "currency": "USD",
-      "partNumber": "B92599"
-    },
-    {
-      "service": "integration",
-      "type": "goldengate",
-      "name": "Oracle Stream Analytics for OCI",
-      "description": "Oracle Stream Analytics for OCI",
-      "unit": "OCPU Per Hour",
-      "pricePerUnit": 0.9498,
-      "currency": "USD",
-      "partNumber": "B92695"
-    },
-    {
-      "service": "integration",
-      "type": "goldengate",
+      "service": "goldengate",
       "name": "OCI GoldenGate",
-      "description": "OCI GoldenGate",
-      "unit": "OCPU Per Hour",
-      "pricePerUnit": 1.3441,
-      "currency": "USD",
-      "partNumber": "B92992"
+      "type": "integration",
+      "pricePerOCPU": 1.3441,
+      "status": "active",
+      "notes": "Real-time data replication"
     },
     {
-      "service": "integration",
-      "type": "goldengate",
-      "name": "OCI GoldenGate - BYOL",
-      "description": "OCI GoldenGate - BYOL",
-      "unit": "OCPU Per Hour",
-      "pricePerUnit": 0.3226,
-      "currency": "USD",
-      "partNumber": "B92993"
+      "service": "goldengate-byol",
+      "name": "OCI GoldenGate BYOL",
+      "type": "integration",
+      "pricePerOCPU": 0.3226,
+      "status": "active",
+      "notes": "Bring Your Own License"
     },
     {
-      "service": "integration",
-      "type": "data-integration",
-      "name": "OCI Data Integration - Pipeline Operator Execution",
-      "description": "OCI Data Integration - Pipeline Operator Execution",
-      "unit": "Execution Hour",
-      "pricePerUnit": 0,
-      "currency": "USD",
-      "partNumber": "B93306"
+      "service": "data-integration",
+      "name": "OCI Data Integration",
+      "type": "integration",
+      "pricePerGB": 0.04,
+      "pricePerHour": 0.16,
+      "status": "active",
+      "notes": "ETL service"
     },
     {
-      "service": "integration",
-      "type": "queue",
-      "name": "OCI Queue",
-      "description": "OCI Queue",
-      "unit": "1,000,000 Requests",
-      "pricePerUnit": 0,
-      "currency": "USD",
-      "partNumber": "B95697"
+      "service": "soa-suite",
+      "name": "Oracle SOA Suite for OCI",
+      "type": "integration",
+      "pricePerOCPU": 0.7231,
+      "status": "active",
+      "notes": "Enterprise SOA"
     }
   ],
   "analytics": [
     {
-      "service": "analytics",
-      "type": "analytics-cloud",
-      "name": "Oracle Analytics Cloud - Professional - OCPU",
-      "description": "Oracle Analytics Cloud - Professional - OCPU",
-      "unit": "OCPU Per Hour",
-      "pricePerUnit": 1.0753,
-      "currency": "USD",
-      "partNumber": "B89630"
+      "service": "analytics-cloud-pro",
+      "name": "Oracle Analytics Cloud Professional",
+      "type": "analytics",
+      "pricePerOCPU": 1.0753,
+      "status": "active",
+      "notes": "Per OCPU/hour"
     },
     {
-      "service": "analytics",
-      "type": "analytics-cloud",
-      "name": "Oracle Analytics Cloud - Enterprise - OCPU",
-      "description": "Oracle Analytics Cloud - Enterprise - OCPU",
-      "unit": "OCPU Per Hour",
-      "pricePerUnit": 2.1506,
-      "currency": "USD",
-      "partNumber": "B89631"
+      "service": "analytics-cloud-ent",
+      "name": "Oracle Analytics Cloud Enterprise",
+      "type": "analytics",
+      "pricePerOCPU": 2.1506,
+      "status": "active",
+      "notes": "Per OCPU/hour"
     },
     {
-      "service": "analytics",
-      "type": "analytics-cloud",
-      "name": "Oracle Analytics Cloud - Professional - BYOL - OCPU",
-      "description": "Oracle Analytics Cloud - Professional - BYOL - OCPU",
-      "unit": "OCPU Per Hour",
-      "pricePerUnit": 0.3226,
-      "currency": "USD",
-      "partNumber": "B89636"
+      "service": "analytics-cloud-user",
+      "name": "Oracle Analytics Cloud Per User",
+      "type": "analytics",
+      "pricePerUser": 16.0,
+      "status": "active",
+      "notes": "Per user/month"
     },
     {
-      "service": "analytics",
-      "type": "analytics-cloud",
-      "name": "Oracle Analytics Cloud - Enterprise - BYOL - OCPU",
-      "description": "Oracle Analytics Cloud - Enterprise - BYOL - OCPU",
-      "unit": "OCPU Per Hour",
-      "pricePerUnit": 0.3226,
-      "currency": "USD",
-      "partNumber": "B89637"
+      "service": "big-data-service",
+      "name": "Big Data Service",
+      "type": "analytics",
+      "pricePerOCPU": 0.015,
+      "status": "active",
+      "notes": "Hadoop/Spark managed"
     },
     {
-      "service": "analytics",
-      "type": "big-data",
-      "name": "Oracle Cloud SQL - Compute Capacity",
-      "description": "Oracle Cloud SQL - Compute Capacity",
-      "unit": "OCPU Per Hour",
-      "pricePerUnit": 0.1075,
-      "currency": "USD",
-      "partNumber": "B91121"
+      "service": "cloud-sql",
+      "name": "Oracle Cloud SQL",
+      "type": "analytics",
+      "pricePerOCPU": 0.1075,
+      "status": "active",
+      "notes": "SQL on Big Data"
     },
     {
-      "service": "analytics",
-      "type": "big-data",
-      "name": "Oracle Big Data Service - Compute - Standard",
-      "description": "Oracle Big Data Service - Compute - Standard",
-      "unit": "OCPU Per Hour",
-      "pricePerUnit": 0.1344,
-      "currency": "USD",
-      "partNumber": "B91128"
-    },
-    {
-      "service": "analytics",
-      "type": "big-data",
-      "name": "Oracle Big Data Service - Compute - Dense I/O",
-      "description": "Oracle Big Data Service - Compute - Dense I/O",
-      "unit": "OCPU Per Hour",
-      "pricePerUnit": 0.214,
-      "currency": "USD",
-      "partNumber": "B91129"
-    },
-    {
-      "service": "analytics",
-      "type": "big-data",
-      "name": "Oracle Big Data Service - Compute - HPC",
-      "description": "Oracle Big Data Service - Compute - HPC",
-      "unit": "OCPU Per Hour",
-      "pricePerUnit": 0.1536,
-      "currency": "USD",
-      "partNumber": "B91130"
-    },
-    {
-      "service": "analytics",
-      "type": "analytics-cloud",
-      "name": "Oracle Analytics Cloud - Professional - Users",
-      "description": "Oracle Analytics Cloud - Professional - Users",
-      "unit": "User Per Month",
-      "pricePerUnit": 16,
-      "currency": "USD",
-      "partNumber": "B92682"
-    },
-    {
-      "service": "analytics",
-      "type": "analytics-cloud",
-      "name": "Oracle Analytics Cloud - Enterprise - Users",
-      "description": "Oracle Analytics Cloud - Enterprise - Users",
-      "unit": "User Per Month",
-      "pricePerUnit": 80,
-      "currency": "USD",
-      "partNumber": "B92683"
-    },
-    {
-      "service": "analytics",
-      "type": "big-data",
-      "name": "Oracle Big Data Service",
-      "description": "Oracle Big Data Service",
-      "unit": "OCPU Per Hour",
-      "pricePerUnit": 0.015,
-      "currency": "USD",
-      "partNumber": "B93555"
-    },
-    {
-      "service": "analytics",
-      "type": "other",
-      "name": "Oracle Analytics Server for OCI",
-      "description": "Oracle Analytics Server for OCI",
-      "unit": "OCPU Per Hour",
-      "pricePerUnit": 1.75,
-      "currency": "USD",
-      "partNumber": "B94568"
+      "service": "data-catalog",
+      "name": "OCI Data Catalog",
+      "type": "analytics",
+      "pricePerHour": 0.0,
+      "status": "active",
+      "notes": "Metadata management, free"
     }
   ],
   "developer": [
     {
-      "service": "developer",
-      "type": "functions",
-      "name": "Oracle Functions - Execution Time",
-      "description": "Oracle Functions - Execution Time",
-      "unit": "10,000 GB Memory-Seconds",
-      "pricePerUnit": 0,
-      "currency": "USD",
-      "partNumber": "B90617"
+      "service": "apex",
+      "name": "Oracle APEX",
+      "type": "developer",
+      "pricePerECPU": 0.0807,
+      "status": "active",
+      "notes": "Low-code platform"
     },
     {
-      "service": "developer",
-      "type": "functions",
-      "name": "Oracle Functions - Invocations",
-      "description": "Oracle Functions - Invocations",
-      "unit": "1MIL Function Invocations",
-      "pricePerUnit": 0,
-      "currency": "USD",
-      "partNumber": "B90618"
+      "service": "apex-free",
+      "name": "Oracle APEX Free",
+      "type": "developer",
+      "pricePerOCPU": 0.0,
+      "status": "active",
+      "notes": "Always Free tier"
     },
     {
-      "service": "developer",
-      "type": "api-gateway",
-      "name": "API Gateway  - 1,000,000 API Calls",
-      "description": "API Gateway  - 1,000,000 API Calls",
-      "unit": "1,000,000 API Calls Per Month",
-      "pricePerUnit": 3,
-      "currency": "USD",
-      "partNumber": "B92072"
+      "service": "visual-builder",
+      "name": "Oracle Visual Builder",
+      "type": "developer",
+      "pricePerOCPU": 1.2365,
+      "status": "active",
+      "notes": "Low-code app builder"
     },
     {
-      "service": "developer",
-      "type": "apex",
-      "name": "Oracle APEX Application Development - Free",
-      "description": "Oracle APEX Application Development - Free",
-      "unit": "OCPU Per Hour",
-      "pricePerUnit": 0,
-      "currency": "USD",
-      "partNumber": "B93320"
+      "service": "devops",
+      "name": "OCI DevOps",
+      "type": "developer",
+      "pricePerHour": 0.0,
+      "status": "active",
+      "notes": "CI/CD, free"
     },
     {
-      "service": "developer",
-      "type": "apex",
-      "name": "Oracle APEX Application Development - ECPU",
-      "description": "Oracle APEX Application Development - ECPU",
-      "unit": "ECPU Per Hour",
-      "pricePerUnit": 0.0807,
-      "currency": "USD",
-      "partNumber": "B99709"
+      "service": "resource-manager",
+      "name": "Resource Manager (Terraform)",
+      "type": "developer",
+      "pricePerHour": 0.0,
+      "status": "active",
+      "notes": "IaC, free"
+    },
+    {
+      "service": "artifact-registry",
+      "name": "Artifact Registry",
+      "type": "developer",
+      "pricePerGB": 0.0255,
+      "status": "active",
+      "notes": "Generic artifacts"
     }
   ],
   "media": [
@@ -9541,7 +9479,8 @@
       "minMemoryGB": 1,
       "maxMemoryGB": 1024,
       "memoryPerOCPURatio": 64,
-      "notes": "Memory can be 1-64 GB per OCPU. Previous generation, still widely used."
+      "notes": "Memory can be 1-64 GB per OCPU. Previous generation, still widely used.",
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -9555,7 +9494,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E4.Flex",
-      "ocpus": 1
+      "ocpus": 1,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -9569,7 +9509,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E4.Flex",
-      "ocpus": 1
+      "ocpus": 1,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -9583,7 +9524,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E4.Flex",
-      "ocpus": 2
+      "ocpus": 2,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -9597,7 +9539,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E4.Flex",
-      "ocpus": 2
+      "ocpus": 2,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -9611,7 +9554,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E4.Flex",
-      "ocpus": 4
+      "ocpus": 4,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -9625,7 +9569,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E4.Flex",
-      "ocpus": 4
+      "ocpus": 4,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -9639,7 +9584,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E4.Flex",
-      "ocpus": 8
+      "ocpus": 8,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -9653,7 +9599,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E4.Flex",
-      "ocpus": 8
+      "ocpus": 8,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -9667,7 +9614,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E4.Flex",
-      "ocpus": 16
+      "ocpus": 16,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -9681,7 +9629,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E4.Flex",
-      "ocpus": 16
+      "ocpus": 16,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -9695,7 +9644,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E4.Flex",
-      "ocpus": 32
+      "ocpus": 32,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -9709,7 +9659,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E4.Flex",
-      "ocpus": 32
+      "ocpus": 32,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -9723,7 +9674,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E4.Flex",
-      "ocpus": 64
+      "ocpus": 64,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -9737,7 +9689,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E4.Flex",
-      "ocpus": 64
+      "ocpus": 64,
+      "status": "active"
     },
     {
       "service": "compute",
@@ -9754,7 +9707,8 @@
       "minMemoryGB": 1,
       "maxMemoryGB": 1049,
       "memoryPerOCPURatio": 64,
-      "notes": "Memory can be 1-64 GB per OCPU. Recommended for new deployments."
+      "notes": "Memory can be 1-64 GB per OCPU. Recommended for new deployments.",
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -9768,7 +9722,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E5.Flex",
-      "ocpus": 1
+      "ocpus": 1,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -9782,7 +9737,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E5.Flex",
-      "ocpus": 1
+      "ocpus": 1,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -9796,7 +9752,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E5.Flex",
-      "ocpus": 2
+      "ocpus": 2,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -9810,7 +9767,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E5.Flex",
-      "ocpus": 2
+      "ocpus": 2,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -9824,7 +9782,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E5.Flex",
-      "ocpus": 4
+      "ocpus": 4,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -9838,7 +9797,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E5.Flex",
-      "ocpus": 4
+      "ocpus": 4,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -9852,7 +9812,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E5.Flex",
-      "ocpus": 8
+      "ocpus": 8,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -9866,7 +9827,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E5.Flex",
-      "ocpus": 8
+      "ocpus": 8,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -9880,7 +9842,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E5.Flex",
-      "ocpus": 16
+      "ocpus": 16,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -9894,7 +9857,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E5.Flex",
-      "ocpus": 16
+      "ocpus": 16,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -9908,7 +9872,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E5.Flex",
-      "ocpus": 32
+      "ocpus": 32,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -9922,7 +9887,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E5.Flex",
-      "ocpus": 32
+      "ocpus": 32,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -9936,7 +9902,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E5.Flex",
-      "ocpus": 64
+      "ocpus": 64,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -9950,7 +9917,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E5.Flex",
-      "ocpus": 64
+      "ocpus": 64,
+      "status": "active"
     },
     {
       "service": "compute",
@@ -9971,7 +9939,8 @@
       "minMemoryGB": 1,
       "maxMemoryGB": 1049,
       "memoryPerOCPURatio": 64,
-      "notes": "Memory can be 1-64 GB per OCPU. Latest AMD generation, recommended for new deployments."
+      "notes": "Memory can be 1-64 GB per OCPU. Latest AMD generation, recommended for new deployments.",
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -9985,7 +9954,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E6.Flex",
-      "ocpus": 1
+      "ocpus": 1,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -9999,7 +9969,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E6.Flex",
-      "ocpus": 1
+      "ocpus": 1,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10013,7 +9984,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E6.Flex",
-      "ocpus": 2
+      "ocpus": 2,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10027,7 +9999,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E6.Flex",
-      "ocpus": 2
+      "ocpus": 2,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10041,7 +10014,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E6.Flex",
-      "ocpus": 4
+      "ocpus": 4,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10055,7 +10029,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E6.Flex",
-      "ocpus": 4
+      "ocpus": 4,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10069,7 +10044,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E6.Flex",
-      "ocpus": 8
+      "ocpus": 8,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10083,7 +10059,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E6.Flex",
-      "ocpus": 8
+      "ocpus": 8,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10097,7 +10074,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E6.Flex",
-      "ocpus": 16
+      "ocpus": 16,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10111,7 +10089,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E6.Flex",
-      "ocpus": 16
+      "ocpus": 16,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10125,7 +10104,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E6.Flex",
-      "ocpus": 32
+      "ocpus": 32,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10139,7 +10119,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E6.Flex",
-      "ocpus": 32
+      "ocpus": 32,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10153,7 +10134,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E6.Flex",
-      "ocpus": 64
+      "ocpus": 64,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10167,7 +10149,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard.E6.Flex",
-      "ocpus": 64
+      "ocpus": 64,
+      "status": "active"
     },
     {
       "service": "compute",
@@ -10184,7 +10167,8 @@
       "minMemoryGB": 1,
       "maxMemoryGB": 512,
       "memoryPerOCPURatio": 64,
-      "notes": "Arm-based. Best value for compatible workloads. Free tier includes 4 OCPUs + 24GB."
+      "notes": "Arm-based. Best value for compatible workloads. Free tier includes 4 OCPUs + 24GB.",
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10198,7 +10182,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A1.Flex",
-      "ocpus": 1
+      "ocpus": 1,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10212,7 +10197,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A1.Flex",
-      "ocpus": 1
+      "ocpus": 1,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10226,7 +10212,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A1.Flex",
-      "ocpus": 2
+      "ocpus": 2,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10240,7 +10227,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A1.Flex",
-      "ocpus": 2
+      "ocpus": 2,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10254,7 +10242,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A1.Flex",
-      "ocpus": 4
+      "ocpus": 4,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10268,7 +10257,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A1.Flex",
-      "ocpus": 4
+      "ocpus": 4,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10282,7 +10272,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A1.Flex",
-      "ocpus": 8
+      "ocpus": 8,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10296,7 +10287,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A1.Flex",
-      "ocpus": 8
+      "ocpus": 8,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10310,7 +10302,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A1.Flex",
-      "ocpus": 16
+      "ocpus": 16,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10324,7 +10317,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A1.Flex",
-      "ocpus": 16
+      "ocpus": 16,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10338,7 +10332,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A1.Flex",
-      "ocpus": 32
+      "ocpus": 32,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10352,7 +10347,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A1.Flex",
-      "ocpus": 32
+      "ocpus": 32,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10366,7 +10362,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A1.Flex",
-      "ocpus": 64
+      "ocpus": 64,
+      "status": "active"
     },
     {
       "service": "compute",
@@ -10387,7 +10384,8 @@
       "minMemoryGB": 1,
       "maxMemoryGB": 512,
       "memoryPerOCPURatio": 64,
-      "notes": "Arm-based. Improved performance over A1."
+      "notes": "Arm-based. Improved performance over A1.",
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10401,7 +10399,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A2.Flex",
-      "ocpus": 1
+      "ocpus": 1,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10415,7 +10414,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A2.Flex",
-      "ocpus": 1
+      "ocpus": 1,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10429,7 +10429,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A2.Flex",
-      "ocpus": 2
+      "ocpus": 2,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10443,7 +10444,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A2.Flex",
-      "ocpus": 2
+      "ocpus": 2,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10457,7 +10459,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A2.Flex",
-      "ocpus": 4
+      "ocpus": 4,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10471,7 +10474,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A2.Flex",
-      "ocpus": 4
+      "ocpus": 4,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10485,7 +10489,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A2.Flex",
-      "ocpus": 8
+      "ocpus": 8,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10499,7 +10504,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A2.Flex",
-      "ocpus": 8
+      "ocpus": 8,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10513,7 +10519,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A2.Flex",
-      "ocpus": 16
+      "ocpus": 16,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10527,7 +10534,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A2.Flex",
-      "ocpus": 16
+      "ocpus": 16,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10541,7 +10549,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A2.Flex",
-      "ocpus": 32
+      "ocpus": 32,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10555,7 +10564,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A2.Flex",
-      "ocpus": 32
+      "ocpus": 32,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10569,7 +10579,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A2.Flex",
-      "ocpus": 64
+      "ocpus": 64,
+      "status": "active"
     },
     {
       "service": "compute",
@@ -10590,7 +10601,8 @@
       "minMemoryGB": 1,
       "maxMemoryGB": 512,
       "memoryPerOCPURatio": 64,
-      "notes": "Arm-based. NVIDIA Grace CPU for AI/ML workloads."
+      "notes": "Arm-based. NVIDIA Grace CPU for AI/ML workloads.",
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10604,7 +10616,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A4.Flex",
-      "ocpus": 1
+      "ocpus": 1,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10618,7 +10631,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A4.Flex",
-      "ocpus": 1
+      "ocpus": 1,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10632,7 +10646,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A4.Flex",
-      "ocpus": 2
+      "ocpus": 2,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10646,7 +10661,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A4.Flex",
-      "ocpus": 2
+      "ocpus": 2,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10660,7 +10676,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A4.Flex",
-      "ocpus": 4
+      "ocpus": 4,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10674,7 +10691,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A4.Flex",
-      "ocpus": 4
+      "ocpus": 4,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10688,7 +10706,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A4.Flex",
-      "ocpus": 8
+      "ocpus": 8,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10702,7 +10721,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A4.Flex",
-      "ocpus": 8
+      "ocpus": 8,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10716,7 +10736,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A4.Flex",
-      "ocpus": 16
+      "ocpus": 16,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10730,7 +10751,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A4.Flex",
-      "ocpus": 16
+      "ocpus": 16,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10744,7 +10766,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A4.Flex",
-      "ocpus": 32
+      "ocpus": 32,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10758,7 +10781,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A4.Flex",
-      "ocpus": 32
+      "ocpus": 32,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10772,7 +10796,8 @@
       "category": "general",
       "architecture": "arm",
       "baseShape": "VM.Standard.A4.Flex",
-      "ocpus": 64
+      "ocpus": 64,
+      "status": "active"
     },
     {
       "service": "compute",
@@ -10789,7 +10814,8 @@
       "minMemoryGB": 1,
       "maxMemoryGB": 512,
       "memoryPerOCPURatio": 64,
-      "notes": "Intel-based option. Memory can be 1-64 GB per OCPU."
+      "notes": "Intel-based option. Memory can be 1-64 GB per OCPU.",
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10803,7 +10829,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard3.Flex",
-      "ocpus": 1
+      "ocpus": 1,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10817,7 +10844,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard3.Flex",
-      "ocpus": 1
+      "ocpus": 1,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10831,7 +10859,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard3.Flex",
-      "ocpus": 2
+      "ocpus": 2,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10845,7 +10874,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard3.Flex",
-      "ocpus": 2
+      "ocpus": 2,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10859,7 +10889,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard3.Flex",
-      "ocpus": 4
+      "ocpus": 4,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10873,7 +10904,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard3.Flex",
-      "ocpus": 4
+      "ocpus": 4,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10887,7 +10919,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard3.Flex",
-      "ocpus": 8
+      "ocpus": 8,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10901,7 +10934,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard3.Flex",
-      "ocpus": 8
+      "ocpus": 8,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10915,7 +10949,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard3.Flex",
-      "ocpus": 16
+      "ocpus": 16,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10929,7 +10964,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard3.Flex",
-      "ocpus": 16
+      "ocpus": 16,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10943,7 +10979,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard3.Flex",
-      "ocpus": 32
+      "ocpus": 32,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10957,7 +10994,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Standard3.Flex",
-      "ocpus": 32
+      "ocpus": 32,
+      "status": "active"
     },
     {
       "service": "compute",
@@ -10974,7 +11012,8 @@
       "minMemoryGB": 1,
       "maxMemoryGB": 256,
       "memoryPerOCPURatio": 14,
-      "notes": "Higher clock speed, optimized for latency-sensitive workloads."
+      "notes": "Higher clock speed, optimized for latency-sensitive workloads.",
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -10988,7 +11027,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Optimized3.Flex",
-      "ocpus": 1
+      "ocpus": 1,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -11002,7 +11042,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Optimized3.Flex",
-      "ocpus": 1
+      "ocpus": 1,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -11016,7 +11057,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Optimized3.Flex",
-      "ocpus": 2
+      "ocpus": 2,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -11030,7 +11072,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Optimized3.Flex",
-      "ocpus": 2
+      "ocpus": 2,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -11044,7 +11087,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Optimized3.Flex",
-      "ocpus": 4
+      "ocpus": 4,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -11058,7 +11102,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Optimized3.Flex",
-      "ocpus": 4
+      "ocpus": 4,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -11072,7 +11117,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Optimized3.Flex",
-      "ocpus": 8
+      "ocpus": 8,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -11086,7 +11132,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Optimized3.Flex",
-      "ocpus": 8
+      "ocpus": 8,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -11100,7 +11147,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Optimized3.Flex",
-      "ocpus": 16
+      "ocpus": 16,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -11114,7 +11162,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.Optimized3.Flex",
-      "ocpus": 16
+      "ocpus": 16,
+      "status": "active"
     },
     {
       "service": "compute",
@@ -11131,7 +11180,8 @@
       "minMemoryGB": 128,
       "maxMemoryGB": 512,
       "localStorageGB": 6400,
-      "notes": "Includes local NVMe storage. 6.4 TB at 8 OCPU, scales with shape."
+      "notes": "Includes local NVMe storage. 6.4 TB at 8 OCPU, scales with shape.",
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -11145,7 +11195,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.DenseIO.E4.Flex",
-      "ocpus": 1
+      "ocpus": 1,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -11159,7 +11210,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.DenseIO.E4.Flex",
-      "ocpus": 1
+      "ocpus": 1,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -11173,7 +11225,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.DenseIO.E4.Flex",
-      "ocpus": 2
+      "ocpus": 2,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -11187,7 +11240,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.DenseIO.E4.Flex",
-      "ocpus": 2
+      "ocpus": 2,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -11201,7 +11255,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.DenseIO.E4.Flex",
-      "ocpus": 4
+      "ocpus": 4,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -11215,7 +11270,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.DenseIO.E4.Flex",
-      "ocpus": 4
+      "ocpus": 4,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -11229,7 +11285,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.DenseIO.E4.Flex",
-      "ocpus": 8
+      "ocpus": 8,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -11243,7 +11300,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.DenseIO.E4.Flex",
-      "ocpus": 8
+      "ocpus": 8,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -11257,7 +11315,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.DenseIO.E4.Flex",
-      "ocpus": 16
+      "ocpus": 16,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -11271,7 +11330,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.DenseIO.E4.Flex",
-      "ocpus": 16
+      "ocpus": 16,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -11285,7 +11345,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.DenseIO.E4.Flex",
-      "ocpus": 32
+      "ocpus": 32,
+      "status": "active"
     },
     {
       "provider": "oci",
@@ -11299,7 +11360,8 @@
       "category": "general",
       "architecture": "x86",
       "baseShape": "VM.DenseIO.E4.Flex",
-      "ocpus": 32
+      "ocpus": 32,
+      "status": "active"
     },
     {
       "service": "compute",
@@ -11315,7 +11377,8 @@
       "maxOCPU": 128,
       "minMemoryGB": 2048,
       "maxMemoryGB": 2048,
-      "notes": "Fixed-shape bare metal. Memory included in instance price."
+      "notes": "Fixed-shape bare metal. Memory included in instance price.",
+      "status": "active"
     },
     {
       "service": "compute",
@@ -11331,7 +11394,8 @@
       "maxOCPU": 192,
       "minMemoryGB": 2304,
       "maxMemoryGB": 2304,
-      "notes": "Latest generation bare metal. Memory included in instance price."
+      "notes": "Latest generation bare metal. Memory included in instance price.",
+      "status": "active"
     },
     {
       "service": "compute",
@@ -11347,7 +11411,8 @@
       "maxOCPU": 160,
       "minMemoryGB": 1024,
       "maxMemoryGB": 1024,
-      "notes": "Arm bare metal. Best value for Arm-compatible workloads."
+      "notes": "Arm bare metal. Best value for Arm-compatible workloads.",
+      "status": "active"
     },
     {
       "service": "compute",
@@ -11364,7 +11429,8 @@
       "maxOCPU": 64,
       "minMemoryGB": 1024,
       "maxMemoryGB": 1024,
-      "notes": "4x NVIDIA A10 Tensor Core GPUs. Good for inference workloads."
+      "notes": "4x NVIDIA A10 Tensor Core GPUs. Good for inference workloads.",
+      "status": "active"
     },
     {
       "service": "compute",
@@ -11381,7 +11447,8 @@
       "maxOCPU": 112,
       "minMemoryGB": 2048,
       "maxMemoryGB": 2048,
-      "notes": "8x NVIDIA H100 80GB HBM3 GPUs. Premium AI/ML training workloads."
+      "notes": "8x NVIDIA H100 80GB HBM3 GPUs. Premium AI/ML training workloads.",
+      "status": "active"
     },
     {
       "service": "compute",
@@ -11398,7 +11465,368 @@
       "maxOCPU": 128,
       "minMemoryGB": 2048,
       "maxMemoryGB": 2048,
-      "notes": "8x NVIDIA A100 80GB GPUs. High-performance AI/ML workloads."
+      "notes": "8x NVIDIA A100 80GB GPUs. High-performance AI/ML workloads.",
+      "status": "active"
+    },
+    {
+      "provider": "oci",
+      "name": "VM.Standard.E2.Flex-1-8",
+      "displayName": "VM.Standard.E2.Flex (1 OCPU / 8 GB)",
+      "vcpus": 2,
+      "memoryGB": 8,
+      "hourlyPrice": 0.042,
+      "monthlyPrice": 30.66,
+      "region": "all",
+      "category": "general",
+      "architecture": "x86",
+      "baseShape": "VM.Standard.E2.Flex",
+      "ocpus": 1,
+      "status": "legacy"
+    },
+    {
+      "provider": "oci",
+      "name": "VM.Standard.E2.Flex-1-16",
+      "displayName": "VM.Standard.E2.Flex (1 OCPU / 16 GB)",
+      "vcpus": 2,
+      "memoryGB": 16,
+      "hourlyPrice": 0.054,
+      "monthlyPrice": 39.42,
+      "region": "all",
+      "category": "general",
+      "architecture": "x86",
+      "baseShape": "VM.Standard.E2.Flex",
+      "ocpus": 1,
+      "status": "legacy"
+    },
+    {
+      "provider": "oci",
+      "name": "VM.Standard.E2.Flex-2-16",
+      "displayName": "VM.Standard.E2.Flex (2 OCPU / 16 GB)",
+      "vcpus": 4,
+      "memoryGB": 16,
+      "hourlyPrice": 0.084,
+      "monthlyPrice": 61.32,
+      "region": "all",
+      "category": "general",
+      "architecture": "x86",
+      "baseShape": "VM.Standard.E2.Flex",
+      "ocpus": 2,
+      "status": "legacy"
+    },
+    {
+      "provider": "oci",
+      "name": "VM.Standard.E2.Flex-2-32",
+      "displayName": "VM.Standard.E2.Flex (2 OCPU / 32 GB)",
+      "vcpus": 4,
+      "memoryGB": 32,
+      "hourlyPrice": 0.108,
+      "monthlyPrice": 78.84,
+      "region": "all",
+      "category": "general",
+      "architecture": "x86",
+      "baseShape": "VM.Standard.E2.Flex",
+      "ocpus": 2,
+      "status": "legacy"
+    },
+    {
+      "provider": "oci",
+      "name": "VM.Standard.E2.Flex-4-32",
+      "displayName": "VM.Standard.E2.Flex (4 OCPU / 32 GB)",
+      "vcpus": 8,
+      "memoryGB": 32,
+      "hourlyPrice": 0.168,
+      "monthlyPrice": 122.64,
+      "region": "all",
+      "category": "general",
+      "architecture": "x86",
+      "baseShape": "VM.Standard.E2.Flex",
+      "ocpus": 4,
+      "status": "legacy"
+    },
+    {
+      "provider": "oci",
+      "name": "VM.Standard.E2.Flex-4-64",
+      "displayName": "VM.Standard.E2.Flex (4 OCPU / 64 GB)",
+      "vcpus": 8,
+      "memoryGB": 64,
+      "hourlyPrice": 0.216,
+      "monthlyPrice": 157.68,
+      "region": "all",
+      "category": "general",
+      "architecture": "x86",
+      "baseShape": "VM.Standard.E2.Flex",
+      "ocpus": 4,
+      "status": "legacy"
+    },
+    {
+      "provider": "oci",
+      "name": "VM.Standard.E2.Flex-8-64",
+      "displayName": "VM.Standard.E2.Flex (8 OCPU / 64 GB)",
+      "vcpus": 16,
+      "memoryGB": 64,
+      "hourlyPrice": 0.336,
+      "monthlyPrice": 245.28,
+      "region": "all",
+      "category": "general",
+      "architecture": "x86",
+      "baseShape": "VM.Standard.E2.Flex",
+      "ocpus": 8,
+      "status": "legacy"
+    },
+    {
+      "provider": "oci",
+      "name": "VM.Standard.E2.Flex-8-128",
+      "displayName": "VM.Standard.E2.Flex (8 OCPU / 128 GB)",
+      "vcpus": 16,
+      "memoryGB": 128,
+      "hourlyPrice": 0.432,
+      "monthlyPrice": 315.36,
+      "region": "all",
+      "category": "general",
+      "architecture": "x86",
+      "baseShape": "VM.Standard.E2.Flex",
+      "ocpus": 8,
+      "status": "legacy"
+    },
+    {
+      "provider": "oci",
+      "name": "VM.Standard.E2.Flex-16-128",
+      "displayName": "VM.Standard.E2.Flex (16 OCPU / 128 GB)",
+      "vcpus": 32,
+      "memoryGB": 128,
+      "hourlyPrice": 0.672,
+      "monthlyPrice": 490.56,
+      "region": "all",
+      "category": "general",
+      "architecture": "x86",
+      "baseShape": "VM.Standard.E2.Flex",
+      "ocpus": 16,
+      "status": "legacy"
+    },
+    {
+      "provider": "oci",
+      "name": "VM.Standard.E2.Flex-16-256",
+      "displayName": "VM.Standard.E2.Flex (16 OCPU / 256 GB)",
+      "vcpus": 32,
+      "memoryGB": 256,
+      "hourlyPrice": 0.864,
+      "monthlyPrice": 630.72,
+      "region": "all",
+      "category": "general",
+      "architecture": "x86",
+      "baseShape": "VM.Standard.E2.Flex",
+      "ocpus": 16,
+      "status": "legacy"
+    },
+    {
+      "provider": "oci",
+      "name": "VM.Standard.E2.Flex-32-256",
+      "displayName": "VM.Standard.E2.Flex (32 OCPU / 256 GB)",
+      "vcpus": 64,
+      "memoryGB": 256,
+      "hourlyPrice": 1.344,
+      "monthlyPrice": 981.12,
+      "region": "all",
+      "category": "general",
+      "architecture": "x86",
+      "baseShape": "VM.Standard.E2.Flex",
+      "ocpus": 32,
+      "status": "legacy"
+    },
+    {
+      "provider": "oci",
+      "name": "VM.Standard.E2.Flex-32-512",
+      "displayName": "VM.Standard.E2.Flex (32 OCPU / 512 GB)",
+      "vcpus": 64,
+      "memoryGB": 512,
+      "hourlyPrice": 1.728,
+      "monthlyPrice": 1261.44,
+      "region": "all",
+      "category": "general",
+      "architecture": "x86",
+      "baseShape": "VM.Standard.E2.Flex",
+      "ocpus": 32,
+      "status": "legacy"
+    },
+    {
+      "provider": "oci",
+      "name": "VM.Standard.E3.Flex-1-8",
+      "displayName": "VM.Standard.E3.Flex (1 OCPU / 8 GB)",
+      "vcpus": 2,
+      "memoryGB": 8,
+      "hourlyPrice": 0.037,
+      "monthlyPrice": 27.01,
+      "region": "all",
+      "category": "general",
+      "architecture": "x86",
+      "baseShape": "VM.Standard.E3.Flex",
+      "ocpus": 1,
+      "status": "legacy"
+    },
+    {
+      "provider": "oci",
+      "name": "VM.Standard.E3.Flex-1-16",
+      "displayName": "VM.Standard.E3.Flex (1 OCPU / 16 GB)",
+      "vcpus": 2,
+      "memoryGB": 16,
+      "hourlyPrice": 0.049,
+      "monthlyPrice": 35.77,
+      "region": "all",
+      "category": "general",
+      "architecture": "x86",
+      "baseShape": "VM.Standard.E3.Flex",
+      "ocpus": 1,
+      "status": "legacy"
+    },
+    {
+      "provider": "oci",
+      "name": "VM.Standard.E3.Flex-2-16",
+      "displayName": "VM.Standard.E3.Flex (2 OCPU / 16 GB)",
+      "vcpus": 4,
+      "memoryGB": 16,
+      "hourlyPrice": 0.074,
+      "monthlyPrice": 54.02,
+      "region": "all",
+      "category": "general",
+      "architecture": "x86",
+      "baseShape": "VM.Standard.E3.Flex",
+      "ocpus": 2,
+      "status": "legacy"
+    },
+    {
+      "provider": "oci",
+      "name": "VM.Standard.E3.Flex-2-32",
+      "displayName": "VM.Standard.E3.Flex (2 OCPU / 32 GB)",
+      "vcpus": 4,
+      "memoryGB": 32,
+      "hourlyPrice": 0.098,
+      "monthlyPrice": 71.54,
+      "region": "all",
+      "category": "general",
+      "architecture": "x86",
+      "baseShape": "VM.Standard.E3.Flex",
+      "ocpus": 2,
+      "status": "legacy"
+    },
+    {
+      "provider": "oci",
+      "name": "VM.Standard.E3.Flex-4-32",
+      "displayName": "VM.Standard.E3.Flex (4 OCPU / 32 GB)",
+      "vcpus": 8,
+      "memoryGB": 32,
+      "hourlyPrice": 0.148,
+      "monthlyPrice": 108.04,
+      "region": "all",
+      "category": "general",
+      "architecture": "x86",
+      "baseShape": "VM.Standard.E3.Flex",
+      "ocpus": 4,
+      "status": "legacy"
+    },
+    {
+      "provider": "oci",
+      "name": "VM.Standard.E3.Flex-4-64",
+      "displayName": "VM.Standard.E3.Flex (4 OCPU / 64 GB)",
+      "vcpus": 8,
+      "memoryGB": 64,
+      "hourlyPrice": 0.196,
+      "monthlyPrice": 143.08,
+      "region": "all",
+      "category": "general",
+      "architecture": "x86",
+      "baseShape": "VM.Standard.E3.Flex",
+      "ocpus": 4,
+      "status": "legacy"
+    },
+    {
+      "provider": "oci",
+      "name": "VM.Standard.E3.Flex-8-64",
+      "displayName": "VM.Standard.E3.Flex (8 OCPU / 64 GB)",
+      "vcpus": 16,
+      "memoryGB": 64,
+      "hourlyPrice": 0.296,
+      "monthlyPrice": 216.08,
+      "region": "all",
+      "category": "general",
+      "architecture": "x86",
+      "baseShape": "VM.Standard.E3.Flex",
+      "ocpus": 8,
+      "status": "legacy"
+    },
+    {
+      "provider": "oci",
+      "name": "VM.Standard.E3.Flex-8-128",
+      "displayName": "VM.Standard.E3.Flex (8 OCPU / 128 GB)",
+      "vcpus": 16,
+      "memoryGB": 128,
+      "hourlyPrice": 0.392,
+      "monthlyPrice": 286.16,
+      "region": "all",
+      "category": "general",
+      "architecture": "x86",
+      "baseShape": "VM.Standard.E3.Flex",
+      "ocpus": 8,
+      "status": "legacy"
+    },
+    {
+      "provider": "oci",
+      "name": "VM.Standard.E3.Flex-16-128",
+      "displayName": "VM.Standard.E3.Flex (16 OCPU / 128 GB)",
+      "vcpus": 32,
+      "memoryGB": 128,
+      "hourlyPrice": 0.592,
+      "monthlyPrice": 432.16,
+      "region": "all",
+      "category": "general",
+      "architecture": "x86",
+      "baseShape": "VM.Standard.E3.Flex",
+      "ocpus": 16,
+      "status": "legacy"
+    },
+    {
+      "provider": "oci",
+      "name": "VM.Standard.E3.Flex-16-256",
+      "displayName": "VM.Standard.E3.Flex (16 OCPU / 256 GB)",
+      "vcpus": 32,
+      "memoryGB": 256,
+      "hourlyPrice": 0.784,
+      "monthlyPrice": 572.32,
+      "region": "all",
+      "category": "general",
+      "architecture": "x86",
+      "baseShape": "VM.Standard.E3.Flex",
+      "ocpus": 16,
+      "status": "legacy"
+    },
+    {
+      "provider": "oci",
+      "name": "VM.Standard.E3.Flex-32-256",
+      "displayName": "VM.Standard.E3.Flex (32 OCPU / 256 GB)",
+      "vcpus": 64,
+      "memoryGB": 256,
+      "hourlyPrice": 1.184,
+      "monthlyPrice": 864.32,
+      "region": "all",
+      "category": "general",
+      "architecture": "x86",
+      "baseShape": "VM.Standard.E3.Flex",
+      "ocpus": 32,
+      "status": "legacy"
+    },
+    {
+      "provider": "oci",
+      "name": "VM.Standard.E3.Flex-32-512",
+      "displayName": "VM.Standard.E3.Flex (32 OCPU / 512 GB)",
+      "vcpus": 64,
+      "memoryGB": 512,
+      "hourlyPrice": 1.568,
+      "monthlyPrice": 1144.64,
+      "region": "all",
+      "category": "general",
+      "architecture": "x86",
+      "baseShape": "VM.Standard.E3.Flex",
+      "ocpus": 32,
+      "status": "legacy"
     }
   ],
   "loadBalancers": [
@@ -11536,6 +11964,107 @@
       "type": "apm",
       "pricePerHour": 0.02,
       "notes": "Per tracing event-hour"
+    }
+  ],
+  "ai": [
+    {
+      "service": "generative-ai-cohere-large",
+      "name": "Generative AI - Cohere Command R+",
+      "type": "genai",
+      "pricePerInput": 0.003,
+      "pricePerOutput": 0.015,
+      "status": "active",
+      "notes": "Per 1K tokens"
+    },
+    {
+      "service": "generative-ai-cohere-small",
+      "name": "Generative AI - Cohere Command R",
+      "type": "genai",
+      "pricePerInput": 0.0005,
+      "pricePerOutput": 0.0015,
+      "status": "active",
+      "notes": "Per 1K tokens"
+    },
+    {
+      "service": "generative-ai-llama",
+      "name": "Generative AI - Meta Llama 3.1",
+      "type": "genai",
+      "pricePerInput": 0.0009,
+      "pricePerOutput": 0.0009,
+      "status": "active",
+      "notes": "Per 1K tokens"
+    },
+    {
+      "service": "generative-ai-embed",
+      "name": "Generative AI - Cohere Embed",
+      "type": "genai",
+      "pricePerInput": 0.0001,
+      "status": "active",
+      "notes": "Embeddings per 1K tokens"
+    },
+    {
+      "service": "generative-ai-dedicated",
+      "name": "Generative AI - Dedicated",
+      "type": "genai",
+      "pricePerUnit": 24.0,
+      "status": "active",
+      "notes": "AI Unit per hour"
+    },
+    {
+      "service": "generative-ai-agents",
+      "name": "Generative AI Agents",
+      "type": "genai",
+      "pricePerTransaction": 0.0003,
+      "status": "active",
+      "notes": "RAG agents per 10K transactions"
+    },
+    {
+      "service": "vision",
+      "name": "OCI Vision",
+      "type": "ai",
+      "pricePerTransaction": 0.0,
+      "status": "active",
+      "notes": "Image analysis, free tier"
+    },
+    {
+      "service": "speech",
+      "name": "OCI Speech",
+      "type": "ai",
+      "pricePerHour": 0.0,
+      "status": "active",
+      "notes": "Speech-to-text, free tier"
+    },
+    {
+      "service": "language",
+      "name": "OCI Language",
+      "type": "ai",
+      "pricePerTransaction": 0.0,
+      "status": "active",
+      "notes": "NLP, free tier"
+    },
+    {
+      "service": "document-understanding",
+      "name": "OCI Document Understanding",
+      "type": "ai",
+      "pricePerTransaction": 0.0,
+      "status": "active",
+      "notes": "Document OCR, free tier"
+    },
+    {
+      "service": "anomaly-detection",
+      "name": "OCI Anomaly Detection",
+      "type": "ai",
+      "pricePerHour": 0.25,
+      "status": "active",
+      "notes": "ML anomaly detection"
+    },
+    {
+      "service": "data-science",
+      "name": "OCI Data Science",
+      "type": "ai",
+      "pricePerOCPU": 0.0,
+      "status": "active",
+      "notes": "Notebooks free, pay for compute"
     }
   ]
 }
