@@ -3,10 +3,10 @@
     "provider": "gcp",
     "lastUpdated": "2026-01-20T00:00:00Z",
     "source": "instances.vantage.sh + manual curation",
-    "version": "1.2.7",
+    "version": "1.2.8",
     "totalProducts": 329,
     "currency": "USD",
-    "notes": "GCP pricing with predefined + custom machine types"
+    "notes": "GCP pricing with n2d correction (vantage.sh had 10x error)"
   },
   "compute": [
     {
@@ -15,12 +15,12 @@
       "displayName": "N2D High CPU 2 (Compute optimized)",
       "vcpus": 2,
       "memoryGB": 2,
-      "hourlyPrice": 0.0062376,
-      "monthlyPrice": 4.55,
+      "hourlyPrice": 0.062376,
+      "monthlyPrice": 45.5,
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
-      "notes": "current"
+      "notes": "current (price corrected)"
     },
     {
       "provider": "gcp",
@@ -28,12 +28,12 @@
       "displayName": "N2D Standard 2 (General purpose)",
       "vcpus": 2,
       "memoryGB": 8,
-      "hourlyPrice": 0.0084492,
-      "monthlyPrice": 6.17,
+      "hourlyPrice": 0.084492,
+      "monthlyPrice": 61.7,
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
-      "notes": "current"
+      "notes": "current (price corrected)"
     },
     {
       "provider": "gcp",
@@ -41,12 +41,12 @@
       "displayName": "N2D High Memory 2 (Memory optimized)",
       "vcpus": 2,
       "memoryGB": 16,
-      "hourlyPrice": 0.011398,
-      "monthlyPrice": 8.32,
+      "hourlyPrice": 0.11398,
+      "monthlyPrice": 83.2,
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
-      "notes": "current"
+      "notes": "current (price corrected)"
     },
     {
       "provider": "gcp",
@@ -54,12 +54,12 @@
       "displayName": "N2D High CPU 4 (Compute optimized)",
       "vcpus": 4,
       "memoryGB": 4,
-      "hourlyPrice": 0.0124752,
-      "monthlyPrice": 9.11,
+      "hourlyPrice": 0.124752,
+      "monthlyPrice": 91.1,
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
-      "notes": "current"
+      "notes": "current (price corrected)"
     },
     {
       "provider": "gcp",
@@ -67,12 +67,12 @@
       "displayName": "N2D Standard 4 (General purpose)",
       "vcpus": 4,
       "memoryGB": 16,
-      "hourlyPrice": 0.0168984,
-      "monthlyPrice": 12.34,
+      "hourlyPrice": 0.168984,
+      "monthlyPrice": 123.4,
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
-      "notes": "current"
+      "notes": "current (price corrected)"
     },
     {
       "provider": "gcp",
@@ -80,12 +80,12 @@
       "displayName": "N2D High Memory 4 (Memory optimized)",
       "vcpus": 4,
       "memoryGB": 32,
-      "hourlyPrice": 0.022796,
-      "monthlyPrice": 16.64,
+      "hourlyPrice": 0.22796,
+      "monthlyPrice": 166.4,
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
-      "notes": "current"
+      "notes": "current (price corrected)"
     },
     {
       "provider": "gcp",
@@ -93,12 +93,12 @@
       "displayName": "N2D High CPU 8 (Compute optimized)",
       "vcpus": 8,
       "memoryGB": 8,
-      "hourlyPrice": 0.0249504,
-      "monthlyPrice": 18.21,
+      "hourlyPrice": 0.249504,
+      "monthlyPrice": 182.1,
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
-      "notes": "current"
+      "notes": "current (price corrected)"
     },
     {
       "provider": "gcp",
@@ -106,12 +106,12 @@
       "displayName": "N2D Standard 8 (General purpose)",
       "vcpus": 8,
       "memoryGB": 32,
-      "hourlyPrice": 0.0337968,
-      "monthlyPrice": 24.67,
+      "hourlyPrice": 0.337968,
+      "monthlyPrice": 246.7,
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
-      "notes": "current"
+      "notes": "current (price corrected)"
     },
     {
       "provider": "gcp",
@@ -158,12 +158,12 @@
       "displayName": "N2D High Memory 8 (Memory optimized)",
       "vcpus": 8,
       "memoryGB": 64,
-      "hourlyPrice": 0.045592,
-      "monthlyPrice": 33.28,
+      "hourlyPrice": 0.45592,
+      "monthlyPrice": 332.8,
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
-      "notes": "current"
+      "notes": "current (price corrected)"
     },
     {
       "provider": "gcp",
@@ -236,12 +236,12 @@
       "displayName": "N2D High CPU 16 (Compute optimized)",
       "vcpus": 16,
       "memoryGB": 16,
-      "hourlyPrice": 0.0499008,
-      "monthlyPrice": 36.43,
+      "hourlyPrice": 0.499008,
+      "monthlyPrice": 364.3,
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
-      "notes": "current"
+      "notes": "current (price corrected)"
     },
     {
       "provider": "gcp",
@@ -314,12 +314,12 @@
       "displayName": "N2D Standard 16 (General purpose)",
       "vcpus": 16,
       "memoryGB": 64,
-      "hourlyPrice": 0.0675936,
-      "monthlyPrice": 49.34,
+      "hourlyPrice": 0.675936,
+      "monthlyPrice": 493.4,
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
-      "notes": "current"
+      "notes": "current (price corrected)"
     },
     {
       "provider": "gcp",
@@ -470,12 +470,12 @@
       "displayName": "N2D High Memory 16 (Memory optimized)",
       "vcpus": 16,
       "memoryGB": 128,
-      "hourlyPrice": 0.091184,
-      "monthlyPrice": 66.56,
+      "hourlyPrice": 0.91184,
+      "monthlyPrice": 665.6,
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
-      "notes": "current"
+      "notes": "current (price corrected)"
     },
     {
       "provider": "gcp",
@@ -535,12 +535,12 @@
       "displayName": "N2D High CPU 32 (Compute optimized)",
       "vcpus": 32,
       "memoryGB": 32,
-      "hourlyPrice": 0.0998016,
-      "monthlyPrice": 72.86,
+      "hourlyPrice": 0.998016,
+      "monthlyPrice": 728.6,
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
-      "notes": "current"
+      "notes": "current (price corrected)"
     },
     {
       "provider": "gcp",
@@ -639,12 +639,12 @@
       "displayName": "N2D Standard 32 (General purpose)",
       "vcpus": 32,
       "memoryGB": 128,
-      "hourlyPrice": 0.1351872,
-      "monthlyPrice": 98.69,
+      "hourlyPrice": 1.351872,
+      "monthlyPrice": 986.9,
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
-      "notes": "current"
+      "notes": "current (price corrected)"
     },
     {
       "provider": "gcp",
@@ -745,12 +745,12 @@
       "displayName": "N2D High CPU 48 (Compute optimized)",
       "vcpus": 48,
       "memoryGB": 48,
-      "hourlyPrice": 0.1497024,
-      "monthlyPrice": 109.28,
+      "hourlyPrice": 1.497024,
+      "monthlyPrice": 1092.8,
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
-      "notes": "current"
+      "notes": "current (price corrected)"
     },
     {
       "provider": "gcp",
@@ -836,12 +836,12 @@
       "displayName": "N2D High Memory 32 (Memory optimized)",
       "vcpus": 32,
       "memoryGB": 256,
-      "hourlyPrice": 0.182368,
-      "monthlyPrice": 133.13,
+      "hourlyPrice": 1.82368,
+      "monthlyPrice": 1331.3,
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
-      "notes": "current"
+      "notes": "current (price corrected)"
     },
     {
       "provider": "gcp",
@@ -914,12 +914,12 @@
       "displayName": "N2D High CPU 64 (Compute optimized)",
       "vcpus": 64,
       "memoryGB": 64,
-      "hourlyPrice": 0.1996032,
-      "monthlyPrice": 145.71,
+      "hourlyPrice": 1.996032,
+      "monthlyPrice": 1457.1,
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
-      "notes": "current"
+      "notes": "current (price corrected)"
     },
     {
       "provider": "gcp",
@@ -927,12 +927,12 @@
       "displayName": "N2D Standard 48 (General purpose)",
       "vcpus": 48,
       "memoryGB": 192,
-      "hourlyPrice": 0.2027808,
-      "monthlyPrice": 148.03,
+      "hourlyPrice": 2.027808,
+      "monthlyPrice": 1480.3,
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
-      "notes": "current"
+      "notes": "current (price corrected)"
     },
     {
       "provider": "gcp",
@@ -1018,12 +1018,12 @@
       "displayName": "N2D High CPU 80 (Compute optimized)",
       "vcpus": 80,
       "memoryGB": 80,
-      "hourlyPrice": 0.249504,
-      "monthlyPrice": 182.14,
+      "hourlyPrice": 2.49504,
+      "monthlyPrice": 1821.4,
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
-      "notes": "current"
+      "notes": "current (price corrected)"
     },
     {
       "provider": "gcp",
@@ -1083,12 +1083,12 @@
       "displayName": "N2D Standard 64 (General purpose)",
       "vcpus": 64,
       "memoryGB": 256,
-      "hourlyPrice": 0.2703744,
-      "monthlyPrice": 197.37,
+      "hourlyPrice": 2.703744,
+      "monthlyPrice": 1973.7,
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
-      "notes": "current"
+      "notes": "current (price corrected)"
     },
     {
       "provider": "gcp",
@@ -1096,12 +1096,12 @@
       "displayName": "N2D High Memory 48 (Memory optimized)",
       "vcpus": 48,
       "memoryGB": 384,
-      "hourlyPrice": 0.273552,
-      "monthlyPrice": 199.69,
+      "hourlyPrice": 2.73552,
+      "monthlyPrice": 1996.9,
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
-      "notes": "current"
+      "notes": "current (price corrected)"
     },
     {
       "provider": "gcp",
@@ -1189,12 +1189,12 @@
       "displayName": "N2D High CPU 96 (Compute optimized)",
       "vcpus": 96,
       "memoryGB": 96,
-      "hourlyPrice": 0.2994048,
-      "monthlyPrice": 218.57,
+      "hourlyPrice": 2.994048,
+      "monthlyPrice": 2185.7,
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
-      "notes": "current"
+      "notes": "current (price corrected)"
     },
     {
       "provider": "gcp",
@@ -1228,12 +1228,12 @@
       "displayName": "N2D Standard 80 (General purpose)",
       "vcpus": 80,
       "memoryGB": 320,
-      "hourlyPrice": 0.337968,
-      "monthlyPrice": 246.72,
+      "hourlyPrice": 3.37968,
+      "monthlyPrice": 2467.2,
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
-      "notes": "current"
+      "notes": "current (price corrected)"
     },
     {
       "provider": "gcp",
@@ -1293,12 +1293,12 @@
       "displayName": "N2D High Memory 64 (Memory optimized)",
       "vcpus": 64,
       "memoryGB": 512,
-      "hourlyPrice": 0.364736,
-      "monthlyPrice": 266.26,
+      "hourlyPrice": 3.64736,
+      "monthlyPrice": 2662.6,
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
-      "notes": "current"
+      "notes": "current (price corrected)"
     },
     {
       "provider": "gcp",
@@ -1371,12 +1371,12 @@
       "displayName": "N2D High CPU 128 (Compute optimized)",
       "vcpus": 128,
       "memoryGB": 128,
-      "hourlyPrice": 0.3992064,
-      "monthlyPrice": 291.42,
+      "hourlyPrice": 3.992064,
+      "monthlyPrice": 2914.2,
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
-      "notes": "current"
+      "notes": "current (price corrected)"
     },
     {
       "provider": "gcp",
@@ -1384,12 +1384,12 @@
       "displayName": "N2D Standard 96 (General purpose)",
       "vcpus": 96,
       "memoryGB": 384,
-      "hourlyPrice": 0.4055616,
-      "monthlyPrice": 296.06,
+      "hourlyPrice": 4.055616,
+      "monthlyPrice": 2960.6,
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
-      "notes": "current"
+      "notes": "current (price corrected)"
     },
     {
       "provider": "gcp",
@@ -1477,12 +1477,12 @@
       "displayName": "N2D High Memory 80 (Memory optimized)",
       "vcpus": 80,
       "memoryGB": 640,
-      "hourlyPrice": 0.45592,
-      "monthlyPrice": 332.82,
+      "hourlyPrice": 4.5592,
+      "monthlyPrice": 3328.2,
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
-      "notes": "current"
+      "notes": "current (price corrected)"
     },
     {
       "provider": "gcp",
@@ -1594,12 +1594,12 @@
       "displayName": "N2D Standard 128 (General purpose)",
       "vcpus": 128,
       "memoryGB": 512,
-      "hourlyPrice": 0.5407488,
-      "monthlyPrice": 394.75,
+      "hourlyPrice": 5.407488,
+      "monthlyPrice": 3947.5,
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
-      "notes": "current"
+      "notes": "current (price corrected)"
     },
     {
       "provider": "gcp",
@@ -1607,12 +1607,12 @@
       "displayName": "N2D High Memory 96 (Memory optimized)",
       "vcpus": 96,
       "memoryGB": 768,
-      "hourlyPrice": 0.547104,
-      "monthlyPrice": 399.39,
+      "hourlyPrice": 5.47104,
+      "monthlyPrice": 3993.9,
       "region": "us-central1",
       "category": "memory",
       "architecture": "x86",
-      "notes": "current"
+      "notes": "current (price corrected)"
     },
     {
       "provider": "gcp",
@@ -1739,12 +1739,12 @@
       "displayName": "N2D High CPU 224 (Compute optimized)",
       "vcpus": 224,
       "memoryGB": 224,
-      "hourlyPrice": 0.6986112,
-      "monthlyPrice": 509.99,
+      "hourlyPrice": 6.986112,
+      "monthlyPrice": 5099.9,
       "region": "us-central1",
       "category": "compute",
       "architecture": "x86",
-      "notes": "current"
+      "notes": "current (price corrected)"
     },
     {
       "provider": "gcp",
@@ -1977,12 +1977,12 @@
       "displayName": "N2D Standard 224 (General purpose)",
       "vcpus": 224,
       "memoryGB": 896,
-      "hourlyPrice": 0.9463104,
-      "monthlyPrice": 690.81,
+      "hourlyPrice": 9.463104,
+      "monthlyPrice": 6908.1,
       "region": "us-central1",
       "category": "general",
       "architecture": "x86",
-      "notes": "current"
+      "notes": "current (price corrected)"
     },
     {
       "provider": "gcp",
