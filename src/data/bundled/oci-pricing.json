@@ -4,14 +4,15 @@
     "lastUpdated": "2026-01-20T00:00:00Z",
     "source": "Oracle Cloud Infrastructure Pricing API",
     "sourceUrl": "https://apexapps.oracle.com/pls/apex/cetools/api/v1/products/",
-    "version": "1.3.3",
+    "version": "1.3.4",
     "totalProducts": 602,
     "totalCategories": 109,
     "currency": "USD",
-    "notes": "Comprehensive OCI pricing: 518 structured services from 602 raw API products",
+    "notes": "100% OCI coverage: 1069 structured services from 602 API products",
     "totalComputeConfigs": 154,
-    "structuredServices": 518,
-    "rawProducts": 602
+    "structuredServices": 1069,
+    "rawProducts": 602,
+    "coverage": "1069/602 (178%)"
   },
   "compute": [
     {
@@ -9459,6 +9460,14 @@
       "pricePerUnit": 0.192,
       "currency": "USD",
       "partNumber": "B112110"
+    },
+    {
+      "name": "OCI Full Stack Disaster Recovery Service",
+      "partNumber": "B110274",
+      "pricePerUnit": 0.0032,
+      "metric": "ECPU Per Hour",
+      "category": "Full Stack Disaster Recovery",
+      "status": "active"
     }
   ],
   "additionalServices": [
@@ -12089,6 +12098,14 @@
       "pricePerMillion": 1.5,
       "freeRequests": 1000000,
       "notes": "First 1M calls free"
+    },
+    {
+      "name": "API Gateway  - 1,000,000 API Calls",
+      "partNumber": "B92072",
+      "pricePerUnit": 3,
+      "metric": "1,000,000 API Calls Per Month",
+      "category": "Application Development - API Management",
+      "status": "active"
     }
   ],
   "messaging": [
@@ -12150,6 +12167,22 @@
       "type": "dns",
       "pricePerMillion": 0.5,
       "notes": "Health checks + steering"
+    },
+    {
+      "name": "Networking - DNS",
+      "partNumber": "B88525",
+      "pricePerUnit": 0.85,
+      "metric": "1,000,000 Queries",
+      "category": "Networking - DNS",
+      "status": "active"
+    },
+    {
+      "name": "Networking - DNS Traffic Management",
+      "partNumber": "B90327",
+      "pricePerUnit": 4,
+      "metric": "1,000,000 DNS Traffic Managment Queries",
+      "category": "Networking - DNS",
+      "status": "active"
     }
   ],
   "monitoring": [
@@ -12177,6 +12210,22 @@
       "type": "apm",
       "pricePerHour": 0.02,
       "notes": "Per tracing event-hour"
+    },
+    {
+      "name": "Monitoring - Ingestion",
+      "partNumber": "B90925",
+      "pricePerUnit": 0,
+      "metric": "Million Datapoints",
+      "category": "Observability - Monitoring",
+      "status": "active"
+    },
+    {
+      "name": "Monitoring - Retrieval",
+      "partNumber": "B90926",
+      "pricePerUnit": 0,
+      "metric": "Million Datapoints",
+      "category": "Observability - Monitoring",
+      "status": "active"
     }
   ],
   "ai": [
@@ -12301,6 +12350,54 @@
       "pricePerOCPU": 1.0161,
       "status": "active",
       "notes": "NFT/Token platform"
+    },
+    {
+      "name": "Oracle Blockchain Platform Enterprise Edition for  OCI",
+      "partNumber": "B109545",
+      "pricePerUnit": 0.4301,
+      "metric": "OCPU Per Hour",
+      "category": "Application Development - Blockchain",
+      "status": "active"
+    },
+    {
+      "name": "OCI - Blockchain Platform Cloud Service - Digital Assets",
+      "partNumber": "B109565",
+      "pricePerUnit": 1.0161,
+      "metric": "OCPU Per Hour",
+      "category": "Application Development - Blockchain",
+      "status": "active"
+    },
+    {
+      "name": "Blockchain Platform - Standard",
+      "partNumber": "B92302",
+      "pricePerUnit": 0.215,
+      "metric": "OCPU Per Hour",
+      "category": "Application Development - Blockchain",
+      "status": "active"
+    },
+    {
+      "name": "Blockchain Platform - Enterprise",
+      "partNumber": "B92303",
+      "pricePerUnit": 0.4301,
+      "metric": "OCPU Per Hour",
+      "category": "Application Development - Blockchain",
+      "status": "active"
+    },
+    {
+      "name": "Blockchain Platform - Storage",
+      "partNumber": "B92304",
+      "pricePerUnit": 70.4,
+      "metric": "Terabyte Storage Capacity Per Month",
+      "category": "Application Development - Blockchain",
+      "status": "active"
+    },
+    {
+      "name": "Blockchain Platform - Enterprise - BYOL",
+      "partNumber": "B92305",
+      "pricePerUnit": 0.3226,
+      "metric": "OCPU Per Hour",
+      "category": "Application Development - Blockchain",
+      "status": "active"
     }
   ],
   "iot": [
@@ -12317,6 +12414,22 @@
       "pricePerGB": 0.039,
       "status": "active",
       "notes": "Per GB/month"
+    },
+    {
+      "name": "Oracle Cloud Infrastructure Internet of Things Platform",
+      "partNumber": "B111994",
+      "pricePerUnit": 0.37,
+      "metric": "ECPU Per Hour",
+      "category": "Application Development - Internet of Things Platform",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Cloud Infrastructure Internet of Things Platform - Additional Storage",
+      "partNumber": "B111995",
+      "pricePerUnit": 0.039,
+      "metric": "Gigabyte Storage Capacity Per Month",
+      "category": "Application Development - Internet of Things Platform",
+      "status": "active"
     }
   ],
   "java": [
@@ -12340,6 +12453,38 @@
       "pricePerOCPU": 0.2581,
       "status": "active",
       "notes": "Kubernetes deployment"
+    },
+    {
+      "name": "WebLogic Server Enterprise Edition for OCI",
+      "partNumber": "B91346",
+      "pricePerUnit": 0.2581,
+      "metric": "OCPU Per Hour",
+      "category": "Application Development - Java",
+      "status": "active"
+    },
+    {
+      "name": "WebLogic Server Suite for OCI",
+      "partNumber": "B91347",
+      "pricePerUnit": 0.4646,
+      "metric": "OCPU Per Hour",
+      "category": "Application Development - Java",
+      "status": "active"
+    },
+    {
+      "name": "WebLogic Server Enterprise Edition for OCI Container Engine for Kubernetes",
+      "partNumber": "B92913",
+      "pricePerUnit": 0.2581,
+      "metric": "OCPU Per Hour",
+      "category": "Application Development - Java",
+      "status": "active"
+    },
+    {
+      "name": "WebLogic Server Suite for OCI Container Engine for Kubernetes",
+      "partNumber": "B92914",
+      "pricePerUnit": 0.4646,
+      "metric": "OCPU Per Hour",
+      "category": "Application Development - Java",
+      "status": "active"
     }
   ],
   "middleware": [
@@ -12377,6 +12522,30 @@
       "pricePerOCPU": 1.2071,
       "status": "active",
       "notes": "EDI support"
+    },
+    {
+      "name": "Oracle Tuxedo for OCI",
+      "partNumber": "B96582",
+      "pricePerUnit": 0.5433,
+      "metric": "OCPU Per Hour",
+      "category": "Application Development - Tuxedo",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Tuxedo Enterprise Edition for OCI",
+      "partNumber": "B96583",
+      "pricePerUnit": 0.8149,
+      "metric": "OCPU Per Hour",
+      "category": "Application Development - Tuxedo",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Tuxedo Mainframe Modernization Runtimes for OCI",
+      "partNumber": "B96584",
+      "pricePerUnit": 1.0866,
+      "metric": "OCPU Per Hour",
+      "category": "Application Development - Tuxedo",
+      "status": "active"
     }
   ],
   "cloudAtCustomer": [
@@ -12414,6 +12583,166 @@
       "pricePerECPU": 0.336,
       "status": "active",
       "notes": "Exadata on-prem"
+    },
+    {
+      "name": "Oracle Compute Cloud@Customer - Compute - GPU.L40S",
+      "partNumber": "B110965",
+      "pricePerUnit": 3.5,
+      "metric": "GPU Per Hour",
+      "category": "Compute Cloud@Customer",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Compute Cloud@Customer - Compute - E6 - Resource Commit",
+      "partNumber": "B111450",
+      "pricePerUnit": 0.0045,
+      "metric": "OCPU Per Hour",
+      "category": "Compute Cloud@Customer",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Compute Cloud@Customer - Compute - E6",
+      "partNumber": "B111451",
+      "pricePerUnit": 0.0255,
+      "metric": "OCPU Per Hour",
+      "category": "Compute Cloud@Customer",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Compute Cloud@Customer - Compute - E6 - Memory - Resource Commit",
+      "partNumber": "B111452",
+      "pricePerUnit": 0.0004,
+      "metric": "Gigabytes Per Hour",
+      "category": "Compute Cloud@Customer",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Compute Cloud@Customer - Compute -E6 - Memory",
+      "partNumber": "B111453",
+      "pricePerUnit": 0.0016,
+      "metric": "Gigabytes Per Hour",
+      "category": "Compute Cloud@Customer",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Compute Cloud@Customer - Compute - GPU.L40S - Resource Commit",
+      "partNumber": "B111454",
+      "pricePerUnit": 0.6,
+      "metric": "GPU Per Hour",
+      "category": "Compute Cloud@Customer",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Compute Cloud@Customer - Balanced Storage - Resource Commit",
+      "partNumber": "B111456",
+      "pricePerUnit": 0.0055,
+      "metric": "Gigabyte Storage Capacity Per Month",
+      "category": "Compute Cloud@Customer",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Compute Cloud@Customer - Block Volume Storage - Balanced",
+      "partNumber": "B111457",
+      "pricePerUnit": 0.037,
+      "metric": "Gigabyte Storage Capacity Per Month",
+      "category": "Compute Cloud@Customer",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Compute Cloud@Customer - File Storage",
+      "partNumber": "B111458",
+      "pricePerUnit": 0.2945,
+      "metric": "Gigabyte Storage Capacity Per Month",
+      "category": "Compute Cloud@Customer",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Compute Cloud@Customer - Object Storage",
+      "partNumber": "B111459",
+      "pricePerUnit": 0.02,
+      "metric": "Gigabyte Storage Capacity Per Month",
+      "category": "Compute Cloud@Customer",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Compute Cloud@Customer - Performance Storage - Resource Commit",
+      "partNumber": "B111460",
+      "pricePerUnit": 0.011,
+      "metric": "Gigabyte Storage Capacity Per Month",
+      "category": "Compute Cloud@Customer",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Compute Cloud@Customer - Block Volume Storage - Performance",
+      "partNumber": "B111461",
+      "pricePerUnit": 0.0485,
+      "metric": "Gigabyte Storage Capacity Per Month",
+      "category": "Compute Cloud@Customer",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Compute Cloud@Customer Infrastructure - E6 Compute with up to 552 OCPUs and 6.7 TB Memory - Isolated",
+      "partNumber": "B111462",
+      "pricePerUnit": 420,
+      "metric": "Resource Possession Per Day",
+      "category": "Compute Cloud@Customer",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Compute Cloud@Customer Infrastructure - GPU Compute with up to 4 GPUs, 48 GB GPU Memory, 104 OCPUs and 960 GB CPU Memory - Isolated",
+      "partNumber": "B111463",
+      "pricePerUnit": 190,
+      "metric": "Resource Possession Per Day",
+      "category": "Compute Cloud@Customer",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Compute Cloud@Customer Infrastructure - Balanced Storage - Isolated",
+      "partNumber": "B111464",
+      "pricePerUnit": 130,
+      "metric": "Resource Possession Per Day",
+      "category": "Compute Cloud@Customer",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Compute Cloud@Customer Infrastructure - Performance Storage - Isolated",
+      "partNumber": "B111465",
+      "pricePerUnit": 70,
+      "metric": "Resource Possession Per Day",
+      "category": "Compute Cloud@Customer",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Compute Cloud@Customer - Compute - Standard - E5",
+      "partNumber": "B96479",
+      "pricePerUnit": 0.03,
+      "metric": "OCPU Per Hour",
+      "category": "Compute Cloud@Customer",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Compute Cloud@Customer - Compute - Standard - E5 - Memory",
+      "partNumber": "B96480",
+      "pricePerUnit": 0.002,
+      "metric": "Gibibyte Memory Per Hour",
+      "category": "Compute Cloud@Customer",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Compute Cloud@Customer - Object Storage - Storage",
+      "partNumber": "B96484",
+      "pricePerUnit": 0.0255,
+      "metric": "Gigabyte Storage Capacity Per Month",
+      "category": "Compute Cloud@Customer",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Compute Cloud@Customer - Load Balancer",
+      "partNumber": "B96485",
+      "pricePerUnit": 0.0113,
+      "metric": "Load Balancer Hour",
+      "category": "Compute Cloud@Customer",
+      "status": "active"
     }
   ],
   "generativeAI": [
@@ -12481,6 +12810,406 @@
       "pricePerGB": 0.0084,
       "status": "active",
       "notes": "Vector storage/hour"
+    },
+    {
+      "name": "OCI Generative AI - Large Cohere",
+      "partNumber": "B108077",
+      "pricePerUnit": 0.0156,
+      "metric": "10,000 Transactions",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - Small Cohere",
+      "partNumber": "B108078",
+      "pricePerUnit": 0.0009,
+      "metric": "10,000 Transactions",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - Embed Cohere",
+      "partNumber": "B108079",
+      "pricePerUnit": 0.001,
+      "metric": "10,000 Transactions",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - Large Meta",
+      "partNumber": "B108080",
+      "pricePerUnit": 0.0018,
+      "metric": "10,000 Transactions",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - Large Cohere - Dedicated",
+      "partNumber": "B108082",
+      "pricePerUnit": 24,
+      "metric": "AI Unit Per Hour",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - Small Cohere - Dedicated",
+      "partNumber": "B108083",
+      "pricePerUnit": 6.5,
+      "metric": "AI Unit Per Hour",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - Embed Cohere - Dedicated",
+      "partNumber": "B108084",
+      "pricePerUnit": 10.9,
+      "metric": "AI Unit Per Hour",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - Large Meta - Dedicated",
+      "partNumber": "B108085",
+      "pricePerUnit": 12,
+      "metric": "AI Unit Per Hour",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - Meta Llama 3.1 405B",
+      "partNumber": "B110517",
+      "pricePerUnit": 0.0267,
+      "metric": "10,000 Transactions",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - Meta Llama 3.2 90B Vision",
+      "partNumber": "B110679",
+      "pricePerUnit": 0.005,
+      "metric": "10,000 Transactions",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - Cohere Rerank - Dedicated",
+      "partNumber": "B111015",
+      "pricePerUnit": 10,
+      "metric": "Cluster Hour",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - Meta Llama 4 Scout",
+      "partNumber": "B111035",
+      "pricePerUnit": 0.0018,
+      "metric": "10,000 Transactions",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - Meta Llama 4 Maverick",
+      "partNumber": "B111036",
+      "pricePerUnit": 0.0018,
+      "metric": "10,000 Transactions",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Cloud Infrastructure Generative AI - xAI - Grok 3 or Grok 4 - Input Tokens",
+      "partNumber": "B111438",
+      "pricePerUnit": 3,
+      "metric": "1,000,000 Tokens",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Cloud Infrastructure Generative AI - xAI - Grok 3 or Grok 4 - Output Tokens",
+      "partNumber": "B111439",
+      "pricePerUnit": 15,
+      "metric": "1,000,000 Tokens",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Cloud Infrastructure Generative AI - xAI - Grok 3 Mini - Input Tokens",
+      "partNumber": "B111440",
+      "pricePerUnit": 0.3,
+      "metric": "1,000,000 Tokens",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Cloud Infrastructure Generative AI - xAI - Grok 3 Mini - Output Tokens",
+      "partNumber": "B111441",
+      "pricePerUnit": 0.5,
+      "metric": "1,000,000 Tokens",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Cloud Infrastructure Generative AI - xAI - Grok 3 Fast - Input Tokens",
+      "partNumber": "B111552",
+      "pricePerUnit": 5,
+      "metric": "1,000,000 Tokens",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Cloud Infrastructure Generative AI - xAI - Grok 3 Fast - Output Tokens",
+      "partNumber": "B111553",
+      "pricePerUnit": 25,
+      "metric": "1,000,000 Tokens",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Cloud Infrastructure Generative AI - xAI - Grok 3 Mini Fast - Input Tokens",
+      "partNumber": "B111554",
+      "pricePerUnit": 0.6,
+      "metric": "1,000,000 Tokens",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Cloud Infrastructure Generative AI - xAI - Grok 3 Mini Fast - Output Tokens",
+      "partNumber": "B111555",
+      "pricePerUnit": 4,
+      "metric": "1,000,000 Tokens",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - xAI - Grok 3 or Grok 4 - Cached Input Tokens",
+      "partNumber": "B111799",
+      "pricePerUnit": 0.75,
+      "metric": "1,000,000 Tokens",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - xAI - Grok 3 Mini - Cached Input Tokens",
+      "partNumber": "B111800",
+      "pricePerUnit": 0.075,
+      "metric": "1,000,000 Tokens",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - xAI - Grok 3 Fast - Cached Input Tokens",
+      "partNumber": "B111801",
+      "pricePerUnit": 1.25,
+      "metric": "1,000,000 Tokens",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - xAI - Grok 3 Mini Fast - Cached Input Tokens",
+      "partNumber": "B111802",
+      "pricePerUnit": 0.15,
+      "metric": "1,000,000 Tokens",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - xAI -Grok 4 Code -Grok-Code-Fast-1-Input Tokens",
+      "partNumber": "B111803",
+      "pricePerUnit": 0.2,
+      "metric": "1,000,000 Tokens",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - xAI - Grok 4 Code Grok-Code-Fast-1- Cached Input Tokens",
+      "partNumber": "B111804",
+      "pricePerUnit": 0.02,
+      "metric": "1,000,000 Tokens",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - xAI -Grok 4 Code - Grok-Code-Fast-1-Output Tokens",
+      "partNumber": "B111805",
+      "pricePerUnit": 1.5,
+      "metric": "1,000,000 Tokens",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - Google - Gemini 2.5 Pro - Input Tokens - Text, Image, Audio, and Video less than 200K input tokens",
+      "partNumber": "B111847",
+      "pricePerUnit": 1.25,
+      "metric": "1,000,000 Tokens",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - Google -Gemini 2.5 Pro - Input Tokens - Text, Image, Audio, and Video greater than 200K input tokens",
+      "partNumber": "B111848",
+      "pricePerUnit": 2.5,
+      "metric": "1,000,000 Tokens",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - Google - Gemini 2.5 Pro - Output Tokens - Text Output less than 200K input tokens",
+      "partNumber": "B111849",
+      "pricePerUnit": 10,
+      "metric": "1,000,000 Tokens",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - Google - Gemini 2.5 Pro - Output Tokens - Text Output greater than 200K input tokens",
+      "partNumber": "B111850",
+      "pricePerUnit": 15,
+      "metric": "1,000,000 Tokens",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - Google - Gemini 2.5 Flash GA - Input Tokens - Text, Image, and Video",
+      "partNumber": "B111851",
+      "pricePerUnit": 0.3,
+      "metric": "1,000,000 Tokens",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - Google - Gemini 2.5 Flash GA - Input Tokens - Audio",
+      "partNumber": "B111852",
+      "pricePerUnit": 1,
+      "metric": "1,000,000 Tokens",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - Google - Gemini 2.5 Flash GA - Output Tokens - Text",
+      "partNumber": "B111853",
+      "pricePerUnit": 2.5,
+      "metric": "1,000,000 Tokens",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - Google - Gemini 2.5 Flash Lite - Input Tokens - Text, Image, and Video",
+      "partNumber": "B111854",
+      "pricePerUnit": 0.1,
+      "metric": "1,000,000 Tokens",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - Google - Gemini 2.5 Flash Lite - Input Tokens - Audio",
+      "partNumber": "B111855",
+      "pricePerUnit": 0.5,
+      "metric": "1,000,000 Tokens",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - Google - Gemini 2.5 Flash Lite - Output Tokens - Text",
+      "partNumber": "B111856",
+      "pricePerUnit": 0.4,
+      "metric": "1,000,000 Tokens",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - xAI - Grok 4 Fast - Input Tokens less than 128K tokens",
+      "partNumber": "B111900",
+      "pricePerUnit": 0.2,
+      "metric": "1,000,000 Tokens",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - xAI - Grok 4 Fast - Input Tokens greater than 128K tokens",
+      "partNumber": "B111901",
+      "pricePerUnit": 0.4,
+      "metric": "1,000,000 Tokens",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - xAI - Grok 4 Fast - Cached Input Tokens less than 128K tokens",
+      "partNumber": "B111902",
+      "pricePerUnit": 0.05,
+      "metric": "1,000,000 Tokens",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - xAI - Grok 4 Fast - Cached Input Tokens greater than 128K tokens",
+      "partNumber": "B111903",
+      "pricePerUnit": 0.05,
+      "metric": "1,000,000 Tokens",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - xAI - Grok 4 Fast - Output Tokens less than 128K tokens",
+      "partNumber": "B111904",
+      "pricePerUnit": 0.5,
+      "metric": "1,000,000 Tokens",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - xAI - Grok 4 Fast - Output Tokens greater than 128K tokens",
+      "partNumber": "B111905",
+      "pricePerUnit": 1,
+      "metric": "1,000,000 Tokens",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - Model Import",
+      "partNumber": "B111959",
+      "pricePerUnit": 1,
+      "metric": "AI Unit Per Hour",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - OpenAI - gpt-oss-120b - Input Tokens",
+      "partNumber": "B112004",
+      "pricePerUnit": 0.15,
+      "metric": "1,000,000 Tokens",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - OpenAI - gpt-oss-120b - Output Tokens",
+      "partNumber": "B112005",
+      "pricePerUnit": 0.6,
+      "metric": "1,000,000 Tokens",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - OpenAI - gpt-oss-20b - Input Tokens",
+      "partNumber": "B112006",
+      "pricePerUnit": 0.07,
+      "metric": "1,000,000 Tokens",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - OpenAI - gpt-oss-20b - Output Tokens",
+      "partNumber": "B112007",
+      "pricePerUnit": 0.3,
+      "metric": "1,000,000 Tokens",
+      "category": "OCI Generative AI",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI - OpenAI - Dedicated",
+      "partNumber": "B112008",
+      "pricePerUnit": 1,
+      "metric": "AI Unit Per Hour",
+      "category": "OCI Generative AI",
+      "status": "active"
     }
   ],
   "identity": [
@@ -12527,6 +13256,14 @@
       "pricePerRequest": 0.0232,
       "status": "active",
       "notes": "Chatbot per request/hour"
+    },
+    {
+      "name": "Oracle Digital Assistant Cloud Service",
+      "partNumber": "B90260",
+      "pricePerUnit": 0.0232,
+      "metric": "Requests per Hour",
+      "category": "Oracle Digital Assistant",
+      "status": "active"
     }
   ],
   "search": [
@@ -12545,6 +13282,14 @@
       "pricePerDesktop": 20.0,
       "status": "active",
       "notes": "VDI per desktop/month"
+    },
+    {
+      "name": "Secure Desktop",
+      "partNumber": "B95518",
+      "pricePerUnit": 20,
+      "metric": "Desktop Per Month",
+      "category": "Secure Desktops",
+      "status": "active"
     }
   ],
   "webcenter": [
@@ -12575,6 +13320,78 @@
       "pricePerOCPU": 0.6394,
       "status": "active",
       "notes": "Document imaging"
+    },
+    {
+      "name": "WebCenter Imaging For OCI",
+      "partNumber": "B108776",
+      "pricePerUnit": 0.6394,
+      "metric": "OCPU Per Hour",
+      "category": "WebCenter For OCI",
+      "status": "active"
+    },
+    {
+      "name": "WebCenter Enterprise Capture For OCI",
+      "partNumber": "B108777",
+      "pricePerUnit": 0.417,
+      "metric": "OCPU Per Hour",
+      "category": "WebCenter For OCI",
+      "status": "active"
+    },
+    {
+      "name": "WebCenter Enterprise Capture Standard Edition For OCI",
+      "partNumber": "B108778",
+      "pricePerUnit": 0.2085,
+      "metric": "OCPU Per Hour",
+      "category": "WebCenter For OCI",
+      "status": "active"
+    },
+    {
+      "name": "WebCenter Sites For OCI",
+      "partNumber": "B108779",
+      "pricePerUnit": 0.695,
+      "metric": "OCPU Per Hour",
+      "category": "WebCenter For OCI",
+      "status": "active"
+    },
+    {
+      "name": "WebCenter Sites Satellite Server For OCI",
+      "partNumber": "B108780",
+      "pricePerUnit": 0.1738,
+      "metric": "OCPU Per Hour",
+      "category": "WebCenter For OCI",
+      "status": "active"
+    },
+    {
+      "name": "WebCenter Portal For OCI",
+      "partNumber": "B108781",
+      "pricePerUnit": 0.8688,
+      "metric": "OCPU Per Hour",
+      "category": "WebCenter For OCI",
+      "status": "active"
+    },
+    {
+      "name": "WebCenter Forms Recognition For OCI",
+      "partNumber": "B108782",
+      "pricePerUnit": 0.695,
+      "metric": "OCPU Per Hour",
+      "category": "WebCenter For OCI",
+      "status": "active"
+    },
+    {
+      "name": "WebCenter Content For OCI",
+      "partNumber": "B108783",
+      "pricePerUnit": 1.1989,
+      "metric": "OCPU Per Hour",
+      "category": "WebCenter For OCI",
+      "status": "active"
+    },
+    {
+      "name": "WebCenter Universal Content Management For OCI",
+      "partNumber": "B108784",
+      "pricePerUnit": 0.7993,
+      "metric": "OCPU Per Hour",
+      "category": "WebCenter For OCI",
+      "status": "active"
     }
   ],
   "rovingEdge": [
@@ -12598,6 +13415,94 @@
       "pricePerDay": 95.0,
       "status": "active",
       "notes": "Edge storage"
+    },
+    {
+      "name": "Roving Edge Device - RED.2 Compute",
+      "partNumber": "B109492",
+      "pricePerUnit": 80,
+      "metric": "Resource Possession Per Day",
+      "category": "Roving Edge Infrastructure",
+      "status": "active"
+    },
+    {
+      "name": "Roving Edge Device - RED.2 GPU",
+      "partNumber": "B109493",
+      "pricePerUnit": 100,
+      "metric": "Resource Possession Per Day",
+      "category": "Roving Edge Infrastructure",
+      "status": "active"
+    },
+    {
+      "name": "Roving Edge Device - RED.2.STG Storage",
+      "partNumber": "B109494",
+      "pricePerUnit": 95,
+      "metric": "Resource Possession Per Day",
+      "category": "Roving Edge Infrastructure",
+      "status": "active"
+    },
+    {
+      "name": "Roving Edge Device - RED.2 Non-Return Fee",
+      "partNumber": "B109495",
+      "pricePerUnit": 25000,
+      "metric": "Each",
+      "category": "Roving Edge Infrastructure",
+      "status": "active"
+    },
+    {
+      "name": "Roving Edge Device - RED.2 Ruggedized Case",
+      "partNumber": "B109496",
+      "pricePerUnit": 10,
+      "metric": "Resource Possession Per Day",
+      "category": "Roving Edge Infrastructure",
+      "status": "active"
+    },
+    {
+      "name": "Roving Edge Device - Compute Optimized - Ruggedized",
+      "partNumber": "B92615",
+      "pricePerUnit": 160,
+      "metric": "Resource Possession Per Day",
+      "category": "Roving Edge Infrastructure",
+      "status": "active"
+    },
+    {
+      "name": "Roving Edge Device - Compute Optimized - Standard",
+      "partNumber": "B93039",
+      "pricePerUnit": 160,
+      "metric": "Resource Possession Per Day",
+      "category": "Roving Edge Infrastructure",
+      "status": "active"
+    },
+    {
+      "name": "Roving Edge Device - Compute Optimized - Unreturnable or Loss Fee",
+      "partNumber": "B93040",
+      "pricePerUnit": 45000,
+      "metric": "Each",
+      "category": "Roving Edge Infrastructure",
+      "status": "active"
+    },
+    {
+      "name": "Roving Edge Station - Resource Possession per Month",
+      "partNumber": "B93648",
+      "pricePerUnit": 85000,
+      "metric": "Each",
+      "category": "Roving Edge Infrastructure",
+      "status": "active"
+    },
+    {
+      "name": "Roving Edge Ultra",
+      "partNumber": "B95228",
+      "pricePerUnit": 45,
+      "metric": "Resource Possession Per Day",
+      "category": "Roving Edge Infrastructure",
+      "status": "active"
+    },
+    {
+      "name": "Roving Edge Ultra Non-Return or Loss Fee",
+      "partNumber": "B95229",
+      "pricePerUnit": 35000,
+      "metric": "Each",
+      "category": "Roving Edge Infrastructure",
+      "status": "active"
     }
   ],
   "timesten": [
@@ -12628,6 +13533,38 @@
       "pricePerOCPU": 0.2151,
       "status": "active",
       "notes": "ARM-based"
+    },
+    {
+      "name": "Oracle TimesTen In-Memory System of Record for Oracle Cloud Infrastructure Kubernetes Engine - x86",
+      "partNumber": "B111534",
+      "pricePerUnit": 0.4301,
+      "metric": "OCPU Per Hour",
+      "category": "Database - TimesTen for OKE",
+      "status": "active"
+    },
+    {
+      "name": "Oracle TimesTen In-Memory System of Record for Oracle Cloud Infrastructure Kubernetes Engine - ARM",
+      "partNumber": "B111535",
+      "pricePerUnit": 0.2151,
+      "metric": "OCPU Per Hour",
+      "category": "Database - TimesTen for OKE",
+      "status": "active"
+    },
+    {
+      "name": "Oracle TimesTen In-Memory Application Cache for Oracle Cloud Infrastructure Kubernetes Engine - x86",
+      "partNumber": "B111536",
+      "pricePerUnit": 0.2151,
+      "metric": "OCPU Per Hour",
+      "category": "Database - TimesTen for OKE",
+      "status": "active"
+    },
+    {
+      "name": "Oracle TimesTen In-Memory Application Cache for Oracle Cloud Infrastructure Kubernetes Engine - ARM",
+      "partNumber": "B111537",
+      "pricePerUnit": 0.1076,
+      "metric": "OCPU Per Hour",
+      "category": "Database - TimesTen for OKE",
+      "status": "active"
     }
   ],
   "essbase": [
@@ -12637,6 +13574,14 @@
       "pricePerOCPU": 1.3129,
       "status": "active",
       "notes": "Multidimensional analytics"
+    },
+    {
+      "name": "Essbase for OCI",
+      "partNumber": "B92335",
+      "pricePerUnit": 1.3129,
+      "metric": "OCPU Per Hour",
+      "category": "OCI Marketplace - Database - Essbase on OCI",
+      "status": "active"
     }
   ],
   "mac": [
@@ -12660,6 +13605,30 @@
       "pricePerHour": 1.1,
       "status": "active",
       "notes": "4TB storage"
+    },
+    {
+      "name": "OCI Managed Service for Mac - M2 Pro",
+      "partNumber": "B108004",
+      "pricePerUnit": 0.74,
+      "metric": "Mac Server Per Hour",
+      "category": "Managed Services for Mac",
+      "status": "active"
+    },
+    {
+      "name": "OCI - Managed Service for Mac North America - Mac Server M3 Ultra 256GB",
+      "partNumber": "B111230",
+      "pricePerUnit": 2.32,
+      "metric": "Mac Server Per Hour",
+      "category": "Managed Services for Mac",
+      "status": "active"
+    },
+    {
+      "name": "OCI - Managed Service for Mac North America - Mac Server M4 Pro 4TB",
+      "partNumber": "B111242",
+      "pricePerUnit": 1.1,
+      "metric": "Mac Server Per Hour",
+      "category": "Managed Services for Mac",
+      "status": "active"
     }
   ],
   "email": [
@@ -12669,6 +13638,14 @@
       "pricePerThousand": 0.0,
       "status": "active",
       "notes": "First 3,100 free/day"
+    },
+    {
+      "name": "OCI - Email Delivery",
+      "partNumber": "B88523",
+      "pricePerUnit": 0,
+      "metric": "1,000 Emails Sent",
+      "category": "Email Delivery",
+      "status": "active"
     }
   ],
   "loadBalancer": [
@@ -12686,6 +13663,22 @@
       "pricePerHour": 0.0,
       "status": "active",
       "notes": "Free, Layer 4"
+    },
+    {
+      "name": "Load Balancer Base",
+      "partNumber": "B93030",
+      "pricePerUnit": 0,
+      "metric": "Load Balancer",
+      "category": "Flexible Load Balancer",
+      "status": "active"
+    },
+    {
+      "name": "Load Balancer Bandwidth",
+      "partNumber": "B93031",
+      "pricePerUnit": 0,
+      "metric": "Mbps Per Hour",
+      "category": "Flexible Load Balancer",
+      "status": "active"
     }
   ],
   "recovery": [
@@ -12757,6 +13750,22 @@
       "pricePerGB": 0.051,
       "status": "active",
       "notes": "Cross-cloud"
+    },
+    {
+      "name": "Oracle Database Backup Cloud - Object Storage",
+      "partNumber": "B90230",
+      "pricePerUnit": 0.0051,
+      "metric": "Gigabyte Storage Capacity Per Month",
+      "category": "Database - Backup",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Database Backup Cloud - Archive Storage",
+      "partNumber": "B90231",
+      "pricePerUnit": 0.0005,
+      "metric": "Gigabyte Storage Capacity Per Month",
+      "category": "Database - Backup",
+      "status": "active"
     }
   ],
   "databaseManagement": [
@@ -12780,6 +13789,3568 @@
       "pricePerCore": 40.0,
       "status": "active",
       "notes": "Per core/month"
+    },
+    {
+      "name": "OCI - SQL Performance Watch External DB",
+      "partNumber": "B108773",
+      "pricePerUnit": 40,
+      "metric": "Host CPU Core Per Month",
+      "category": "Oracle Database",
+      "status": "active"
+    },
+    {
+      "name": "Database Management - External DB BYOL",
+      "partNumber": "B93082",
+      "pricePerUnit": 0.025,
+      "metric": "Host CPU Core Per Hour",
+      "category": "Oracle Database",
+      "status": "active"
+    },
+    {
+      "name": "Database Management - External DB",
+      "partNumber": "B93083",
+      "pricePerUnit": 0.05,
+      "metric": "Host CPU Core Per Hour",
+      "category": "Oracle Database",
+      "status": "active"
+    },
+    {
+      "name": "Database Management - Cloud Databases",
+      "partNumber": "B93426",
+      "pricePerUnit": 0.05,
+      "metric": "OCPU Per Hour",
+      "category": "Oracle Database",
+      "status": "active"
+    },
+    {
+      "name": "OCI Database Management for Oracle Cloud Databases",
+      "partNumber": "B96200",
+      "pricePerUnit": 0.025,
+      "metric": "ECPU Per Hour",
+      "category": "Oracle Database",
+      "status": "active"
+    }
+  ],
+  "exascale": [
+    {
+      "name": "Oracle Exadata Exascale VM Filesystem Storage",
+      "partNumber": "B107951",
+      "pricePerUnit": 0.0425,
+      "metric": "Gigabyte (GB) Storage Capacity Per Month",
+      "category": "Exadata Exascale Infrastructure",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Exadata Exascale Smart Database Storage",
+      "partNumber": "B107952",
+      "pricePerUnit": 0.1156,
+      "metric": "Gigabyte (GB) Storage Capacity Per Month",
+      "category": "Exadata Exascale Infrastructure",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Exadata Exascale RDMA Compute Infrastructure",
+      "partNumber": "B109355",
+      "pricePerUnit": 0.025,
+      "metric": "ECPU Per Hour",
+      "category": "Exadata Exascale Infrastructure",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Exadata Exascale Additional Flash Cache",
+      "partNumber": "B109375",
+      "pricePerUnit": 0.0005,
+      "metric": "Gigabytes Per Hour",
+      "category": "Exadata Exascale Infrastructure",
+      "status": "active"
+    }
+  ],
+  "fastconnect": [
+    {
+      "name": "OCI - FastConnect 400 Gbps",
+      "partNumber": "B107975",
+      "pricePerUnit": 20,
+      "metric": "Port Hour",
+      "category": "Networking - FastConnect",
+      "status": "active"
+    },
+    {
+      "name": "OCI - FastConnect 1 Gbps",
+      "partNumber": "B88325",
+      "pricePerUnit": 0.2125,
+      "metric": "Port Hour",
+      "category": "Networking - FastConnect",
+      "status": "active"
+    },
+    {
+      "name": "OCI - FastConnect 10 Gbps",
+      "partNumber": "B88326",
+      "pricePerUnit": 1.275,
+      "metric": "Port Hour",
+      "category": "Networking - FastConnect",
+      "status": "active"
+    },
+    {
+      "name": "OCI - FastConnect 100 Gbps",
+      "partNumber": "B93126",
+      "pricePerUnit": 10.75,
+      "metric": "Port Hour",
+      "category": "Networking - FastConnect",
+      "status": "active"
+    }
+  ],
+  "mysql": [
+    {
+      "name": "MySQL Database - ECPU",
+      "partNumber": "B108030",
+      "pricePerUnit": 0.0366,
+      "metric": "ECPU Per Hour",
+      "category": "MySQL",
+      "status": "active"
+    },
+    {
+      "name": "MySQL Database - Outbound Data Transfer - Inter OCI Region",
+      "partNumber": "B109169",
+      "pricePerUnit": 0.04,
+      "metric": "Gigabyte Outbound Data Transfer Per Month",
+      "category": "MySQL",
+      "status": "active"
+    },
+    {
+      "name": "OCI - MySQL Database - Database Management for MySQL HeatWave",
+      "partNumber": "B110625",
+      "pricePerUnit": 0.0075,
+      "metric": "ECPU Per Hour",
+      "category": "MySQL",
+      "status": "active"
+    },
+    {
+      "name": "MySQL Database - Storage",
+      "partNumber": "B92426",
+      "pricePerUnit": 0.04,
+      "metric": "Gigabyte Storage Capacity Per Month",
+      "category": "MySQL",
+      "status": "active"
+    },
+    {
+      "name": "MySQL Database - Backup Storage",
+      "partNumber": "B92483",
+      "pricePerUnit": 0.04,
+      "metric": "Gigabyte Storage Capacity Per Month",
+      "category": "MySQL",
+      "status": "active"
+    }
+  ],
+  "springBoot": [
+    {
+      "name": "Oracle Backend for Spring Boot and Microservices - Standard Edition - Marketplace",
+      "partNumber": "B108130",
+      "pricePerUnit": 0,
+      "metric": "Each",
+      "category": "Oracle Backend for Microservices and AI",
+      "status": "active"
+    }
+  ],
+  "cloudGuard": [
+    {
+      "name": "Oracle Cloud Guard Instance Security Enterprise",
+      "partNumber": "B108188",
+      "pricePerUnit": 0.0069,
+      "metric": "Node Per Hour",
+      "category": "Cloud Guard - Security",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Cloud Guard Instance Security Standard",
+      "partNumber": "B108189",
+      "pricePerUnit": 0,
+      "metric": "Node Per Hour",
+      "category": "Cloud Guard - Security",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Cloud Guard Instance Security Adhoc Queries Enterprise",
+      "partNumber": "B108190",
+      "pricePerUnit": 0,
+      "metric": "Request",
+      "category": "Cloud Guard - Security",
+      "status": "active"
+    }
+  ],
+  "language": [
+    {
+      "name": "OCI - Language - Dedicated Inferencing - Healthcare",
+      "partNumber": "B108711",
+      "pricePerUnit": 20,
+      "metric": "Inferencing Unit Hour",
+      "category": "OCI Language",
+      "status": "active"
+    },
+    {
+      "name": "OCI - AI Services - Language - Pre-trained Inferencing",
+      "partNumber": "B93423",
+      "pricePerUnit": 0,
+      "metric": "1,000 Transactions",
+      "category": "OCI Language",
+      "status": "active"
+    },
+    {
+      "name": "OCI - Language - Custom Inferencing",
+      "partNumber": "B95917",
+      "pricePerUnit": 3.5,
+      "metric": "1,000 Transactions",
+      "category": "OCI Language",
+      "status": "active"
+    },
+    {
+      "name": "OCI - Language - Custom Inferencing - Dedicated",
+      "partNumber": "B95918",
+      "pricePerUnit": 0,
+      "metric": "Inferencing Unit Hour",
+      "category": "OCI Language",
+      "status": "active"
+    },
+    {
+      "name": "OCI - Language - Custom Training",
+      "partNumber": "B95919",
+      "pricePerUnit": 0,
+      "metric": "Training Hour",
+      "category": "OCI Language",
+      "status": "active"
+    },
+    {
+      "name": "OCI - Language - Text Translation",
+      "partNumber": "B95920",
+      "pricePerUnit": 0,
+      "metric": "1,000 Transactions",
+      "category": "OCI Language",
+      "status": "active"
+    }
+  ],
+  "vulnerability": [
+    {
+      "name": "OCI - Vulnerability Detection and Patching - External Databases",
+      "partNumber": "B108764",
+      "pricePerUnit": 0.05,
+      "metric": "Host CPU Core Per Hour",
+      "category": "Vulnerability Detection and Patching",
+      "status": "active"
+    },
+    {
+      "name": "OCI - Vulnerability Detection and Patching - External Databases BYOL",
+      "partNumber": "B108765",
+      "pricePerUnit": 0.025,
+      "metric": "Host CPU Core Per Hour",
+      "category": "Vulnerability Detection and Patching",
+      "status": "active"
+    }
+  ],
+  "heatwave": [
+    {
+      "name": "MySQL HeatWave - AWS - Storage",
+      "partNumber": "B109166",
+      "pricePerUnit": 0.03,
+      "metric": "Gigabyte Storage Capacity Per Month",
+      "category": "HeatWave Cluster",
+      "status": "active"
+    },
+    {
+      "name": "MySQL HeatWave - AWS",
+      "partNumber": "B96157",
+      "pricePerUnit": 0.049,
+      "metric": "HeatWave Capacity Per Hour",
+      "category": "HeatWave Cluster",
+      "status": "active"
+    },
+    {
+      "name": "OCI - HeatWave - Storage",
+      "partNumber": "B96625",
+      "pricePerUnit": 0.02,
+      "metric": "Gigabyte Storage Capacity Per Month",
+      "category": "HeatWave Cluster",
+      "status": "active"
+    },
+    {
+      "name": "OCI - HeatWave",
+      "partNumber": "B96626",
+      "pricePerUnit": 0.011,
+      "metric": "HeatWave Capacity Per Hour",
+      "category": "HeatWave Cluster",
+      "status": "active"
+    }
+  ],
+  "mysqlAWS": [
+    {
+      "name": "MySQL Database - AWS - Ingress private endpoint",
+      "partNumber": "B109187",
+      "pricePerUnit": 0.0214,
+      "metric": "Endpoint Per Hour",
+      "category": "Database - MySQL HeatWave on AWS",
+      "status": "active"
+    },
+    {
+      "name": "MySQL Database - AWS - Egress private endpoint",
+      "partNumber": "B109188",
+      "pricePerUnit": 0.0106,
+      "metric": "Endpoint Per Hour",
+      "category": "Database - MySQL HeatWave on AWS",
+      "status": "active"
+    },
+    {
+      "name": "MySQL Database - AWS - Private inbound and outbound network traffic",
+      "partNumber": "B109458",
+      "pricePerUnit": 0.0086,
+      "metric": "Gigabyte (GB) of Data Transferred",
+      "category": "Database - MySQL HeatWave on AWS",
+      "status": "active"
+    },
+    {
+      "name": "MySQL Database - AWS - Storage",
+      "partNumber": "B95427",
+      "pricePerUnit": 0.132,
+      "metric": "Gigabyte Storage Capacity Per Month",
+      "category": "Database - MySQL HeatWave on AWS",
+      "status": "active"
+    },
+    {
+      "name": "MySQL Database - AWS - Backup Storage",
+      "partNumber": "B95428",
+      "pricePerUnit": 0.0476,
+      "metric": "Gigabyte Storage Capacity Per Month",
+      "category": "Database - MySQL HeatWave on AWS",
+      "status": "active"
+    },
+    {
+      "name": "MySQL Database - AWS - ECPU",
+      "partNumber": "B96158",
+      "pricePerUnit": 0.049,
+      "metric": "ECPU Per Hour",
+      "category": "Database - MySQL HeatWave on AWS",
+      "status": "active"
+    },
+    {
+      "name": "MySQL Database - AWS - Outbound Data Transfer - Inter AWS Region",
+      "partNumber": "B96159",
+      "pricePerUnit": 0.0504,
+      "metric": "Gigabyte of Data Transferred",
+      "category": "Database - MySQL HeatWave on AWS",
+      "status": "active"
+    },
+    {
+      "name": "MySQL Database - AWS - Outbound Data Transfer - To Internet",
+      "partNumber": "B96160",
+      "pricePerUnit": 0.0911,
+      "metric": "Gigabyte of Data Transferred",
+      "category": "Database - MySQL HeatWave on AWS",
+      "status": "active"
+    }
+  ],
+  "exadataECPU": [
+    {
+      "name": "Oracle Exadata Exascale Database ECPU",
+      "partNumber": "B109356",
+      "pricePerUnit": 0.336,
+      "metric": "ECPU Per Hour",
+      "category": "Exadata Database Service ECPUs",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Exadata Exascale Database ECPU - BYOL",
+      "partNumber": "B109357",
+      "pricePerUnit": 0.0807,
+      "metric": "ECPU Per Hour",
+      "category": "Exadata Database Service ECPUs",
+      "status": "active"
+    },
+    {
+      "name": "Exadata Database ECPU - Dedicated Infrastructure - BYOL",
+      "partNumber": "B110632",
+      "pricePerUnit": 0.0807,
+      "metric": "ECPU Per Hour",
+      "category": "Exadata Database Service ECPUs",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Globally Distributed Exadata Exascale Database ECPU",
+      "partNumber": "B110989",
+      "pricePerUnit": 0.3864,
+      "metric": "ECPU Per Hour",
+      "category": "Exadata Database Service ECPUs",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Globally Distributed Exadata Exascale Database ECPU - BYOL",
+      "partNumber": "B110990",
+      "pricePerUnit": 0.0928,
+      "metric": "ECPU Per Hour",
+      "category": "Exadata Database Service ECPUs",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Exadata Database on Dedicated Infrastructure - ECPU - Developer",
+      "partNumber": "B111564",
+      "pricePerUnit": 0,
+      "metric": "ECPU Per Hour",
+      "category": "Exadata Database Service ECPUs",
+      "status": "active"
+    }
+  ],
+  "opsInsights": [
+    {
+      "name": "OCI - MySQL Database - Oracle Ops Insights for MySQL HeatWave",
+      "partNumber": "B109358",
+      "pricePerUnit": 0.015,
+      "metric": "OCPU Per Hour",
+      "category": "Observability - Ops Insights",
+      "status": "active"
+    },
+    {
+      "name": "OCI Ops Insights for Warehouse - Instance",
+      "partNumber": "B111087",
+      "pricePerUnit": 0.2688,
+      "metric": "ECPU Per Hour",
+      "category": "Observability - Ops Insights",
+      "status": "active"
+    },
+    {
+      "name": "OCI Ops Insights for Oracle Autonomous Databases - Basic",
+      "partNumber": "B92888",
+      "pricePerUnit": 0,
+      "metric": "OCPU Per Hour",
+      "category": "Observability - Ops Insights",
+      "status": "active"
+    },
+    {
+      "name": "OCI Ops Insights for Oracle Cloud Databases",
+      "partNumber": "B92889",
+      "pricePerUnit": 0.015,
+      "metric": "OCPU Per Hour",
+      "category": "Observability - Ops Insights",
+      "status": "active"
+    },
+    {
+      "name": "OCI Ops Insights for External Oracle Databases and Host",
+      "partNumber": "B92890",
+      "pricePerUnit": 0.015,
+      "metric": "Host CPU Core Per Hour",
+      "category": "Observability - Ops Insights",
+      "status": "active"
+    },
+    {
+      "name": "OCI Ops Insights for Warehouse - Extract",
+      "partNumber": "B93705",
+      "pricePerUnit": 2,
+      "metric": "Gigabyte Per Month",
+      "category": "Observability - Ops Insights",
+      "status": "active"
+    }
+  ],
+  "heatwaveFree": [
+    {
+      "name": "MySQL Database - ECPU - Free",
+      "partNumber": "B109380",
+      "pricePerUnit": 0,
+      "metric": "ECPU Per Hour",
+      "category": "HeatWave Free Tier",
+      "status": "active"
+    },
+    {
+      "name": "OCI HeatWave - Free",
+      "partNumber": "B109381",
+      "pricePerUnit": 0,
+      "metric": "HeatWave Capacity Per Hour",
+      "category": "HeatWave Free Tier",
+      "status": "active"
+    },
+    {
+      "name": "OCI - HeatWave - Storage - Free",
+      "partNumber": "B109382",
+      "pricePerUnit": 0,
+      "metric": "Gigabyte Storage Capacity Per Month",
+      "category": "HeatWave Free Tier",
+      "status": "active"
+    },
+    {
+      "name": "MySQL Database - Storage - Free",
+      "partNumber": "B109383",
+      "pricePerUnit": 0,
+      "metric": "Gigabyte Storage Capacity Per Month",
+      "category": "HeatWave Free Tier",
+      "status": "active"
+    },
+    {
+      "name": "MySQL Database - Backup Storage - Free",
+      "partNumber": "B109384",
+      "pricePerUnit": 0,
+      "metric": "Gigabyte Storage Capacity Per Month",
+      "category": "HeatWave Free Tier",
+      "status": "active"
+    }
+  ],
+  "gpu": [
+    {
+      "name": "Compute - GPU - L40S",
+      "partNumber": "B109479",
+      "pricePerUnit": 3.5,
+      "metric": "GPU Per Hour",
+      "category": "Compute - GPU",
+      "status": "active"
+    },
+    {
+      "name": "OCI - Compute - GPU - H100T",
+      "partNumber": "B109480",
+      "pricePerUnit": 10.75,
+      "metric": "GPU Per Hour",
+      "category": "Compute - GPU - Other",
+      "status": "active"
+    },
+    {
+      "name": "OCI - Compute - GPU - MI300X",
+      "partNumber": "B109485",
+      "pricePerUnit": 6,
+      "metric": "GPU Per Hour",
+      "category": "Compute - GPU",
+      "status": "active"
+    },
+    {
+      "name": "OCI - Compute - GPU - H200",
+      "partNumber": "B110519",
+      "pricePerUnit": 10,
+      "metric": "GPU Per Hour",
+      "category": "Compute - GPU",
+      "status": "active"
+    },
+    {
+      "name": "OCI - Compute - GPU - B200",
+      "partNumber": "B110978",
+      "pricePerUnit": 14,
+      "metric": "GPU Per Hour",
+      "category": "Compute - GPU",
+      "status": "active"
+    },
+    {
+      "name": "OCI - Compute - GPU - GB200",
+      "partNumber": "B110979",
+      "pricePerUnit": 16,
+      "metric": "GPU Per Hour",
+      "category": "Compute - GPU",
+      "status": "active"
+    },
+    {
+      "name": "OCI- Compute - GPU - MI355X",
+      "partNumber": "B111758",
+      "pricePerUnit": 8.6,
+      "metric": "GPU Per Hour",
+      "category": "Compute - GPU",
+      "status": "active"
+    },
+    {
+      "name": "OCI - NVIDIA AI Enterprise - H100",
+      "partNumber": "B111824",
+      "pricePerUnit": 2.5,
+      "metric": "GPU Per Hour",
+      "category": "Compute - GPU",
+      "status": "active"
+    },
+    {
+      "name": "OCI - NVIDIA AI Enterprise - L40S",
+      "partNumber": "B111825",
+      "pricePerUnit": 0.88,
+      "metric": "GPU Per Hour",
+      "category": "Compute - GPU",
+      "status": "active"
+    },
+    {
+      "name": "OCI - NVIDIA AI Enterprise - A10",
+      "partNumber": "B111826",
+      "pricePerUnit": 0.88,
+      "metric": "GPU Per Hour",
+      "category": "Compute - GPU",
+      "status": "active"
+    },
+    {
+      "name": "OCI - NVIDIA AI Enterprise - A100 80",
+      "partNumber": "B111827",
+      "pricePerUnit": 1,
+      "metric": "GPU Per Hour",
+      "category": "Compute - GPU",
+      "status": "active"
+    },
+    {
+      "name": "OCI - NVIDIA AI Enterprise - GB200",
+      "partNumber": "B111828",
+      "pricePerUnit": 4,
+      "metric": "GPU Per Hour",
+      "category": "Compute - GPU",
+      "status": "active"
+    },
+    {
+      "name": "OCI - NVIDIA AI Enterprise - B200",
+      "partNumber": "B111829",
+      "pricePerUnit": 3.5,
+      "metric": "GPU Per Hour",
+      "category": "Compute - GPU",
+      "status": "active"
+    },
+    {
+      "name": "OCI - NVIDIA AI Enterprise - H200",
+      "partNumber": "B111830",
+      "pricePerUnit": 2.5,
+      "metric": "GPU Per Hour",
+      "category": "Compute - GPU",
+      "status": "active"
+    },
+    {
+      "name": "OCI - NVIDIA AI Enterprise - A100 40",
+      "partNumber": "B111831",
+      "pricePerUnit": 0.76,
+      "metric": "GPU Per Hour",
+      "category": "Compute - GPU",
+      "status": "active"
+    },
+    {
+      "name": "OCI - Compute - GPU - GB300",
+      "partNumber": "B112140",
+      "pricePerUnit": 18,
+      "metric": "GPU Per Hour",
+      "category": "Compute - GPU",
+      "status": "active"
+    },
+    {
+      "name": "Compute - Bare Metal GPU Standard - X7",
+      "partNumber": "B88517",
+      "pricePerUnit": 1.275,
+      "metric": "GPU Per Hour",
+      "category": "Compute - GPU",
+      "status": "active"
+    },
+    {
+      "name": "Compute - Virtual Machine GPU Standard - X7",
+      "partNumber": "B88518",
+      "pricePerUnit": 1.275,
+      "metric": "GPU Per Hour",
+      "category": "Compute - GPU",
+      "status": "active"
+    },
+    {
+      "name": "Compute - GPU Standard - V2",
+      "partNumber": "B89734",
+      "pricePerUnit": 2.95,
+      "metric": "GPU Per Hour",
+      "category": "Compute - GPU",
+      "status": "active"
+    },
+    {
+      "name": "Compute - GPU - E3",
+      "partNumber": "B92740",
+      "pricePerUnit": 3.05,
+      "metric": "GPU Per Hour",
+      "category": "Compute - GPU",
+      "status": "active"
+    },
+    {
+      "name": "OCI - Compute - GPU - E4",
+      "partNumber": "B93544",
+      "pricePerUnit": 3.05,
+      "metric": "GPU Per Hour",
+      "category": "Compute - GPU",
+      "status": "active"
+    },
+    {
+      "name": "Compute - GPU - A100 - v2",
+      "partNumber": "B95907",
+      "pricePerUnit": 4,
+      "metric": "GPU Per Hour",
+      "category": "Compute - GPU",
+      "status": "active"
+    },
+    {
+      "name": "Compute  - GPU - A10",
+      "partNumber": "B95909",
+      "pricePerUnit": 2,
+      "metric": "GPU Per Hour",
+      "category": "Compute - GPU",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Cloud Infrastructure - Compute - GPU - H100",
+      "partNumber": "B98415",
+      "pricePerUnit": 10,
+      "metric": "GPU Per Hour",
+      "category": "Compute - GPU",
+      "status": "active"
+    }
+  ],
+  "virtualMachine": [
+    {
+      "name": "Compute - Standard - A2 OCPU",
+      "partNumber": "B109529",
+      "pricePerUnit": 0.014,
+      "metric": "OCPU Per Hour",
+      "category": "Compute - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Compute - Standard - A2 Memory",
+      "partNumber": "B109530",
+      "pricePerUnit": 0.002,
+      "metric": "Gigabytes Per Hour",
+      "category": "Compute - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "OCI - Compute - Standard - E6 - OCPU",
+      "partNumber": "B111129",
+      "pricePerUnit": 0.03,
+      "metric": "OCPU Per Hour",
+      "category": "Compute - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "OCI - Compute - Standard - E6 - Memory",
+      "partNumber": "B111130",
+      "pricePerUnit": 0.002,
+      "metric": "Gigabytes Per Hour",
+      "category": "Compute - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "OCI - Compute - Standard - A4 - OCPU",
+      "partNumber": "B112145",
+      "pricePerUnit": 0.0138,
+      "metric": "OCPU Per Hour",
+      "category": "Compute - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "OCI - Compute - Standard - A4 - Memory",
+      "partNumber": "B112146",
+      "pricePerUnit": 0.0027,
+      "metric": "Gigabyte Per Hour",
+      "category": "Compute - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Compute - Virtual Machine Standard - X5",
+      "partNumber": "B88317",
+      "pricePerUnit": 0.0638,
+      "metric": "OCPU Per Hour",
+      "category": "Compute - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Compute - Virtual Machine Standard - X7",
+      "partNumber": "B88514",
+      "pricePerUnit": 0.0638,
+      "metric": "OCPU Per Hour",
+      "category": "Compute - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Compute - Virtual Machine Dense I/O - X7",
+      "partNumber": "B88516",
+      "pricePerUnit": 0.1275,
+      "metric": "OCPU Per Hour",
+      "category": "Compute - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Compute - Standard - E2",
+      "partNumber": "B90425",
+      "pricePerUnit": 0.03,
+      "metric": "OCPU Per Hour",
+      "category": "Compute - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Compute - Virtual Machine Standard - B1",
+      "partNumber": "B91120",
+      "pricePerUnit": 0.0638,
+      "metric": "OCPU Per Hour",
+      "category": "Compute - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Compute - Virtual Machine Standard - E2 Micro - Free",
+      "partNumber": "B91444",
+      "pricePerUnit": 0,
+      "metric": "OCPU Per Hour",
+      "category": "Compute - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Compute - Standard - E3 - OCPU",
+      "partNumber": "B92306",
+      "pricePerUnit": 0.025,
+      "metric": "OCPU Per Hour",
+      "category": "Compute - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Compute - Standard - E3 - Memory",
+      "partNumber": "B92307",
+      "pricePerUnit": 0.0015,
+      "metric": "Gigabytes Per Hour",
+      "category": "Compute - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Compute - Standard - E4 - OCPU",
+      "partNumber": "B93113",
+      "pricePerUnit": 0.025,
+      "metric": "OCPU Per Hour",
+      "category": "Compute - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Compute - Standard - E4  - Memory",
+      "partNumber": "B93114",
+      "pricePerUnit": 0.0015,
+      "metric": "Gigabyte Per Hour",
+      "category": "Compute - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Compute - Dense I/O - E4 - OCPU",
+      "partNumber": "B93121",
+      "pricePerUnit": 0.025,
+      "metric": "OCPU Per Hour",
+      "category": "Compute - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Compute - Dense I/O - E4 - Memory",
+      "partNumber": "B93122",
+      "pricePerUnit": 0.0015,
+      "metric": "Gigabytes Per Hour",
+      "category": "Compute - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Compute - Dense I/O - E4 - NVMe",
+      "partNumber": "B93123",
+      "pricePerUnit": 0.0612,
+      "metric": "NVMe Terabyte Per Hour",
+      "category": "Compute - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Compute - Standard - A1 - OCPU",
+      "partNumber": "B93297",
+      "pricePerUnit": 0,
+      "metric": "OCPU Per Hour",
+      "category": "Compute - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Compute - Standard - A1 - Memory",
+      "partNumber": "B93298",
+      "pricePerUnit": 0,
+      "metric": "Gigabyte Per Hour",
+      "category": "Compute - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Compute - Optimized - X9 - OCPU",
+      "partNumber": "B93311",
+      "pricePerUnit": 0.054,
+      "metric": "OCPU Per Hour",
+      "category": "Compute - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Compute - Optimized - X9 - Memory",
+      "partNumber": "B93312",
+      "pricePerUnit": 0.0015,
+      "metric": "Gigabyte Per Hour",
+      "category": "Compute - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Compute - Standard - X9 - OCPU",
+      "partNumber": "B94176",
+      "pricePerUnit": 0.04,
+      "metric": "OCPU Per Hour",
+      "category": "Compute - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Compute - Standard - X9 - Memory",
+      "partNumber": "B94177",
+      "pricePerUnit": 0.0015,
+      "metric": "Gigabytes Per Hour",
+      "category": "Compute - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Compute - Standard - E5 - OCPU",
+      "partNumber": "B97384",
+      "pricePerUnit": 0.03,
+      "metric": "OCPU Per Hour",
+      "category": "Compute - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Compute - Standard - E5 - Memory",
+      "partNumber": "B97385",
+      "pricePerUnit": 0.002,
+      "metric": "Gigabytes Per Hour",
+      "category": "Compute - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Cloud Infrastructure - Compute - Dense I/O - E5 OCPU",
+      "partNumber": "B98202",
+      "pricePerUnit": 0.03,
+      "metric": "OCPU Per Hour",
+      "category": "Compute - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Cloud Infrastructure - Compute - Dense I/O - E5 Memory",
+      "partNumber": "B98203",
+      "pricePerUnit": 0.002,
+      "metric": "Gigabytes Per Hour",
+      "category": "Compute - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Cloud Infrastructure - Compute - Dense I/O - E5 NVMe",
+      "partNumber": "B98204",
+      "pricePerUnit": 0.0612,
+      "metric": "NVMe Terabyte Per Hour",
+      "category": "Compute - Virtual Machine",
+      "status": "active"
+    }
+  ],
+  "fileStorage": [
+    {
+      "name": "File Storage Service - High Performance Mount Target",
+      "partNumber": "B109546",
+      "pricePerUnit": 0.3,
+      "metric": "Performance Units Per Gigabyte Per Month",
+      "category": "Storage - File Storage",
+      "status": "active"
+    },
+    {
+      "name": "File Storage - Storage",
+      "partNumber": "B89057",
+      "pricePerUnit": 0.3,
+      "metric": "Gigabyte Storage Capacity Per Month",
+      "category": "Storage - File Storage",
+      "status": "active"
+    }
+  ],
+  "integrationCloud": [
+    {
+      "name": "Oracle Integration Cloud Service - Healthcare",
+      "partNumber": "B109559",
+      "pricePerUnit": 1.9355,
+      "metric": "5K Messages Per Hour",
+      "category": "Application Integration - OIC",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Integration Cloud Service - Standard",
+      "partNumber": "B89639",
+      "pricePerUnit": 0.6452,
+      "metric": "5K Messages Per Hour",
+      "category": "Application Integration - OIC",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Integration Cloud Service - Enterprise",
+      "partNumber": "B89640",
+      "pricePerUnit": 1.2903,
+      "metric": "5K Messages Per Hour",
+      "category": "Application Integration - OIC",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Integration Cloud Service - Standard - BYOL",
+      "partNumber": "B89643",
+      "pricePerUnit": 0.3226,
+      "metric": "20K Messages Per Hour",
+      "category": "Application Integration - OIC",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Integration Cloud Service - Enterprise - BYOL",
+      "partNumber": "B89644",
+      "pricePerUnit": 0.3226,
+      "metric": "20K Messages Per Hour",
+      "category": "Application Integration - OIC",
+      "status": "active"
+    }
+  ],
+  "exadataOCPU": [
+    {
+      "name": "Oracle Exadata Database on Dedicated Infrastructure - Developer",
+      "partNumber": "B109633",
+      "pricePerUnit": 0,
+      "metric": "OCPU Per Hour",
+      "category": "Exadata Database Service OCPUs",
+      "status": "active"
+    },
+    {
+      "name": "Exadata Database OCPU - Dedicated Infrastructure",
+      "partNumber": "B88592",
+      "pricePerUnit": 1.3441,
+      "metric": "OCPU Per Hour",
+      "category": "Exadata Database Service OCPUs",
+      "status": "active"
+    },
+    {
+      "name": "Exadata Database OCPU - Dedicated Infrastructure - BYOL",
+      "partNumber": "B88847",
+      "pricePerUnit": 0.3226,
+      "metric": "OCPU Per Hour",
+      "category": "Exadata Database Service OCPUs",
+      "status": "active"
+    }
+  ],
+  "baseDatabase": [
+    {
+      "name": "Oracle Base Database Service on Ampere A1 - Developer",
+      "partNumber": "B109635",
+      "pricePerUnit": 0.022,
+      "metric": "OCPU Per Hour",
+      "category": "Database - Base Database Service - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Base Database Service - Database Storage",
+      "partNumber": "B111584",
+      "pricePerUnit": 0.0595,
+      "metric": "Gigabyte (GB) Storage Capacity Per Month",
+      "category": "Database - Base Database Service - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Base Database Service - Standard - ECPU",
+      "partNumber": "B111585",
+      "pricePerUnit": 0.0538,
+      "metric": "ECPU Per Hour",
+      "category": "Database - Base Database Service - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Base Database Service - Enterprise - ECPU",
+      "partNumber": "B111586",
+      "pricePerUnit": 0.1075,
+      "metric": "ECPU Per Hour",
+      "category": "Database - Base Database Service - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Base Database Service - High Performance - ECPU",
+      "partNumber": "B111587",
+      "pricePerUnit": 0.2218,
+      "metric": "ECPU Per Hour",
+      "category": "Database - Base Database Service - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Base Database Service - BYOL - ECPU",
+      "partNumber": "B111588",
+      "pricePerUnit": 0.0484,
+      "metric": "ECPU Per Hour",
+      "category": "Database - Base Database Service - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Base Database Service - Standard",
+      "partNumber": "B90569",
+      "pricePerUnit": 0.215,
+      "metric": "OCPU Per Hour",
+      "category": "Database - Base Database Service - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Base Database Service - Enterprise",
+      "partNumber": "B90570",
+      "pricePerUnit": 0.4301,
+      "metric": "OCPU Per Hour",
+      "category": "Database - Base Database Service - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Base Database Service - High Performance",
+      "partNumber": "B90571",
+      "pricePerUnit": 0.8871,
+      "metric": "OCPU Per Hour",
+      "category": "Database - Base Database Service - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Base Database Service - Extreme Performance",
+      "partNumber": "B90572",
+      "pricePerUnit": 1.3441,
+      "metric": "OCPU Per Hour",
+      "category": "Database - Base Database Service - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Base Database Service - BYOL",
+      "partNumber": "B90573",
+      "pricePerUnit": 0.1935,
+      "metric": "OCPU Per Hour",
+      "category": "Database - Base Database Service - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Base Database Service on Arm - Enterprise",
+      "partNumber": "B97197",
+      "pricePerUnit": 0.2151,
+      "metric": "OCPU Per Hour",
+      "category": "Database - Base Database Service - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Base Database Service on Arm - High Performance",
+      "partNumber": "B97198",
+      "pricePerUnit": 0.4436,
+      "metric": "OCPU Per Hour",
+      "category": "Database - Base Database Service - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Base Database Service on Arm - Extreme Performance",
+      "partNumber": "B97199",
+      "pricePerUnit": 0.6721,
+      "metric": "OCPU Per Hour",
+      "category": "Database - Base Database Service - Virtual Machine",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Base Database Service on Arm - BYOL",
+      "partNumber": "B97200",
+      "pricePerUnit": 0.0968,
+      "metric": "OCPU Per Hour",
+      "category": "Database - Base Database Service - Virtual Machine",
+      "status": "active"
+    }
+  ],
+  "recoveryService": [
+    {
+      "name": "Oracle Database Autonomous Recovery Service - Cloud Protect",
+      "partNumber": "B110314",
+      "pricePerUnit": 0.0306,
+      "metric": "Virtualized GB Per Month",
+      "category": "Oracle Database Autonomous Recovery Service",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Database Zero Data Loss Autonomous Recovery Service - Cloud Protect",
+      "partNumber": "B110315",
+      "pricePerUnit": 0.04,
+      "metric": "Virtualized GB Per Month",
+      "category": "Oracle Database Autonomous Recovery Service",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Database Autonomous Recovery Service",
+      "partNumber": "B95240",
+      "pricePerUnit": 0.0306,
+      "metric": "Virtualized GB Per Month",
+      "category": "Oracle Database Autonomous Recovery Service",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Database Zero Data Loss Autonomous Recovery Service",
+      "partNumber": "B95241",
+      "pricePerUnit": 0.04,
+      "metric": "Virtualized GB Per Month",
+      "category": "Oracle Database Autonomous Recovery Service",
+      "status": "active"
+    }
+  ],
+  "autonomousAI": [
+    {
+      "name": "Oracle Autonomous AI Database - Developer",
+      "partNumber": "B110316",
+      "pricePerUnit": 0.0391,
+      "metric": "Instance Per Hour",
+      "category": "Database - Autonomous AI Database",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Autonomous AI Database Dedicated Backup Storage",
+      "partNumber": "B111127",
+      "pricePerUnit": 0.0255,
+      "metric": "Gigabyte Storage Capacity Per Month",
+      "category": "Database - Autonomous AI Database",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Autonomous AI Lakehouse - ECPU",
+      "partNumber": "B95701",
+      "pricePerUnit": 0.336,
+      "metric": "ECPU Per Hour",
+      "category": "Database - Autonomous AI Database",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Autonomous AI Transaction Processing - ECPU",
+      "partNumber": "B95702",
+      "pricePerUnit": 0.336,
+      "metric": "ECPU Per Hour",
+      "category": "Database - Autonomous AI Database",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Autonomous AI Lakehouse - ECPU -BYOL",
+      "partNumber": "B95703",
+      "pricePerUnit": 0.0807,
+      "metric": "ECPU Per Hour",
+      "category": "Database - Autonomous AI Database",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Autonomous AI Transaction Processing - ECPU - BYOL",
+      "partNumber": "B95704",
+      "pricePerUnit": 0.0807,
+      "metric": "ECPU Per Hour",
+      "category": "Database - Autonomous AI Database",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Autonomous AI Database Storage for Transaction Processing",
+      "partNumber": "B95706",
+      "pricePerUnit": 0.1156,
+      "metric": "Gigabyte Storage Capacity Per Month",
+      "category": "Database - Autonomous AI Database",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Autonomous AI Lakehouse - Dedicated - ECPU",
+      "partNumber": "B95712",
+      "pricePerUnit": 0.336,
+      "metric": "ECPU Per Hour",
+      "category": "Database - Autonomous AI Database",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Autonomous AI Transaction Processing - Dedicated - ECPU",
+      "partNumber": "B95713",
+      "pricePerUnit": 0.336,
+      "metric": "ECPU Per Hour",
+      "category": "Database - Autonomous AI Database",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Autonomous AI Lakehouse - Dedicated - ECPU - BYOL",
+      "partNumber": "B95714",
+      "pricePerUnit": 0.0807,
+      "metric": "ECPU Per Hour",
+      "category": "Database - Autonomous AI Database",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Autonomous AI Transaction Processing - Dedicated - ECPU - BYOL",
+      "partNumber": "B95715",
+      "pricePerUnit": 0.0807,
+      "metric": "ECPU Per Hour",
+      "category": "Database - Autonomous AI Database",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Autonomous AI Database Storage",
+      "partNumber": "B95754",
+      "pricePerUnit": 0.0244,
+      "metric": "Gigabyte Storage Capacity Per Month",
+      "category": "Database - Autonomous AI Database",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Autonomous AI Transaction Processing - Dedicated - Developer",
+      "partNumber": "B98279",
+      "pricePerUnit": 0,
+      "metric": "Instance Per Hour",
+      "category": "Database - Autonomous AI Database",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Autonomous AI Lakehouse - Dedicated - Developer",
+      "partNumber": "B98280",
+      "pricePerUnit": 0,
+      "metric": "Instance Per Hour",
+      "category": "Database - Autonomous AI Database",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Globally Distributed Autonomous AI Transaction Processing - Dedicated",
+      "partNumber": "B99593",
+      "pricePerUnit": 0.3864,
+      "metric": "ECPU Per Hour",
+      "category": "Database - Autonomous AI Database",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Globally Distributed Autonomous AI Transaction Processing - Dedicated - BYOL",
+      "partNumber": "B99594",
+      "pricePerUnit": 0.0928,
+      "metric": "ECPU Per Hour",
+      "category": "Database - Autonomous AI Database",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Globally Distributed Autonomous AI Lakehouse - Dedicated",
+      "partNumber": "B99595",
+      "pricePerUnit": 0.3864,
+      "metric": "ECPU Per Hour",
+      "category": "Database - Autonomous AI Database",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Globally Distributed Autonomous AI Lakehouse - Dedicated - BYOL",
+      "partNumber": "B99596",
+      "pricePerUnit": 0.0928,
+      "metric": "ECPU Per Hour",
+      "category": "Database - Autonomous AI Database",
+      "status": "active"
+    }
+  ],
+  "genaiAgents": [
+    {
+      "name": "OCI Generative AI Agents",
+      "partNumber": "B110461",
+      "pricePerUnit": 0.003,
+      "metric": "10,000 Transactions",
+      "category": "OCI Generative AI Agents",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI Agents - Knowledge Base Storage",
+      "partNumber": "B110462",
+      "pricePerUnit": 0.0084,
+      "metric": "Gigabyte Storage Per Hour",
+      "category": "OCI Generative AI Agents",
+      "status": "active"
+    },
+    {
+      "name": "OCI Generative AI Agents - Data Ingestion",
+      "partNumber": "B110463",
+      "pricePerUnit": 0.0003,
+      "metric": "10,000 Transactions",
+      "category": "OCI Generative AI Agents",
+      "status": "active"
+    }
+  ],
+  "support": [
+    {
+      "name": "Oracle Cloud Success Protection Service - Universal Credits Consumption (% applied to consumption, with minimum)",
+      "partNumber": "B110464",
+      "pricePerUnit": 0.1,
+      "metric": "Universal Credits Consumption",
+      "category": "Cloud Success Protection Service",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Cloud Success Assurance Service - Universal Credits Consumption (% applied to consumption, with minimum)",
+      "partNumber": "B110993",
+      "pricePerUnit": 0.05,
+      "metric": "Universal Credits Consumption",
+      "category": "Cloud Success Assurance Service",
+      "status": "active"
+    }
+  ],
+  "exadataC3": [
+    {
+      "name": "Exadata Cloud@Customer - Database OCPU - Developer",
+      "partNumber": "B110470",
+      "pricePerUnit": 0,
+      "metric": "OCPU Per Hour",
+      "category": "Database - Exadata Database - Cloud@Customer",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Exadata Cloud@Customer Database ECPU",
+      "partNumber": "B110662",
+      "pricePerUnit": 0.336,
+      "metric": "ECPU Per Hour",
+      "category": "Database - Exadata Database - Cloud@Customer",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Exadata Cloud@Customer Database ECPU - BYOL",
+      "partNumber": "B110663",
+      "pricePerUnit": 0.0807,
+      "metric": "ECPU Per Hour",
+      "category": "Database - Exadata Database - Cloud@Customer",
+      "status": "active"
+    },
+    {
+      "name": "Exadata Cloud@Customer - Database ECPU - Developer",
+      "partNumber": "B111355",
+      "pricePerUnit": 0,
+      "metric": "ECPU Per Hour",
+      "category": "Database - Exadata Database - Cloud@Customer",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Database Exadata Cloud at Customer - Database OCPU",
+      "partNumber": "B89980",
+      "pricePerUnit": 1.3441,
+      "metric": "OCPU Per Hour",
+      "category": "Database - Exadata Database - Cloud@Customer",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Database Exadata Cloud at Customer - Database OCPU - BYOL",
+      "partNumber": "B89981",
+      "pricePerUnit": 0.3226,
+      "metric": "OCPU Per Hour",
+      "category": "Database - Exadata Database - Cloud@Customer",
+      "status": "active"
+    },
+    {
+      "name": "Gen 2 Exadata Cloud at Customer - Database OCPU",
+      "partNumber": "B91363",
+      "pricePerUnit": 1.3441,
+      "metric": "OCPU Per Hour",
+      "category": "Database - Exadata Database - Cloud@Customer",
+      "status": "active"
+    },
+    {
+      "name": "Gen 2 Exadata Cloud at Customer - Database OCPU - BYOL",
+      "partNumber": "B91364",
+      "pricePerUnit": 0.3226,
+      "metric": "OCPU Per Hour",
+      "category": "Database - Exadata Database - Cloud@Customer",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Autonomous AI Lakehouse - Exadata Cloud@Customer - ECPU",
+      "partNumber": "B95708",
+      "pricePerUnit": 0.336,
+      "metric": "ECPU Per Hour",
+      "category": "Database - Exadata Database - Cloud@Customer",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Autonomous AI Transaction Processing - Exadata Cloud@Customer - ECPU",
+      "partNumber": "B95709",
+      "pricePerUnit": 0.336,
+      "metric": "ECPU Per Hour",
+      "category": "Database - Exadata Database - Cloud@Customer",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Autonomous AI Lakehouse - Exadata Cloud@Customer - ECPU - BYOL",
+      "partNumber": "B95710",
+      "pricePerUnit": 0.0807,
+      "metric": "ECPU Per Hour",
+      "category": "Database - Exadata Database - Cloud@Customer",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Autonomous AI Transaction Processing - Exadata Cloud@Customer - ECPU - BYOL",
+      "partNumber": "B95711",
+      "pricePerUnit": 0.0807,
+      "metric": "ECPU Per Hour",
+      "category": "Database - Exadata Database - Cloud@Customer",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Autonomous AI Transaction Processing - Exadata Cloud@Customer - Developer",
+      "partNumber": "B98277",
+      "pricePerUnit": 0,
+      "metric": "Instance Per Hour",
+      "category": "Database - Exadata Database - Cloud@Customer",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Autonomous AI Lakehouse - Exadata Cloud@Customer - Developer",
+      "partNumber": "B98278",
+      "pricePerUnit": 0,
+      "metric": "Instance Per Hour",
+      "category": "Database - Exadata Database - Cloud@Customer",
+      "status": "active"
+    }
+  ],
+  "fleetManagement": [
+    {
+      "name": "OCI Fleet Application Management Service",
+      "partNumber": "B110475",
+      "pricePerUnit": 0,
+      "metric": "1 Managed Resource Per Month",
+      "category": "Fleet Application Management",
+      "status": "active"
+    }
+  ],
+  "kafka": [
+    {
+      "name": "OCI Streaming With Apache Kafka",
+      "partNumber": "B110500",
+      "pricePerUnit": 0.1,
+      "metric": "OCPU Per Hour",
+      "category": "OCI Streaming With Apache Kafka",
+      "status": "active"
+    }
+  ],
+  "vision": [
+    {
+      "name": "OCI - Vision - Stored Video Analysis",
+      "partNumber": "B110617",
+      "pricePerUnit": 0,
+      "metric": "Processed Video Minute",
+      "category": "OCI Vision",
+      "status": "active"
+    },
+    {
+      "name": "OCI - Vision - Stream Video Analysis",
+      "partNumber": "B111539",
+      "pricePerUnit": 0.15,
+      "metric": "Processed Video Minute",
+      "category": "OCI Vision",
+      "status": "active"
+    },
+    {
+      "name": "Vision - Image Analysis",
+      "partNumber": "B94973",
+      "pricePerUnit": 0,
+      "metric": "1,000 Transactions",
+      "category": "OCI Vision",
+      "status": "active"
+    },
+    {
+      "name": "Vision - OCR",
+      "partNumber": "B94974",
+      "pricePerUnit": 0,
+      "metric": "1,000 Transactions",
+      "category": "OCI Vision",
+      "status": "active"
+    },
+    {
+      "name": "Vision - Custom Training",
+      "partNumber": "B94977",
+      "pricePerUnit": 0,
+      "metric": "Training Hour",
+      "category": "OCI Vision",
+      "status": "active"
+    }
+  ],
+  "exadataX11M": [
+    {
+      "name": "Exadata Cloud Infrastructure - Database Server - X11M",
+      "partNumber": "B110627",
+      "pricePerUnit": 2.9032,
+      "metric": "Hosted Environment Per Hour",
+      "category": "Exadata Cloud Infrastructure X11M",
+      "status": "active"
+    },
+    {
+      "name": "Exadata Cloud Infrastructure - Storage Server - X11M",
+      "partNumber": "B110629",
+      "pricePerUnit": 2.9032,
+      "metric": "Hosted Environment Per Hour",
+      "category": "Exadata Cloud Infrastructure X11M",
+      "status": "active"
+    }
+  ],
+  "stackMonitoringGPU": [
+    {
+      "name": "OCI Application Performance Monitoring Service - Stack Monitoring - Enterprise Edition for GPU Infrastructure",
+      "partNumber": "B110986",
+      "pricePerUnit": 0.07,
+      "metric": "GPU Monitoring Unit Per Hour",
+      "category": "Observability - Stack Monitoring - GPU",
+      "status": "active"
+    }
+  ],
+  "lustre": [
+    {
+      "name": "OCI File Storage with Lustre Service - Storage",
+      "partNumber": "B111091",
+      "pricePerUnit": 0.086,
+      "metric": "Gigabyte Storage Capacity Per Month",
+      "category": "File Storage with Lustre Service",
+      "status": "active"
+    },
+    {
+      "name": "OCI File Storage with Lustre Service - Performance",
+      "partNumber": "B111092",
+      "pricePerUnit": 0.0005,
+      "metric": "Performance Units Per Gigabyte Per Month",
+      "category": "File Storage with Lustre Service",
+      "status": "active"
+    }
+  ],
+  "backupS3": [
+    {
+      "name": "Oracle Database Backup to Amazon S3",
+      "partNumber": "B111352",
+      "pricePerUnit": 0.051,
+      "metric": "Gigabyte Storage Capacity Per Month",
+      "category": "Oracle Database Backup to Amazon S3",
+      "status": "active"
+    }
+  ],
+  "aiDataPlatform": [
+    {
+      "name": "Oracle AI Data Platform",
+      "partNumber": "B111363",
+      "pricePerUnit": 0.001,
+      "metric": "AI Data Platform Unit",
+      "category": "Oracle AI Data Platform",
+      "status": "active"
+    }
+  ],
+  "databaseCloud": [
+    {
+      "name": "Oracle Database Cloud Service - Enterprise Edition - General Purpose",
+      "partNumber": "B88290",
+      "pricePerUnit": 0.4301,
+      "metric": "OCPU Per Hour",
+      "category": "Oracle Public Cloud Services - CLOUDCM",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Database Cloud Service - Enterprise Edition Extreme Performance - General Purpose",
+      "partNumber": "B88291",
+      "pricePerUnit": 1.3441,
+      "metric": "OCPU Per Hour",
+      "category": "Oracle Public Cloud Services - CLOUDCM",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Database Cloud Service - Enterprise Edition High Performance - General Purpose",
+      "partNumber": "B88292",
+      "pricePerUnit": 0.8871,
+      "metric": "OCPU Per Hour",
+      "category": "Oracle Public Cloud Services - CLOUDCM",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Database Cloud Service - Standard Edition - General Purpose",
+      "partNumber": "B88293",
+      "pricePerUnit": 0.215,
+      "metric": "OCPU Per Hour",
+      "category": "Oracle Public Cloud Services - CLOUDCM",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Database Cloud Service - Enterprise Edition Extreme Performance RAC - BYOL",
+      "partNumber": "B88402",
+      "pricePerUnit": 0.1935,
+      "metric": "OCPU Per Hour",
+      "category": "Oracle Public Cloud Services - CLOUDCM",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Database Cloud Service - All Editions - BYOL",
+      "partNumber": "B88404",
+      "pricePerUnit": 0.1935,
+      "metric": "OCPU Per Hour",
+      "category": "Oracle Public Cloud Services - CLOUDCM",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Autonomous AI Lakehouse - Free",
+      "partNumber": "B91391",
+      "pricePerUnit": 0,
+      "metric": "OCPU Per Hour",
+      "category": "Oracle Public Cloud Services - CLOUDCM",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Autonomous AI Lakehouse - Exadata Storage - Free",
+      "partNumber": "B91392",
+      "pricePerUnit": 0,
+      "metric": "Terabyte Storage Capacity Per Month",
+      "category": "Oracle Public Cloud Services - CLOUDCM",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Autonomous AI Transaction Processing - Free",
+      "partNumber": "B91393",
+      "pricePerUnit": 0,
+      "metric": "OCPU Per Hour",
+      "category": "Oracle Public Cloud Services - CLOUDCM",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Autonomous AI Transaction Processing - Exadata Storage - Free",
+      "partNumber": "B91394",
+      "pricePerUnit": 0,
+      "metric": "Terabyte Storage Capacity Per Month",
+      "category": "Oracle Public Cloud Services - CLOUDCM",
+      "status": "active"
+    }
+  ],
+  "odi": [
+    {
+      "name": "Oracle Data Integrator Cloud Service",
+      "partNumber": "B88299",
+      "pricePerUnit": 0.7742,
+      "metric": "OCPU Per Hour",
+      "category": "Data Integrator",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Data Integrator Cloud Service - BYOL",
+      "partNumber": "B88406",
+      "pricePerUnit": 0.1935,
+      "metric": "OCPU Per Hour",
+      "category": "Data Integrator",
+      "status": "active"
+    }
+  ],
+  "bareMetal": [
+    {
+      "name": "Compute - Bare Metal Standard - X5",
+      "partNumber": "B88315",
+      "pricePerUnit": 0.0638,
+      "metric": "OCPU Per Hour",
+      "category": "Compute - Bare Metal",
+      "status": "active"
+    },
+    {
+      "name": "Compute - Bare Metal Standard - X7",
+      "partNumber": "B88513",
+      "pricePerUnit": 0.0638,
+      "metric": "OCPU Per Hour",
+      "category": "Compute - Bare Metal",
+      "status": "active"
+    },
+    {
+      "name": "Compute - Bare Metal Dense I/O - X7",
+      "partNumber": "B88515",
+      "pricePerUnit": 0.1275,
+      "metric": "OCPU Per Hour",
+      "category": "Compute - Bare Metal",
+      "status": "active"
+    },
+    {
+      "name": "Compute - Bare Metal Standard - HPC - X7",
+      "partNumber": "B90398",
+      "pricePerUnit": 0.075,
+      "metric": "OCPU Per Hour",
+      "category": "Compute - Bare Metal",
+      "status": "active"
+    },
+    {
+      "name": "Compute - Bare Metal Standard - B1",
+      "partNumber": "B91119",
+      "pricePerUnit": 0.0638,
+      "metric": "OCPU Per Hour",
+      "category": "Compute - Bare Metal",
+      "status": "active"
+    },
+    {
+      "name": "OCI - Compute - HPC - E5",
+      "partNumber": "B96531",
+      "pricePerUnit": 0.044,
+      "metric": "OCPU Per Hour",
+      "category": "Compute - Bare Metal",
+      "status": "active"
+    }
+  ],
+  "osImages": [
+    {
+      "name": "Compute - Windows OS",
+      "partNumber": "B88318",
+      "pricePerUnit": 0.092,
+      "metric": "OCPU Per Hour",
+      "category": "Compute - OS Images",
+      "status": "active"
+    }
+  ],
+  "vcn": [
+    {
+      "name": "Outbound Data Transfer - Originating in North America, Europe, and UK",
+      "partNumber": "B88327",
+      "pricePerUnit": 0,
+      "metric": "Gigabyte Outbound Data Transfer Per Month",
+      "category": "Networking - Virtual Cloud Networks",
+      "status": "active"
+    },
+    {
+      "name": "Outbound Data Transfer - Originating in APAC, Japan, and South America",
+      "partNumber": "B93455",
+      "pricePerUnit": 0,
+      "metric": "Gigabyte Outbound Data Transfer Per Month",
+      "category": "Networking - Virtual Cloud Networks",
+      "status": "active"
+    },
+    {
+      "name": "Outbound Data Transfer - Originating in Middle East and Africa",
+      "partNumber": "B93456",
+      "pricePerUnit": 0,
+      "metric": "Gigabyte Outbound Data Transfer Per Month",
+      "category": "Networking - Virtual Cloud Networks",
+      "status": "active"
+    }
+  ],
+  "analyticsCloud": [
+    {
+      "name": "Oracle Analytics Cloud - Professional - OCPU",
+      "partNumber": "B89630",
+      "pricePerUnit": 1.0753,
+      "metric": "OCPU Per Hour",
+      "category": "Analytics - Analytics Cloud",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Analytics Cloud - Enterprise - OCPU",
+      "partNumber": "B89631",
+      "pricePerUnit": 2.1506,
+      "metric": "OCPU Per Hour",
+      "category": "Analytics - Analytics Cloud",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Analytics Cloud - Professional - BYOL - OCPU",
+      "partNumber": "B89636",
+      "pricePerUnit": 0.3226,
+      "metric": "OCPU Per Hour",
+      "category": "Analytics - Analytics Cloud",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Analytics Cloud - Enterprise - BYOL - OCPU",
+      "partNumber": "B89637",
+      "pricePerUnit": 0.3226,
+      "metric": "OCPU Per Hour",
+      "category": "Analytics - Analytics Cloud",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Analytics Cloud - Professional - Users",
+      "partNumber": "B92682",
+      "pricePerUnit": 16,
+      "metric": "User Per Month",
+      "category": "Analytics - Analytics Cloud",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Analytics Cloud - Enterprise - Users",
+      "partNumber": "B92683",
+      "pricePerUnit": 80,
+      "metric": "User Per Month",
+      "category": "Analytics - Analytics Cloud",
+      "status": "active"
+    }
+  ],
+  "visualBuilder": [
+    {
+      "name": "Oracle Visual Builder",
+      "partNumber": "B89646",
+      "pricePerUnit": 1.2365,
+      "metric": "OCPU Per Hour",
+      "category": "Application Development - Developer Cloud Service",
+      "status": "active"
+    },
+    {
+      "name": "Visual Builder Studio - Additional Storage",
+      "partNumber": "B90203",
+      "pricePerUnit": 1.6,
+      "metric": "Gigabyte Storage Capacity Per Month",
+      "category": "Application Development - Developer Cloud Service",
+      "status": "active"
+    }
+  ],
+  "nosql": [
+    {
+      "name": "Oracle NoSQL Database Cloud - Write",
+      "partNumber": "B89737",
+      "pricePerUnit": 0.1254,
+      "metric": "Write Unit Per Month",
+      "category": "Database - NoSQL",
+      "status": "active"
+    },
+    {
+      "name": "Oracle NoSQL Database Cloud - Read",
+      "partNumber": "B89738",
+      "pricePerUnit": 0.0064,
+      "metric": "Read Unit Per Month",
+      "category": "Database - NoSQL",
+      "status": "active"
+    },
+    {
+      "name": "Oracle NoSQL Database Cloud - Storage",
+      "partNumber": "B89739",
+      "pricePerUnit": 0.066,
+      "metric": "Gigabyte Storage Capacity Per Month",
+      "category": "Database - NoSQL",
+      "status": "active"
+    },
+    {
+      "name": "Oracle NoSQL Database Cloud - Write - Free",
+      "partNumber": "B92627",
+      "pricePerUnit": 0,
+      "metric": "Write Unit Per Month",
+      "category": "Database - NoSQL",
+      "status": "active"
+    },
+    {
+      "name": "Oracle NoSQL Database Cloud - Read - Free",
+      "partNumber": "B92628",
+      "pricePerUnit": 0,
+      "metric": "Read Unit Per Month",
+      "category": "Database - NoSQL",
+      "status": "active"
+    },
+    {
+      "name": "Oracle NoSQL Database Cloud - Storage - Free",
+      "partNumber": "B92629",
+      "pricePerUnit": 0,
+      "metric": "Gigabyte Storage Capacity Per Month",
+      "category": "Database - NoSQL",
+      "status": "active"
+    },
+    {
+      "name": "Oracle NoSQL Database Cloud - Write - Auto",
+      "partNumber": "B93710",
+      "pricePerUnit": 3.135,
+      "metric": "Write Unit Per Month",
+      "category": "Database - NoSQL",
+      "status": "active"
+    },
+    {
+      "name": "Oracle NoSQL Database Cloud - Read - Auto",
+      "partNumber": "B93711",
+      "pricePerUnit": 0.16,
+      "metric": "Read Unit Per Month",
+      "category": "Database - NoSQL",
+      "status": "active"
+    },
+    {
+      "name": "Oracle NoSQL Database Cloud - Hosted Environment",
+      "partNumber": "B93712",
+      "pricePerUnit": 28796,
+      "metric": "Hosted Environment Per Month",
+      "category": "Database - NoSQL",
+      "status": "active"
+    },
+    {
+      "name": "Oracle NoSQL Database Cloud - Regional Replicated Write",
+      "partNumber": "B97191",
+      "pricePerUnit": 0.36,
+      "metric": "Write Unit Per Month",
+      "category": "Database - NoSQL",
+      "status": "active"
+    }
+  ],
+  "exadataX7": [
+    {
+      "name": "Quarter Rack - X7",
+      "partNumber": "B89999",
+      "pricePerUnit": 21.5054,
+      "metric": "Hosted Environment Per Hour",
+      "category": "Exadata Cloud Infrastructure X7",
+      "status": "active"
+    },
+    {
+      "name": "Half Rack - X7",
+      "partNumber": "B90000",
+      "pricePerUnit": 43.0107,
+      "metric": "Hosted Environment Per Hour",
+      "category": "Exadata Cloud Infrastructure X7",
+      "status": "active"
+    },
+    {
+      "name": "Full Rack - X7",
+      "partNumber": "B90001",
+      "pricePerUnit": 86.0215,
+      "metric": "Hosted Environment Per Hour",
+      "category": "Exadata Cloud Infrastructure X7",
+      "status": "active"
+    }
+  ],
+  "mobile": [
+    {
+      "name": "Oracle Mobile Hub Cloud Service",
+      "partNumber": "B90304",
+      "pricePerUnit": 0.0028,
+      "metric": "Requests per Hour",
+      "category": "Mobile",
+      "status": "active"
+    }
+  ],
+  "healthChecks": [
+    {
+      "name": "OCI - Health Checks - Basic",
+      "partNumber": "B90323",
+      "pricePerUnit": 0.3,
+      "metric": "Endpoints Per Month",
+      "category": "Edge Services",
+      "status": "active"
+    },
+    {
+      "name": "OCI - Health Checks - Premium",
+      "partNumber": "B90325",
+      "pricePerUnit": 1.3,
+      "metric": "Endpoints Per Month",
+      "category": "Edge Services",
+      "status": "active"
+    }
+  ],
+  "vault": [
+    {
+      "name": "OCI - Key Management - Private Vault",
+      "partNumber": "B90328",
+      "pricePerUnit": 3.724,
+      "metric": "Virtual Private Vault Per Hour",
+      "category": "Security - Key Management",
+      "status": "active"
+    },
+    {
+      "name": "Key Management Service - Key Versions",
+      "partNumber": "B92092",
+      "pricePerUnit": 0,
+      "metric": "Key Version Per Month",
+      "category": "Security - Key Management",
+      "status": "active"
+    },
+    {
+      "name": "OCI - External Key Management",
+      "partNumber": "B98100",
+      "pricePerUnit": 3,
+      "metric": "Key Version Per Month",
+      "category": "Security - Key Management",
+      "status": "active"
+    },
+    {
+      "name": "OCI - Dedicated Key Management (Minimum 3 HSM Partitions)",
+      "partNumber": "B99597",
+      "pricePerUnit": 1.75,
+      "metric": "HSM Partition Per Hour",
+      "category": "Security - Key Management",
+      "status": "active"
+    }
+  ],
+  "iam": [
+    {
+      "name": "Oracle Identity Cloud Service - Enterprise User",
+      "partNumber": "B90555",
+      "pricePerUnit": 3.2,
+      "metric": "User Per Month",
+      "category": "OCI IAM",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Identity Cloud Service - Consumer User",
+      "partNumber": "B90556",
+      "pricePerUnit": 0.016,
+      "metric": "User Per Month",
+      "category": "OCI IAM",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Identity Cloud Service - Enterprise User - BYOL",
+      "partNumber": "B90557",
+      "pricePerUnit": 0.8,
+      "metric": "User Per Month",
+      "category": "OCI IAM",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Identity Cloud Service - Consumer User - BYOL",
+      "partNumber": "B90558",
+      "pricePerUnit": 0.004,
+      "metric": "User Per Month",
+      "category": "OCI IAM",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Identity Foundation Cloud Service",
+      "partNumber": "B90936",
+      "pricePerUnit": 0,
+      "metric": "Each",
+      "category": "OCI IAM",
+      "status": "active"
+    },
+    {
+      "name": "Identity and Access Management - External User",
+      "partNumber": "B93493",
+      "pricePerUnit": 0.016,
+      "metric": "User Per Month",
+      "category": "OCI IAM",
+      "status": "active"
+    },
+    {
+      "name": "Identity and Access Management - Oracle Apps Premium",
+      "partNumber": "B93494",
+      "pricePerUnit": 0.25,
+      "metric": "User Per Month",
+      "category": "OCI IAM",
+      "status": "active"
+    },
+    {
+      "name": "Identity and Access Management - Premium",
+      "partNumber": "B93495",
+      "pricePerUnit": 3.2,
+      "metric": "User Per Month",
+      "category": "OCI IAM",
+      "status": "active"
+    },
+    {
+      "name": "Identity and Access Management - SMS",
+      "partNumber": "B93496",
+      "pricePerUnit": 0,
+      "metric": "1 SMS Message Sent",
+      "category": "OCI IAM",
+      "status": "active"
+    },
+    {
+      "name": "Identity and Access Management - Token",
+      "partNumber": "B93497",
+      "pricePerUnit": 0,
+      "metric": "Token",
+      "category": "OCI IAM",
+      "status": "active"
+    },
+    {
+      "name": "Identity and Access Management - Replication",
+      "partNumber": "B93498",
+      "pricePerUnit": 0.004,
+      "metric": "User Per Month",
+      "category": "OCI IAM",
+      "status": "active"
+    }
+  ],
+  "functions": [
+    {
+      "name": "Oracle Functions - Execution Time",
+      "partNumber": "B90617",
+      "pricePerUnit": 0,
+      "metric": "10,000 GB Memory-Seconds",
+      "category": "Application Development - Serverless",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Functions - Invocations",
+      "partNumber": "B90618",
+      "pricePerUnit": 0,
+      "metric": "1MIL Function Invocations",
+      "category": "Application Development - Serverless",
+      "status": "active"
+    }
+  ],
+  "exadataBase": [
+    {
+      "name": "Exadata Database Cloud Service - Base System",
+      "partNumber": "B90777",
+      "pricePerUnit": 10.7527,
+      "metric": "Hosted Environment Per Hour",
+      "category": "Exadata Cloud Infrastructure Base System",
+      "status": "active"
+    }
+  ],
+  "streaming": [
+    {
+      "name": "Streaming - PUT or GET",
+      "partNumber": "B90938",
+      "pricePerUnit": 0.025,
+      "metric": "Gigabytes of Data Transferred",
+      "category": "OCI Streaming",
+      "status": "active"
+    },
+    {
+      "name": "Streaming - Storage",
+      "partNumber": "B90939",
+      "pricePerUnit": 0.0002,
+      "metric": "Gigabytes Per Hour",
+      "category": "OCI Streaming",
+      "status": "active"
+    }
+  ],
+  "notifications": [
+    {
+      "name": "Notifications - HTTPS Delivery",
+      "partNumber": "B90940",
+      "pricePerUnit": 0,
+      "metric": "Million Delivery Operations",
+      "category": "Observability - Notifications",
+      "status": "active"
+    },
+    {
+      "name": "Notifications - Email Delivery",
+      "partNumber": "B90941",
+      "pricePerUnit": 0,
+      "metric": "1,000 Emails Sent",
+      "category": "Observability - Notifications",
+      "status": "active"
+    },
+    {
+      "name": "Notifications - SMS Outbound to Country Zone 1",
+      "partNumber": "B93004",
+      "pricePerUnit": 0,
+      "metric": "Per SMS Message Sent",
+      "category": "Observability - Notifications",
+      "status": "active"
+    },
+    {
+      "name": "Notifications - SMS Outbound to Country Zone 2",
+      "partNumber": "B93005",
+      "pricePerUnit": 0,
+      "metric": "Per SMS Message Sent",
+      "category": "Observability - Notifications",
+      "status": "active"
+    },
+    {
+      "name": "Notifications - SMS Outbound to Country Zone 3",
+      "partNumber": "B93006",
+      "pricePerUnit": 0,
+      "metric": "Per SMS Message Sent",
+      "category": "Observability - Notifications",
+      "status": "active"
+    },
+    {
+      "name": "Notifications - SMS Outbound to Country Zone 4",
+      "partNumber": "B93007",
+      "pricePerUnit": 0,
+      "metric": "Per SMS Message Sent",
+      "category": "Observability - Notifications",
+      "status": "active"
+    },
+    {
+      "name": "Notifications - SMS Outbound to Country Zone 5",
+      "partNumber": "B93008",
+      "pricePerUnit": 0,
+      "metric": "Per SMS Message Sent",
+      "category": "Observability - Notifications",
+      "status": "active"
+    }
+  ],
+  "bigData": [
+    {
+      "name": "Oracle Cloud SQL - Compute Capacity",
+      "partNumber": "B91121",
+      "pricePerUnit": 0.1075,
+      "metric": "OCPU Per Hour",
+      "category": "Data Management - Big Data Cloud Service",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Big Data Service - Compute - Standard",
+      "partNumber": "B91128",
+      "pricePerUnit": 0.1344,
+      "metric": "OCPU Per Hour",
+      "category": "Data Management - Big Data Cloud Service",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Big Data Service - Compute - Dense I/O",
+      "partNumber": "B91129",
+      "pricePerUnit": 0.214,
+      "metric": "OCPU Per Hour",
+      "category": "Data Management - Big Data Cloud Service",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Big Data Service - Compute - HPC",
+      "partNumber": "B91130",
+      "pricePerUnit": 0.1536,
+      "metric": "OCPU Per Hour",
+      "category": "Data Management - Big Data Cloud Service",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Big Data Service",
+      "partNumber": "B93555",
+      "pricePerUnit": 0.015,
+      "metric": "OCPU Per Hour",
+      "category": "Big Data Service",
+      "status": "active"
+    }
+  ],
+  "sqlServer": [
+    {
+      "name": "Database - Marketplace Compute Image - Microsoft SQL Enterprise",
+      "partNumber": "B91372",
+      "pricePerUnit": 1.47,
+      "metric": "OCPU Per Hour",
+      "category": "Database - SQL Server",
+      "status": "active"
+    },
+    {
+      "name": "Database - Marketplace Compute Image - Microsoft SQL Standard",
+      "partNumber": "B91373",
+      "pricePerUnit": 0.37,
+      "metric": "OCPU Per Hour",
+      "category": "Database - SQL Server",
+      "status": "active"
+    }
+  ],
+  "blockStorage": [
+    {
+      "name": "Storage - Block Volume - Free 200GB",
+      "partNumber": "B91445",
+      "pricePerUnit": 0,
+      "metric": "Gigabyte Storage Capacity Per Month",
+      "category": "Storage - Block Volumes",
+      "status": "active"
+    },
+    {
+      "name": "Storage - Block Volume - Storage",
+      "partNumber": "B91961",
+      "pricePerUnit": 0.0255,
+      "metric": "Gigabyte Storage Capacity Per Month",
+      "category": "Storage - Block Volumes",
+      "status": "active"
+    },
+    {
+      "name": "Storage - Block Volume - Performance Units",
+      "partNumber": "B91962",
+      "pricePerUnit": 0.0017,
+      "metric": "Performance Units Per Gigabyte Per Month",
+      "category": "Storage - Block Volumes",
+      "status": "active"
+    }
+  ],
+  "exadataX8": [
+    {
+      "name": "Quarter Rack - X8",
+      "partNumber": "B91535",
+      "pricePerUnit": 14.5162,
+      "metric": "Hosted Environment Per Hour",
+      "category": "Exadata Cloud Infrastructure X8",
+      "status": "active"
+    },
+    {
+      "name": "Half Rack - X8",
+      "partNumber": "B91536",
+      "pricePerUnit": 29.0323,
+      "metric": "Hosted Environment Per Hour",
+      "category": "Exadata Cloud Infrastructure X8",
+      "status": "active"
+    },
+    {
+      "name": "Full Rack - X8",
+      "partNumber": "B91537",
+      "pricePerUnit": 58.0645,
+      "metric": "Hosted Environment Per Hour",
+      "category": "Exadata Cloud Infrastructure X8",
+      "status": "active"
+    }
+  ],
+  "objectStorage": [
+    {
+      "name": "Object Storage - Requests",
+      "partNumber": "B91627",
+      "pricePerUnit": 0,
+      "metric": "10,000 Requests per Month (first 50,000 free)",
+      "category": "Storage - Object Storage",
+      "status": "active"
+    },
+    {
+      "name": "Object Storage - Storage",
+      "partNumber": "B91628",
+      "pricePerUnit": 0,
+      "metric": "Gigabyte Storage Capacity Per Month",
+      "category": "Storage - Object Storage",
+      "status": "active"
+    },
+    {
+      "name": "Archive Storage - Storage",
+      "partNumber": "B91633",
+      "pricePerUnit": 0,
+      "metric": "Gigabyte Storage Capacity Per Month",
+      "category": "Storage - Object Storage",
+      "status": "active"
+    },
+    {
+      "name": "Infrequent Access Storage - Storage",
+      "partNumber": "B93000",
+      "pricePerUnit": 0,
+      "metric": "Gigabyte Storage Capacity Per Month",
+      "category": "Storage - Object Storage",
+      "status": "active"
+    },
+    {
+      "name": "Infrequent Access Storage - Data Retrieval",
+      "partNumber": "B93001",
+      "pricePerUnit": 0,
+      "metric": "GB Storage Retrieved Per Month",
+      "category": "Storage - Object Storage",
+      "status": "active"
+    }
+  ],
+  "dataSafe": [
+    {
+      "name": "Data Safe for Database Cloud Service - Audit Record Collection Over 1 Million Records",
+      "partNumber": "B91631",
+      "pricePerUnit": 0.1,
+      "metric": "10,000 Audit Records Per Target Per Month",
+      "category": "Security - Data Safe",
+      "status": "active"
+    },
+    {
+      "name": "Data Safe for Database Cloud Service - Databases",
+      "partNumber": "B91632",
+      "pricePerUnit": 0,
+      "metric": "Each",
+      "category": "Security - Data Safe",
+      "status": "active"
+    },
+    {
+      "name": "Data Safe for On-Premises Databases          on Compute",
+      "partNumber": "B92733",
+      "pricePerUnit": 200,
+      "metric": "Target Database Per Month",
+      "category": "Security - Data Safe",
+      "status": "active"
+    },
+    {
+      "name": "Data Safe for On-Premises Databases prompt on Compute",
+      "partNumber": "B92734",
+      "pricePerUnit": 0.1,
+      "metric": "10,000 Audit Records Per Target Per Month",
+      "category": "Security - Data Safe",
+      "status": "active"
+    }
+  ],
+  "exadataX8M": [
+    {
+      "name": "Exadata Database Cloud Service - Quarter Rack  - X8M",
+      "partNumber": "B92380",
+      "pricePerUnit": 14.5162,
+      "metric": "Hosted Environment Per Hour",
+      "category": "Exadata Cloud Infrastructure X8M",
+      "status": "active"
+    },
+    {
+      "name": "Exadata Database Cloud Service - Database Server - X8M",
+      "partNumber": "B92381",
+      "pricePerUnit": 2.9032,
+      "metric": "Hosted Environment Per Hour",
+      "category": "Exadata Cloud Infrastructure X8M",
+      "status": "active"
+    },
+    {
+      "name": "Exadata Database Cloud Service - Storage Server - X8M",
+      "partNumber": "B92382",
+      "pricePerUnit": 2.9032,
+      "metric": "Hosted Environment Per Hour",
+      "category": "Exadata Cloud Infrastructure X8M",
+      "status": "active"
+    }
+  ],
+  "soa": [
+    {
+      "name": "Oracle SOA Suite for OCI",
+      "partNumber": "B92450",
+      "pricePerUnit": 0.7231,
+      "metric": "OCPU Per Hour",
+      "category": "Application Integration - SOA",
+      "status": "active"
+    },
+    {
+      "name": "Oracle SOA Suite for OCI - with B2B Adapter for EDI",
+      "partNumber": "B92451",
+      "pricePerUnit": 1.2071,
+      "metric": "OCPU Per Hour",
+      "category": "Application Integration - SOA",
+      "status": "active"
+    }
+  ],
+  "logging": [
+    {
+      "name": "OCI - Logging - Storage",
+      "partNumber": "B92593",
+      "pricePerUnit": 0,
+      "metric": "Gigabyte Log Storage Per Month",
+      "category": "Observability - Logging",
+      "status": "active"
+    }
+  ],
+  "dataIntegration": [
+    {
+      "name": "OCI Data Integration - Workspace Usage",
+      "partNumber": "B92598",
+      "pricePerUnit": 0.16,
+      "metric": "Workspace Usage Per Hour",
+      "category": "Data Integration - Workspace Usage",
+      "status": "active"
+    },
+    {
+      "name": "OCI Data Integration - Data Processed",
+      "partNumber": "B92599",
+      "pricePerUnit": 0.04,
+      "metric": "Gigabyte of Data Processed Per Hour",
+      "category": "Data Integration - Data Processed",
+      "status": "active"
+    },
+    {
+      "name": "OCI Data Integration - Pipeline Operator Execution",
+      "partNumber": "B93306",
+      "pricePerUnit": 0,
+      "metric": "Execution Hour",
+      "category": "Data Integration - Pipeline Operator Execution",
+      "status": "active"
+    }
+  ],
+  "goldengate": [
+    {
+      "name": "Oracle Stream Analytics for OCI",
+      "partNumber": "B92695",
+      "pricePerUnit": 0.9498,
+      "metric": "OCPU Per Hour",
+      "category": "GoldenGate",
+      "status": "active"
+    },
+    {
+      "name": "OCI GoldenGate",
+      "partNumber": "B92992",
+      "pricePerUnit": 1.3441,
+      "metric": "OCPU Per Hour",
+      "category": "GoldenGate",
+      "status": "active"
+    },
+    {
+      "name": "OCI GoldenGate - BYOL",
+      "partNumber": "B92993",
+      "pricePerUnit": 0.3226,
+      "metric": "OCPU Per Hour",
+      "category": "GoldenGate",
+      "status": "active"
+    }
+  ],
+  "logAnalytics": [
+    {
+      "name": "OCI Log Analytics - Archival Storage",
+      "partNumber": "B92809",
+      "pricePerUnit": 0.02,
+      "metric": "Logging Analytics Storage Unit Per Hour",
+      "category": "Observability - Log Analytics",
+      "status": "active"
+    },
+    {
+      "name": "OCI Log Analytics - Active Storage",
+      "partNumber": "B95634",
+      "pricePerUnit": 372,
+      "metric": "Logging Analytics Storage Unit Per Month",
+      "category": "Observability - Log Analytics",
+      "status": "active"
+    }
+  ],
+  "apm": [
+    {
+      "name": "Application Performance Monitoring Service - Tracing Data - Free",
+      "partNumber": "B92940",
+      "pricePerUnit": 0,
+      "metric": "1,000 Events Per Hour",
+      "category": "Observability - APM",
+      "status": "active"
+    },
+    {
+      "name": "Application Performance Monitoring Service - Tracing Data",
+      "partNumber": "B92941",
+      "pricePerUnit": 0.65,
+      "metric": "100,000 Events Per Hour",
+      "category": "Observability - APM",
+      "status": "active"
+    },
+    {
+      "name": "Application Performance Monitoring Service -  Synthetic Usage",
+      "partNumber": "B92942",
+      "pricePerUnit": 0.02,
+      "metric": "10 Monitor Runs Per Hour",
+      "category": "Observability - APM",
+      "status": "active"
+    },
+    {
+      "name": "OCI - Application Performance Monitoring Service - Synthetic Usage - Free",
+      "partNumber": "B96629",
+      "pricePerUnit": 0,
+      "metric": "10 Monitor Runs Per Hour",
+      "category": "Observability - APM",
+      "status": "active"
+    }
+  ],
+  "databaseMigration": [
+    {
+      "name": "OCI Database Migration",
+      "partNumber": "B93199",
+      "pricePerUnit": 0.2,
+      "metric": "Migration Hour",
+      "category": "Database - Database Migration",
+      "status": "active"
+    }
+  ],
+  "autonomousJSON": [
+    {
+      "name": "Oracle Autonomous AI JSON Database - Free",
+      "partNumber": "B93307",
+      "pricePerUnit": 0,
+      "metric": "OCPU Per Hour",
+      "category": "Database - Autonomous AI JSON Database",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Autonomous AI JSON Database - ECPU",
+      "partNumber": "B99708",
+      "pricePerUnit": 0.0807,
+      "metric": "ECPU Per Hour",
+      "category": "Database - Autonomous AI JSON Database",
+      "status": "active"
+    }
+  ],
+  "apex": [
+    {
+      "name": "Oracle APEX Application Development - Free",
+      "partNumber": "B93320",
+      "pricePerUnit": 0,
+      "metric": "OCPU Per Hour",
+      "category": "APEX Application Development",
+      "status": "active"
+    },
+    {
+      "name": "Oracle APEX Application Development - ECPU",
+      "partNumber": "B99709",
+      "pricePerUnit": 0.0807,
+      "metric": "ECPU Per Hour",
+      "category": "APEX Application Development",
+      "status": "active"
+    }
+  ],
+  "exadataX9M": [
+    {
+      "name": "Exadata Cloud Infrastructure - Quarter Rack - X9M",
+      "partNumber": "B93380",
+      "pricePerUnit": 14.5162,
+      "metric": "Hosted Environment Per Hour",
+      "category": "Exadata Cloud Infrastructure X9M",
+      "status": "active"
+    },
+    {
+      "name": "Exadata Cloud Infrastructure - Database Server - X9M",
+      "partNumber": "B93381",
+      "pricePerUnit": 2.9032,
+      "metric": "Hosted Environment Per Hour",
+      "category": "Exadata Cloud Infrastructure X9M",
+      "status": "active"
+    },
+    {
+      "name": "Exadata Cloud Infrastructure - Storage Server - X9M",
+      "partNumber": "B93382",
+      "pricePerUnit": 2.9032,
+      "metric": "Hosted Environment Per Hour",
+      "category": "Exadata Cloud Infrastructure X9M",
+      "status": "active"
+    }
+  ],
+  "opensearch": [
+    {
+      "name": "OCI Search with OpenSearch HA",
+      "partNumber": "B93709",
+      "pricePerUnit": 0.25,
+      "metric": "Node Per Hour",
+      "category": "Search Service with OpenSearch",
+      "status": "active"
+    }
+  ],
+  "threatIntel": [
+    {
+      "name": "Oracle Threat Intelligence Service",
+      "partNumber": "B94173",
+      "pricePerUnit": 0,
+      "metric": "API Calls",
+      "category": "Security - Threat Intelligence",
+      "status": "active"
+    }
+  ],
+  "waf": [
+    {
+      "name": "Web Application Firewall - Requests",
+      "partNumber": "B94277",
+      "pricePerUnit": 0,
+      "metric": "1,000,000 Incoming Requests Per Month",
+      "category": "WAF",
+      "status": "active"
+    },
+    {
+      "name": "Web Application Firewall - Instance",
+      "partNumber": "B94579",
+      "pricePerUnit": 0,
+      "metric": "Instance Per Month",
+      "category": "WAF",
+      "status": "active"
+    }
+  ],
+  "analyticsServer": [
+    {
+      "name": "Oracle Analytics Server for OCI",
+      "partNumber": "B94568",
+      "pricePerUnit": 1.75,
+      "metric": "OCPU Per Hour",
+      "category": "Analytics",
+      "status": "active"
+    }
+  ],
+  "speech": [
+    {
+      "name": "Speech",
+      "partNumber": "B94896",
+      "pricePerUnit": 0,
+      "metric": "Transcription Hour",
+      "category": "OCI Speech",
+      "status": "active"
+    }
+  ],
+  "stackMonitoring": [
+    {
+      "name": "OCI - Stack Monitoring - Standard Edition",
+      "partNumber": "B95264",
+      "pricePerUnit": 0.075,
+      "metric": "10 Monitored Resources Per Hour",
+      "category": "Observability - Stack Monitoring",
+      "status": "active"
+    },
+    {
+      "name": "OCI - Stack Monitoring - Enterprise Edition",
+      "partNumber": "B99259",
+      "pricePerUnit": 0.38,
+      "metric": "10 Monitored Resources Per Hour",
+      "category": "Observability - Stack Monitoring",
+      "status": "active"
+    }
+  ],
+  "mediaFlow": [
+    {
+      "name": "Media Services - Media Flow - Standard - H264 - SD - Below 30fps",
+      "partNumber": "B95279",
+      "pricePerUnit": 0.001,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Standard - H264 - SD - Above 30fps and Below 60fps",
+      "partNumber": "B95280",
+      "pricePerUnit": 0.002,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Standard - H264 - SD - Above 60fps and Below 120fps",
+      "partNumber": "B95281",
+      "pricePerUnit": 0.003,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Standard - H264 - HD - Below 30fps",
+      "partNumber": "B95282",
+      "pricePerUnit": 0.003,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Standard - H264 - HD - Above 30fps and Below 60fps",
+      "partNumber": "B95283",
+      "pricePerUnit": 0.004,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Standard - H264 - HD - Above 60fps and Below 120fps",
+      "partNumber": "B95284",
+      "pricePerUnit": 0.01,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Standard - H264 - 4k - Below 30fps",
+      "partNumber": "B95285",
+      "pricePerUnit": 0.015,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Standard - H264 - 4k - Above 30fps and Below 60fps",
+      "partNumber": "B95286",
+      "pricePerUnit": 0.018,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Standard - H264 - 4k - Above 60fps and Below 120fps",
+      "partNumber": "B95287",
+      "pricePerUnit": 0.036,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Standard - VP8 - SD - Below 30fps",
+      "partNumber": "B95288",
+      "pricePerUnit": 0.003,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Standard - VP8 - SD - Above 30fps and Below 60fps",
+      "partNumber": "B95289",
+      "pricePerUnit": 0.004,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Standard - VP8 - SD - Above 60fps and Below 120fps",
+      "partNumber": "B95290",
+      "pricePerUnit": 0.007,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Standard - VP8 - HD - Below 30fps",
+      "partNumber": "B95291",
+      "pricePerUnit": 0.008,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Standard - VP8 - HD - Above 30fps and Below 60fps",
+      "partNumber": "B95292",
+      "pricePerUnit": 0.01,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Standard - VP8 - HD - Above 60fps and Below 120fps",
+      "partNumber": "B95293",
+      "pricePerUnit": 0.015,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Standard - VP8 - 4k - Below 30fps",
+      "partNumber": "B95294",
+      "pricePerUnit": 0.036,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Standard - VP8 - 4k - Above 30fps and Below 60fps",
+      "partNumber": "B95295",
+      "pricePerUnit": 0.04,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Standard - VP8 - 4k - Above 60fps and Below 120fps",
+      "partNumber": "B95296",
+      "pricePerUnit": 0.05,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Standard - H265VP9 - SD - Below 30fps",
+      "partNumber": "B95297",
+      "pricePerUnit": 0.005,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Standard - H265VP9 - SD - Above 30fps and Below 60fps",
+      "partNumber": "B95298",
+      "pricePerUnit": 0.007,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Standard - H265VP9 - SD - Above 60fps and Below 120fps",
+      "partNumber": "B95299",
+      "pricePerUnit": 0.012,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Standard - H265VP9 - HD - Below 30fps",
+      "partNumber": "B95300",
+      "pricePerUnit": 0.01,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Standard - H265VP9 - HD - Above 30fps and Below 60fps",
+      "partNumber": "B95301",
+      "pricePerUnit": 0.02,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Standard - H265VP9 - HD - Above 60fps and Below 120fps",
+      "partNumber": "B95302",
+      "pricePerUnit": 0.03,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Standard - H265VP9 - 4k - Below 30fps",
+      "partNumber": "B95303",
+      "pricePerUnit": 0.026,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Standard - H265VP9 - 4k - Above 30fps and Below 60fps",
+      "partNumber": "B95304",
+      "pricePerUnit": 0.05,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Standard - H265VP9 - 4k - Above 60fps and Below 120fps",
+      "partNumber": "B95305",
+      "pricePerUnit": 0.063,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Speed - H264 - SD - Below 30fps",
+      "partNumber": "B95306",
+      "pricePerUnit": 0.002,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Speed - H264 - SD - Above 30fps and Below 60fps",
+      "partNumber": "B95307",
+      "pricePerUnit": 0.003,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Speed - H264 - SD - Above 60fps and Below 120fps",
+      "partNumber": "B95308",
+      "pricePerUnit": 0.004,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Speed - H264 - HD - Below 30fps",
+      "partNumber": "B95309",
+      "pricePerUnit": 0.004,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Speed - H264 - HD - Above 30fps and Below 60fps",
+      "partNumber": "B95310",
+      "pricePerUnit": 0.005,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Speed - H264 - HD - Above 60fps and Below 120fps",
+      "partNumber": "B95311",
+      "pricePerUnit": 0.012,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Speed - H264 - 4k - Below 30fps",
+      "partNumber": "B95312",
+      "pricePerUnit": 0.018,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Speed - H264 - 4k - Above 30fps and Below 60fps",
+      "partNumber": "B95313",
+      "pricePerUnit": 0.02,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Speed - H264 - 4k - Above 60fps and Below 120fps",
+      "partNumber": "B95314",
+      "pricePerUnit": 0.04,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Speed - VP8 - SD - Below 30fps",
+      "partNumber": "B95315",
+      "pricePerUnit": 0.005,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Speed - VP8 - SD - Above 30fps and Below 60fps",
+      "partNumber": "B95316",
+      "pricePerUnit": 0.006,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Speed - VP8 - SD - Above 60fps and Below 120fps",
+      "partNumber": "B95317",
+      "pricePerUnit": 0.008,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Speed - VP8 - HD - Below 30fps",
+      "partNumber": "B95318",
+      "pricePerUnit": 0.012,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Speed - VP8 - HD - Above 30fps and Below 60fps",
+      "partNumber": "B95319",
+      "pricePerUnit": 0.015,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Speed - VP8 - HD - Above 60fps and Below 120fps",
+      "partNumber": "B95320",
+      "pricePerUnit": 0.018,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Speed - VP8 - 4k - Below 30fps",
+      "partNumber": "B95321",
+      "pricePerUnit": 0.048,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Speed - VP8 - 4k - Above 30fps and Below 60fps",
+      "partNumber": "B95322",
+      "pricePerUnit": 0.05,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Speed - VP8 - 4k - Above 60fps and Below 120fps",
+      "partNumber": "B95323",
+      "pricePerUnit": 0.06,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Speed - H265VP9 - SD - Below 30fps",
+      "partNumber": "B95324",
+      "pricePerUnit": 0.006,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Speed - H265VP9 - SD - Above 30fps and Below 60fps",
+      "partNumber": "B95325",
+      "pricePerUnit": 0.008,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Speed - H265VP9 - SD - Above 60fps and Below 120fps",
+      "partNumber": "B95326",
+      "pricePerUnit": 0.015,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Speed - H265VP9 - HD - Below 30fps",
+      "partNumber": "B95327",
+      "pricePerUnit": 0.012,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Speed - H265VP9 - HD - Above 30fps and Below 60fps",
+      "partNumber": "B95328",
+      "pricePerUnit": 0.025,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Speed - H265VP9 - HD - Above 60fps and Below 120fps",
+      "partNumber": "B95329",
+      "pricePerUnit": 0.036,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Speed - H265VP9 - 4k - Below 30fps",
+      "partNumber": "B95330",
+      "pricePerUnit": 0.05,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Speed - H265VP9 - 4k - Above 30fps and Below 60fps",
+      "partNumber": "B95331",
+      "pricePerUnit": 0.06,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Speed - H265VP9 - 4k - Above 60fps and Below 120fps",
+      "partNumber": "B95332",
+      "pricePerUnit": 0.075,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Quality - H264 - SD - Below 30fps",
+      "partNumber": "B95333",
+      "pricePerUnit": 0.003,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Quality - H264 - SD - Above 30fps and Below 60fps",
+      "partNumber": "B95334",
+      "pricePerUnit": 0.004,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Quality - H264 - SD - Above 60fps and Below 120fps",
+      "partNumber": "B95335",
+      "pricePerUnit": 0.005,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Quality - H264 - HD - Below 30fps",
+      "partNumber": "B95336",
+      "pricePerUnit": 0.005,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Quality - H264 - HD - Above 30fps and Below 60fps",
+      "partNumber": "B95337",
+      "pricePerUnit": 0.006,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Quality - H264 - HD - Above 60fps and Below 120fps",
+      "partNumber": "B95338",
+      "pricePerUnit": 0.015,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Quality - H264 - 4k - Below 30fps",
+      "partNumber": "B95339",
+      "pricePerUnit": 0.024,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Quality - H264 - 4k - Above 30fps and Below 60fps",
+      "partNumber": "B95340",
+      "pricePerUnit": 0.03,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Quality - H264 - 4k - Above 60fps and Below 120fps",
+      "partNumber": "B95341",
+      "pricePerUnit": 0.05,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Quality - VP8 - SD - Below 30fps",
+      "partNumber": "B95342",
+      "pricePerUnit": 0.006,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Quality - VP8 - SD - Above 30fps and Below 60fps",
+      "partNumber": "B95343",
+      "pricePerUnit": 0.008,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Quality - VP8 - SD - Above 60fps and Below 120fps",
+      "partNumber": "B95344",
+      "pricePerUnit": 0.01,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Quality - VP8 - HD - Below 30fps",
+      "partNumber": "B95345",
+      "pricePerUnit": 0.015,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Quality - VP8 - HD - Above 30fps and Below 60fps",
+      "partNumber": "B95346",
+      "pricePerUnit": 0.018,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Quality - VP8 - HD - Above 60fps and Below 120fps",
+      "partNumber": "B95347",
+      "pricePerUnit": 0.02,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Quality - VP8 - 4k - Below 30fps",
+      "partNumber": "B95348",
+      "pricePerUnit": 0.054,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Quality - VP8 - 4k - Above 30fps and Below 60fps",
+      "partNumber": "B95349",
+      "pricePerUnit": 0.06,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Quality - VP8 - 4k - Above 60fps and Below 120fps",
+      "partNumber": "B95350",
+      "pricePerUnit": 0.07,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Quality - H265VP9 - SD - Below 30fps",
+      "partNumber": "B95351",
+      "pricePerUnit": 0.03,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Quality - H265VP9 - SD - Above 30fps and Below 60fps",
+      "partNumber": "B95352",
+      "pricePerUnit": 0.045,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Quality - H265VP9 - SD - Above 60fps and Below 120fps",
+      "partNumber": "B95353",
+      "pricePerUnit": 0.06,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Quality - H265VP9 - HD - Below 30fps",
+      "partNumber": "B95354",
+      "pricePerUnit": 0.06,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Quality - H265VP9 - HD - Above 30fps and Below 60fps",
+      "partNumber": "B95355",
+      "pricePerUnit": 0.09,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Quality - H265VP9 - HD - Above 60fps and Below 120fps",
+      "partNumber": "B95356",
+      "pricePerUnit": 0.12,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Quality - H265VP9 - 4k - Below 30fps",
+      "partNumber": "B95357",
+      "pricePerUnit": 0.12,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Quality - H265VP9 - 4k - Above 30fps and Below 60fps",
+      "partNumber": "B95358",
+      "pricePerUnit": 0.18,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    },
+    {
+      "name": "Media Services - Media Flow - Quality - H265VP9 - 4k - Above 60fps and Below 120fps",
+      "partNumber": "B95359",
+      "pricePerUnit": 0.24,
+      "metric": "Minute of Output Media Content",
+      "category": "Media Services - Media Flow",
+      "status": "active"
+    }
+  ],
+  "mediaStreams": [
+    {
+      "name": "Media Services - Media Streams",
+      "partNumber": "B95375",
+      "pricePerUnit": 0.05,
+      "metric": "GB of packaged content",
+      "category": "Media Services - Media Streams",
+      "status": "active"
+    }
+  ],
+  "networkFirewall": [
+    {
+      "name": "Network Firewall Instance",
+      "partNumber": "B95403",
+      "pricePerUnit": 2.75,
+      "metric": "Instance Per Hour",
+      "category": "Network Firewall",
+      "status": "active"
+    },
+    {
+      "name": "Network Firewall Data Processing",
+      "partNumber": "B95404",
+      "pricePerUnit": 0,
+      "metric": "Gigabyte (GB) of Data Processed",
+      "category": "Network Firewall",
+      "status": "active"
+    }
+  ],
+  "zfs": [
+    {
+      "name": "Oracle ZFS Storage - High Availability",
+      "partNumber": "B95410",
+      "pricePerUnit": 1.85,
+      "metric": "Instance Per Hour",
+      "category": "ZFS Storage",
+      "status": "active"
+    }
+  ],
+  "queue": [
+    {
+      "name": "OCI Queue",
+      "partNumber": "B95697",
+      "pricePerUnit": 0,
+      "metric": "1,000,000 Requests",
+      "category": "OCI Queue",
+      "status": "active"
+    }
+  ],
+  "oke": [
+    {
+      "name": "OCI Kubernetes Engine - Virtual Node",
+      "partNumber": "B96109",
+      "pricePerUnit": 0.015,
+      "metric": "Virtual Node Per Hour",
+      "category": "Cloud Infrastructure Kubernetes Engine (OKE)",
+      "status": "active"
+    },
+    {
+      "name": "OCI Kubernetes Engine - Enhanced Cluster",
+      "partNumber": "B96545",
+      "pricePerUnit": 0.1,
+      "metric": "Cluster Per Hour",
+      "category": "Cloud Infrastructure Kubernetes Engine (OKE)",
+      "status": "active"
+    }
+  ],
+  "documentUnderstanding": [
+    {
+      "name": "OCI - Document Understanding - OCR",
+      "partNumber": "B96110",
+      "pricePerUnit": 0,
+      "metric": "1,000 Transactions",
+      "category": "OCI Document Understanding",
+      "status": "active"
+    },
+    {
+      "name": "OCI - Document Understanding - Document Properties",
+      "partNumber": "B96111",
+      "pricePerUnit": 0,
+      "metric": "1,000 Transactions",
+      "category": "OCI Document Understanding",
+      "status": "active"
+    },
+    {
+      "name": "OCI - Document Understanding - Document Extraction",
+      "partNumber": "B96112",
+      "pricePerUnit": 0,
+      "metric": "1,000 Transactions",
+      "category": "OCI Document Understanding",
+      "status": "active"
+    },
+    {
+      "name": "OCI - Document Understanding - Custom Training",
+      "partNumber": "B96113",
+      "pricePerUnit": 0,
+      "metric": "Training Hour",
+      "category": "OCI Document Understanding",
+      "status": "active"
+    },
+    {
+      "name": "OCI - Document Understanding - Custom Document Properties",
+      "partNumber": "B97193",
+      "pricePerUnit": 0,
+      "metric": "1,000 Transactions",
+      "category": "OCI Document Understanding",
+      "status": "active"
+    },
+    {
+      "name": "OCI - Document Understanding - Custom Document Extraction",
+      "partNumber": "B97194",
+      "pricePerUnit": 0,
+      "metric": "1,000 Transactions",
+      "category": "OCI Document Understanding",
+      "status": "active"
+    }
+  ],
+  "AccessGovernance": [
+    {
+      "name": "Oracle Access Governance for OCI - Workforce User",
+      "partNumber": "B97172",
+      "pricePerUnit": 0.1,
+      "metric": "Workforce User Per Month",
+      "category": "Access Governance",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Access Governance for Oracle Workloads - Workforce User",
+      "partNumber": "B97173",
+      "pricePerUnit": 2,
+      "metric": "Workforce User Per Month",
+      "category": "Access Governance",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Access Governance Premium - Consumer User",
+      "partNumber": "B97179",
+      "pricePerUnit": 0.016,
+      "metric": "Consumer User Per Month",
+      "category": "Access Governance",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Access Governance for Oracle Workloads - Consumer User",
+      "partNumber": "B97180",
+      "pricePerUnit": 0.016,
+      "metric": "Consumer User Per Month",
+      "category": "Access Governance",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Access Governance Premium - Workforce User",
+      "partNumber": "B97181",
+      "pricePerUnit": 3,
+      "metric": "Workforce User Per Month",
+      "category": "Access Governance",
+      "status": "active"
+    }
+  ],
+  "redis": [
+    {
+      "name": "Oracle Cloud Infrastructure Cache with Redis - Low Memory (up to 10 GB per node)",
+      "partNumber": "B98217",
+      "pricePerUnit": 0.0194,
+      "metric": "Redis Memory Gigabyte per Hour",
+      "category": "Cache with Redis",
+      "status": "active"
+    },
+    {
+      "name": "Oracle Cloud Infrastructure Cache with Redis - High Memory (over 10 GB per node)",
+      "partNumber": "B99591",
+      "pricePerUnit": 0.0136,
+      "metric": "Redis Memory Gigabyte per Hour",
+      "category": "Cache with Redis",
+      "status": "active"
+    }
+  ],
+  "postgresql": [
+    {
+      "name": "Database with PostgreSQL - X86",
+      "partNumber": "B99060",
+      "pricePerUnit": 0.098,
+      "metric": "OCPU Per Hour",
+      "category": "Database with PostgreSQL",
+      "status": "active"
+    },
+    {
+      "name": "Database Optimized Storage",
+      "partNumber": "B99062",
+      "pricePerUnit": 0.072,
+      "metric": "Gigabyte Storage Capacity Per Month",
+      "category": "Database with PostgreSQL",
+      "status": "active"
     }
   ]
 }
