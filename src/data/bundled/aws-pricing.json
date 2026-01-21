@@ -3,10 +3,11 @@
     "provider": "aws",
     "lastUpdated": "2026-01-20T00:00:00Z",
     "source": "instances.vantage.sh + manual curation",
-    "version": "1.3.1",
+    "version": "1.3.5",
     "totalProducts": 2388,
     "currency": "USD",
-    "notes": "Comprehensive AWS pricing: EC2, RDS, ElastiCache, Redshift, OpenSearch"
+    "notes": "Comprehensive AWS pricing: EC2, RDS, ElastiCache, Redshift, OpenSearch",
+    "paasServices": 88
   },
   "compute": [
     {
@@ -29812,6 +29813,661 @@
       "monthlyPrice": 334.34,
       "status": "active",
       "notes": "Durable Redis, Graviton3"
+    }
+  ],
+  "serverless": [
+    {
+      "service": "lambda",
+      "name": "Lambda",
+      "pricePerRequest": 2e-07,
+      "pricePerGBSecond": 1.66667e-05,
+      "freeRequests": 1000000,
+      "freeGBSeconds": 400000,
+      "status": "active",
+      "notes": "First 1M requests free"
+    },
+    {
+      "service": "lambda-provisioned",
+      "name": "Lambda Provisioned Concurrency",
+      "pricePerGBHour": 4.463e-06,
+      "status": "active",
+      "notes": "Pre-warmed instances"
+    },
+    {
+      "service": "api-gateway-rest",
+      "name": "API Gateway REST",
+      "pricePerMillion": 3.5,
+      "status": "active",
+      "notes": "First 333M requests/month"
+    },
+    {
+      "service": "api-gateway-http",
+      "name": "API Gateway HTTP",
+      "pricePerMillion": 1.0,
+      "status": "active",
+      "notes": "Lower latency"
+    },
+    {
+      "service": "api-gateway-websocket",
+      "name": "API Gateway WebSocket",
+      "pricePerMillion": 1.0,
+      "pricePerMinute": 2.5e-07,
+      "status": "active",
+      "notes": "Real-time"
+    },
+    {
+      "service": "step-functions-standard",
+      "name": "Step Functions Standard",
+      "pricePerTransition": 2.5e-05,
+      "status": "active",
+      "notes": "First 4K free"
+    },
+    {
+      "service": "step-functions-express",
+      "name": "Step Functions Express",
+      "pricePerRequest": 1e-06,
+      "pricePerGBSecond": 1.667e-05,
+      "status": "active",
+      "notes": "High-volume"
+    },
+    {
+      "service": "eventbridge",
+      "name": "EventBridge",
+      "pricePerMillion": 1.0,
+      "status": "active",
+      "notes": "Event bus"
+    },
+    {
+      "service": "eventbridge-pipes",
+      "name": "EventBridge Pipes",
+      "pricePerMillion": 0.4,
+      "status": "active",
+      "notes": "Point-to-point"
+    },
+    {
+      "service": "app-runner",
+      "name": "App Runner",
+      "pricePerVCPUHour": 0.064,
+      "pricePerGBHour": 0.007,
+      "status": "active",
+      "notes": "Managed containers"
+    }
+  ],
+  "messaging": [
+    {
+      "service": "sqs-standard",
+      "name": "SQS Standard",
+      "pricePerMillion": 0.4,
+      "freeRequests": 1000000,
+      "status": "active",
+      "notes": "First 1M free"
+    },
+    {
+      "service": "sqs-fifo",
+      "name": "SQS FIFO",
+      "pricePerMillion": 0.5,
+      "status": "active",
+      "notes": "Ordered delivery"
+    },
+    {
+      "service": "sns",
+      "name": "SNS",
+      "pricePerMillion": 0.5,
+      "pricePerSMS": 0.00645,
+      "status": "active",
+      "notes": "Pub/sub"
+    },
+    {
+      "service": "sns-mobile",
+      "name": "SNS Mobile Push",
+      "pricePerMillion": 0.5,
+      "status": "active",
+      "notes": "Mobile notifications"
+    },
+    {
+      "service": "kinesis-data-streams",
+      "name": "Kinesis Data Streams",
+      "pricePerShardHour": 0.015,
+      "pricePerPUT": 1.4e-08,
+      "status": "active",
+      "notes": "Real-time streaming"
+    },
+    {
+      "service": "kinesis-firehose",
+      "name": "Kinesis Firehose",
+      "pricePerGB": 0.029,
+      "status": "active",
+      "notes": "ETL delivery"
+    },
+    {
+      "service": "msk",
+      "name": "Amazon MSK",
+      "pricePerHour": 0.21,
+      "status": "active",
+      "notes": "Managed Kafka (kafka.m5.large)"
+    },
+    {
+      "service": "msk-serverless",
+      "name": "MSK Serverless",
+      "pricePerClusterHour": 0.75,
+      "pricePerPartitionHour": 0.0015,
+      "status": "active",
+      "notes": "Serverless Kafka"
+    },
+    {
+      "service": "mq-activemq",
+      "name": "Amazon MQ ActiveMQ",
+      "pricePerHour": 0.065,
+      "status": "active",
+      "notes": "mq.t3.micro"
+    },
+    {
+      "service": "mq-rabbitmq",
+      "name": "Amazon MQ RabbitMQ",
+      "pricePerHour": 0.065,
+      "status": "active",
+      "notes": "mq.t3.micro"
+    }
+  ],
+  "networking": [
+    {
+      "service": "cloudfront",
+      "name": "CloudFront",
+      "pricePerGB": 0.085,
+      "pricePerRequest": 1e-07,
+      "status": "active",
+      "notes": "First 1TB, US/EU"
+    },
+    {
+      "service": "cloudfront-functions",
+      "name": "CloudFront Functions",
+      "pricePerMillion": 0.1,
+      "status": "active",
+      "notes": "Edge compute"
+    },
+    {
+      "service": "route53-hosted",
+      "name": "Route 53 Hosted Zone",
+      "pricePerZone": 0.5,
+      "status": "active",
+      "notes": "Per zone/month"
+    },
+    {
+      "service": "route53-queries",
+      "name": "Route 53 Queries",
+      "pricePerMillion": 0.4,
+      "status": "active",
+      "notes": "Standard queries"
+    },
+    {
+      "service": "route53-health",
+      "name": "Route 53 Health Checks",
+      "pricePerCheck": 0.5,
+      "status": "active",
+      "notes": "Basic, per month"
+    },
+    {
+      "service": "elb-alb",
+      "name": "Application Load Balancer",
+      "pricePerHour": 0.0225,
+      "pricePerLCU": 0.008,
+      "status": "active",
+      "notes": "Layer 7"
+    },
+    {
+      "service": "elb-nlb",
+      "name": "Network Load Balancer",
+      "pricePerHour": 0.0225,
+      "pricePerNLCU": 0.006,
+      "status": "active",
+      "notes": "Layer 4"
+    },
+    {
+      "service": "elb-gwlb",
+      "name": "Gateway Load Balancer",
+      "pricePerHour": 0.0125,
+      "pricePerGLCU": 0.004,
+      "status": "active",
+      "notes": "Appliances"
+    },
+    {
+      "service": "nat-gateway",
+      "name": "NAT Gateway",
+      "pricePerHour": 0.045,
+      "pricePerGB": 0.045,
+      "status": "active",
+      "notes": "Outbound internet"
+    },
+    {
+      "service": "vpc-endpoint",
+      "name": "VPC Endpoint",
+      "pricePerHour": 0.01,
+      "pricePerGB": 0.01,
+      "status": "active",
+      "notes": "Interface endpoint"
+    },
+    {
+      "service": "transit-gateway",
+      "name": "Transit Gateway",
+      "pricePerAttachment": 0.05,
+      "pricePerGB": 0.02,
+      "status": "active",
+      "notes": "Per hour"
+    },
+    {
+      "service": "global-accelerator",
+      "name": "Global Accelerator",
+      "pricePerHour": 0.025,
+      "pricePerGB": 0.015,
+      "status": "active",
+      "notes": "Anycast"
+    },
+    {
+      "service": "direct-connect-1g",
+      "name": "Direct Connect 1Gbps",
+      "pricePerPortHour": 0.3,
+      "status": "active",
+      "notes": "Dedicated connection"
+    },
+    {
+      "service": "direct-connect-10g",
+      "name": "Direct Connect 10Gbps",
+      "pricePerPortHour": 2.25,
+      "status": "active",
+      "notes": "Dedicated connection"
+    }
+  ],
+  "containers": [
+    {
+      "service": "ecs-ec2",
+      "name": "ECS (EC2 launch)",
+      "pricePerHour": 0.0,
+      "status": "active",
+      "notes": "Free, pay for EC2"
+    },
+    {
+      "service": "ecs-fargate-vcpu",
+      "name": "Fargate vCPU",
+      "pricePerHour": 0.04048,
+      "status": "active",
+      "notes": "Per vCPU-hour"
+    },
+    {
+      "service": "ecs-fargate-memory",
+      "name": "Fargate Memory",
+      "pricePerGBHour": 0.004445,
+      "status": "active",
+      "notes": "Per GB-hour"
+    },
+    {
+      "service": "ecs-fargate-spot-vcpu",
+      "name": "Fargate Spot vCPU",
+      "pricePerHour": 0.012144,
+      "status": "active",
+      "notes": "70% discount"
+    },
+    {
+      "service": "ecr",
+      "name": "ECR",
+      "pricePerGB": 0.1,
+      "status": "active",
+      "notes": "Container registry"
+    },
+    {
+      "service": "eks",
+      "name": "EKS",
+      "pricePerClusterHour": 0.1,
+      "status": "active",
+      "notes": "Control plane only"
+    },
+    {
+      "service": "batch",
+      "name": "AWS Batch",
+      "pricePerHour": 0.0,
+      "status": "active",
+      "notes": "Free, pay for compute"
+    }
+  ],
+  "aiml": [
+    {
+      "service": "sagemaker-notebook-ml.t3.medium",
+      "name": "SageMaker Notebook ml.t3.medium",
+      "pricePerHour": 0.0464,
+      "status": "active",
+      "notes": "Jupyter notebook"
+    },
+    {
+      "service": "sagemaker-training-ml.m5.xlarge",
+      "name": "SageMaker Training ml.m5.xlarge",
+      "pricePerHour": 0.269,
+      "status": "active",
+      "notes": "Training instance"
+    },
+    {
+      "service": "sagemaker-inference-ml.m5.large",
+      "name": "SageMaker Inference ml.m5.large",
+      "pricePerHour": 0.134,
+      "status": "active",
+      "notes": "Real-time endpoint"
+    },
+    {
+      "service": "sagemaker-serverless",
+      "name": "SageMaker Serverless Inference",
+      "pricePerSecond": 2e-05,
+      "status": "active",
+      "notes": "Per inference second"
+    },
+    {
+      "service": "bedrock-claude-3-sonnet-input",
+      "name": "Bedrock Claude 3 Sonnet Input",
+      "pricePerToken": 3e-06,
+      "status": "active",
+      "notes": "Per 1K input tokens"
+    },
+    {
+      "service": "bedrock-claude-3-sonnet-output",
+      "name": "Bedrock Claude 3 Sonnet Output",
+      "pricePerToken": 1.5e-05,
+      "status": "active",
+      "notes": "Per 1K output tokens"
+    },
+    {
+      "service": "bedrock-claude-3-haiku-input",
+      "name": "Bedrock Claude 3 Haiku Input",
+      "pricePerToken": 2.5e-07,
+      "status": "active",
+      "notes": "Per 1K input tokens"
+    },
+    {
+      "service": "bedrock-claude-3-haiku-output",
+      "name": "Bedrock Claude 3 Haiku Output",
+      "pricePerToken": 1.25e-06,
+      "status": "active",
+      "notes": "Per 1K output tokens"
+    },
+    {
+      "service": "bedrock-titan-text-express",
+      "name": "Bedrock Titan Text Express",
+      "pricePerToken": 0.0002,
+      "status": "active",
+      "notes": "Per 1K tokens"
+    },
+    {
+      "service": "bedrock-titan-embed",
+      "name": "Bedrock Titan Embeddings",
+      "pricePerToken": 0.0001,
+      "status": "active",
+      "notes": "Per 1K tokens"
+    },
+    {
+      "service": "comprehend",
+      "name": "Comprehend",
+      "pricePerUnit": 0.0001,
+      "status": "active",
+      "notes": "NLP per unit"
+    },
+    {
+      "service": "rekognition-image",
+      "name": "Rekognition Image",
+      "pricePerImage": 0.001,
+      "status": "active",
+      "notes": "First 1M images"
+    },
+    {
+      "service": "rekognition-video",
+      "name": "Rekognition Video",
+      "pricePerMinute": 0.1,
+      "status": "active",
+      "notes": "Video analysis"
+    },
+    {
+      "service": "textract",
+      "name": "Textract",
+      "pricePerPage": 0.0015,
+      "status": "active",
+      "notes": "Document OCR"
+    },
+    {
+      "service": "polly",
+      "name": "Polly",
+      "pricePerMillion": 4.0,
+      "status": "active",
+      "notes": "Text-to-speech characters"
+    },
+    {
+      "service": "transcribe",
+      "name": "Transcribe",
+      "pricePerSecond": 0.00024,
+      "status": "active",
+      "notes": "Speech-to-text"
+    },
+    {
+      "service": "translate",
+      "name": "Translate",
+      "pricePerMillion": 15.0,
+      "status": "active",
+      "notes": "Per million characters"
+    }
+  ],
+  "analytics": [
+    {
+      "service": "athena",
+      "name": "Athena",
+      "pricePerTB": 5.0,
+      "status": "active",
+      "notes": "Per TB scanned"
+    },
+    {
+      "service": "glue-etl",
+      "name": "Glue ETL",
+      "pricePerDPU": 0.44,
+      "status": "active",
+      "notes": "Per DPU-hour"
+    },
+    {
+      "service": "glue-crawler",
+      "name": "Glue Crawler",
+      "pricePerDPU": 0.44,
+      "status": "active",
+      "notes": "Per DPU-hour"
+    },
+    {
+      "service": "glue-catalog",
+      "name": "Glue Data Catalog",
+      "pricePerObject": 1e-06,
+      "status": "active",
+      "notes": "First 1M free"
+    },
+    {
+      "service": "emr-ec2",
+      "name": "EMR on EC2",
+      "pricePerHour": 0.015,
+      "status": "active",
+      "notes": "m5.xlarge, plus EC2"
+    },
+    {
+      "service": "emr-serverless",
+      "name": "EMR Serverless",
+      "pricePerVCPUHour": 0.052624,
+      "pricePerGBHour": 0.0057785,
+      "status": "active",
+      "notes": "Spark/Hive"
+    },
+    {
+      "service": "quicksight-author",
+      "name": "QuickSight Author",
+      "pricePerUser": 24.0,
+      "status": "active",
+      "notes": "Per user/month"
+    },
+    {
+      "service": "quicksight-reader",
+      "name": "QuickSight Reader",
+      "pricePerSession": 0.3,
+      "status": "active",
+      "notes": "Per 30-min session"
+    },
+    {
+      "service": "lake-formation",
+      "name": "Lake Formation",
+      "pricePerHour": 0.0,
+      "status": "active",
+      "notes": "Free, pay for underlying"
+    }
+  ],
+  "security": [
+    {
+      "service": "secrets-manager",
+      "name": "Secrets Manager",
+      "pricePerSecret": 0.4,
+      "pricePerRequest": 0.05,
+      "status": "active",
+      "notes": "Per secret/month + 10K API calls"
+    },
+    {
+      "service": "kms",
+      "name": "KMS",
+      "pricePerKey": 1.0,
+      "pricePerRequest": 0.03,
+      "status": "active",
+      "notes": "Per key/month + 10K requests"
+    },
+    {
+      "service": "kms-custom",
+      "name": "KMS Custom Key Store",
+      "pricePerKeyStore": 4800.0,
+      "status": "active",
+      "notes": "CloudHSM backed, per year"
+    },
+    {
+      "service": "acm",
+      "name": "ACM Public Certs",
+      "pricePerCert": 0.0,
+      "status": "active",
+      "notes": "Free public SSL/TLS"
+    },
+    {
+      "service": "acm-private",
+      "name": "ACM Private CA",
+      "pricePerCA": 400.0,
+      "status": "active",
+      "notes": "Per CA/month"
+    },
+    {
+      "service": "waf",
+      "name": "WAF",
+      "pricePerWebACL": 5.0,
+      "pricePerRule": 1.0,
+      "pricePerMillion": 0.6,
+      "status": "active",
+      "notes": "Per month"
+    },
+    {
+      "service": "shield-standard",
+      "name": "Shield Standard",
+      "pricePerMonth": 0.0,
+      "status": "active",
+      "notes": "Free DDoS protection"
+    },
+    {
+      "service": "shield-advanced",
+      "name": "Shield Advanced",
+      "pricePerMonth": 3000.0,
+      "status": "active",
+      "notes": "Enhanced DDoS"
+    },
+    {
+      "service": "guardduty",
+      "name": "GuardDuty",
+      "pricePerGB": 1.0,
+      "status": "active",
+      "notes": "First 500GB of logs"
+    },
+    {
+      "service": "inspector",
+      "name": "Inspector",
+      "pricePerAssessment": 0.15,
+      "status": "active",
+      "notes": "Per EC2 instance"
+    },
+    {
+      "service": "macie",
+      "name": "Macie",
+      "pricePerGB": 0.1,
+      "status": "active",
+      "notes": "First 1GB free"
+    },
+    {
+      "service": "cognito-mau",
+      "name": "Cognito User Pools",
+      "pricePerMAU": 0.0055,
+      "status": "active",
+      "notes": "First 50K MAU free"
+    },
+    {
+      "service": "cognito-saml",
+      "name": "Cognito SAML/OIDC",
+      "pricePerMAU": 0.015,
+      "status": "active",
+      "notes": "Federation"
+    }
+  ],
+  "monitoring": [
+    {
+      "service": "cloudwatch-metrics",
+      "name": "CloudWatch Metrics",
+      "pricePerMetric": 0.3,
+      "status": "active",
+      "notes": "First 10 metrics free"
+    },
+    {
+      "service": "cloudwatch-logs-ingestion",
+      "name": "CloudWatch Logs Ingestion",
+      "pricePerGB": 0.5,
+      "status": "active",
+      "notes": "Per GB ingested"
+    },
+    {
+      "service": "cloudwatch-logs-storage",
+      "name": "CloudWatch Logs Storage",
+      "pricePerGB": 0.03,
+      "status": "active",
+      "notes": "Per GB/month"
+    },
+    {
+      "service": "cloudwatch-dashboards",
+      "name": "CloudWatch Dashboards",
+      "pricePerDashboard": 3.0,
+      "status": "active",
+      "notes": "First 3 free"
+    },
+    {
+      "service": "cloudwatch-alarms",
+      "name": "CloudWatch Alarms",
+      "pricePerAlarm": 0.1,
+      "status": "active",
+      "notes": "Standard resolution"
+    },
+    {
+      "service": "cloudwatch-events",
+      "name": "CloudWatch Events",
+      "pricePerMillion": 1.0,
+      "status": "active",
+      "notes": "Custom events"
+    },
+    {
+      "service": "xray-traces",
+      "name": "X-Ray Traces",
+      "pricePerMillion": 5.0,
+      "status": "active",
+      "notes": "Traces recorded"
+    },
+    {
+      "service": "xray-retrieved",
+      "name": "X-Ray Retrieved",
+      "pricePerMillion": 0.5,
+      "status": "active",
+      "notes": "Traces retrieved"
     }
   ]
 }

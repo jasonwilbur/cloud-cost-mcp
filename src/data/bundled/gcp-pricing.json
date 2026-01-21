@@ -3,7 +3,7 @@
     "provider": "gcp",
     "lastUpdated": "2026-01-20T00:00:00Z",
     "source": "instances.vantage.sh + manual curation",
-    "version": "1.3.0",
+    "version": "1.3.5",
     "totalProducts": 360,
     "currency": "USD",
     "notes": "Comprehensive GCP pricing with full database coverage."
@@ -4918,6 +4918,492 @@
       "monthlyPrice": 1168.0,
       "status": "active",
       "notes": "Enterprise Plus, 99.99% SLA"
+    }
+  ],
+  "serverless": [
+    {
+      "service": "cloud-functions-invocations",
+      "name": "Cloud Functions Invocations",
+      "pricePerMillion": 0.4,
+      "freeInvocations": 2000000,
+      "status": "active",
+      "notes": "First 2M free"
+    },
+    {
+      "service": "cloud-functions-compute",
+      "name": "Cloud Functions Compute",
+      "pricePerGHzSecond": 1e-05,
+      "pricePerGBSecond": 2.5e-06,
+      "status": "active",
+      "notes": "Per second"
+    },
+    {
+      "service": "cloud-run-vcpu",
+      "name": "Cloud Run vCPU",
+      "pricePerVCPUSecond": 2.4e-05,
+      "status": "active",
+      "notes": "Per vCPU-second"
+    },
+    {
+      "service": "cloud-run-memory",
+      "name": "Cloud Run Memory",
+      "pricePerGBSecond": 2.5e-06,
+      "status": "active",
+      "notes": "Per GB-second"
+    },
+    {
+      "service": "cloud-run-requests",
+      "name": "Cloud Run Requests",
+      "pricePerMillion": 0.4,
+      "status": "active",
+      "notes": "First 2M free"
+    },
+    {
+      "service": "api-gateway",
+      "name": "API Gateway",
+      "pricePerMillion": 3.0,
+      "status": "active",
+      "notes": "First 2M free"
+    },
+    {
+      "service": "cloud-endpoints",
+      "name": "Cloud Endpoints",
+      "pricePerMillion": 3.0,
+      "status": "active",
+      "notes": "API management"
+    },
+    {
+      "service": "workflows",
+      "name": "Workflows",
+      "pricePerStep": 1e-05,
+      "pricePerExternalStep": 2.5e-05,
+      "status": "active",
+      "notes": "Orchestration"
+    },
+    {
+      "service": "eventarc",
+      "name": "Eventarc",
+      "pricePerMillion": 0.0,
+      "status": "active",
+      "notes": "Free, pay for destinations"
+    }
+  ],
+  "messaging": [
+    {
+      "service": "pubsub-messages",
+      "name": "Pub/Sub Message Delivery",
+      "pricePerTB": 40.0,
+      "status": "active",
+      "notes": "First 10GB free"
+    },
+    {
+      "service": "pubsub-seek",
+      "name": "Pub/Sub Seek Storage",
+      "pricePerGBMonth": 0.027,
+      "status": "active",
+      "notes": "Message retention"
+    },
+    {
+      "service": "pubsub-lite",
+      "name": "Pub/Sub Lite",
+      "pricePerTB": 20.0,
+      "status": "active",
+      "notes": "Zonal only"
+    },
+    {
+      "service": "cloud-tasks",
+      "name": "Cloud Tasks",
+      "pricePerMillion": 0.4,
+      "status": "active",
+      "notes": "First 1M free"
+    },
+    {
+      "service": "cloud-scheduler",
+      "name": "Cloud Scheduler",
+      "pricePerJob": 0.1,
+      "status": "active",
+      "notes": "First 3 jobs free"
+    }
+  ],
+  "networking": [
+    {
+      "service": "cloud-cdn",
+      "name": "Cloud CDN",
+      "pricePerGB": 0.02,
+      "status": "active",
+      "notes": "Cache egress"
+    },
+    {
+      "service": "cloud-armor-standard",
+      "name": "Cloud Armor Standard",
+      "pricePerPolicy": 5.0,
+      "pricePerRule": 1.0,
+      "status": "active",
+      "notes": "WAF per month"
+    },
+    {
+      "service": "cloud-armor-plus",
+      "name": "Cloud Armor Plus",
+      "pricePerPolicy": 200.0,
+      "status": "active",
+      "notes": "Advanced DDoS"
+    },
+    {
+      "service": "cloud-load-balancing",
+      "name": "Cloud Load Balancing",
+      "pricePerRule": 0.025,
+      "status": "active",
+      "notes": "First 5 rules free"
+    },
+    {
+      "service": "cloud-nat",
+      "name": "Cloud NAT",
+      "pricePerGatewayHour": 0.044,
+      "pricePerGB": 0.045,
+      "status": "active",
+      "notes": "NAT gateway"
+    },
+    {
+      "service": "cloud-vpn",
+      "name": "Cloud VPN",
+      "pricePerTunnelHour": 0.05,
+      "status": "active",
+      "notes": "Per tunnel/hour"
+    },
+    {
+      "service": "cloud-interconnect-10g",
+      "name": "Cloud Interconnect 10G",
+      "pricePerPortMonth": 1700.0,
+      "status": "active",
+      "notes": "Dedicated"
+    },
+    {
+      "service": "cloud-interconnect-100g",
+      "name": "Cloud Interconnect 100G",
+      "pricePerPortMonth": 17000.0,
+      "status": "active",
+      "notes": "Dedicated"
+    },
+    {
+      "service": "partner-interconnect",
+      "name": "Partner Interconnect",
+      "pricePerMbps": 0.05,
+      "status": "active",
+      "notes": "Per attachment"
+    },
+    {
+      "service": "cloud-dns",
+      "name": "Cloud DNS",
+      "pricePerZone": 0.2,
+      "pricePerMillion": 0.4,
+      "status": "active",
+      "notes": "Per zone/month"
+    },
+    {
+      "service": "traffic-director",
+      "name": "Traffic Director",
+      "pricePerEndpoint": 0.001,
+      "status": "active",
+      "notes": "Service mesh"
+    }
+  ],
+  "containers": [
+    {
+      "service": "gke-standard",
+      "name": "GKE Standard",
+      "pricePerClusterHour": 0.1,
+      "status": "active",
+      "notes": "Cluster management"
+    },
+    {
+      "service": "gke-autopilot-vcpu",
+      "name": "GKE Autopilot vCPU",
+      "pricePerVCPUHour": 0.0445,
+      "status": "active",
+      "notes": "Pay per pod"
+    },
+    {
+      "service": "gke-autopilot-memory",
+      "name": "GKE Autopilot Memory",
+      "pricePerGBHour": 0.0049,
+      "status": "active",
+      "notes": "Pay per pod"
+    },
+    {
+      "service": "artifact-registry",
+      "name": "Artifact Registry",
+      "pricePerGB": 0.1,
+      "status": "active",
+      "notes": "Container + artifacts"
+    },
+    {
+      "service": "cloud-build-minutes",
+      "name": "Cloud Build",
+      "pricePerMinute": 0.003,
+      "status": "active",
+      "notes": "First 120 min/day free"
+    },
+    {
+      "service": "cloud-batch",
+      "name": "Batch",
+      "pricePerHour": 0.0,
+      "status": "active",
+      "notes": "Free, pay for compute"
+    }
+  ],
+  "aiml": [
+    {
+      "service": "vertex-ai-training",
+      "name": "Vertex AI Training",
+      "pricePerHour": 0.0,
+      "status": "active",
+      "notes": "Pay for compute"
+    },
+    {
+      "service": "vertex-ai-prediction",
+      "name": "Vertex AI Prediction",
+      "pricePerNode": 0.0,
+      "status": "active",
+      "notes": "Pay for compute"
+    },
+    {
+      "service": "vertex-ai-gemini-pro-input",
+      "name": "Vertex AI Gemini Pro Input",
+      "pricePerChar": 0.000125,
+      "status": "active",
+      "notes": "Per 1K characters"
+    },
+    {
+      "service": "vertex-ai-gemini-pro-output",
+      "name": "Vertex AI Gemini Pro Output",
+      "pricePerChar": 0.000375,
+      "status": "active",
+      "notes": "Per 1K characters"
+    },
+    {
+      "service": "vertex-ai-gemini-flash-input",
+      "name": "Vertex AI Gemini Flash Input",
+      "pricePerChar": 1.25e-05,
+      "status": "active",
+      "notes": "Per 1K characters"
+    },
+    {
+      "service": "vertex-ai-gemini-flash-output",
+      "name": "Vertex AI Gemini Flash Output",
+      "pricePerChar": 3.75e-05,
+      "status": "active",
+      "notes": "Per 1K characters"
+    },
+    {
+      "service": "vertex-ai-embeddings",
+      "name": "Vertex AI Embeddings",
+      "pricePerChar": 2.5e-05,
+      "status": "active",
+      "notes": "Per 1K characters"
+    },
+    {
+      "service": "document-ai",
+      "name": "Document AI",
+      "pricePerPage": 0.001,
+      "status": "active",
+      "notes": "First 1K pages free"
+    },
+    {
+      "service": "vision-api",
+      "name": "Vision API",
+      "pricePerImage": 0.0015,
+      "status": "active",
+      "notes": "First 1K free"
+    },
+    {
+      "service": "speech-to-text",
+      "name": "Speech-to-Text",
+      "pricePerMinute": 0.006,
+      "status": "active",
+      "notes": "First 60 min free"
+    },
+    {
+      "service": "text-to-speech",
+      "name": "Text-to-Speech",
+      "pricePerMillion": 4.0,
+      "status": "active",
+      "notes": "Per million characters"
+    },
+    {
+      "service": "translation",
+      "name": "Translation API",
+      "pricePerMillion": 20.0,
+      "status": "active",
+      "notes": "Per million characters"
+    },
+    {
+      "service": "natural-language",
+      "name": "Natural Language API",
+      "pricePerRecord": 0.001,
+      "status": "active",
+      "notes": "Per 1K characters"
+    },
+    {
+      "service": "dialogflow-es",
+      "name": "Dialogflow ES",
+      "pricePerRequest": 0.0,
+      "status": "active",
+      "notes": "Free tier"
+    },
+    {
+      "service": "dialogflow-cx",
+      "name": "Dialogflow CX",
+      "pricePerRequest": 0.006,
+      "status": "active",
+      "notes": "Per request"
+    }
+  ],
+  "analytics": [
+    {
+      "service": "dataflow",
+      "name": "Dataflow",
+      "pricePerVCPU": 0.056,
+      "pricePerGB": 0.003,
+      "status": "active",
+      "notes": "Streaming/batch"
+    },
+    {
+      "service": "dataproc",
+      "name": "Dataproc",
+      "pricePerVCPU": 0.01,
+      "status": "active",
+      "notes": "Plus compute cost"
+    },
+    {
+      "service": "dataproc-serverless",
+      "name": "Dataproc Serverless",
+      "pricePerDCU": 0.06,
+      "status": "active",
+      "notes": "Per DCU-hour"
+    },
+    {
+      "service": "composer-small",
+      "name": "Cloud Composer Small",
+      "pricePerHour": 0.35,
+      "status": "active",
+      "notes": "Airflow managed"
+    },
+    {
+      "service": "composer-medium",
+      "name": "Cloud Composer Medium",
+      "pricePerHour": 0.8,
+      "status": "active",
+      "notes": "Airflow managed"
+    },
+    {
+      "service": "looker-platform",
+      "name": "Looker",
+      "pricePerUser": 0.0,
+      "status": "active",
+      "notes": "Contact sales"
+    },
+    {
+      "service": "data-studio",
+      "name": "Looker Studio",
+      "pricePerMonth": 0.0,
+      "status": "active",
+      "notes": "Free"
+    }
+  ],
+  "security": [
+    {
+      "service": "secret-manager",
+      "name": "Secret Manager",
+      "pricePerVersion": 0.06,
+      "pricePerAccess": 0.03,
+      "status": "active",
+      "notes": "Per 10K accesses"
+    },
+    {
+      "service": "kms-keys",
+      "name": "Cloud KMS Keys",
+      "pricePerKey": 0.06,
+      "status": "active",
+      "notes": "Active key/month"
+    },
+    {
+      "service": "kms-operations",
+      "name": "Cloud KMS Operations",
+      "pricePerOperation": 0.03,
+      "status": "active",
+      "notes": "Per 10K operations"
+    },
+    {
+      "service": "kms-hsm",
+      "name": "Cloud HSM",
+      "pricePerKey": 1.0,
+      "status": "active",
+      "notes": "HSM-backed key/month"
+    },
+    {
+      "service": "security-command-center",
+      "name": "Security Command Center",
+      "pricePerMonth": 0.0,
+      "status": "active",
+      "notes": "Free tier, Premium contact sales"
+    },
+    {
+      "service": "certificate-manager",
+      "name": "Certificate Manager",
+      "pricePerCert": 0.0,
+      "status": "active",
+      "notes": "First 100 free"
+    },
+    {
+      "service": "identity-platform",
+      "name": "Identity Platform",
+      "pricePerMAU": 0.0025,
+      "status": "active",
+      "notes": "First 50K free"
+    }
+  ],
+  "monitoring": [
+    {
+      "service": "cloud-monitoring-metrics",
+      "name": "Cloud Monitoring Metrics",
+      "pricePerMB": 0.258,
+      "status": "active",
+      "notes": "First 150MB free"
+    },
+    {
+      "service": "cloud-logging-ingestion",
+      "name": "Cloud Logging Ingestion",
+      "pricePerGB": 0.5,
+      "status": "active",
+      "notes": "First 50GB free"
+    },
+    {
+      "service": "cloud-logging-storage",
+      "name": "Cloud Logging Storage",
+      "pricePerGB": 0.01,
+      "status": "active",
+      "notes": "Beyond default retention"
+    },
+    {
+      "service": "cloud-trace",
+      "name": "Cloud Trace",
+      "pricePerMillion": 0.2,
+      "status": "active",
+      "notes": "First 2.5M free"
+    },
+    {
+      "service": "cloud-profiler",
+      "name": "Cloud Profiler",
+      "pricePerMonth": 0.0,
+      "status": "active",
+      "notes": "Free"
+    },
+    {
+      "service": "error-reporting",
+      "name": "Error Reporting",
+      "pricePerMonth": 0.0,
+      "status": "active",
+      "notes": "Free"
     }
   ]
 }

@@ -4,7 +4,7 @@
     "lastUpdated": "2026-01-20T00:00:00Z",
     "source": "Azure Retail Prices API (official)",
     "sourceUrl": "https://prices.azure.com/api/retail/prices",
-    "version": "1.2.9",
+    "version": "1.3.5",
     "totalProducts": 1624,
     "currency": "USD",
     "notes": "Official Azure pricing from Microsoft Retail Prices API. Includes comprehensive database services."
@@ -22611,6 +22611,661 @@
       "monthlyPrice": 978.2,
       "notes": "100GB per partition",
       "status": "active"
+    }
+  ],
+  "serverless": [
+    {
+      "service": "functions-consumption",
+      "name": "Azure Functions Consumption",
+      "pricePerMillion": 0.2,
+      "pricePerGBSecond": 1.6e-05,
+      "freeExecutions": 1000000,
+      "freeGBSeconds": 400000,
+      "status": "active",
+      "notes": "First 1M free"
+    },
+    {
+      "service": "functions-premium",
+      "name": "Azure Functions Premium EP1",
+      "pricePerHour": 0.173,
+      "status": "active",
+      "notes": "Always warm"
+    },
+    {
+      "service": "logic-apps-consumption",
+      "name": "Logic Apps Consumption",
+      "pricePerAction": 2.5e-05,
+      "pricePerConnector": 0.000125,
+      "status": "active",
+      "notes": "Per action"
+    },
+    {
+      "service": "logic-apps-standard",
+      "name": "Logic Apps Standard WS1",
+      "pricePerHour": 0.16,
+      "status": "active",
+      "notes": "Dedicated"
+    },
+    {
+      "service": "api-management-consumption",
+      "name": "API Management Consumption",
+      "pricePerMillion": 3.5,
+      "status": "active",
+      "notes": "First 1M free"
+    },
+    {
+      "service": "api-management-developer",
+      "name": "API Management Developer",
+      "pricePerHour": 0.07,
+      "status": "active",
+      "notes": "Dev/test"
+    },
+    {
+      "service": "api-management-basic",
+      "name": "API Management Basic",
+      "pricePerHour": 0.21,
+      "status": "active",
+      "notes": "Production entry"
+    },
+    {
+      "service": "api-management-standard",
+      "name": "API Management Standard",
+      "pricePerHour": 0.94,
+      "status": "active",
+      "notes": "Full features"
+    },
+    {
+      "service": "event-grid",
+      "name": "Event Grid",
+      "pricePerMillion": 0.6,
+      "status": "active",
+      "notes": "First 100K free"
+    },
+    {
+      "service": "durable-functions",
+      "name": "Durable Functions",
+      "pricePerOrchestration": 0.0,
+      "status": "active",
+      "notes": "Same as Functions"
+    }
+  ],
+  "messaging": [
+    {
+      "service": "service-bus-basic",
+      "name": "Service Bus Basic",
+      "pricePerMillion": 0.05,
+      "status": "active",
+      "notes": "Queues only"
+    },
+    {
+      "service": "service-bus-standard",
+      "name": "Service Bus Standard",
+      "pricePerHour": 0.0135,
+      "pricePerMillion": 0.8,
+      "status": "active",
+      "notes": "Topics + queues"
+    },
+    {
+      "service": "service-bus-premium",
+      "name": "Service Bus Premium",
+      "pricePerMU": 0.928,
+      "status": "active",
+      "notes": "Per messaging unit/hour"
+    },
+    {
+      "service": "event-hubs-basic",
+      "name": "Event Hubs Basic",
+      "pricePerTU": 0.015,
+      "status": "active",
+      "notes": "Per throughput unit/hour"
+    },
+    {
+      "service": "event-hubs-standard",
+      "name": "Event Hubs Standard",
+      "pricePerTU": 0.03,
+      "status": "active",
+      "notes": "Per throughput unit/hour"
+    },
+    {
+      "service": "event-hubs-premium",
+      "name": "Event Hubs Premium",
+      "pricePerPU": 1.386,
+      "status": "active",
+      "notes": "Per processing unit/hour"
+    },
+    {
+      "service": "event-hubs-dedicated",
+      "name": "Event Hubs Dedicated",
+      "pricePerCU": 7.8,
+      "status": "active",
+      "notes": "Per capacity unit/hour"
+    },
+    {
+      "service": "notification-hubs-free",
+      "name": "Notification Hubs Free",
+      "pricePerMonth": 0.0,
+      "status": "active",
+      "notes": "1M pushes"
+    },
+    {
+      "service": "notification-hubs-basic",
+      "name": "Notification Hubs Basic",
+      "pricePerUnit": 10.0,
+      "status": "active",
+      "notes": "10M pushes/month"
+    },
+    {
+      "service": "queue-storage",
+      "name": "Queue Storage",
+      "pricePerGB": 0.045,
+      "pricePerTransaction": 4e-06,
+      "status": "active",
+      "notes": "Per 10K transactions"
+    }
+  ],
+  "networking": [
+    {
+      "service": "front-door-classic",
+      "name": "Front Door Classic",
+      "pricePerGB": 0.21,
+      "pricePerRequest": 0.01,
+      "status": "active",
+      "notes": "Per GB + 10K requests"
+    },
+    {
+      "service": "front-door-standard",
+      "name": "Front Door Standard",
+      "pricePerHour": 0.035,
+      "pricePerRequest": 0.009,
+      "status": "active",
+      "notes": "Per profile/hour"
+    },
+    {
+      "service": "cdn-standard",
+      "name": "CDN Standard",
+      "pricePerGB": 0.081,
+      "status": "active",
+      "notes": "First 10TB"
+    },
+    {
+      "service": "cdn-premium",
+      "name": "CDN Premium Verizon",
+      "pricePerGB": 0.17,
+      "status": "active",
+      "notes": "Advanced features"
+    },
+    {
+      "service": "traffic-manager",
+      "name": "Traffic Manager",
+      "pricePerMillion": 0.54,
+      "status": "active",
+      "notes": "DNS queries"
+    },
+    {
+      "service": "load-balancer-basic",
+      "name": "Load Balancer Basic",
+      "pricePerHour": 0.0,
+      "status": "active",
+      "notes": "Free"
+    },
+    {
+      "service": "load-balancer-standard",
+      "name": "Load Balancer Standard",
+      "pricePerHour": 0.025,
+      "pricePerRule": 0.01,
+      "status": "active",
+      "notes": "Per rule/hour"
+    },
+    {
+      "service": "application-gateway-small",
+      "name": "Application Gateway Small",
+      "pricePerHour": 0.025,
+      "status": "active",
+      "notes": "Layer 7"
+    },
+    {
+      "service": "application-gateway-waf-v2",
+      "name": "Application Gateway WAF v2",
+      "pricePerHour": 0.36,
+      "pricePerCU": 0.008,
+      "status": "active",
+      "notes": "Per capacity unit"
+    },
+    {
+      "service": "vpn-gateway-basic",
+      "name": "VPN Gateway Basic",
+      "pricePerHour": 0.04,
+      "status": "active",
+      "notes": "Site-to-site"
+    },
+    {
+      "service": "vpn-gateway-vpngw1",
+      "name": "VPN Gateway VpnGw1",
+      "pricePerHour": 0.19,
+      "status": "active",
+      "notes": "650 Mbps"
+    },
+    {
+      "service": "expressroute-50mbps",
+      "name": "ExpressRoute 50 Mbps",
+      "pricePerMonth": 55.0,
+      "status": "active",
+      "notes": "Metered"
+    },
+    {
+      "service": "expressroute-1gbps",
+      "name": "ExpressRoute 1 Gbps",
+      "pricePerMonth": 436.0,
+      "status": "active",
+      "notes": "Metered"
+    },
+    {
+      "service": "nat-gateway",
+      "name": "NAT Gateway",
+      "pricePerHour": 0.045,
+      "pricePerGB": 0.045,
+      "status": "active",
+      "notes": "Outbound"
+    },
+    {
+      "service": "private-link",
+      "name": "Private Link",
+      "pricePerHour": 0.01,
+      "pricePerGB": 0.01,
+      "status": "active",
+      "notes": "Private endpoint"
+    },
+    {
+      "service": "bastion-basic",
+      "name": "Bastion Basic",
+      "pricePerHour": 0.19,
+      "status": "active",
+      "notes": "SSH/RDP"
+    },
+    {
+      "service": "bastion-standard",
+      "name": "Bastion Standard",
+      "pricePerHour": 0.35,
+      "status": "active",
+      "notes": "More features"
+    }
+  ],
+  "containers": [
+    {
+      "service": "aci-linux",
+      "name": "Container Instances Linux",
+      "pricePerVCPU": 1.3e-05,
+      "pricePerGB": 1.4e-06,
+      "status": "active",
+      "notes": "Per second"
+    },
+    {
+      "service": "aci-windows",
+      "name": "Container Instances Windows",
+      "pricePerVCPU": 1.7e-05,
+      "pricePerGB": 1.9e-06,
+      "status": "active",
+      "notes": "Per second"
+    },
+    {
+      "service": "aci-gpu",
+      "name": "Container Instances GPU",
+      "pricePerGPU": 0.00095,
+      "status": "active",
+      "notes": "Per second, K80"
+    },
+    {
+      "service": "aks",
+      "name": "AKS",
+      "pricePerCluster": 0.0,
+      "status": "active",
+      "notes": "Free control plane"
+    },
+    {
+      "service": "aks-uptime-sla",
+      "name": "AKS Uptime SLA",
+      "pricePerClusterHour": 0.1,
+      "status": "active",
+      "notes": "99.95% SLA"
+    },
+    {
+      "service": "acr-basic",
+      "name": "Container Registry Basic",
+      "pricePerDay": 0.167,
+      "status": "active",
+      "notes": "10GB included"
+    },
+    {
+      "service": "acr-standard",
+      "name": "Container Registry Standard",
+      "pricePerDay": 0.667,
+      "status": "active",
+      "notes": "100GB included"
+    },
+    {
+      "service": "acr-premium",
+      "name": "Container Registry Premium",
+      "pricePerDay": 1.667,
+      "status": "active",
+      "notes": "500GB, geo-rep"
+    },
+    {
+      "service": "app-service-free",
+      "name": "App Service Free",
+      "pricePerMonth": 0.0,
+      "status": "active",
+      "notes": "60 CPU min/day"
+    },
+    {
+      "service": "app-service-b1",
+      "name": "App Service Basic B1",
+      "pricePerHour": 0.018,
+      "status": "active",
+      "notes": "1 core, 1.75GB"
+    },
+    {
+      "service": "app-service-s1",
+      "name": "App Service Standard S1",
+      "pricePerHour": 0.1,
+      "status": "active",
+      "notes": "1 core, 1.75GB, autoscale"
+    },
+    {
+      "service": "app-service-p1v3",
+      "name": "App Service Premium P1V3",
+      "pricePerHour": 0.12,
+      "status": "active",
+      "notes": "2 core, 8GB"
+    }
+  ],
+  "aiml": [
+    {
+      "service": "azure-ml-basic",
+      "name": "Azure ML Basic",
+      "pricePerHour": 0.0,
+      "status": "active",
+      "notes": "Free tier"
+    },
+    {
+      "service": "azure-ml-enterprise",
+      "name": "Azure ML Enterprise",
+      "pricePerHour": 0.0,
+      "status": "active",
+      "notes": "Pay for compute"
+    },
+    {
+      "service": "azure-openai-gpt4-input",
+      "name": "Azure OpenAI GPT-4 Input",
+      "pricePerToken": 3e-05,
+      "status": "active",
+      "notes": "Per 1K tokens"
+    },
+    {
+      "service": "azure-openai-gpt4-output",
+      "name": "Azure OpenAI GPT-4 Output",
+      "pricePerToken": 6e-05,
+      "status": "active",
+      "notes": "Per 1K tokens"
+    },
+    {
+      "service": "azure-openai-gpt35-input",
+      "name": "Azure OpenAI GPT-3.5 Input",
+      "pricePerToken": 1.5e-06,
+      "status": "active",
+      "notes": "Per 1K tokens"
+    },
+    {
+      "service": "azure-openai-gpt35-output",
+      "name": "Azure OpenAI GPT-3.5 Output",
+      "pricePerToken": 2e-06,
+      "status": "active",
+      "notes": "Per 1K tokens"
+    },
+    {
+      "service": "azure-openai-embedding",
+      "name": "Azure OpenAI Embedding",
+      "pricePerToken": 1e-07,
+      "status": "active",
+      "notes": "Per 1K tokens"
+    },
+    {
+      "service": "cognitive-vision",
+      "name": "Cognitive Services Vision",
+      "pricePerTransaction": 0.001,
+      "status": "active",
+      "notes": "Per transaction"
+    },
+    {
+      "service": "cognitive-speech",
+      "name": "Cognitive Services Speech",
+      "pricePerHour": 1.0,
+      "status": "active",
+      "notes": "Speech-to-text"
+    },
+    {
+      "service": "cognitive-language",
+      "name": "Cognitive Services Language",
+      "pricePerRecord": 0.0001,
+      "status": "active",
+      "notes": "Text analytics"
+    },
+    {
+      "service": "cognitive-translator",
+      "name": "Cognitive Services Translator",
+      "pricePerMillion": 10.0,
+      "status": "active",
+      "notes": "Per million characters"
+    },
+    {
+      "service": "form-recognizer",
+      "name": "Form Recognizer",
+      "pricePerPage": 0.001,
+      "status": "active",
+      "notes": "Document extraction"
+    },
+    {
+      "service": "bot-service",
+      "name": "Bot Service",
+      "pricePerMessage": 0.0005,
+      "status": "active",
+      "notes": "Premium channels"
+    }
+  ],
+  "analytics": [
+    {
+      "service": "databricks-standard",
+      "name": "Databricks Standard",
+      "pricePerDBU": 0.07,
+      "status": "active",
+      "notes": "Per DBU-hour"
+    },
+    {
+      "service": "databricks-premium",
+      "name": "Databricks Premium",
+      "pricePerDBU": 0.22,
+      "status": "active",
+      "notes": "Per DBU-hour"
+    },
+    {
+      "service": "data-factory-orchestration",
+      "name": "Data Factory Orchestration",
+      "pricePerRun": 0.001,
+      "status": "active",
+      "notes": "Per activity run"
+    },
+    {
+      "service": "data-factory-data-movement",
+      "name": "Data Factory Data Movement",
+      "pricePerDIU": 0.25,
+      "status": "active",
+      "notes": "Per DIU-hour"
+    },
+    {
+      "service": "hdinsight-spark",
+      "name": "HDInsight Spark",
+      "pricePerCore": 0.03,
+      "status": "active",
+      "notes": "Per core-hour, plus VM"
+    },
+    {
+      "service": "hdinsight-hadoop",
+      "name": "HDInsight Hadoop",
+      "pricePerCore": 0.03,
+      "status": "active",
+      "notes": "Per core-hour, plus VM"
+    },
+    {
+      "service": "stream-analytics",
+      "name": "Stream Analytics",
+      "pricePerSU": 0.11,
+      "status": "active",
+      "notes": "Per streaming unit/hour"
+    },
+    {
+      "service": "power-bi-pro",
+      "name": "Power BI Pro",
+      "pricePerUser": 10.0,
+      "status": "active",
+      "notes": "Per user/month"
+    },
+    {
+      "service": "power-bi-premium",
+      "name": "Power BI Premium P1",
+      "pricePerMonth": 4995.0,
+      "status": "active",
+      "notes": "Capacity-based"
+    },
+    {
+      "service": "purview",
+      "name": "Microsoft Purview",
+      "pricePerRU": 0.4,
+      "status": "active",
+      "notes": "Per resource unit/hour"
+    }
+  ],
+  "security": [
+    {
+      "service": "key-vault-standard",
+      "name": "Key Vault Standard",
+      "pricePerOperation": 0.03,
+      "pricePerKey": 0.0,
+      "status": "active",
+      "notes": "Per 10K operations"
+    },
+    {
+      "service": "key-vault-premium",
+      "name": "Key Vault Premium HSM",
+      "pricePerKey": 1.0,
+      "pricePerOperation": 0.03,
+      "status": "active",
+      "notes": "HSM-backed"
+    },
+    {
+      "service": "app-config",
+      "name": "App Configuration",
+      "pricePerDay": 1.2,
+      "status": "active",
+      "notes": "Standard tier"
+    },
+    {
+      "service": "defender-servers",
+      "name": "Defender for Servers",
+      "pricePerServer": 15.0,
+      "status": "active",
+      "notes": "Plan 2, per month"
+    },
+    {
+      "service": "defender-storage",
+      "name": "Defender for Storage",
+      "pricePerTransaction": 0.0175,
+      "status": "active",
+      "notes": "Per 10K transactions"
+    },
+    {
+      "service": "defender-sql",
+      "name": "Defender for SQL",
+      "pricePerNode": 15.0,
+      "status": "active",
+      "notes": "Per node/month"
+    },
+    {
+      "service": "sentinel-ingestion",
+      "name": "Microsoft Sentinel",
+      "pricePerGB": 2.46,
+      "status": "active",
+      "notes": "Log ingestion"
+    },
+    {
+      "service": "active-directory-b2c",
+      "name": "Azure AD B2C",
+      "pricePerMAU": 0.00325,
+      "status": "active",
+      "notes": "First 50K MAU free"
+    },
+    {
+      "service": "ddos-protection",
+      "name": "DDoS Protection Standard",
+      "pricePerMonth": 2944.0,
+      "status": "active",
+      "notes": "Per protected resource"
+    }
+  ],
+  "monitoring": [
+    {
+      "service": "monitor-metrics",
+      "name": "Azure Monitor Metrics",
+      "pricePerMetric": 0.0,
+      "status": "active",
+      "notes": "Platform metrics free"
+    },
+    {
+      "service": "monitor-custom-metrics",
+      "name": "Azure Monitor Custom Metrics",
+      "pricePerMillion": 0.258,
+      "status": "active",
+      "notes": "Per million samples"
+    },
+    {
+      "service": "log-analytics-ingestion",
+      "name": "Log Analytics Ingestion",
+      "pricePerGB": 2.3,
+      "status": "active",
+      "notes": "Data ingestion"
+    },
+    {
+      "service": "log-analytics-retention",
+      "name": "Log Analytics Retention",
+      "pricePerGB": 0.1,
+      "status": "active",
+      "notes": "Beyond 31 days"
+    },
+    {
+      "service": "app-insights",
+      "name": "Application Insights",
+      "pricePerGB": 2.3,
+      "status": "active",
+      "notes": "Data ingestion"
+    },
+    {
+      "service": "app-insights-web-tests",
+      "name": "Application Insights Web Tests",
+      "pricePerTest": 5.0,
+      "status": "active",
+      "notes": "Multi-step per month"
+    },
+    {
+      "service": "alerts",
+      "name": "Azure Alerts",
+      "pricePerRule": 0.1,
+      "status": "active",
+      "notes": "Metric alert rule/month"
+    },
+    {
+      "service": "action-groups",
+      "name": "Action Groups",
+      "pricePerNotification": 0.0,
+      "status": "active",
+      "notes": "Email/SMS/webhook free"
     }
   ]
 }
