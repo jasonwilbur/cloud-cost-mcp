@@ -619,6 +619,25 @@
       "notes": "HPC file system"
     }
   ],
+  "egress": {
+    "provider": "oci",
+    "freeGBPerMonth": 10240,
+    "tiers": [
+      {
+        "upToGB": -1,
+        "pricePerGB": 0.0085
+      }
+    ],
+    "notes": "First 10TB/month FREE - industry-leading free egress tier. Then $0.0085/GB."
+  },
+  "kubernetes": {
+    "provider": "oci",
+    "name": "OKE",
+    "controlPlaneHourly": 0,
+    "controlPlaneMonthly": 0,
+    "workerNodeIncluded": false,
+    "notes": "OKE Basic cluster control plane is FREE. Enhanced clusters: $0.10/hr. Worker nodes billed separately."
+  },
   "database": [
     {
       "service": "database",
