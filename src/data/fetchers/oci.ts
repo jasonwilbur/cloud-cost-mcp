@@ -33,6 +33,21 @@ export interface OCISimplifiedProduct {
   serviceCategory: string;
   unitPrice: number;
   currency: string;
+  isBYOL: boolean;
+  licenseModel: 'standard' | 'byol';
+}
+
+export interface OCIFetchResult {
+  lastUpdated: string;
+  totalProducts: number;
+  items: OCISimplifiedProduct[];
+  summary: {
+    totalSKUs: number;
+    standardPricing: number;
+    byolPricing: number;
+    uniqueCategories: number;
+  };
+  apiNotes: string[];
 }
 
 /**
@@ -42,20 +57,12 @@ export async function fetchOCIRealTimePricing(options?: {
   currency?: string;
   category?: string;
   search?: string;
-}): Promise<{
-  lastUpdated: string;
-  totalProducts: number;
-  items: OCISimplifiedProduct[];
-}> {
+}): Promise<OCIFetchResult> {
   const currency = options?.currency || 'USD';
   const cacheKey = `${CACHE_KEYS.OCI_REALTIME}_${currency}`;
 
   // Check cache (5 minute TTL for real-time data)
-  const cached = pricingCache.get<{
-    lastUpdated: string;
-    totalProducts: number;
-    items: OCISimplifiedProduct[];
-  }>(cacheKey);
+  const cached = pricingCache.get<OCIFetchResult>(cacheKey);
 
   if (cached) {
     return filterOCIData(cached, options);
@@ -85,6 +92,10 @@ export async function fetchOCIRealTimePricing(options?: {
         }
       }
 
+      // Detect BYOL (Bring Your Own License) from display name
+      const isBYOL = item.displayName.toUpperCase().includes('BYOL') ||
+                     item.displayName.toUpperCase().includes('BRING YOUR OWN LICENSE');
+
       return {
         partNumber: item.partNumber,
         displayName: item.displayName,
@@ -92,13 +103,35 @@ export async function fetchOCIRealTimePricing(options?: {
         serviceCategory: item.serviceCategory,
         unitPrice,
         currency,
+        isBYOL,
+        licenseModel: isBYOL ? 'byol' : 'standard',
       };
     });
 
-    const result = {
+    // Generate summary statistics
+    const byolCount = items.filter(item => item.isBYOL).length;
+    const standardCount = items.length - byolCount;
+    const uniqueCategories = new Set(items.map(item => item.serviceCategory)).size;
+
+    const result: OCIFetchResult = {
       lastUpdated: data.lastUpdated || new Date().toISOString(),
       totalProducts: items.length,
       items,
+      summary: {
+        totalSKUs: items.length,
+        standardPricing: standardCount,
+        byolPricing: byolCount,
+        uniqueCategories,
+      },
+      apiNotes: [
+        'Public API returns PAY_AS_YOU_GO pricing only',
+        'BYOL (Bring Your Own License) variants are included as separate SKUs',
+        'Reserved/Committed pricing (1-year, 3-year) NOT available via public API',
+        'Universal Credits and Monthly Flex pricing NOT included',
+        'Government cloud and private region pricing may differ',
+        'OCI maintains consistent pricing across all commercial regions',
+        'For reserved/committed pricing, contact Oracle sales or use Universal Credits calculator',
+      ],
     };
 
     // Cache for 5 minutes
@@ -114,9 +147,9 @@ export async function fetchOCIRealTimePricing(options?: {
  * Filter OCI pricing data by category or search term
  */
 function filterOCIData(
-  data: { lastUpdated: string; totalProducts: number; items: OCISimplifiedProduct[] },
+  data: OCIFetchResult,
   options?: { category?: string; search?: string }
-): { lastUpdated: string; totalProducts: number; items: OCISimplifiedProduct[] } {
+): OCIFetchResult {
   let items = data.items;
 
   if (options?.category) {
@@ -135,10 +168,21 @@ function filterOCIData(
     );
   }
 
+  // Recalculate summary for filtered data
+  const byolCount = items.filter(item => item.isBYOL).length;
+  const standardCount = items.length - byolCount;
+  const uniqueCategories = new Set(items.map(item => item.serviceCategory)).size;
+
   return {
     ...data,
     items,
     totalProducts: items.length,
+    summary: {
+      totalSKUs: items.length,
+      standardPricing: standardCount,
+      byolPricing: byolCount,
+      uniqueCategories,
+    },
   };
 }
 

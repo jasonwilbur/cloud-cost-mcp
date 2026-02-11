@@ -1,12 +1,12 @@
 {
   "name": "cloud-cost-mcp",
-  "version": "1.3.7",
+  "version": "1.3.8",
   "description": "Multi-cloud pricing comparison MCP server for AWS, Azure, GCP, and OCI",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
-    "cloud-cost-mcp": "./dist/index.js"
+    "cloud-cost-mcp": "dist/index.js"
   },
   "scripts": {
     "build": "tsc && npm run copy-data",
@@ -37,7 +37,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jasonwilbur/cloud-cost-mcp"
+    "url": "git+https://github.com/jasonwilbur/cloud-cost-mcp.git"
   },
   "engines": {
     "node": ">=18.0.0"
