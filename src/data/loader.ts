@@ -73,7 +73,21 @@ export function getAllComputeInstances(): ComputeInstance[] {
     ...allData.azure.compute,
     ...allData.gcp.compute,
     ...allData.oci.compute,
-  ];
+    // Note: OCI bundled "compute" entries use a flexible-shape pricing schema
+    // (shapeFamily/ocpuPrice) rather than the unified ComputeInstance shape, so
+    // they are dropped by the guard below and currently do not participate in
+    // compare_compute. Use refresh_oci_pricing / oci-pricing-mcp for OCI compute.
+  ].filter(
+    // Only keep rows that actually conform to ComputeInstance so the comparison
+    // logic never sees malformed/foreign-schema entries.
+    (i) =>
+      i != null &&
+      Number.isFinite(i.vcpus) &&
+      Number.isFinite(i.memoryGB) &&
+      Number.isFinite(i.monthlyPrice) &&
+      typeof i.name === 'string' &&
+      i.name.length > 0
+  );
 
   pricingCache.set(CACHE_KEYS.ALL_COMPUTE, instances, 60);
   return instances;

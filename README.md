@@ -1,18 +1,23 @@
 # Cloud Cost MCP
 
+[![npm version](https://img.shields.io/npm/v/cloud-cost-mcp.svg)](https://www.npmjs.com/package/cloud-cost-mcp)
+[![npm downloads](https://img.shields.io/npm/dm/cloud-cost-mcp.svg)](https://www.npmjs.com/package/cloud-cost-mcp)
+[![CI](https://github.com/jasonwilbur/cloud-cost-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/jasonwilbur/cloud-cost-mcp/actions/workflows/ci.yml)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
+
 Multi-cloud pricing comparison MCP server for AWS, Azure, GCP, and OCI. Compare compute, storage, egress, and Kubernetes costs across all major cloud providers with a single query.
 
 > **⚠️ DISCLAIMER**: All pricing data is retrieved from publicly available APIs and data sources including [instances.vantage.sh](https://instances.vantage.sh), Azure Retail Prices API, and Oracle Cloud Price List API. This data is provided for informational and estimation purposes only. **Cloud pricing changes frequently and may vary by region, account type, commitment terms, and other factors.** Users are solely responsible for verifying all pricing information directly with cloud providers before making any purchasing or architectural decisions. The authors make no warranties about the accuracy, completeness, or timeliness of this data.
 
 ## Features
 
-- **Comprehensive Coverage**: 2,700+ instance types across all providers
-  - AWS: 1,147 EC2 instances + 353 RDS database types + Lightsail
-  - Azure: 1,199 VM types
-  - GCP: 287 instance types across 40+ regions
+- **Comprehensive Coverage**: 4,900+ instance types across all providers
+  - AWS: 1,300+ EC2 instances + 1,180+ managed-database types + Lightsail
+  - Azure: 1,680+ VM types (official Azure Retail Prices API)
+  - GCP: 360+ instance types across 40+ regions
   - OCI: 600+ products via Oracle API
 - **No API Keys Required**: All data from public APIs (instances.vantage.sh + provider APIs)
-- **Real-Time Pricing**: All providers have real-time refresh capability
+- **Fresh data, two ways**: AWS/Azure/GCP bundled data is auto-refreshed weekly via GitHub Actions, and the `refresh_*` tools fetch live pricing on demand (cached 60 min in-memory). OCI bundled data is curated. See [Data freshness](#data-freshness) for the exact model.
 - **Natural Language Queries**: Ask Claude "What's cheapest for 4 vCPU 16GB?"
 - **Workload Calculator**: Estimate full workload costs including compute, storage, and egress
 - **Migration Planning**: Calculate potential savings when switching providers
@@ -23,7 +28,22 @@ Multi-cloud pricing comparison MCP server for AWS, Azure, GCP, and OCI. Compare 
 
 ```bash
 # One-command install
-claude mcp add cloud-cost -- npx cloud-cost-mcp
+claude mcp add cloud-cost -- npx -y cloud-cost-mcp
+```
+
+### For Claude Desktop Users
+
+Add this to your `claude_desktop_config.json` (macOS: `~/Library/Application Support/Claude/claude_desktop_config.json`, Windows: `%APPDATA%\Claude\claude_desktop_config.json`), then restart Claude Desktop:
+
+```json
+{
+  "mcpServers": {
+    "cloud-cost": {
+      "command": "npx",
+      "args": ["-y", "cloud-cost-mcp"]
+    }
+  }
+}
 ```
 
 ### Manual Installation
@@ -32,7 +52,7 @@ claude mcp add cloud-cost -- npx cloud-cost-mcp
 npm install -g cloud-cost-mcp
 ```
 
-Then add to your Claude Code configuration:
+Then reference the installed binary in any MCP client config:
 
 ```json
 {
@@ -228,19 +248,27 @@ npm run build
 claude mcp add cloud-cost-dev -- node /path/to/cloud-cost-mcp/dist/index.js
 ```
 
-## Updating Pricing Data
+## Data freshness
 
-All providers support real-time refresh:
+This server uses a **two-tier** data model — it helps to know which is which:
 
-```
-# Refresh all providers
-refresh_aws_ec2_pricing
-refresh_azure_full_pricing
-refresh_gcp_pricing
-refresh_oci_pricing
-```
+1. **Bundled data** (`src/data/bundled/*.json`) is what the comparison/calculator tools
+   read by default, so the server works instantly with no network calls.
+   - **AWS, Azure, GCP** bundled data is regenerated from live upstream sources
+     (`instances.vantage.sh` + the official Azure Retail Prices API) and **auto-refreshed
+     weekly** via the [`refresh-data` GitHub Action](.github/workflows/refresh-data.yml).
+     You can also regenerate locally with `npm run fetch-data`.
+   - **OCI** bundled data is **curated** (vantage.sh has no OCI feed) and updated manually.
+     For always-live OCI pricing, use the `refresh_oci_pricing` tool or the dedicated
+     [oci-pricing-mcp](https://github.com/jasonwilbur/oci-pricing-mcp).
 
-Data is cached for 60 minutes. Bundled fallback data is in `src/data/bundled/`.
+2. **Live refresh tools** (`refresh_aws_ec2_pricing`, `refresh_azure_full_pricing`,
+   `refresh_gcp_pricing`, `refresh_oci_pricing`, `refresh_aws_rds_pricing`) fetch current
+   pricing from provider APIs at call time, cached **60 minutes in-memory** for the life of
+   the process. These return fresh data to the caller but do **not** rewrite the bundled
+   files — that only happens via `npm run fetch-data` / the weekly Action.
+
+Use `get_data_freshness` to see the bundled timestamp and staleness for each provider.
 
 ## License
 
