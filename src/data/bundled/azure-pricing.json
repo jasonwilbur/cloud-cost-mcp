@@ -1,13 +1,13 @@
 {
   "metadata": {
     "provider": "azure",
-    "lastUpdated": "2026-01-20T00:00:00Z",
+    "lastUpdated": "2026-06-03T22:05:05.672Z",
     "source": "Azure Retail Prices API (official)",
     "sourceUrl": "https://prices.azure.com/api/retail/prices",
-    "version": "1.3.5",
-    "totalProducts": 1624,
+    "version": "1.2.9",
+    "totalProducts": 1697,
     "currency": "USD",
-    "notes": "Official Azure pricing from Microsoft Retail Prices API. Includes comprehensive database services."
+    "notes": "Official Azure pricing from Microsoft Retail Prices API"
   },
   "compute": [
     {
@@ -191,6 +191,20 @@
       "architecture": "x86",
       "status": "legacy",
       "notes": "Virtual Machines Av2 Series"
+    },
+    {
+      "provider": "azure",
+      "name": "NC8dsxlRTX6Kv6",
+      "displayName": "NC8dsxlRTX6Kv6 (NCdsxlRTX6kv6)",
+      "vcpus": 0,
+      "memoryGB": 0,
+      "hourlyPrice": 0.0447,
+      "monthlyPrice": 32.63,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines NCdsxlRTX6kv6"
     },
     {
       "provider": "azure",
@@ -1076,6 +1090,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_D2nls_v6",
+      "displayName": "Standard_D2nls_v6 (Dnlsv6)",
+      "vcpus": 2,
+      "memoryGB": 8,
+      "hourlyPrice": 0.113,
+      "monthlyPrice": 82.49,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dnlsv6 Series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_DC1ds_v3",
       "displayName": "Standard_DC1ds_v3 (DCdsv3)",
       "vcpus": 3,
@@ -1202,20 +1230,6 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_D2nls_v6",
-      "displayName": "Standard_D2nls_v6 (Dnlv6)",
-      "vcpus": 2,
-      "memoryGB": 8,
-      "hourlyPrice": 0.117,
-      "monthlyPrice": 85.41,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Dnlv6 Series Linux"
-    },
-    {
-      "provider": "azure",
       "name": "Standard_E2pds_v6",
       "displayName": "Standard_E2pds_v6 (Epdsv6)",
       "vcpus": 2,
@@ -1227,6 +1241,20 @@
       "architecture": "arm",
       "status": "active",
       "notes": "Virtual Machines Epdsv6 Series"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D2ls_v7",
+      "displayName": "Standard_D2ls_v7 (Dlsv7-series)",
+      "vcpus": 2,
+      "memoryGB": 8,
+      "hourlyPrice": 0.117,
+      "monthlyPrice": 85.41,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dlsv7-series Linux"
     },
     {
       "provider": "azure",
@@ -1510,6 +1538,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_D2s_v7",
+      "displayName": "Standard_D2s_v7 (Dsv7-series)",
+      "vcpus": 2,
+      "memoryGB": 8,
+      "hourlyPrice": 0.132,
+      "monthlyPrice": 96.36,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dsv7-series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_EC2es_v6",
       "displayName": "Standard_EC2es_v6 (ECesv6)",
       "vcpus": 6,
@@ -1605,6 +1647,48 @@
       "architecture": "x86",
       "status": "active",
       "notes": "Virtual Machines Fasv7 Series"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D2lds_v7",
+      "displayName": "Standard_D2lds_v7 (Dldsv7-series)",
+      "vcpus": 2,
+      "memoryGB": 8,
+      "hourlyPrice": 0.139,
+      "monthlyPrice": 101.47,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dldsv7-series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D2ns_v6",
+      "displayName": "Standard_D2ns_v6 (Dnsv6)",
+      "vcpus": 2,
+      "memoryGB": 8,
+      "hourlyPrice": 0.139,
+      "monthlyPrice": 101.47,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dnsv6 Series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D2nlds_v6",
+      "displayName": "Standard_D2nlds_v6 (Dnldsv6)",
+      "vcpus": 2,
+      "memoryGB": 8,
+      "hourlyPrice": 0.14,
+      "monthlyPrice": 102.2,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dnldsv6 Series Linux"
     },
     {
       "provider": "azure",
@@ -1706,20 +1790,6 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_D2nlds_v6",
-      "displayName": "Standard_D2nlds_v6 (Dnldv6)",
-      "vcpus": 2,
-      "memoryGB": 8,
-      "hourlyPrice": 0.145,
-      "monthlyPrice": 105.85,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Dnldv6 Series Linux"
-    },
-    {
-      "provider": "azure",
       "name": "Standard_E2ads_v7",
       "displayName": "Standard_E2ads_v7 (Eadsv7)",
       "vcpus": 2,
@@ -1773,20 +1843,6 @@
       "architecture": "x86",
       "status": "legacy",
       "notes": "Virtual Machines DSv2 Series"
-    },
-    {
-      "provider": "azure",
-      "name": "Standard_D2ns_v6",
-      "displayName": "Standard_D2ns_v6 (Dnv6)",
-      "vcpus": 2,
-      "memoryGB": 8,
-      "hourlyPrice": 0.146,
-      "monthlyPrice": 106.58,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Dnv6 Series Linux"
     },
     {
       "provider": "azure",
@@ -1916,17 +1972,17 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_E2as_v5",
-      "displayName": "Standard_E2as_v5 (Easv5)",
+      "name": "Standard_D2nds_v6",
+      "displayName": "Standard_D2nds_v6 (Dndsv6)",
       "vcpus": 2,
-      "memoryGB": 16,
+      "memoryGB": 8,
       "hourlyPrice": 0.159,
       "monthlyPrice": 116.07,
       "region": "eastus",
       "category": "general",
       "architecture": "x86",
       "status": "active",
-      "notes": "Easv5 Series CloudServices"
+      "notes": "Virtual Machines Dndsv6 Series Linux"
     },
     {
       "provider": "azure",
@@ -1955,6 +2011,20 @@
       "architecture": "x86",
       "status": "active",
       "notes": "Virtual Machines Dalsv6 Series"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D2ds_v7",
+      "displayName": "Standard_D2ds_v7 (Ddsv7-series)",
+      "vcpus": 2,
+      "memoryGB": 8,
+      "hourlyPrice": 0.163,
+      "monthlyPrice": 118.99,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Ddsv7-series Linux"
     },
     {
       "provider": "azure",
@@ -2098,20 +2168,6 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_E2ns_v6",
-      "displayName": "Standard_E2ns_v6 (Env6)",
-      "vcpus": 2,
-      "memoryGB": 16,
-      "hourlyPrice": 0.173,
-      "monthlyPrice": 126.29,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Env6 Series Linux"
-    },
-    {
-      "provider": "azure",
       "name": "Standard_L2s_v4",
       "displayName": "Standard_L2s_v4 (Lsv4)",
       "vcpus": 2,
@@ -2137,6 +2193,34 @@
       "architecture": "x86",
       "status": "active",
       "notes": "Virtual Machines Ebsv6-Series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_E2ns_v6",
+      "displayName": "Standard_E2ns_v6 (Ensv6)",
+      "vcpus": 2,
+      "memoryGB": 16,
+      "hourlyPrice": 0.174,
+      "monthlyPrice": 127.02,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Ensv6 Series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_E2s_v7",
+      "displayName": "Standard_E2s_v7 (Esv7-series)",
+      "vcpus": 2,
+      "memoryGB": 16,
+      "hourlyPrice": 0.174,
+      "monthlyPrice": 127.02,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Esv7-series Linux"
     },
     {
       "provider": "azure",
@@ -2210,6 +2294,20 @@
     },
     {
       "provider": "azure",
+      "name": "NC16dsxlRTX6Kv6",
+      "displayName": "NC16dsxlRTX6Kv6 (NCdsxlRTX6kv6)",
+      "vcpus": 0,
+      "memoryGB": 0,
+      "hourlyPrice": 0.18,
+      "monthlyPrice": 131.4,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines NCdsxlRTX6kv6"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_D4pds_v5",
       "displayName": "Standard_D4pds_v5 (Dpdsv5)",
       "vcpus": 4,
@@ -2221,20 +2319,6 @@
       "architecture": "arm",
       "status": "active",
       "notes": "Virtual Machines Dpdsv5 Series"
-    },
-    {
-      "provider": "azure",
-      "name": "Standard_D2nds_v6",
-      "displayName": "Standard_D2nds_v6 (Dndv6)",
-      "vcpus": 2,
-      "memoryGB": 8,
-      "hourlyPrice": 0.181,
-      "monthlyPrice": 132.13,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Dndv6 Series Linux"
     },
     {
       "provider": "azure",
@@ -2616,6 +2700,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_E2nds_v6",
+      "displayName": "Standard_E2nds_v6 (Endsv6)",
+      "vcpus": 2,
+      "memoryGB": 16,
+      "hourlyPrice": 0.195,
+      "monthlyPrice": 142.35,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Endsv6 Series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_DC2s",
       "displayName": "Standard_DC2s (DCS)",
       "vcpus": 0,
@@ -2700,6 +2798,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_E2as_v5",
+      "displayName": "Standard_E2as_v5 (Easv5)",
+      "vcpus": 2,
+      "memoryGB": 16,
+      "hourlyPrice": 0.205,
+      "monthlyPrice": 149.65,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Easv5 Series CloudServices"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_D4ads_v5",
       "displayName": "Standard_D4ads_v5 (Dadsv5)",
       "vcpus": 4,
@@ -2742,17 +2854,17 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_E2nds_v6",
-      "displayName": "Standard_E2nds_v6 (Endv6)",
+      "name": "Standard_E2ds_v7",
+      "displayName": "Standard_E2ds_v7 (Edsv7-series)",
       "vcpus": 2,
       "memoryGB": 16,
-      "hourlyPrice": 0.214,
-      "monthlyPrice": 156.22,
+      "hourlyPrice": 0.208,
+      "monthlyPrice": 151.84,
       "region": "eastus",
       "category": "general",
       "architecture": "x86",
       "status": "active",
-      "notes": "Virtual Machines Endv6 Series Linux"
+      "notes": "Virtual Machines Edsv7-series Linux"
     },
     {
       "provider": "azure",
@@ -2924,6 +3036,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_D4nls_v6",
+      "displayName": "Standard_D4nls_v6 (Dnlsv6)",
+      "vcpus": 4,
+      "memoryGB": 16,
+      "hourlyPrice": 0.227,
+      "monthlyPrice": 165.71,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dnlsv6 Series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_D4ads_v6",
       "displayName": "Standard_D4ads_v6 (Dadsv6)",
       "vcpus": 4,
@@ -2994,8 +3120,8 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_D4nls_v6",
-      "displayName": "Standard_D4nls_v6 (Dnlv6)",
+      "name": "Standard_D4ls_v7",
+      "displayName": "Standard_D4ls_v7 (Dlsv7-series)",
       "vcpus": 4,
       "memoryGB": 16,
       "hourlyPrice": 0.234,
@@ -3004,7 +3130,7 @@
       "category": "general",
       "architecture": "x86",
       "status": "active",
-      "notes": "Virtual Machines Dnlv6 Series Linux"
+      "notes": "Virtual Machines Dlsv7-series Linux"
     },
     {
       "provider": "azure",
@@ -3442,6 +3568,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_D4s_v7",
+      "displayName": "Standard_D4s_v7 (Dsv7-series)",
+      "vcpus": 4,
+      "memoryGB": 16,
+      "hourlyPrice": 0.265,
+      "monthlyPrice": 193.45,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dsv7-series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_EC4es_v6",
       "displayName": "Standard_EC4es_v6 (ECesv6)",
       "vcpus": 6,
@@ -3467,20 +3607,6 @@
       "architecture": "x86",
       "status": "legacy",
       "notes": "Virtual Machines Basv2 Series"
-    },
-    {
-      "provider": "azure",
-      "name": "Standard_E4as_v5",
-      "displayName": "Standard_E4as_v5 (Easv5)",
-      "vcpus": 4,
-      "memoryGB": 32,
-      "hourlyPrice": 0.272,
-      "monthlyPrice": 198.56,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Easv5 Series CloudServices"
     },
     {
       "provider": "azure",
@@ -3551,6 +3677,48 @@
       "architecture": "arm",
       "status": "legacy",
       "notes": "Bpsv2 Series Cloud Services"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D4lds_v7",
+      "displayName": "Standard_D4lds_v7 (Dldsv7-series)",
+      "vcpus": 4,
+      "memoryGB": 16,
+      "hourlyPrice": 0.277,
+      "monthlyPrice": 202.21,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dldsv7-series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D4ns_v6",
+      "displayName": "Standard_D4ns_v6 (Dnsv6)",
+      "vcpus": 4,
+      "memoryGB": 16,
+      "hourlyPrice": 0.278,
+      "monthlyPrice": 202.94,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dnsv6 Series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D4nlds_v6",
+      "displayName": "Standard_D4nlds_v6 (Dnldsv6)",
+      "vcpus": 4,
+      "memoryGB": 16,
+      "hourlyPrice": 0.28,
+      "monthlyPrice": 204.4,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dnldsv6 Series Linux"
     },
     {
       "provider": "azure",
@@ -3666,20 +3834,6 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_D4nlds_v6",
-      "displayName": "Standard_D4nlds_v6 (Dnldv6)",
-      "vcpus": 4,
-      "memoryGB": 16,
-      "hourlyPrice": 0.289,
-      "monthlyPrice": 210.97,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Dnldv6 Series Linux"
-    },
-    {
-      "provider": "azure",
       "name": "Standard_EC4ads_v6",
       "displayName": "Standard_EC4ads_v6 (ECadsv6)",
       "vcpus": 6,
@@ -3750,20 +3904,6 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_D4ns_v6",
-      "displayName": "Standard_D4ns_v6 (Dnv6)",
-      "vcpus": 4,
-      "memoryGB": 16,
-      "hourlyPrice": 0.292,
-      "monthlyPrice": 213.16,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Dnv6 Series Linux"
-    },
-    {
-      "provider": "azure",
       "name": "Standard_DS3_v2",
       "displayName": "Standard_DS3_v2 (DSv2)",
       "vcpus": 2,
@@ -3775,6 +3915,20 @@
       "architecture": "x86",
       "status": "legacy",
       "notes": "Virtual Machines DSv2 Series"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D4nds_v6",
+      "displayName": "Standard_D4nds_v6 (Dndsv6)",
+      "vcpus": 4,
+      "memoryGB": 16,
+      "hourlyPrice": 0.293,
+      "monthlyPrice": 213.89,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dndsv6 Series Linux"
     },
     {
       "provider": "azure",
@@ -3946,6 +4100,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_D4ds_v7",
+      "displayName": "Standard_D4ds_v7 (Ddsv7-series)",
+      "vcpus": 4,
+      "memoryGB": 16,
+      "hourlyPrice": 0.326,
+      "monthlyPrice": 237.98,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Ddsv7-series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_E4-2ds_v6",
       "displayName": "Standard_E4-2ds_v6 (Edsv6)",
       "vcpus": 4,
@@ -3999,20 +4167,6 @@
       "architecture": "x86",
       "status": "active",
       "notes": "Virtual Machines BS Series"
-    },
-    {
-      "provider": "azure",
-      "name": "Standard_D4nds_v6",
-      "displayName": "Standard_D4nds_v6 (Dndv6)",
-      "vcpus": 4,
-      "memoryGB": 16,
-      "hourlyPrice": 0.333,
-      "monthlyPrice": 243.09,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Dndv6 Series Linux"
     },
     {
       "provider": "azure",
@@ -4156,8 +4310,8 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_E4ns_v6",
-      "displayName": "Standard_E4ns_v6 (Env6)",
+      "name": "Standard_E4s_v7",
+      "displayName": "Standard_E4s_v7 (Esv7-series)",
       "vcpus": 4,
       "memoryGB": 32,
       "hourlyPrice": 0.347,
@@ -4166,7 +4320,7 @@
       "category": "general",
       "architecture": "x86",
       "status": "active",
-      "notes": "Virtual Machines Env6 Series Linux"
+      "notes": "Virtual Machines Esv7-series Linux"
     },
     {
       "provider": "azure",
@@ -4181,6 +4335,20 @@
       "architecture": "x86",
       "status": "active",
       "notes": "Virtual Machines Lsv4 Series"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_E4ns_v6",
+      "displayName": "Standard_E4ns_v6 (Ensv6)",
+      "vcpus": 4,
+      "memoryGB": 32,
+      "hourlyPrice": 0.349,
+      "monthlyPrice": 254.77,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Ensv6 Series Linux"
     },
     {
       "provider": "azure",
@@ -4674,6 +4842,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_E4nds_v6",
+      "displayName": "Standard_E4nds_v6 (Endsv6)",
+      "vcpus": 4,
+      "memoryGB": 32,
+      "hourlyPrice": 0.391,
+      "monthlyPrice": 285.43,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Endsv6 Series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_E4bds_v6",
       "displayName": "Standard_E4bds_v6 (Ebdsv6-Series)",
       "vcpus": 4,
@@ -4800,6 +4982,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_E4as_v5",
+      "displayName": "Standard_E4as_v5 (Easv5)",
+      "vcpus": 4,
+      "memoryGB": 32,
+      "hourlyPrice": 0.41,
+      "monthlyPrice": 299.3,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Easv5 Series CloudServices"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_E4-2as_v5",
       "displayName": "Standard_E4-2as_v5 (Easv5)",
       "vcpus": 4,
@@ -4856,17 +5052,17 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_E4nds_v6",
-      "displayName": "Standard_E4nds_v6 (Endv6)",
+      "name": "Standard_E4ds_v7",
+      "displayName": "Standard_E4ds_v7 (Edsv7-series)",
       "vcpus": 4,
       "memoryGB": 32,
-      "hourlyPrice": 0.428,
-      "monthlyPrice": 312.44,
+      "hourlyPrice": 0.416,
+      "monthlyPrice": 303.68,
       "region": "eastus",
       "category": "general",
       "architecture": "x86",
       "status": "active",
-      "notes": "Virtual Machines Endv6 Series Linux"
+      "notes": "Virtual Machines Edsv7-series Linux"
     },
     {
       "provider": "azure",
@@ -5136,6 +5332,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_D8nls_v6",
+      "displayName": "Standard_D8nls_v6 (Dnlsv6)",
+      "vcpus": 8,
+      "memoryGB": 32,
+      "hourlyPrice": 0.454,
+      "monthlyPrice": 331.42,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dnlsv6 Series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_D8ads_v7",
       "displayName": "Standard_D8ads_v7 (Dadsv7)",
       "vcpus": 8,
@@ -5206,20 +5416,6 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_D8nls_v6",
-      "displayName": "Standard_D8nls_v6 (Dnlv6)",
-      "vcpus": 8,
-      "memoryGB": 32,
-      "hourlyPrice": 0.468,
-      "monthlyPrice": 341.64,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Dnlv6 Series Linux"
-    },
-    {
-      "provider": "azure",
       "name": "Standard_E8pds_v6",
       "displayName": "Standard_E8pds_v6 (Epdsv6)",
       "vcpus": 8,
@@ -5231,6 +5427,20 @@
       "architecture": "arm",
       "status": "active",
       "notes": "Virtual Machines Epdsv6 Series"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D8ls_v7",
+      "displayName": "Standard_D8ls_v7 (Dlsv7-series)",
+      "vcpus": 8,
+      "memoryGB": 32,
+      "hourlyPrice": 0.469,
+      "monthlyPrice": 342.37,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dlsv7-series Linux"
     },
     {
       "provider": "azure",
@@ -5808,6 +6018,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_D8s_v7",
+      "displayName": "Standard_D8s_v7 (Dsv7-series)",
+      "vcpus": 8,
+      "memoryGB": 32,
+      "hourlyPrice": 0.529,
+      "monthlyPrice": 386.17,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dsv7-series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_B16ps_v2",
       "displayName": "Standard_B16ps_v2 (Bpsv2)",
       "vcpus": 16,
@@ -5920,6 +6144,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_NC8lds_xl_RTXPRO6000BSE_v6",
+      "displayName": "Standard_NC8lds_xl_RTXPRO6000BSE_v6 (NCldsxlRTX6kv6)",
+      "vcpus": 6,
+      "memoryGB": 36,
+      "hourlyPrice": 0.55,
+      "monthlyPrice": 401.5,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "arm",
+      "status": "active",
+      "notes": "Virtual Machines NCldsxlRTX6kv6"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_GS1",
       "displayName": "Standard_GS1 (GS)",
       "vcpus": 0,
@@ -5934,6 +6172,48 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_D8lds_v7",
+      "displayName": "Standard_D8lds_v7 (Dldsv7-series)",
+      "vcpus": 8,
+      "memoryGB": 32,
+      "hourlyPrice": 0.554,
+      "monthlyPrice": 404.42,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dldsv7-series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D8ns_v6",
+      "displayName": "Standard_D8ns_v6 (Dnsv6)",
+      "vcpus": 8,
+      "memoryGB": 32,
+      "hourlyPrice": 0.557,
+      "monthlyPrice": 406.61,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dnsv6 Series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D8nlds_v6",
+      "displayName": "Standard_D8nlds_v6 (Dnldsv6)",
+      "vcpus": 8,
+      "memoryGB": 32,
+      "hourlyPrice": 0.56,
+      "monthlyPrice": 408.8,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dnldsv6 Series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_D16ps_v6",
       "displayName": "Standard_D16ps_v6 (Dpsv6)",
       "vcpus": 16,
@@ -5945,20 +6225,6 @@
       "architecture": "arm",
       "status": "active",
       "notes": "Virtual Machines Dpsv6 Series"
-    },
-    {
-      "provider": "azure",
-      "name": "Standard_E8ads_v5",
-      "displayName": "Standard_E8ads_v5 (Eadsv5)",
-      "vcpus": 8,
-      "memoryGB": 64,
-      "hourlyPrice": 0.57,
-      "monthlyPrice": 416.1,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Eadsv5 Series CloudServices"
     },
     {
       "provider": "azure",
@@ -6088,20 +6354,6 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_D8nlds_v6",
-      "displayName": "Standard_D8nlds_v6 (Dnldv6)",
-      "vcpus": 8,
-      "memoryGB": 32,
-      "hourlyPrice": 0.578,
-      "monthlyPrice": 421.94,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Dnldv6 Series Linux"
-    },
-    {
-      "provider": "azure",
       "name": "Standard_E8-2ads_v7",
       "displayName": "Standard_E8-2ads_v7 (Eadsv7)",
       "vcpus": 8,
@@ -6211,20 +6463,6 @@
       "architecture": "x86",
       "status": "legacy",
       "notes": "Virtual Machines DSv2 Series"
-    },
-    {
-      "provider": "azure",
-      "name": "Standard_D8ns_v6",
-      "displayName": "Standard_D8ns_v6 (Dnv6)",
-      "vcpus": 8,
-      "memoryGB": 32,
-      "hourlyPrice": 0.585,
-      "monthlyPrice": 427.05,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Dnv6 Series Linux"
     },
     {
       "provider": "azure",
@@ -6396,6 +6634,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_D8nds_v6",
+      "displayName": "Standard_D8nds_v6 (Dndsv6)",
+      "vcpus": 8,
+      "memoryGB": 32,
+      "hourlyPrice": 0.636,
+      "monthlyPrice": 464.28,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dndsv6 Series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_D16als_v6",
       "displayName": "Standard_D16als_v6 (Dalsv6)",
       "vcpus": 16,
@@ -6421,6 +6673,20 @@
       "architecture": "x86",
       "status": "active",
       "notes": "Virtual Machines Dalsv7 Series"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D8ds_v7",
+      "displayName": "Standard_D8ds_v7 (Ddsv7-series)",
+      "vcpus": 8,
+      "memoryGB": 32,
+      "hourlyPrice": 0.653,
+      "monthlyPrice": 476.69,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Ddsv7-series Linux"
     },
     {
       "provider": "azure",
@@ -6662,17 +6928,17 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_E8ns_v6",
-      "displayName": "Standard_E8ns_v6 (Env6)",
+      "name": "Standard_E8s_v7",
+      "displayName": "Standard_E8s_v7 (Esv7-series)",
       "vcpus": 8,
       "memoryGB": 64,
-      "hourlyPrice": 0.693,
-      "monthlyPrice": 505.89,
+      "hourlyPrice": 0.695,
+      "monthlyPrice": 507.35,
       "region": "eastus",
       "category": "general",
       "architecture": "x86",
       "status": "active",
-      "notes": "Virtual Machines Env6 Series Linux"
+      "notes": "Virtual Machines Esv7-series Linux"
     },
     {
       "provider": "azure",
@@ -6701,6 +6967,20 @@
       "architecture": "x86",
       "status": "active",
       "notes": "Virtual Machines Lsv4 Series"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_E8ns_v6",
+      "displayName": "Standard_E8ns_v6 (Ensv6)",
+      "vcpus": 8,
+      "memoryGB": 64,
+      "hourlyPrice": 0.697,
+      "monthlyPrice": 508.81,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Ensv6 Series Linux"
     },
     {
       "provider": "azure",
@@ -6785,20 +7065,6 @@
       "architecture": "x86",
       "status": "active",
       "notes": "Virtual Machines Famsv6 Series"
-    },
-    {
-      "provider": "azure",
-      "name": "Standard_D8nds_v6",
-      "displayName": "Standard_D8nds_v6 (Dndv6)",
-      "vcpus": 8,
-      "memoryGB": 32,
-      "hourlyPrice": 0.723,
-      "monthlyPrice": 527.79,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Dndv6 Series Linux"
     },
     {
       "provider": "azure",
@@ -7208,6 +7474,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_E8nds_v6",
+      "displayName": "Standard_E8nds_v6 (Endsv6)",
+      "vcpus": 8,
+      "memoryGB": 64,
+      "hourlyPrice": 0.782,
+      "monthlyPrice": 570.86,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Endsv6 Series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_NC12_Promo",
       "displayName": "Standard_NC12_Promo (NC)",
       "vcpus": 0,
@@ -7362,6 +7642,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_E8ds_v7",
+      "displayName": "Standard_E8ds_v7 (Edsv7-series)",
+      "vcpus": 8,
+      "memoryGB": 64,
+      "hourlyPrice": 0.832,
+      "monthlyPrice": 607.36,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Edsv7-series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "DCsv2 Type 1",
       "displayName": "DCsv2 Type 1 (DCsv2)",
       "vcpus": 0,
@@ -7373,20 +7667,6 @@
       "architecture": "arm",
       "status": "active",
       "notes": "DCsv2 Series Dedicated Host"
-    },
-    {
-      "provider": "azure",
-      "name": "Standard_E8nds_v6",
-      "displayName": "Standard_E8nds_v6 (Endv6)",
-      "vcpus": 8,
-      "memoryGB": 64,
-      "hourlyPrice": 0.857,
-      "monthlyPrice": 625.61,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Endv6 Series Linux"
     },
     {
       "provider": "azure",
@@ -7490,6 +7770,20 @@
       "provider": "azure",
       "name": "Standard_E8-2ads_v5",
       "displayName": "Standard_E8-2ads_v5 (Eadsv5)",
+      "vcpus": 8,
+      "memoryGB": 64,
+      "hourlyPrice": 0.892,
+      "monthlyPrice": 651.16,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Eadsv5 Series CloudServices"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_E8ads_v5",
+      "displayName": "Standard_E8ads_v5 (Eadsv5)",
       "vcpus": 8,
       "memoryGB": 64,
       "hourlyPrice": 0.892,
@@ -7628,6 +7922,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_D16nls_v6",
+      "displayName": "Standard_D16nls_v6 (Dnlsv6)",
+      "vcpus": 16,
+      "memoryGB": 64,
+      "hourlyPrice": 0.907,
+      "monthlyPrice": 662.11,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dnlsv6 Series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_NV12ads_A10_v5",
       "displayName": "Standard_NV12ads_A10_v5 (NVadsA10v5)",
       "vcpus": 10,
@@ -7712,20 +8020,6 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_D16nls_v6",
-      "displayName": "Standard_D16nls_v6 (Dnlv6)",
-      "vcpus": 16,
-      "memoryGB": 64,
-      "hourlyPrice": 0.935,
-      "monthlyPrice": 682.55,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Dnlv6 Series Linux"
-    },
-    {
-      "provider": "azure",
       "name": "Standard_E16pds_v6",
       "displayName": "Standard_E16pds_v6 (Epdsv6)",
       "vcpus": 16,
@@ -7740,17 +8034,17 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_E16as_v5",
-      "displayName": "Standard_E16as_v5 (Easv5)",
+      "name": "Standard_D16ls_v7",
+      "displayName": "Standard_D16ls_v7 (Dlsv7-series)",
       "vcpus": 16,
-      "memoryGB": 128,
-      "hourlyPrice": 0.95,
-      "monthlyPrice": 693.5,
+      "memoryGB": 64,
+      "hourlyPrice": 0.937,
+      "monthlyPrice": 684.01,
       "region": "eastus",
       "category": "general",
       "architecture": "x86",
       "status": "active",
-      "notes": "Easv5 Series CloudServices"
+      "notes": "Virtual Machines Dlsv7-series Linux"
     },
     {
       "provider": "azure",
@@ -8286,6 +8580,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_D16s_v7",
+      "displayName": "Standard_D16s_v7 (Dsv7-series)",
+      "vcpus": 16,
+      "memoryGB": 64,
+      "hourlyPrice": 1.058,
+      "monthlyPrice": 772.34,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dsv7-series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_E16s_v6",
       "displayName": "Standard_E16s_v6 (Esv6)",
       "vcpus": 16,
@@ -8384,20 +8692,6 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_E16ads_v5",
-      "displayName": "Standard_E16ads_v5 (Eadsv5)",
-      "vcpus": 16,
-      "memoryGB": 128,
-      "hourlyPrice": 1.094,
-      "monthlyPrice": 798.62,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Eadsv5 Series CloudServices"
-    },
-    {
-      "provider": "azure",
       "name": "Standard_FX8mds_v2",
       "displayName": "Standard_FX8mds_v2 (FXmdsv2)",
       "vcpus": 2,
@@ -8454,6 +8748,34 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_D16lds_v7",
+      "displayName": "Standard_D16lds_v7 (Dldsv7-series)",
+      "vcpus": 16,
+      "memoryGB": 64,
+      "hourlyPrice": 1.109,
+      "monthlyPrice": 809.57,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dldsv7-series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D16ns_v6",
+      "displayName": "Standard_D16ns_v6 (Dnsv6)",
+      "vcpus": 16,
+      "memoryGB": 64,
+      "hourlyPrice": 1.114,
+      "monthlyPrice": 813.22,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dnsv6 Series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_FX12mds",
       "displayName": "Standard_FX12mds (FX)",
       "vcpus": 0,
@@ -8468,6 +8790,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_D16nlds_v6",
+      "displayName": "Standard_D16nlds_v6 (Dnldsv6)",
+      "vcpus": 16,
+      "memoryGB": 64,
+      "hourlyPrice": 1.12,
+      "monthlyPrice": 817.6,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dnldsv6 Series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_D32ps_v6",
       "displayName": "Standard_D32ps_v6 (Dpsv6)",
       "vcpus": 32,
@@ -8479,6 +8815,34 @@
       "architecture": "arm",
       "status": "active",
       "notes": "Virtual Machines Dpsv6 Series"
+    },
+    {
+      "provider": "azure",
+      "name": "NC24ldsxlRTX6kv6",
+      "displayName": "NC24ldsxlRTX6kv6 (NCldsxlRTX6kv6)",
+      "vcpus": 0,
+      "memoryGB": 0,
+      "hourlyPrice": 1.13,
+      "monthlyPrice": 824.9,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines NCldsxlRTX6kv6"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_NC16lds_xl_RTXPRO6000BSE_v6",
+      "displayName": "Standard_NC16lds_xl_RTXPRO6000BSE_v6 (NCldsxlRTX6kv6)",
+      "vcpus": 6,
+      "memoryGB": 36,
+      "hourlyPrice": 1.13,
+      "monthlyPrice": 824.9,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "arm",
+      "status": "active",
+      "notes": "Virtual Machines NCldsxlRTX6kv6"
     },
     {
       "provider": "azure",
@@ -8664,20 +9028,6 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_D16nlds_v6",
-      "displayName": "Standard_D16nlds_v6 (Dnldv6)",
-      "vcpus": 16,
-      "memoryGB": 64,
-      "hourlyPrice": 1.156,
-      "monthlyPrice": 843.88,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Dnldv6 Series Linux"
-    },
-    {
-      "provider": "azure",
       "name": "Standard_E16ads_v7",
       "displayName": "Standard_E16ads_v7 (Eadsv7)",
       "vcpus": 16,
@@ -8776,20 +9126,6 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_D16ns_v6",
-      "displayName": "Standard_D16ns_v6 (Dnv6)",
-      "vcpus": 16,
-      "memoryGB": 64,
-      "hourlyPrice": 1.169,
-      "monthlyPrice": 853.37,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Dnv6 Series Linux"
-    },
-    {
-      "provider": "azure",
       "name": "Standard_D5_v2",
       "displayName": "Standard_D5_v2 (Dv2)",
       "vcpus": 5,
@@ -8815,20 +9151,6 @@
       "architecture": "x86",
       "status": "legacy",
       "notes": "Virtual Machines DSv2 Series"
-    },
-    {
-      "provider": "azure",
-      "name": "Standard_E20as_v5",
-      "displayName": "Standard_E20as_v5 (Easv5)",
-      "vcpus": 20,
-      "memoryGB": 160,
-      "hourlyPrice": 1.176,
-      "monthlyPrice": 858.48,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Easv5 Series CloudServices"
     },
     {
       "provider": "azure",
@@ -8941,6 +9263,34 @@
       "architecture": "arm",
       "status": "active",
       "notes": "Virtual Machines Dpsv5 Series"
+    },
+    {
+      "provider": "azure",
+      "name": "NC36ldsxlRTX6kv6",
+      "displayName": "NC36ldsxlRTX6kv6 (NCldsxlRTX6kv6)",
+      "vcpus": 0,
+      "memoryGB": 0,
+      "hourlyPrice": 1.243,
+      "monthlyPrice": 907.39,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines NCldsxlRTX6kv6"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_NC32lds_xl_RTXPRO6000BSE_v6",
+      "displayName": "Standard_NC32lds_xl_RTXPRO6000BSE_v6 (NCldsxlRTX6kv6)",
+      "vcpus": 6,
+      "memoryGB": 36,
+      "hourlyPrice": 1.243,
+      "monthlyPrice": 907.39,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "arm",
+      "status": "active",
+      "notes": "Virtual Machines NCldsxlRTX6kv6"
     },
     {
       "provider": "azure",
@@ -9098,6 +9448,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_D16nds_v6",
+      "displayName": "Standard_D16nds_v6 (Dndsv6)",
+      "vcpus": 16,
+      "memoryGB": 64,
+      "hourlyPrice": 1.273,
+      "monthlyPrice": 929.29,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dndsv6 Series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_D32als_v7",
       "displayName": "Standard_D32als_v7 (Dalsv7)",
       "vcpus": 32,
@@ -9123,6 +9487,20 @@
       "architecture": "x86",
       "status": "active",
       "notes": "Virtual Machines Dalsv6 Series"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D16ds_v7",
+      "displayName": "Standard_D16ds_v7 (Ddsv7-series)",
+      "vcpus": 16,
+      "memoryGB": 64,
+      "hourlyPrice": 1.305,
+      "monthlyPrice": 952.65,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Ddsv7-series Linux"
     },
     {
       "provider": "azure",
@@ -9308,20 +9686,6 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_E20ads_v5",
-      "displayName": "Standard_E20ads_v5 (Eadsv5)",
-      "vcpus": 20,
-      "memoryGB": 160,
-      "hourlyPrice": 1.356,
-      "monthlyPrice": 989.88,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Eadsv5 Series CloudServices"
-    },
-    {
-      "provider": "azure",
       "name": "Standard_L12aos_v4",
       "displayName": "Standard_L12aos_v4 (Laosv4)",
       "vcpus": 12,
@@ -9420,17 +9784,17 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_E16ns_v6",
-      "displayName": "Standard_E16ns_v6 (Env6)",
+      "name": "Standard_E16s_v7",
+      "displayName": "Standard_E16s_v7 (Esv7-series)",
       "vcpus": 16,
       "memoryGB": 128,
-      "hourlyPrice": 1.386,
-      "monthlyPrice": 1011.78,
+      "hourlyPrice": 1.389,
+      "monthlyPrice": 1013.97,
       "region": "eastus",
       "category": "general",
       "architecture": "x86",
       "status": "active",
-      "notes": "Virtual Machines Env6 Series Linux"
+      "notes": "Virtual Machines Esv7-series Linux"
     },
     {
       "provider": "azure",
@@ -9459,6 +9823,20 @@
       "architecture": "x86",
       "status": "active",
       "notes": "Virtual Machines Lsv4 Series"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_E16ns_v6",
+      "displayName": "Standard_E16ns_v6 (Ensv6)",
+      "vcpus": 16,
+      "memoryGB": 128,
+      "hourlyPrice": 1.395,
+      "monthlyPrice": 1018.35,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Ensv6 Series Linux"
     },
     {
       "provider": "azure",
@@ -9616,17 +9994,31 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_D16nds_v6",
-      "displayName": "Standard_D16nds_v6 (Dndv6)",
-      "vcpus": 16,
-      "memoryGB": 64,
-      "hourlyPrice": 1.445,
-      "monthlyPrice": 1054.85,
+      "name": "Standard_NC32ds_xl_RTXPRO6000BSE_v6",
+      "displayName": "Standard_NC32ds_xl_RTXPRO6000BSE_v6 (NCdsxlRTX6kv6)",
+      "vcpus": 6,
+      "memoryGB": 36,
+      "hourlyPrice": 1.442,
+      "monthlyPrice": 1052.66,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "arm",
+      "status": "active",
+      "notes": "Virtual Machines NCdsxlRTX6kv6"
+    },
+    {
+      "provider": "azure",
+      "name": "NC36dsxlRTX6kv6",
+      "displayName": "NC36dsxlRTX6kv6 (NCdsxlRTX6kv6)",
+      "vcpus": 0,
+      "memoryGB": 0,
+      "hourlyPrice": 1.442,
+      "monthlyPrice": 1052.66,
       "region": "eastus",
       "category": "general",
       "architecture": "x86",
       "status": "active",
-      "notes": "Virtual Machines Dndv6 Series Linux"
+      "notes": "Virtual Machines NCdsxlRTX6kv6"
     },
     {
       "provider": "azure",
@@ -10148,6 +10540,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_E16nds_v6",
+      "displayName": "Standard_E16nds_v6 (Endsv6)",
+      "vcpus": 16,
+      "memoryGB": 128,
+      "hourlyPrice": 1.563,
+      "monthlyPrice": 1140.99,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Endsv6 Series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_NC24_Promo",
       "displayName": "Standard_NC24_Promo (NC)",
       "vcpus": 0,
@@ -10316,6 +10722,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_E16as_v5",
+      "displayName": "Standard_E16as_v5 (Easv5)",
+      "vcpus": 16,
+      "memoryGB": 128,
+      "hourlyPrice": 1.64,
+      "monthlyPrice": 1197.2,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Easv5 Series CloudServices"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_FX12-6mds_v2",
       "displayName": "Standard_FX12-6mds_v2 (FXmdsv2)",
       "vcpus": 2,
@@ -10400,6 +10820,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_E16ds_v7",
+      "displayName": "Standard_E16ds_v7 (Edsv7-series)",
+      "vcpus": 16,
+      "memoryGB": 128,
+      "hourlyPrice": 1.663,
+      "monthlyPrice": 1213.99,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Edsv7-series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_D48ps_v6",
       "displayName": "Standard_D48ps_v6 (Dpsv6)",
       "vcpus": 48,
@@ -10414,17 +10848,17 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_E16nds_v6",
-      "displayName": "Standard_E16nds_v6 (Endv6)",
-      "vcpus": 16,
-      "memoryGB": 128,
-      "hourlyPrice": 1.714,
-      "monthlyPrice": 1251.22,
+      "name": "Standard_E20s_v7",
+      "displayName": "Standard_E20s_v7 (Esv7-series)",
+      "vcpus": 20,
+      "memoryGB": 160,
+      "hourlyPrice": 1.737,
+      "monthlyPrice": 1268.01,
       "region": "eastus",
       "category": "general",
       "architecture": "x86",
       "status": "active",
-      "notes": "Virtual Machines Endv6 Series Linux"
+      "notes": "Virtual Machines Esv7-series Linux"
     },
     {
       "provider": "azure",
@@ -10537,6 +10971,20 @@
       "architecture": "x86",
       "status": "legacy",
       "notes": "Virtual Machines FXmsv2 Series"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_E16ads_v5",
+      "displayName": "Standard_E16ads_v5 (Eadsv5)",
+      "vcpus": 16,
+      "memoryGB": 128,
+      "hourlyPrice": 1.784,
+      "monthlyPrice": 1302.32,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Eadsv5 Series CloudServices"
     },
     {
       "provider": "azure",
@@ -10708,6 +11156,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_D32nls_v6",
+      "displayName": "Standard_D32nls_v6 (Dnlsv6)",
+      "vcpus": 32,
+      "memoryGB": 128,
+      "hourlyPrice": 1.814,
+      "monthlyPrice": 1324.22,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dnlsv6 Series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_D32ads_v6",
       "displayName": "Standard_D32ads_v6 (Dadsv6)",
       "vcpus": 32,
@@ -10862,20 +11324,6 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_D32nls_v6",
-      "displayName": "Standard_D32nls_v6 (Dnlv6)",
-      "vcpus": 32,
-      "memoryGB": 128,
-      "hourlyPrice": 1.871,
-      "monthlyPrice": 1365.83,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Dnlv6 Series Linux"
-    },
-    {
-      "provider": "azure",
       "name": "Standard_E32pds_v6",
       "displayName": "Standard_E32pds_v6 (Epdsv6)",
       "vcpus": 32,
@@ -10901,6 +11349,20 @@
       "architecture": "arm",
       "status": "active",
       "notes": "Virtual Machines Dpldsv6 Series"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D32ls_v7",
+      "displayName": "Standard_D32ls_v7 (Dlsv7-series)",
+      "vcpus": 32,
+      "memoryGB": 128,
+      "hourlyPrice": 1.874,
+      "monthlyPrice": 1368.02,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dlsv7-series Linux"
     },
     {
       "provider": "azure",
@@ -11408,6 +11870,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_E20as_v5",
+      "displayName": "Standard_E20as_v5 (Easv5)",
+      "vcpus": 20,
+      "memoryGB": 160,
+      "hourlyPrice": 2.05,
+      "monthlyPrice": 1496.5,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Easv5 Series CloudServices"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_DC48as_v5",
       "displayName": "Standard_DC48as_v5 (DCasv5-series)",
       "vcpus": 5,
@@ -11447,6 +11923,20 @@
       "architecture": "x86",
       "status": "active",
       "notes": "Virtual Machines Dasv5 Series"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_E20ds_v7",
+      "displayName": "Standard_E20ds_v7 (Edsv7-series)",
+      "vcpus": 20,
+      "memoryGB": 160,
+      "hourlyPrice": 2.079,
+      "monthlyPrice": 1517.67,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Edsv7-series Linux"
     },
     {
       "provider": "azure",
@@ -11534,17 +12024,17 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_E32ads_v5",
-      "displayName": "Standard_E32ads_v5 (Eadsv5)",
+      "name": "Standard_D32s_v7",
+      "displayName": "Standard_D32s_v7 (Dsv7-series)",
       "vcpus": 32,
-      "memoryGB": 256,
-      "hourlyPrice": 2.142,
-      "monthlyPrice": 1563.66,
+      "memoryGB": 128,
+      "hourlyPrice": 2.117,
+      "monthlyPrice": 1545.41,
       "region": "eastus",
       "category": "general",
       "architecture": "x86",
       "status": "active",
-      "notes": "Eadsv5 Series CloudServices"
+      "notes": "Virtual Machines Dsv7-series Linux"
     },
     {
       "provider": "azure",
@@ -11730,6 +12220,48 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_D32lds_v7",
+      "displayName": "Standard_D32lds_v7 (Dldsv7-series)",
+      "vcpus": 32,
+      "memoryGB": 128,
+      "hourlyPrice": 2.218,
+      "monthlyPrice": 1619.14,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dldsv7-series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D32ns_v6",
+      "displayName": "Standard_D32ns_v6 (Dnsv6)",
+      "vcpus": 32,
+      "memoryGB": 128,
+      "hourlyPrice": 2.228,
+      "monthlyPrice": 1626.44,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dnsv6 Series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_E20ads_v5",
+      "displayName": "Standard_E20ads_v5 (Eadsv5)",
+      "vcpus": 20,
+      "memoryGB": 160,
+      "hourlyPrice": 2.23,
+      "monthlyPrice": 1627.9,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Eadsv5 Series CloudServices"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_FX24mds",
       "displayName": "Standard_FX24mds (FX)",
       "vcpus": 0,
@@ -11741,6 +12273,20 @@
       "architecture": "x86",
       "status": "active",
       "notes": "Virtual Machines FX Series"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D32nlds_v6",
+      "displayName": "Standard_D32nlds_v6 (Dnldsv6)",
+      "vcpus": 32,
+      "memoryGB": 128,
+      "hourlyPrice": 2.241,
+      "monthlyPrice": 1635.93,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dnldsv6 Series Linux"
     },
     {
       "provider": "azure",
@@ -12122,20 +12668,6 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_D32nlds_v6",
-      "displayName": "Standard_D32nlds_v6 (Dnldv6)",
-      "vcpus": 32,
-      "memoryGB": 128,
-      "hourlyPrice": 2.312,
-      "monthlyPrice": 1687.76,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Dnldv6 Series Linux"
-    },
-    {
-      "provider": "azure",
       "name": "Standard_E32-8ads_v6",
       "displayName": "Standard_E32-8ads_v6 (Eadsv6)",
       "vcpus": 32,
@@ -12234,20 +12766,6 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_D32ns_v6",
-      "displayName": "Standard_D32ns_v6 (Dnv6)",
-      "vcpus": 32,
-      "memoryGB": 128,
-      "hourlyPrice": 2.339,
-      "monthlyPrice": 1707.47,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Dnv6 Series Linux"
-    },
-    {
-      "provider": "azure",
       "name": "Standard_E32bs_v5",
       "displayName": "Standard_E32bs_v5 (Ebsv5)",
       "vcpus": 32,
@@ -12329,6 +12847,34 @@
       "architecture": "x86",
       "status": "active",
       "notes": "Virtual Machines H Series"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_NC64lds_xl_RTXPRO6000BSE_v6",
+      "displayName": "Standard_NC64lds_xl_RTXPRO6000BSE_v6 (NCldsxlRTX6kv6)",
+      "vcpus": 6,
+      "memoryGB": 36,
+      "hourlyPrice": 2.44,
+      "monthlyPrice": 1781.2,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "arm",
+      "status": "active",
+      "notes": "Virtual Machines NCldsxlRTX6kv6"
+    },
+    {
+      "provider": "azure",
+      "name": "NC72ldsxlRTX6kv6",
+      "displayName": "NC72ldsxlRTX6kv6 (NCldsxlRTX6kv6)",
+      "vcpus": 0,
+      "memoryGB": 0,
+      "hourlyPrice": 2.44,
+      "monthlyPrice": 1781.2,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines NCldsxlRTX6kv6"
     },
     {
       "provider": "azure",
@@ -12430,6 +12976,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_D32nds_v6",
+      "displayName": "Standard_D32nds_v6 (Dndsv6)",
+      "vcpus": 32,
+      "memoryGB": 128,
+      "hourlyPrice": 2.546,
+      "monthlyPrice": 1858.58,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dndsv6 Series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_D64als_v6",
       "displayName": "Standard_D64als_v6 (Dalsv6)",
       "vcpus": 64,
@@ -12455,6 +13015,20 @@
       "architecture": "x86",
       "status": "active",
       "notes": "Virtual Machines Dalsv7 Series"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D32ds_v7",
+      "displayName": "Standard_D32ds_v7 (Ddsv7-series)",
+      "vcpus": 32,
+      "memoryGB": 128,
+      "hourlyPrice": 2.611,
+      "monthlyPrice": 1906.03,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Ddsv7-series Linux"
     },
     {
       "provider": "azure",
@@ -12752,6 +13326,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_D48nls_v6",
+      "displayName": "Standard_D48nls_v6 (Dnlsv6)",
+      "vcpus": 48,
+      "memoryGB": 192,
+      "hourlyPrice": 2.722,
+      "monthlyPrice": 1987.06,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dnlsv6 Series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_DC48ads_v6",
       "displayName": "Standard_DC48ads_v6 (DCadsv6)",
       "vcpus": 6,
@@ -12864,31 +13452,17 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_E48as_v5",
-      "displayName": "Standard_E48as_v5 (Easv5)",
-      "vcpus": 48,
-      "memoryGB": 384,
-      "hourlyPrice": 2.758,
-      "monthlyPrice": 2013.34,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Easv5 Series CloudServices"
-    },
-    {
-      "provider": "azure",
-      "name": "Standard_E32ns_v6",
-      "displayName": "Standard_E32ns_v6 (Env6)",
+      "name": "Standard_E32s_v7",
+      "displayName": "Standard_E32s_v7 (Esv7-series)",
       "vcpus": 32,
       "memoryGB": 256,
-      "hourlyPrice": 2.773,
-      "monthlyPrice": 2024.29,
+      "hourlyPrice": 2.779,
+      "monthlyPrice": 2028.67,
       "region": "eastus",
       "category": "general",
       "architecture": "x86",
       "status": "active",
-      "notes": "Virtual Machines Env6 Series Linux"
+      "notes": "Virtual Machines Esv7-series Linux"
     },
     {
       "provider": "azure",
@@ -12920,6 +13494,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_E32ns_v6",
+      "displayName": "Standard_E32ns_v6 (Ensv6)",
+      "vcpus": 32,
+      "memoryGB": 256,
+      "hourlyPrice": 2.789,
+      "monthlyPrice": 2035.97,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Ensv6 Series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_E32bs_v6",
       "displayName": "Standard_E32bs_v6 (Ebsv6-Series)",
       "vcpus": 32,
@@ -12948,20 +13536,6 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_D48nls_v6",
-      "displayName": "Standard_D48nls_v6 (Dnlv6)",
-      "vcpus": 48,
-      "memoryGB": 192,
-      "hourlyPrice": 2.806,
-      "monthlyPrice": 2048.38,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Dnlv6 Series Linux"
-    },
-    {
-      "provider": "azure",
       "name": "Standard_E48pds_v6",
       "displayName": "Standard_E48pds_v6 (Epdsv6)",
       "vcpus": 48,
@@ -12973,6 +13547,48 @@
       "architecture": "arm",
       "status": "active",
       "notes": "Virtual Machines Epdsv6 Series"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D48ls_v7",
+      "displayName": "Standard_D48ls_v7 (Dlsv7-series)",
+      "vcpus": 48,
+      "memoryGB": 192,
+      "hourlyPrice": 2.811,
+      "monthlyPrice": 2052.03,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dlsv7-series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_NC64ds_xl_RTXPRO6000BSE_v6",
+      "displayName": "Standard_NC64ds_xl_RTXPRO6000BSE_v6 (NCdsxlRTX6kv6)",
+      "vcpus": 6,
+      "memoryGB": 36,
+      "hourlyPrice": 2.83,
+      "monthlyPrice": 2065.9,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "arm",
+      "status": "active",
+      "notes": "Virtual Machines NCdsxlRTX6kv6"
+    },
+    {
+      "provider": "azure",
+      "name": "NC72dsxlRTX6kv6",
+      "displayName": "NC72dsxlRTX6kv6 (NCdsxlRTX6kv6)",
+      "vcpus": 0,
+      "memoryGB": 0,
+      "hourlyPrice": 2.83,
+      "monthlyPrice": 2065.9,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines NCdsxlRTX6kv6"
     },
     {
       "provider": "azure",
@@ -13113,20 +13729,6 @@
       "architecture": "x86",
       "status": "active",
       "notes": "Virtual Machines MS Series"
-    },
-    {
-      "provider": "azure",
-      "name": "Standard_D32nds_v6",
-      "displayName": "Standard_D32nds_v6 (Dndv6)",
-      "vcpus": 32,
-      "memoryGB": 128,
-      "hourlyPrice": 2.89,
-      "monthlyPrice": 2109.7,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Dndv6 Series Linux"
     },
     {
       "provider": "azure",
@@ -13746,6 +14348,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_E32nds_v6",
+      "displayName": "Standard_E32nds_v6 (Endsv6)",
+      "vcpus": 32,
+      "memoryGB": 256,
+      "hourlyPrice": 3.126,
+      "monthlyPrice": 2281.98,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Endsv6 Series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_EC48ads_cc_v5",
       "displayName": "Standard_EC48ads_cc_v5 (ECadsccv5)",
       "vcpus": 5,
@@ -13844,17 +14460,17 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_E48ads_v5",
-      "displayName": "Standard_E48ads_v5 (Eadsv5)",
+      "name": "Standard_D48s_v7",
+      "displayName": "Standard_D48s_v7 (Dsv7-series)",
       "vcpus": 48,
-      "memoryGB": 384,
-      "hourlyPrice": 3.19,
-      "monthlyPrice": 2328.7,
+      "memoryGB": 192,
+      "hourlyPrice": 3.175,
+      "monthlyPrice": 2317.75,
       "region": "eastus",
       "category": "general",
       "architecture": "x86",
       "status": "active",
-      "notes": "Eadsv5 Series CloudServices"
+      "notes": "Virtual Machines Dsv7-series Linux"
     },
     {
       "provider": "azure",
@@ -14082,6 +14698,34 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_D48lds_v7",
+      "displayName": "Standard_D48lds_v7 (Dldsv7-series)",
+      "vcpus": 48,
+      "memoryGB": 192,
+      "hourlyPrice": 3.326,
+      "monthlyPrice": 2427.98,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dldsv7-series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_E32ds_v7",
+      "displayName": "Standard_E32ds_v7 (Edsv7-series)",
+      "vcpus": 32,
+      "memoryGB": 256,
+      "hourlyPrice": 3.326,
+      "monthlyPrice": 2427.98,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Edsv7-series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_M32s",
       "displayName": "Standard_M32s (MS)",
       "vcpus": 32,
@@ -14096,6 +14740,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_D48ns_v6",
+      "displayName": "Standard_D48ns_v6 (Dnsv6)",
+      "vcpus": 48,
+      "memoryGB": 192,
+      "hourlyPrice": 3.342,
+      "monthlyPrice": 2439.66,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dnsv6 Series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_FX36mds",
       "displayName": "Standard_FX36mds (FX)",
       "vcpus": 0,
@@ -14107,6 +14765,20 @@
       "architecture": "x86",
       "status": "active",
       "notes": "Virtual Machines FX Series"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D48nlds_v6",
+      "displayName": "Standard_D48nlds_v6 (Dnldsv6)",
+      "vcpus": 48,
+      "memoryGB": 192,
+      "hourlyPrice": 3.361,
+      "monthlyPrice": 2453.53,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dnldsv6 Series Linux"
     },
     {
       "provider": "azure",
@@ -14135,20 +14807,6 @@
       "architecture": "arm",
       "status": "active",
       "notes": "Virtual Machines Dpsv6 Series"
-    },
-    {
-      "provider": "azure",
-      "name": "Standard_E32nds_v6",
-      "displayName": "Standard_E32nds_v6 (Endv6)",
-      "vcpus": 32,
-      "memoryGB": 256,
-      "hourlyPrice": 3.427,
-      "monthlyPrice": 2501.71,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Endv6 Series Linux"
     },
     {
       "provider": "azure",
@@ -14219,20 +14877,6 @@
       "architecture": "x86",
       "status": "active",
       "notes": "Virtual Machines Edsv5 Series"
-    },
-    {
-      "provider": "azure",
-      "name": "Standard_D48nlds_v6",
-      "displayName": "Standard_D48nlds_v6 (Dnldv6)",
-      "vcpus": 48,
-      "memoryGB": 192,
-      "hourlyPrice": 3.468,
-      "monthlyPrice": 2531.64,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Dnldv6 Series Linux"
     },
     {
       "provider": "azure",
@@ -14320,20 +14964,6 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_D48ns_v6",
-      "displayName": "Standard_D48ns_v6 (Dnv6)",
-      "vcpus": 48,
-      "memoryGB": 192,
-      "hourlyPrice": 3.508,
-      "monthlyPrice": 2560.84,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Dnv6 Series Linux"
-    },
-    {
-      "provider": "azure",
       "name": "Standard_D64lds_v6",
       "displayName": "Standard_D64lds_v6 (Dldsv6)",
       "vcpus": 64,
@@ -14387,6 +15017,20 @@
       "architecture": "x86",
       "status": "legacy",
       "notes": "Virtual Machines FXmsv2 Series"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_E32ads_v5",
+      "displayName": "Standard_E32ads_v5 (Eadsv5)",
+      "vcpus": 32,
+      "memoryGB": 256,
+      "hourlyPrice": 3.568,
+      "monthlyPrice": 2604.64,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Eadsv5 Series CloudServices"
     },
     {
       "provider": "azure",
@@ -14768,6 +15412,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_D64nls_v6",
+      "displayName": "Standard_D64nls_v6 (Dnlsv6)",
+      "vcpus": 64,
+      "memoryGB": 256,
+      "hourlyPrice": 3.629,
+      "monthlyPrice": 2649.17,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dnlsv6 Series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_E64is_v3",
       "displayName": "Standard_E64is_v3 (ESv3)",
       "vcpus": 64,
@@ -14852,20 +15510,6 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_D64nls_v6",
-      "displayName": "Standard_D64nls_v6 (Dnlv6)",
-      "vcpus": 64,
-      "memoryGB": 256,
-      "hourlyPrice": 3.742,
-      "monthlyPrice": 2731.66,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Dnlv6 Series Linux"
-    },
-    {
-      "provider": "azure",
       "name": "Standard_L48s_v2",
       "displayName": "Standard_L48s_v2 (LSv2)",
       "vcpus": 48,
@@ -14919,6 +15563,20 @@
       "architecture": "x86",
       "status": "active",
       "notes": "Lasv3 Series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D64ls_v7",
+      "displayName": "Standard_D64ls_v7 (Dlsv7-series)",
+      "vcpus": 64,
+      "memoryGB": 256,
+      "hourlyPrice": 3.748,
+      "monthlyPrice": 2736.04,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dlsv7-series Linux"
     },
     {
       "provider": "azure",
@@ -15020,6 +15678,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_D48nds_v6",
+      "displayName": "Standard_D48nds_v6 (Dndsv6)",
+      "vcpus": 48,
+      "memoryGB": 192,
+      "hourlyPrice": 3.819,
+      "monthlyPrice": 2787.87,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dndsv6 Series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_D96als_v6",
       "displayName": "Standard_D96als_v6 (Dalsv6)",
       "vcpus": 96,
@@ -15073,6 +15745,20 @@
       "architecture": "x86",
       "status": "active",
       "notes": "Virtual Machines Falsv7 Series"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D48ds_v7",
+      "displayName": "Standard_D48ds_v7 (Ddsv7-series)",
+      "vcpus": 48,
+      "memoryGB": 192,
+      "hourlyPrice": 3.916,
+      "monthlyPrice": 2858.68,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Ddsv7-series Linux"
     },
     {
       "provider": "azure",
@@ -15412,17 +16098,17 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_E48ns_v6",
-      "displayName": "Standard_E48ns_v6 (Env6)",
+      "name": "Standard_E48s_v7",
+      "displayName": "Standard_E48s_v7 (Esv7-series)",
       "vcpus": 48,
       "memoryGB": 384,
-      "hourlyPrice": 4.159,
-      "monthlyPrice": 3036.07,
+      "hourlyPrice": 4.168,
+      "monthlyPrice": 3042.64,
       "region": "eastus",
       "category": "general",
       "architecture": "x86",
       "status": "active",
-      "notes": "Virtual Machines Env6 Series Linux"
+      "notes": "Virtual Machines Esv7-series Linux"
     },
     {
       "provider": "azure",
@@ -15465,6 +16151,20 @@
       "architecture": "x86",
       "status": "active",
       "notes": "Virtual Machines Mbsv3 Series"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_E48ns_v6",
+      "displayName": "Standard_E48ns_v6 (Ensv6)",
+      "vcpus": 48,
+      "memoryGB": 384,
+      "hourlyPrice": 4.184,
+      "monthlyPrice": 3054.32,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Ensv6 Series Linux"
     },
     {
       "provider": "azure",
@@ -15594,6 +16294,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_D64s_v7",
+      "displayName": "Standard_D64s_v7 (Dsv7-series)",
+      "vcpus": 64,
+      "memoryGB": 256,
+      "hourlyPrice": 4.234,
+      "monthlyPrice": 3090.82,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dsv7-series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_EC64es_v6",
       "displayName": "Standard_EC64es_v6 (ECesv6)",
       "vcpus": 6,
@@ -15675,20 +16389,6 @@
       "architecture": "arm",
       "status": "active",
       "notes": "ESv3 Series Dedicated Host"
-    },
-    {
-      "provider": "azure",
-      "name": "Standard_D48nds_v6",
-      "displayName": "Standard_D48nds_v6 (Dndv6)",
-      "vcpus": 48,
-      "memoryGB": 192,
-      "hourlyPrice": 4.335,
-      "monthlyPrice": 3164.55,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Dndv6 Series Linux"
     },
     {
       "provider": "azure",
@@ -15888,6 +16588,34 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_D64lds_v7",
+      "displayName": "Standard_D64lds_v7 (Dldsv7-series)",
+      "vcpus": 64,
+      "memoryGB": 256,
+      "hourlyPrice": 4.435,
+      "monthlyPrice": 3237.55,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dldsv7-series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D64ns_v6",
+      "displayName": "Standard_D64ns_v6 (Dnsv6)",
+      "vcpus": 64,
+      "memoryGB": 256,
+      "hourlyPrice": 4.455,
+      "monthlyPrice": 3252.15,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dnsv6 Series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_FX48mds",
       "displayName": "Standard_FX48mds (FX)",
       "vcpus": 0,
@@ -15913,6 +16641,20 @@
       "architecture": "arm",
       "status": "active",
       "notes": "FSv2 Series Dedicated Host"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D64nlds_v6",
+      "displayName": "Standard_D64nlds_v6 (Dnldsv6)",
+      "vcpus": 64,
+      "memoryGB": 256,
+      "hourlyPrice": 4.482,
+      "monthlyPrice": 3271.86,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dnldsv6 Series Linux"
     },
     {
       "provider": "azure",
@@ -16182,20 +16924,6 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_D64nlds_v6",
-      "displayName": "Standard_D64nlds_v6 (Dnldv6)",
-      "vcpus": 64,
-      "memoryGB": 256,
-      "hourlyPrice": 4.625,
-      "monthlyPrice": 3376.25,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Dnldv6 Series Linux"
-    },
-    {
-      "provider": "azure",
       "name": "Standard_E64ads_v6",
       "displayName": "Standard_E64ads_v6 (Eadsv6)",
       "vcpus": 64,
@@ -16294,20 +17022,6 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_D64ns_v6",
-      "displayName": "Standard_D64ns_v6 (Dnv6)",
-      "vcpus": 64,
-      "memoryGB": 256,
-      "hourlyPrice": 4.677,
-      "monthlyPrice": 3414.21,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Dnv6 Series Linux"
-    },
-    {
-      "provider": "azure",
       "name": "Standard_D48ads_v5",
       "displayName": "Standard_D48ads_v5 (Dadsv5)",
       "vcpus": 48,
@@ -16319,6 +17033,20 @@
       "architecture": "x86",
       "status": "active",
       "notes": "Dadsv5 Series Cloud Services"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_E48nds_v6",
+      "displayName": "Standard_E48nds_v6 (Endsv6)",
+      "vcpus": 48,
+      "memoryGB": 384,
+      "hourlyPrice": 4.689,
+      "monthlyPrice": 3422.97,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Endsv6 Series Linux"
     },
     {
       "provider": "azure",
@@ -16434,6 +17162,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_E48as_v5",
+      "displayName": "Standard_E48as_v5 (Easv5)",
+      "vcpus": 48,
+      "memoryGB": 384,
+      "hourlyPrice": 4.92,
+      "monthlyPrice": 3591.6,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Easv5 Series CloudServices"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_DC96ads_cc_v5",
       "displayName": "Standard_DC96ads_cc_v5 (DCadsccv5)",
       "vcpus": 5,
@@ -16459,6 +17201,20 @@
       "architecture": "x86",
       "status": "active",
       "notes": "DCadsv5-series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_E48ds_v7",
+      "displayName": "Standard_E48ds_v7 (Edsv7-series)",
+      "vcpus": 48,
+      "memoryGB": 384,
+      "hourlyPrice": 4.99,
+      "monthlyPrice": 3642.7,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Edsv7-series Linux"
     },
     {
       "provider": "azure",
@@ -16574,17 +17330,17 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_E48nds_v6",
-      "displayName": "Standard_E48nds_v6 (Endv6)",
-      "vcpus": 48,
-      "memoryGB": 384,
-      "hourlyPrice": 5.141,
-      "monthlyPrice": 3752.93,
+      "name": "Standard_D64nds_v6",
+      "displayName": "Standard_D64nds_v6 (Dndsv6)",
+      "vcpus": 64,
+      "memoryGB": 256,
+      "hourlyPrice": 5.092,
+      "monthlyPrice": 3717.16,
       "region": "eastus",
       "category": "general",
       "architecture": "x86",
       "status": "active",
-      "notes": "Virtual Machines Endv6 Series Linux"
+      "notes": "Virtual Machines Dndsv6 Series Linux"
     },
     {
       "provider": "azure",
@@ -16599,6 +17355,20 @@
       "architecture": "x86",
       "status": "active",
       "notes": "Virtual Machines Dalsv7 Series"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D64ds_v7",
+      "displayName": "Standard_D64ds_v7 (Ddsv7-series)",
+      "vcpus": 64,
+      "memoryGB": 256,
+      "hourlyPrice": 5.221,
+      "monthlyPrice": 3811.33,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Ddsv7-series Linux"
     },
     {
       "provider": "azure",
@@ -16826,6 +17596,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_E48ads_v5",
+      "displayName": "Standard_E48ads_v5 (Eadsv5)",
+      "vcpus": 48,
+      "memoryGB": 384,
+      "hourlyPrice": 5.352,
+      "monthlyPrice": 3906.96,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Eadsv5 Series CloudServices"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_M64ls",
       "displayName": "Standard_M64ls (MS)",
       "vcpus": 64,
@@ -16938,6 +17722,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_D96nls_v6",
+      "displayName": "Standard_D96nls_v6 (Dnlsv6)",
+      "vcpus": 96,
+      "memoryGB": 384,
+      "hourlyPrice": 5.443,
+      "monthlyPrice": 3973.39,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dnlsv6 Series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_F80as_v7",
       "displayName": "Standard_F80as_v7 (Fasv7)",
       "vcpus": 80,
@@ -17008,6 +17806,62 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_NC144ldsxlRTX6k_v6",
+      "displayName": "Standard_NC144ldsxlRTX6k_v6 (NCldsxlRTX6kv6)",
+      "vcpus": 6,
+      "memoryGB": 36,
+      "hourlyPrice": 5.5,
+      "monthlyPrice": 4015,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines NCldsxlRTX6kv6"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_NC128lds_xl_RTXPRO6000BSE_v6",
+      "displayName": "Standard_NC128lds_xl_RTXPRO6000BSE_v6 (NCldsxlRTX6kv6)",
+      "vcpus": 6,
+      "memoryGB": 36,
+      "hourlyPrice": 5.5,
+      "monthlyPrice": 4015,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "arm",
+      "status": "active",
+      "notes": "Virtual Machines NCldsxlRTX6kv6"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_NC144dsxlRTX6k_v6",
+      "displayName": "Standard_NC144dsxlRTX6k_v6 (NCdsxlRTX6kv6)",
+      "vcpus": 6,
+      "memoryGB": 36,
+      "hourlyPrice": 5.5,
+      "monthlyPrice": 4015,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines NCdsxlRTX6kv6"
+    },
+    {
+      "provider": "azure",
+      "name": "NC132ldsxlRTX6kv6",
+      "displayName": "NC132ldsxlRTX6kv6 (NCldsxlRTX6kv6)",
+      "vcpus": 0,
+      "memoryGB": 0,
+      "hourlyPrice": 5.5,
+      "monthlyPrice": 4015,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines NCldsxlRTX6kv6"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_L64as_v4",
       "displayName": "Standard_L64as_v4 (Lasv4)",
       "vcpus": 64,
@@ -17022,17 +17876,17 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_E64ns_v6",
-      "displayName": "Standard_E64ns_v6 (Env6)",
+      "name": "Standard_E64s_v7",
+      "displayName": "Standard_E64s_v7 (Esv7-series)",
       "vcpus": 64,
       "memoryGB": 512,
-      "hourlyPrice": 5.546,
-      "monthlyPrice": 4048.58,
+      "hourlyPrice": 5.557,
+      "monthlyPrice": 4056.61,
       "region": "eastus",
       "category": "general",
       "architecture": "x86",
       "status": "active",
-      "notes": "Virtual Machines Env6 Series Linux"
+      "notes": "Virtual Machines Esv7-series Linux"
     },
     {
       "provider": "azure",
@@ -17064,6 +17918,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_E64ns_v6",
+      "displayName": "Standard_E64ns_v6 (Ensv6)",
+      "vcpus": 64,
+      "memoryGB": 512,
+      "hourlyPrice": 5.579,
+      "monthlyPrice": 4072.67,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Ensv6 Series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_M64bs_v3",
       "displayName": "Standard_M64bs_v3 (Mbsv3)",
       "vcpus": 64,
@@ -17092,20 +17960,6 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_D96nls_v6",
-      "displayName": "Standard_D96nls_v6 (Dnlv6)",
-      "vcpus": 96,
-      "memoryGB": 384,
-      "hourlyPrice": 5.613,
-      "monthlyPrice": 4097.49,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Dnlv6 Series Linux"
-    },
-    {
-      "provider": "azure",
       "name": "Standard_E96pds_v6",
       "displayName": "Standard_E96pds_v6 (Epdsv6)",
       "vcpus": 96,
@@ -17117,6 +17971,20 @@
       "architecture": "arm",
       "status": "active",
       "notes": "Virtual Machines Epdsv6 Series"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D96ls_v7",
+      "displayName": "Standard_D96ls_v7 (Dlsv7-series)",
+      "vcpus": 96,
+      "memoryGB": 384,
+      "hourlyPrice": 5.623,
+      "monthlyPrice": 4104.79,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dlsv7-series Linux"
     },
     {
       "provider": "azure",
@@ -17327,20 +18195,6 @@
       "architecture": "x86",
       "status": "active",
       "notes": "Virtual Machines Edsv4 Series"
-    },
-    {
-      "provider": "azure",
-      "name": "Standard_D64nds_v6",
-      "displayName": "Standard_D64nds_v6 (Dndv6)",
-      "vcpus": 64,
-      "memoryGB": 256,
-      "hourlyPrice": 5.78,
-      "monthlyPrice": 4219.4,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Dndv6 Series Linux"
     },
     {
       "provider": "azure",
@@ -17820,6 +18674,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_E64nds_v6",
+      "displayName": "Standard_E64nds_v6 (Endsv6)",
+      "vcpus": 64,
+      "memoryGB": 512,
+      "hourlyPrice": 6.252,
+      "monthlyPrice": 4563.96,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Endsv6 Series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_E64bds_v6",
       "displayName": "Standard_E64bds_v6 (Ebdsv6-Series)",
       "vcpus": 64,
@@ -17932,6 +18800,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_D96s_v7",
+      "displayName": "Standard_D96s_v7 (Dsv7-series)",
+      "vcpus": 96,
+      "memoryGB": 384,
+      "hourlyPrice": 6.35,
+      "monthlyPrice": 4635.5,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dsv7-series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_E96-24s_v6",
       "displayName": "Standard_E96-24s_v6 (Esv6)",
       "vcpus": 96,
@@ -17943,6 +18825,34 @@
       "architecture": "x86",
       "status": "active",
       "notes": "Virtual Machines Esv6 Series"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_NC128ds_xl_RTXPRO6000BSE_v6",
+      "displayName": "Standard_NC128ds_xl_RTXPRO6000BSE_v6 (NCdsxlRTX6kv6)",
+      "vcpus": 6,
+      "memoryGB": 36,
+      "hourlyPrice": 6.38,
+      "monthlyPrice": 4657.4,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "arm",
+      "status": "active",
+      "notes": "Virtual Machines NCdsxlRTX6kv6"
+    },
+    {
+      "provider": "azure",
+      "name": "NC132dsxlRTX6kv6",
+      "displayName": "NC132dsxlRTX6kv6 (NCdsxlRTX6kv6)",
+      "vcpus": 0,
+      "memoryGB": 0,
+      "hourlyPrice": 6.38,
+      "monthlyPrice": 4657.4,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines NCdsxlRTX6kv6"
     },
     {
       "provider": "azure",
@@ -18156,6 +19066,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_D96lds_v7",
+      "displayName": "Standard_D96lds_v7 (Dldsv7-series)",
+      "vcpus": 96,
+      "memoryGB": 384,
+      "hourlyPrice": 6.653,
+      "monthlyPrice": 4856.69,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dldsv7-series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Easv4_Type1",
       "displayName": "Easv4_Type1 (Easv4)",
       "vcpus": 0,
@@ -18167,6 +19091,20 @@
       "architecture": "arm",
       "status": "active",
       "notes": "Easv4 Series Dedicated Host"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_E64ds_v7",
+      "displayName": "Standard_E64ds_v7 (Edsv7-series)",
+      "vcpus": 64,
+      "memoryGB": 512,
+      "hourlyPrice": 6.653,
+      "monthlyPrice": 4856.69,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Edsv7-series Linux"
     },
     {
       "provider": "azure",
@@ -18226,17 +19164,31 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_E64nds_v6",
-      "displayName": "Standard_E64nds_v6 (Endv6)",
-      "vcpus": 64,
-      "memoryGB": 512,
-      "hourlyPrice": 6.855,
-      "monthlyPrice": 5004.15,
+      "name": "Standard_D96ns_v6",
+      "displayName": "Standard_D96ns_v6 (Dnsv6)",
+      "vcpus": 96,
+      "memoryGB": 384,
+      "hourlyPrice": 6.683,
+      "monthlyPrice": 4878.59,
       "region": "eastus",
       "category": "general",
       "architecture": "x86",
       "status": "active",
-      "notes": "Virtual Machines Endv6 Series Linux"
+      "notes": "Virtual Machines Dnsv6 Series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D96nlds_v6",
+      "displayName": "Standard_D96nlds_v6 (Dnldsv6)",
+      "vcpus": 96,
+      "memoryGB": 384,
+      "hourlyPrice": 6.722,
+      "monthlyPrice": 4907.06,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dnldsv6 Series Linux"
     },
     {
       "provider": "azure",
@@ -18405,20 +19357,6 @@
       "architecture": "x86",
       "status": "active",
       "notes": "ECadsv5-series Linux"
-    },
-    {
-      "provider": "azure",
-      "name": "Standard_D96nlds_v6",
-      "displayName": "Standard_D96nlds_v6 (Dnldv6)",
-      "vcpus": 96,
-      "memoryGB": 384,
-      "hourlyPrice": 6.937,
-      "monthlyPrice": 5064.01,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Dnldv6 Series Linux"
     },
     {
       "provider": "azure",
@@ -18615,20 +19553,6 @@
       "architecture": "x86",
       "status": "active",
       "notes": "Virtual Machines NCadsH100v5 Series"
-    },
-    {
-      "provider": "azure",
-      "name": "Standard_D96ns_v6",
-      "displayName": "Standard_D96ns_v6 (Dnv6)",
-      "vcpus": 96,
-      "memoryGB": 384,
-      "hourlyPrice": 7.016,
-      "monthlyPrice": 5121.68,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Dnv6 Series Linux"
     },
     {
       "provider": "azure",
@@ -18884,6 +19808,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_D128nls_v6",
+      "displayName": "Standard_D128nls_v6 (Dnlsv6)",
+      "vcpus": 128,
+      "memoryGB": 512,
+      "hourlyPrice": 7.258,
+      "monthlyPrice": 5298.34,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dnlsv6 Series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_D160as_v7",
       "displayName": "Standard_D160as_v7 (Dasv7)",
       "vcpus": 160,
@@ -18926,17 +19864,17 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_D128nls_v6",
-      "displayName": "Standard_D128nls_v6 (Dnlv6)",
+      "name": "Standard_D128ls_v7",
+      "displayName": "Standard_D128ls_v7 (Dlsv7-series)",
       "vcpus": 128,
       "memoryGB": 512,
-      "hourlyPrice": 7.484,
-      "monthlyPrice": 5463.32,
+      "hourlyPrice": 7.497,
+      "monthlyPrice": 5472.81,
       "region": "eastus",
       "category": "general",
       "architecture": "x86",
       "status": "active",
-      "notes": "Virtual Machines Dnlv6 Series Linux"
+      "notes": "Virtual Machines Dlsv7-series Linux"
     },
     {
       "provider": "azure",
@@ -19024,6 +19962,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_D96nds_v6",
+      "displayName": "Standard_D96nds_v6 (Dndsv6)",
+      "vcpus": 96,
+      "memoryGB": 384,
+      "hourlyPrice": 7.638,
+      "monthlyPrice": 5575.74,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dndsv6 Series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Lsv3_Type1",
       "displayName": "Lsv3_Type1 (Lsv3)",
       "vcpus": 0,
@@ -19035,6 +19987,20 @@
       "architecture": "arm",
       "status": "active",
       "notes": "Lsv3 Series Dedicated Host"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D96ds_v7",
+      "displayName": "Standard_D96ds_v7 (Ddsv7-series)",
+      "vcpus": 96,
+      "memoryGB": 384,
+      "hourlyPrice": 7.832,
+      "monthlyPrice": 5717.36,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Ddsv7-series Linux"
     },
     {
       "provider": "azure",
@@ -19178,17 +20144,17 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_E96ns_v6",
-      "displayName": "Standard_E96ns_v6 (Env6)",
+      "name": "Standard_E96s_v7",
+      "displayName": "Standard_E96s_v7 (Esv7-series)",
       "vcpus": 96,
       "memoryGB": 768,
-      "hourlyPrice": 8.319,
-      "monthlyPrice": 6072.87,
+      "hourlyPrice": 8.336,
+      "monthlyPrice": 6085.28,
       "region": "eastus",
       "category": "general",
       "architecture": "x86",
       "status": "active",
-      "notes": "Virtual Machines Env6 Series Linux"
+      "notes": "Virtual Machines Esv7-series Linux"
     },
     {
       "provider": "azure",
@@ -19203,6 +20169,20 @@
       "architecture": "x86",
       "status": "active",
       "notes": "Virtual Machines Lsv4 Series"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_E96ns_v6",
+      "displayName": "Standard_E96ns_v6 (Ensv6)",
+      "vcpus": 96,
+      "memoryGB": 768,
+      "hourlyPrice": 8.368,
+      "monthlyPrice": 6108.64,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Ensv6 Series Linux"
     },
     {
       "provider": "azure",
@@ -19273,6 +20253,20 @@
       "architecture": "x86",
       "status": "active",
       "notes": "Virtual Machines Esv6 Series"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D128s_v7",
+      "displayName": "Standard_D128s_v7 (Dsv7-series)",
+      "vcpus": 128,
+      "memoryGB": 512,
+      "hourlyPrice": 8.467,
+      "monthlyPrice": 6180.91,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dsv7-series Linux"
     },
     {
       "provider": "azure",
@@ -19374,20 +20368,6 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_D96nds_v6",
-      "displayName": "Standard_D96nds_v6 (Dndv6)",
-      "vcpus": 96,
-      "memoryGB": 384,
-      "hourlyPrice": 8.671,
-      "monthlyPrice": 6329.83,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Dndv6 Series Linux"
-    },
-    {
-      "provider": "azure",
       "name": "Standard_F80amds_v7",
       "displayName": "Standard_F80amds_v7 (Famdsv7)",
       "vcpus": 80,
@@ -19458,6 +20438,48 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_D128lds_v7",
+      "displayName": "Standard_D128lds_v7 (Dldsv7-series)",
+      "vcpus": 128,
+      "memoryGB": 512,
+      "hourlyPrice": 8.87,
+      "monthlyPrice": 6475.1,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dldsv7-series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D128ns_v6",
+      "displayName": "Standard_D128ns_v6 (Dnsv6)",
+      "vcpus": 128,
+      "memoryGB": 512,
+      "hourlyPrice": 8.911,
+      "monthlyPrice": 6505.03,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dnsv6 Series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D128nlds_v6",
+      "displayName": "Standard_D128nlds_v6 (Dnldsv6)",
+      "vcpus": 128,
+      "memoryGB": 512,
+      "hourlyPrice": 8.963,
+      "monthlyPrice": 6542.99,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dnldsv6 Series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "DCadsv6_Type1",
       "displayName": "DCadsv6_Type1 (DCadsv6)",
       "vcpus": 0,
@@ -19497,20 +20519,6 @@
       "architecture": "x86",
       "status": "active",
       "notes": "Virtual Machines Ebsv5 Series"
-    },
-    {
-      "provider": "azure",
-      "name": "Standard_D128nlds_v6",
-      "displayName": "Standard_D128nlds_v6 (Dnldv6)",
-      "vcpus": 128,
-      "memoryGB": 512,
-      "hourlyPrice": 9.249,
-      "monthlyPrice": 6751.77,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Dnldv6 Series Linux"
     },
     {
       "provider": "azure",
@@ -19598,20 +20606,6 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_D128ns_v6",
-      "displayName": "Standard_D128ns_v6 (Dnv6)",
-      "vcpus": 128,
-      "memoryGB": 512,
-      "hourlyPrice": 9.354,
-      "monthlyPrice": 6828.42,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Dnv6 Series Linux"
-    },
-    {
-      "provider": "azure",
       "name": "Standard_D96ads_v5",
       "displayName": "Standard_D96ads_v5 (Dadsv5)",
       "vcpus": 96,
@@ -19637,6 +20631,20 @@
       "architecture": "x86",
       "status": "active",
       "notes": "Virtual Machines Ebdsv6-Series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_E96nds_v6",
+      "displayName": "Standard_E96nds_v6 (Endsv6)",
+      "vcpus": 96,
+      "memoryGB": 768,
+      "hourlyPrice": 9.379,
+      "monthlyPrice": 6846.67,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Endsv6 Series Linux"
     },
     {
       "provider": "azure",
@@ -19696,6 +20704,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_M96s_v3",
+      "displayName": "Standard_M96s_v3 (Msv3)",
+      "vcpus": 96,
+      "memoryGB": 768,
+      "hourlyPrice": 9.83,
+      "monthlyPrice": 7175.9,
+      "region": "eastus",
+      "category": "memory",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Msv3 Medium Memory Series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_E96-48as_v5",
       "displayName": "Standard_E96-48as_v5 (Easv5)",
       "vcpus": 96,
@@ -19752,6 +20774,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_E96ds_v7",
+      "displayName": "Standard_E96ds_v7 (Edsv7-series)",
+      "vcpus": 96,
+      "memoryGB": 768,
+      "hourlyPrice": 9.979,
+      "monthlyPrice": 7284.67,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Edsv7-series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_M64ms_v2",
       "displayName": "Standard_M64ms_v2 (MSv2)",
       "vcpus": 64,
@@ -19766,17 +20802,17 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_E96nds_v6",
-      "displayName": "Standard_E96nds_v6 (Endv6)",
-      "vcpus": 96,
-      "memoryGB": 768,
-      "hourlyPrice": 10.282,
-      "monthlyPrice": 7505.86,
+      "name": "Standard_D128nds_v6",
+      "displayName": "Standard_D128nds_v6 (Dndsv6)",
+      "vcpus": 128,
+      "memoryGB": 512,
+      "hourlyPrice": 10.184,
+      "monthlyPrice": 7434.32,
       "region": "eastus",
       "category": "general",
       "architecture": "x86",
       "status": "active",
-      "notes": "Virtual Machines Endv6 Series Linux"
+      "notes": "Virtual Machines Dndsv6 Series Linux"
     },
     {
       "provider": "azure",
@@ -19861,6 +20897,34 @@
       "architecture": "x86",
       "status": "legacy",
       "notes": "Virtual Machines MdSv2 Series"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_M96ds_v3",
+      "displayName": "Standard_M96ds_v3 (Mdsv3)",
+      "vcpus": 96,
+      "memoryGB": 768,
+      "hourlyPrice": 10.44,
+      "monthlyPrice": 7621.2,
+      "region": "eastus",
+      "category": "memory",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Mdsv3 Medium Memory Series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D128ds_v7",
+      "displayName": "Standard_D128ds_v7 (Ddsv7-series)",
+      "vcpus": 128,
+      "memoryGB": 512,
+      "hourlyPrice": 10.442,
+      "monthlyPrice": 7622.66,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Ddsv7-series Linux"
     },
     {
       "provider": "azure",
@@ -20004,17 +21068,87 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_E128ns_v6",
-      "displayName": "Standard_E128ns_v6 (Env6)",
-      "vcpus": 128,
-      "memoryGB": 1024,
-      "hourlyPrice": 11.092,
-      "monthlyPrice": 8097.16,
+      "name": "NC264ldsxlRTX6kv6",
+      "displayName": "NC264ldsxlRTX6kv6 (NCldsxlRTX6kv6)",
+      "vcpus": 0,
+      "memoryGB": 0,
+      "hourlyPrice": 11,
+      "monthlyPrice": 8030,
       "region": "eastus",
       "category": "general",
       "architecture": "x86",
       "status": "active",
-      "notes": "Virtual Machines Env6 Series Linux"
+      "notes": "Virtual Machines NCldsxlRTX6kv6"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_NC256lds_xl_RTXPRO6000BSE_v6",
+      "displayName": "Standard_NC256lds_xl_RTXPRO6000BSE_v6 (NCldsxlRTX6kv6)",
+      "vcpus": 6,
+      "memoryGB": 36,
+      "hourlyPrice": 11,
+      "monthlyPrice": 8030,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "arm",
+      "status": "active",
+      "notes": "Virtual Machines NCldsxlRTX6kv6"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_NC288ldsxlRTX6k_v6",
+      "displayName": "Standard_NC288ldsxlRTX6k_v6 (NCldsxlRTX6kv6)",
+      "vcpus": 6,
+      "memoryGB": 36,
+      "hourlyPrice": 11,
+      "monthlyPrice": 8030,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines NCldsxlRTX6kv6"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_NC288dsxlRTX6k_v6",
+      "displayName": "Standard_NC288dsxlRTX6k_v6 (NCdsxlRTX6kv6)",
+      "vcpus": 6,
+      "memoryGB": 36,
+      "hourlyPrice": 11,
+      "monthlyPrice": 8030,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines NCdsxlRTX6kv6"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_E128s_v7",
+      "displayName": "Standard_E128s_v7 (Esv7-series)",
+      "vcpus": 128,
+      "memoryGB": 1024,
+      "hourlyPrice": 11.114,
+      "monthlyPrice": 8113.22,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Esv7-series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_E128ns_v6",
+      "displayName": "Standard_E128ns_v6 (Ensv6)",
+      "vcpus": 128,
+      "memoryGB": 1024,
+      "hourlyPrice": 11.157,
+      "monthlyPrice": 8144.61,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Ensv6 Series Linux"
     },
     {
       "provider": "azure",
@@ -20060,6 +21194,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_D192ls_v7",
+      "displayName": "Standard_D192ls_v7 (Dlsv7-series)",
+      "vcpus": 192,
+      "memoryGB": 768,
+      "hourlyPrice": 11.245,
+      "monthlyPrice": 8208.85,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dlsv7-series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "ECadsv6_Type1",
       "displayName": "ECadsv6_Type1 (ECadsv6)",
       "vcpus": 0,
@@ -20071,20 +21219,6 @@
       "architecture": "arm",
       "status": "active",
       "notes": "ECadsv6 Series Dedicated Host"
-    },
-    {
-      "provider": "azure",
-      "name": "Standard_D128nds_v6",
-      "displayName": "Standard_D128nds_v6 (Dndv6)",
-      "vcpus": 128,
-      "memoryGB": 512,
-      "hourlyPrice": 11.561,
-      "monthlyPrice": 8439.53,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Dndv6 Series Linux"
     },
     {
       "provider": "azure",
@@ -20214,6 +21348,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_E128nds_v6",
+      "displayName": "Standard_E128nds_v6 (Endsv6)",
+      "vcpus": 128,
+      "memoryGB": 1024,
+      "hourlyPrice": 12.505,
+      "monthlyPrice": 9128.65,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Endsv6 Series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_E128bds_v6",
       "displayName": "Standard_E128bds_v6 (Ebdsv6-Series)",
       "vcpus": 128,
@@ -20225,6 +21373,48 @@
       "architecture": "x86",
       "status": "active",
       "notes": "Virtual Machines Ebdsv6-Series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D192s_v7",
+      "displayName": "Standard_D192s_v7 (Dsv7-series)",
+      "vcpus": 192,
+      "memoryGB": 768,
+      "hourlyPrice": 12.701,
+      "monthlyPrice": 9271.73,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dsv7-series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_NC256ds_xl_RTXPRO6000BSE_v6",
+      "displayName": "Standard_NC256ds_xl_RTXPRO6000BSE_v6 (NCdsxlRTX6kv6)",
+      "vcpus": 6,
+      "memoryGB": 36,
+      "hourlyPrice": 12.76,
+      "monthlyPrice": 9314.8,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "arm",
+      "status": "active",
+      "notes": "Virtual Machines NCdsxlRTX6kv6"
+    },
+    {
+      "provider": "azure",
+      "name": "NC264dsxlRTX6kv6",
+      "displayName": "NC264dsxlRTX6kv6 (NCdsxlRTX6kv6)",
+      "vcpus": 0,
+      "memoryGB": 0,
+      "hourlyPrice": 12.76,
+      "monthlyPrice": 9314.8,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines NCdsxlRTX6kv6"
     },
     {
       "provider": "azure",
@@ -20340,6 +21530,34 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_E128ds_v7",
+      "displayName": "Standard_E128ds_v7 (Edsv7-series)",
+      "vcpus": 128,
+      "memoryGB": 1024,
+      "hourlyPrice": 13.306,
+      "monthlyPrice": 9713.38,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Edsv7-series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D192lds_v7",
+      "displayName": "Standard_D192lds_v7 (Dldsv7-series)",
+      "vcpus": 192,
+      "memoryGB": 768,
+      "hourlyPrice": 13.306,
+      "monthlyPrice": 9713.38,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dldsv7-series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_M128",
       "displayName": "Standard_M128 (MS)",
       "vcpus": 128,
@@ -20396,20 +21614,6 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_E128nds_v6",
-      "displayName": "Standard_E128nds_v6 (Endv6)",
-      "vcpus": 128,
-      "memoryGB": 1024,
-      "hourlyPrice": 13.71,
-      "monthlyPrice": 10008.3,
-      "region": "eastus",
-      "category": "general",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Endv6 Series Linux"
-    },
-    {
-      "provider": "azure",
       "name": "Standard_NC80adis_H100_v5",
       "displayName": "Standard_NC80adis_H100_v5 (NCadsH100v5)",
       "vcpus": 100,
@@ -20452,6 +21656,48 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_NC320lds_xl_RTXPRO6000BSE_v6",
+      "displayName": "Standard_NC320lds_xl_RTXPRO6000BSE_v6 (NCldsxlRTX6kv6)",
+      "vcpus": 6,
+      "memoryGB": 36,
+      "hourlyPrice": 14.3,
+      "monthlyPrice": 10439,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "arm",
+      "status": "active",
+      "notes": "Virtual Machines NCldsxlRTX6kv6"
+    },
+    {
+      "provider": "azure",
+      "name": "NC324ldsxlRTX6kv6",
+      "displayName": "NC324ldsxlRTX6kv6 (NCldsxlRTX6kv6)",
+      "vcpus": 0,
+      "memoryGB": 0,
+      "hourlyPrice": 14.3,
+      "monthlyPrice": 10439,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines NCldsxlRTX6kv6"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D248ls_v7",
+      "displayName": "Standard_D248ls_v7 (Dlsv7-series)",
+      "vcpus": 248,
+      "memoryGB": 992,
+      "hourlyPrice": 14.525,
+      "monthlyPrice": 10603.25,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dlsv7-series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Ms_Type1",
       "displayName": "Ms_Type1 (MS)",
       "vcpus": 0,
@@ -20491,6 +21737,20 @@
       "architecture": "x86",
       "status": "active",
       "notes": "NCads A100 v4 Series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_M176s_v3",
+      "displayName": "Standard_M176s_v3 (Msv3)",
+      "vcpus": 176,
+      "memoryGB": 1408,
+      "hourlyPrice": 14.7292,
+      "monthlyPrice": 10752.32,
+      "region": "eastus",
+      "category": "memory",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Msv3 Medium Memory Series Linux"
     },
     {
       "provider": "azure",
@@ -20550,6 +21810,34 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_M176ds_v3",
+      "displayName": "Standard_M176ds_v3 (Mdsv3)",
+      "vcpus": 176,
+      "memoryGB": 1408,
+      "hourlyPrice": 15.66,
+      "monthlyPrice": 11431.8,
+      "region": "eastus",
+      "category": "memory",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Mdsv3 Medium Memory Series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D192ds_v7",
+      "displayName": "Standard_D192ds_v7 (Ddsv7-series)",
+      "vcpus": 192,
+      "memoryGB": 768,
+      "hourlyPrice": 15.663,
+      "monthlyPrice": 11433.99,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Ddsv7-series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_M192ids_v2",
       "displayName": "Standard_M192ids_v2 (MdSv2)",
       "vcpus": 192,
@@ -20592,6 +21880,62 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_D248s_v7",
+      "displayName": "Standard_D248s_v7 (Dsv7-series)",
+      "vcpus": 248,
+      "memoryGB": 992,
+      "hourlyPrice": 16.405,
+      "monthlyPrice": 11975.65,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dsv7-series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_NC320ds_xl_RTXPRO6000BSE_v6",
+      "displayName": "Standard_NC320ds_xl_RTXPRO6000BSE_v6 (NCdsxlRTX6kv6)",
+      "vcpus": 6,
+      "memoryGB": 36,
+      "hourlyPrice": 16.588,
+      "monthlyPrice": 12109.24,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "arm",
+      "status": "active",
+      "notes": "Virtual Machines NCdsxlRTX6kv6"
+    },
+    {
+      "provider": "azure",
+      "name": "NC324dsxlRTX6kv6",
+      "displayName": "NC324dsxlRTX6kv6 (NCdsxlRTX6kv6)",
+      "vcpus": 0,
+      "memoryGB": 0,
+      "hourlyPrice": 16.588,
+      "monthlyPrice": 12109.24,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines NCdsxlRTX6kv6"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_E192s_v7",
+      "displayName": "Standard_E192s_v7 (Esv7-series)",
+      "vcpus": 192,
+      "memoryGB": 1536,
+      "hourlyPrice": 16.671,
+      "monthlyPrice": 12169.83,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Esv7-series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_E192ibs_v6",
       "displayName": "Standard_E192ibs_v6 (Ebsv6-Series)",
       "vcpus": 192,
@@ -20603,6 +21947,20 @@
       "architecture": "x86",
       "status": "active",
       "notes": "Virtual Machines Ebsv6-Series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D248lds_v7",
+      "displayName": "Standard_D248lds_v7 (Dldsv7-series)",
+      "vcpus": 248,
+      "memoryGB": 992,
+      "hourlyPrice": 17.186,
+      "monthlyPrice": 12545.78,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dldsv7-series Linux"
     },
     {
       "provider": "azure",
@@ -20718,6 +22076,160 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_HB368-336rs_v5",
+      "displayName": "Standard_HB368-336rs_v5 (HBrsv5)",
+      "vcpus": 5,
+      "memoryGB": 10,
+      "hourlyPrice": 19.8,
+      "monthlyPrice": 14454,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines HBrsv5 Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_HB368-48rs_v5",
+      "displayName": "Standard_HB368-48rs_v5 (HBrsv5)",
+      "vcpus": 5,
+      "memoryGB": 10,
+      "hourlyPrice": 19.8,
+      "monthlyPrice": 14454,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines HBrsv5 Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_HB368-240rs_v5",
+      "displayName": "Standard_HB368-240rs_v5 (HBrsv5)",
+      "vcpus": 5,
+      "memoryGB": 10,
+      "hourlyPrice": 19.8,
+      "monthlyPrice": 14454,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines HBrsv5 Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_HB368-96rs_v5",
+      "displayName": "Standard_HB368-96rs_v5 (HBrsv5)",
+      "vcpus": 5,
+      "memoryGB": 10,
+      "hourlyPrice": 19.8,
+      "monthlyPrice": 14454,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines HBrsv5 Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_HB368rs_v5",
+      "displayName": "Standard_HB368rs_v5 (HBrsv5)",
+      "vcpus": 5,
+      "memoryGB": 10,
+      "hourlyPrice": 19.8,
+      "monthlyPrice": 14454,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines HBrsv5 Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_HB368-192rs_v5",
+      "displayName": "Standard_HB368-192rs_v5 (HBrsv5)",
+      "vcpus": 5,
+      "memoryGB": 10,
+      "hourlyPrice": 19.8,
+      "monthlyPrice": 14454,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines HBrsv5 Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_HB368-288rs_v5",
+      "displayName": "Standard_HB368-288rs_v5 (HBrsv5)",
+      "vcpus": 5,
+      "memoryGB": 10,
+      "hourlyPrice": 19.8,
+      "monthlyPrice": 14454,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines HBrsv5 Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_HB368-144rs_v5",
+      "displayName": "Standard_HB368-144rs_v5 (HBrsv5)",
+      "vcpus": 5,
+      "memoryGB": 10,
+      "hourlyPrice": 19.8,
+      "monthlyPrice": 14454,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines HBrsv5 Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_E192ds_v7",
+      "displayName": "Standard_E192ds_v7 (Edsv7-series)",
+      "vcpus": 192,
+      "memoryGB": 1536,
+      "hourlyPrice": 19.958,
+      "monthlyPrice": 14569.34,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Edsv7-series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D248ds_v7",
+      "displayName": "Standard_D248ds_v7 (Ddsv7-series)",
+      "vcpus": 248,
+      "memoryGB": 992,
+      "hourlyPrice": 20.232,
+      "monthlyPrice": 14769.36,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Ddsv7-series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_E248s_v7",
+      "displayName": "Standard_E248s_v7 (Esv7-series)",
+      "vcpus": 248,
+      "memoryGB": 1984,
+      "hourlyPrice": 21.534,
+      "monthlyPrice": 15719.82,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Esv7-series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_ND40rs_v2",
       "displayName": "Standard_ND40rs_v2 (NDrSv2)",
       "vcpus": 2,
@@ -20802,6 +22314,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_D372s_v7",
+      "displayName": "Standard_D372s_v7 (Dsv7-series)",
+      "vcpus": 372,
+      "memoryGB": 1488,
+      "hourlyPrice": 24.608,
+      "monthlyPrice": 17963.84,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Dsv7-series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_M176s_4_v3",
       "displayName": "Standard_M176s_4_v3 (Msv3)",
       "vcpus": 176,
@@ -20841,6 +22367,20 @@
       "architecture": "x86",
       "status": "active",
       "notes": "Virtual Machines Msv3 Medium Memory Series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_E248ds_v7",
+      "displayName": "Standard_E248ds_v7 (Edsv7-series)",
+      "vcpus": 248,
+      "memoryGB": 1984,
+      "hourlyPrice": 25.78,
+      "monthlyPrice": 18819.4,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Edsv7-series Linux"
     },
     {
       "provider": "azure",
@@ -21012,8 +22552,8 @@
     },
     {
       "provider": "azure",
-      "name": "Msmv2MedMem Type1",
-      "displayName": "Msmv2MedMem Type1 (MSv2)",
+      "name": "Mmsv2MedMem-Type1",
+      "displayName": "Mmsv2MedMem-Type1 (MSv2)",
       "vcpus": 0,
       "memoryGB": 0,
       "hourlyPrice": 28.896,
@@ -21079,6 +22619,20 @@
       "architecture": "arm",
       "status": "active",
       "notes": "NDasr A100 v4 Series Dedicated Host"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_D372ds_v7",
+      "displayName": "Standard_D372ds_v7 (Ddsv7-series)",
+      "vcpus": 372,
+      "memoryGB": 1488,
+      "hourlyPrice": 30.348,
+      "monthlyPrice": 22154.04,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Ddsv7-series Linux"
     },
     {
       "provider": "azure",
@@ -21166,6 +22720,20 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_E372is_v7",
+      "displayName": "Standard_E372is_v7 (Esv7-series)",
+      "vcpus": 372,
+      "memoryGB": 2976,
+      "hourlyPrice": 35.531,
+      "monthlyPrice": 25937.63,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Esv7-series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "NDamsrA100v4_Type1",
       "displayName": "NDamsrA100v4_Type1 (NDamsr)",
       "vcpus": 0,
@@ -21177,6 +22745,20 @@
       "architecture": "arm",
       "status": "active",
       "notes": "NDamsr A100 v4 Series Dedicated Host"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_E372ids_v7",
+      "displayName": "Standard_E372ids_v7 (Edsv7-series)",
+      "vcpus": 372,
+      "memoryGB": 2976,
+      "hourlyPrice": 42.536,
+      "monthlyPrice": 31051.28,
+      "region": "eastus",
+      "category": "general",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Edsv7-series Linux"
     },
     {
       "provider": "azure",
@@ -21338,8 +22920,8 @@
       "displayName": "Standard_M416s-104_6_v3 (Msv3)",
       "vcpus": 416,
       "memoryGB": 3328,
-      "hourlyPrice": 61.446,
-      "monthlyPrice": 44855.58,
+      "hourlyPrice": 55.3014,
+      "monthlyPrice": 40370.02,
       "region": "eastus",
       "category": "memory",
       "architecture": "x86",
@@ -21352,8 +22934,8 @@
       "displayName": "Standard_M416s_6_v3 (Msv3)",
       "vcpus": 416,
       "memoryGB": 3328,
-      "hourlyPrice": 61.446,
-      "monthlyPrice": 44855.58,
+      "hourlyPrice": 55.3014,
+      "monthlyPrice": 40370.02,
       "region": "eastus",
       "category": "memory",
       "architecture": "x86",
@@ -21366,13 +22948,55 @@
       "displayName": "Standard_M416s-208_6_v3 (Msv3)",
       "vcpus": 416,
       "memoryGB": 3328,
-      "hourlyPrice": 61.446,
-      "monthlyPrice": 44855.58,
+      "hourlyPrice": 55.3014,
+      "monthlyPrice": 40370.02,
       "region": "eastus",
       "category": "memory",
       "architecture": "x86",
       "status": "active",
       "notes": "Virtual Machines Msv3 High Memory Series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_M416ds-104_6_v3",
+      "displayName": "Standard_M416ds-104_6_v3 (Mdsv3)",
+      "vcpus": 416,
+      "memoryGB": 3328,
+      "hourlyPrice": 58.06647,
+      "monthlyPrice": 42388.52,
+      "region": "eastus",
+      "category": "memory",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Mdsv3 High Memory Series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_M416ds_6_v3",
+      "displayName": "Standard_M416ds_6_v3 (Mdsv3)",
+      "vcpus": 416,
+      "memoryGB": 3328,
+      "hourlyPrice": 58.06647,
+      "monthlyPrice": 42388.52,
+      "region": "eastus",
+      "category": "memory",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Mdsv3 High Memory Series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_M416ds-208_6_v3",
+      "displayName": "Standard_M416ds-208_6_v3 (Mdsv3)",
+      "vcpus": 416,
+      "memoryGB": 3328,
+      "hourlyPrice": 58.06647,
+      "monthlyPrice": 42388.52,
+      "region": "eastus",
+      "category": "memory",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Mdsv3 High Memory Series Linux"
     },
     {
       "provider": "azure",
@@ -21404,48 +23028,6 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_M416ds-104_6_v3",
-      "displayName": "Standard_M416ds-104_6_v3 (Mdsv3)",
-      "vcpus": 416,
-      "memoryGB": 3328,
-      "hourlyPrice": 64.5183,
-      "monthlyPrice": 47098.36,
-      "region": "eastus",
-      "category": "memory",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Mdsv3 High Memory Series Linux"
-    },
-    {
-      "provider": "azure",
-      "name": "Standard_M416ds_6_v3",
-      "displayName": "Standard_M416ds_6_v3 (Mdsv3)",
-      "vcpus": 416,
-      "memoryGB": 3328,
-      "hourlyPrice": 64.5183,
-      "monthlyPrice": 47098.36,
-      "region": "eastus",
-      "category": "memory",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Mdsv3 High Memory Series Linux"
-    },
-    {
-      "provider": "azure",
-      "name": "Standard_M416ds-208_6_v3",
-      "displayName": "Standard_M416ds-208_6_v3 (Mdsv3)",
-      "vcpus": 416,
-      "memoryGB": 3328,
-      "hourlyPrice": 64.5183,
-      "monthlyPrice": 47098.36,
-      "region": "eastus",
-      "category": "memory",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Mdsv3 High Memory Series Linux"
-    },
-    {
-      "provider": "azure",
       "name": "Standard_M416s_8_v2",
       "displayName": "Standard_M416s_8_v2 (MSv2)",
       "vcpus": 416,
@@ -21457,6 +23039,48 @@
       "architecture": "x86",
       "status": "legacy",
       "notes": "Virtual Machines MSv2 Series"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_M416s-104_8_v3",
+      "displayName": "Standard_M416s-104_8_v3 (Msv3)",
+      "vcpus": 416,
+      "memoryGB": 3328,
+      "hourlyPrice": 73.7352,
+      "monthlyPrice": 53826.7,
+      "region": "eastus",
+      "category": "memory",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Msv3 High Memory Series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_M416s_8_v3",
+      "displayName": "Standard_M416s_8_v3 (Msv3)",
+      "vcpus": 416,
+      "memoryGB": 3328,
+      "hourlyPrice": 73.7352,
+      "monthlyPrice": 53826.7,
+      "region": "eastus",
+      "category": "memory",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Msv3 High Memory Series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_M416s-208_8_v3",
+      "displayName": "Standard_M416s-208_8_v3 (Msv3)",
+      "vcpus": 416,
+      "memoryGB": 3328,
+      "hourlyPrice": 73.7352,
+      "monthlyPrice": 53826.7,
+      "region": "eastus",
+      "category": "memory",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Msv3 High Memory Series Linux"
     },
     {
       "provider": "azure",
@@ -21474,45 +23098,45 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_M416s-104_8_v3",
-      "displayName": "Standard_M416s-104_8_v3 (Msv3)",
+      "name": "Standard_M416ds-104_8_v3",
+      "displayName": "Standard_M416ds-104_8_v3 (Mdsv3)",
       "vcpus": 416,
       "memoryGB": 3328,
-      "hourlyPrice": 81.928,
-      "monthlyPrice": 59807.44,
+      "hourlyPrice": 77.42196,
+      "monthlyPrice": 56518.03,
       "region": "eastus",
       "category": "memory",
       "architecture": "x86",
       "status": "active",
-      "notes": "Virtual Machines Msv3 High Memory Series Linux"
+      "notes": "Virtual Machines Mdsv3 High Memory Series Linux"
     },
     {
       "provider": "azure",
-      "name": "Standard_M416s_8_v3",
-      "displayName": "Standard_M416s_8_v3 (Msv3)",
+      "name": "Standard_M416ds_8_v3",
+      "displayName": "Standard_M416ds_8_v3 (Mdsv3)",
       "vcpus": 416,
       "memoryGB": 3328,
-      "hourlyPrice": 81.928,
-      "monthlyPrice": 59807.44,
+      "hourlyPrice": 77.42196,
+      "monthlyPrice": 56518.03,
       "region": "eastus",
       "category": "memory",
       "architecture": "x86",
       "status": "active",
-      "notes": "Virtual Machines Msv3 High Memory Series Linux"
+      "notes": "Virtual Machines Mdsv3 High Memory Series Linux"
     },
     {
       "provider": "azure",
-      "name": "Standard_M416s-208_8_v3",
-      "displayName": "Standard_M416s-208_8_v3 (Msv3)",
+      "name": "Standard_M416ds-208_8_v3",
+      "displayName": "Standard_M416ds-208_8_v3 (Mdsv3)",
       "vcpus": 416,
       "memoryGB": 3328,
-      "hourlyPrice": 81.928,
-      "monthlyPrice": 59807.44,
+      "hourlyPrice": 77.42196,
+      "monthlyPrice": 56518.03,
       "region": "eastus",
       "category": "memory",
       "architecture": "x86",
       "status": "active",
-      "notes": "Virtual Machines Msv3 High Memory Series Linux"
+      "notes": "Virtual Machines Mdsv3 High Memory Series Linux"
     },
     {
       "provider": "azure",
@@ -21530,40 +23154,26 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_M416ds-104_8_v3",
-      "displayName": "Standard_M416ds-104_8_v3 (Mdsv3)",
+      "name": "Standard_M416s_9_v3",
+      "displayName": "Standard_M416s_9_v3 (Msv3)",
       "vcpus": 416,
       "memoryGB": 3328,
-      "hourlyPrice": 86.0244,
-      "monthlyPrice": 62797.81,
+      "hourlyPrice": 83.1267,
+      "monthlyPrice": 60682.49,
       "region": "eastus",
       "category": "memory",
       "architecture": "x86",
       "status": "active",
-      "notes": "Virtual Machines Mdsv3 High Memory Series Linux"
+      "notes": "Virtual Machines Msv3 High Memory Series Linux"
     },
     {
       "provider": "azure",
-      "name": "Standard_M416ds_8_v3",
-      "displayName": "Standard_M416ds_8_v3 (Mdsv3)",
+      "name": "Standard_M416ds_9_v3",
+      "displayName": "Standard_M416ds_9_v3 (Mdsv3)",
       "vcpus": 416,
       "memoryGB": 3328,
-      "hourlyPrice": 86.0244,
-      "monthlyPrice": 62797.81,
-      "region": "eastus",
-      "category": "memory",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Mdsv3 High Memory Series Linux"
-    },
-    {
-      "provider": "azure",
-      "name": "Standard_M416ds-208_8_v3",
-      "displayName": "Standard_M416ds-208_8_v3 (Mdsv3)",
-      "vcpus": 416,
-      "memoryGB": 3328,
-      "hourlyPrice": 86.0244,
-      "monthlyPrice": 62797.81,
+      "hourlyPrice": 87.2831,
+      "monthlyPrice": 63716.66,
       "region": "eastus",
       "category": "memory",
       "architecture": "x86",
@@ -21611,6 +23221,34 @@
       "architecture": "x86",
       "status": "active",
       "notes": "Virtual Machines NDsfH100v5 Series"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_M416s_10_v3",
+      "displayName": "Standard_M416s_10_v3 (Msv3)",
+      "vcpus": 416,
+      "memoryGB": 3328,
+      "hourlyPrice": 92.4261,
+      "monthlyPrice": 67471.05,
+      "region": "eastus",
+      "category": "memory",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Msv3 High Memory Series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_M416ds_10_v3",
+      "displayName": "Standard_M416ds_10_v3 (Mdsv3)",
+      "vcpus": 416,
+      "memoryGB": 3328,
+      "hourlyPrice": 96.7367,
+      "monthlyPrice": 70617.79,
+      "region": "eastus",
+      "category": "memory",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Mdsv3 High Memory Series Linux"
     },
     {
       "provider": "azure",
@@ -21712,12 +23350,26 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_M416s_12_v3",
+      "displayName": "Standard_M416s_12_v3 (Msv3)",
+      "vcpus": 416,
+      "memoryGB": 3328,
+      "hourlyPrice": 110.58,
+      "monthlyPrice": 80723.4,
+      "region": "eastus",
+      "category": "memory",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Msv3 High Memory Series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_M624s-312_12_v3",
       "displayName": "Standard_M624s-312_12_v3 (Msv3)",
       "vcpus": 624,
       "memoryGB": 4992,
-      "hourlyPrice": 122.892,
-      "monthlyPrice": 89711.16,
+      "hourlyPrice": 110.6028,
+      "monthlyPrice": 80740.04,
       "region": "eastus",
       "category": "memory",
       "architecture": "x86",
@@ -21730,8 +23382,8 @@
       "displayName": "Standard_M624s-156_12_v3 (Msv3)",
       "vcpus": 624,
       "memoryGB": 4992,
-      "hourlyPrice": 122.892,
-      "monthlyPrice": 89711.16,
+      "hourlyPrice": 110.6028,
+      "monthlyPrice": 80740.04,
       "region": "eastus",
       "category": "memory",
       "architecture": "x86",
@@ -21744,8 +23396,8 @@
       "displayName": "Standard_M624s_12_v3 (Msv3)",
       "vcpus": 624,
       "memoryGB": 4992,
-      "hourlyPrice": 122.892,
-      "monthlyPrice": 89711.16,
+      "hourlyPrice": 110.6028,
+      "monthlyPrice": 80740.04,
       "region": "eastus",
       "category": "memory",
       "architecture": "x86",
@@ -21754,54 +23406,12 @@
     },
     {
       "provider": "azure",
-      "name": "Standard_M624ds-156_12_v3",
-      "displayName": "Standard_M624ds-156_12_v3 (Mdsv3)",
-      "vcpus": 624,
-      "memoryGB": 4992,
-      "hourlyPrice": 129.0366,
-      "monthlyPrice": 94196.72,
-      "region": "eastus",
-      "category": "memory",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Mdsv3 High Memory Series Linux"
-    },
-    {
-      "provider": "azure",
-      "name": "Standard_M624ds_12_v3",
-      "displayName": "Standard_M624ds_12_v3 (Mdsv3)",
-      "vcpus": 624,
-      "memoryGB": 4992,
-      "hourlyPrice": 129.0366,
-      "monthlyPrice": 94196.72,
-      "region": "eastus",
-      "category": "memory",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Mdsv3 High Memory Series Linux"
-    },
-    {
-      "provider": "azure",
-      "name": "Standard_M624ds-312_12_v3",
-      "displayName": "Standard_M624ds-312_12_v3 (Mdsv3)",
-      "vcpus": 624,
-      "memoryGB": 4992,
-      "hourlyPrice": 129.0366,
-      "monthlyPrice": 94196.72,
-      "region": "eastus",
-      "category": "memory",
-      "architecture": "x86",
-      "status": "active",
-      "notes": "Virtual Machines Mdsv3 High Memory Series Linux"
-    },
-    {
-      "provider": "azure",
       "name": "Standard_M832s_12_v3",
       "displayName": "Standard_M832s_12_v3 (Msv3)",
       "vcpus": 832,
       "memoryGB": 6656,
-      "hourlyPrice": 135.1812,
-      "monthlyPrice": 98682.28,
+      "hourlyPrice": 110.95808,
+      "monthlyPrice": 80999.4,
       "region": "eastus",
       "category": "memory",
       "architecture": "x86",
@@ -21814,8 +23424,8 @@
       "displayName": "Standard_M832s-416_12_v3 (Msv3)",
       "vcpus": 832,
       "memoryGB": 6656,
-      "hourlyPrice": 135.1812,
-      "monthlyPrice": 98682.28,
+      "hourlyPrice": 110.95808,
+      "monthlyPrice": 80999.4,
       "region": "eastus",
       "category": "memory",
       "architecture": "x86",
@@ -21828,8 +23438,8 @@
       "displayName": "Standard_M832s-208_12_v3 (Msv3)",
       "vcpus": 832,
       "memoryGB": 6656,
-      "hourlyPrice": 135.1812,
-      "monthlyPrice": 98682.28,
+      "hourlyPrice": 110.95808,
+      "monthlyPrice": 80999.4,
       "region": "eastus",
       "category": "memory",
       "architecture": "x86",
@@ -21838,12 +23448,68 @@
     },
     {
       "provider": "azure",
+      "name": "Standard_M416ds_12_v3",
+      "displayName": "Standard_M416ds_12_v3 (Mdsv3)",
+      "vcpus": 416,
+      "memoryGB": 3328,
+      "hourlyPrice": 116.052,
+      "monthlyPrice": 84717.96,
+      "region": "eastus",
+      "category": "memory",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Mdsv3 High Memory Series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_M624ds-156_12_v3",
+      "displayName": "Standard_M624ds-156_12_v3 (Mdsv3)",
+      "vcpus": 624,
+      "memoryGB": 4992,
+      "hourlyPrice": 116.13294,
+      "monthlyPrice": 84777.05,
+      "region": "eastus",
+      "category": "memory",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Mdsv3 High Memory Series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_M624ds_12_v3",
+      "displayName": "Standard_M624ds_12_v3 (Mdsv3)",
+      "vcpus": 624,
+      "memoryGB": 4992,
+      "hourlyPrice": 116.13294,
+      "monthlyPrice": 84777.05,
+      "region": "eastus",
+      "category": "memory",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Mdsv3 High Memory Series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_M624ds-312_12_v3",
+      "displayName": "Standard_M624ds-312_12_v3 (Mdsv3)",
+      "vcpus": 624,
+      "memoryGB": 4992,
+      "hourlyPrice": 116.13294,
+      "monthlyPrice": 84777.05,
+      "region": "eastus",
+      "category": "memory",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Mdsv3 High Memory Series Linux"
+    },
+    {
+      "provider": "azure",
       "name": "Standard_M832ds_12_v3",
       "displayName": "Standard_M832ds_12_v3 (Mdsv3)",
       "vcpus": 832,
       "memoryGB": 6656,
-      "hourlyPrice": 141.94026,
-      "monthlyPrice": 103616.39,
+      "hourlyPrice": 116.505984,
+      "monthlyPrice": 85049.37,
       "region": "eastus",
       "category": "memory",
       "architecture": "x86",
@@ -21856,8 +23522,8 @@
       "displayName": "Standard_M832ds-208_12_v3 (Mdsv3)",
       "vcpus": 832,
       "memoryGB": 6656,
-      "hourlyPrice": 141.9403,
-      "monthlyPrice": 103616.42,
+      "hourlyPrice": 116.506017,
+      "monthlyPrice": 85049.39,
       "region": "eastus",
       "category": "memory",
       "architecture": "x86",
@@ -21870,8 +23536,8 @@
       "displayName": "Standard_M832ds-416_12_v3 (Mdsv3)",
       "vcpus": 832,
       "memoryGB": 6656,
-      "hourlyPrice": 141.9403,
-      "monthlyPrice": 103616.42,
+      "hourlyPrice": 116.506017,
+      "monthlyPrice": 85049.39,
       "region": "eastus",
       "category": "memory",
       "architecture": "x86",
@@ -21961,6 +23627,20 @@
       "architecture": "x86",
       "status": "active",
       "notes": "Virtual Machines Mdsv3 High Memory Series Linux"
+    },
+    {
+      "provider": "azure",
+      "name": "Standard_M896ixds_24_v3",
+      "displayName": "Standard_M896ixds_24_v3 (Mdsv3)",
+      "vcpus": 896,
+      "memoryGB": 7168,
+      "hourlyPrice": 311.688,
+      "monthlyPrice": 227532.24,
+      "region": "eastus",
+      "category": "memory",
+      "architecture": "x86",
+      "status": "active",
+      "notes": "Virtual Machines Mdsv3 Very High Memory Series Linux"
     },
     {
       "provider": "azure",
@@ -22092,8 +23772,7 @@
       "memoryGB": 2,
       "hourlyPrice": 0.0068,
       "monthlyPrice": 4.99,
-      "notes": "5 DTUs, 2GB storage",
-      "status": "legacy"
+      "notes": "5 DTUs, 2GB storage"
     },
     {
       "provider": "azure",
@@ -22104,32 +23783,7 @@
       "memoryGB": 2,
       "hourlyPrice": 0.0202,
       "monthlyPrice": 14.72,
-      "notes": "10 DTUs",
-      "status": "legacy"
-    },
-    {
-      "provider": "azure",
-      "name": "Azure SQL Standard S1",
-      "type": "relational",
-      "engine": "SQL Server",
-      "vcpus": 1,
-      "memoryGB": 2,
-      "hourlyPrice": 0.0404,
-      "monthlyPrice": 29.5,
-      "notes": "20 DTUs",
-      "status": "legacy"
-    },
-    {
-      "provider": "azure",
-      "name": "Azure SQL Standard S2",
-      "type": "relational",
-      "engine": "SQL Server",
-      "vcpus": 1,
-      "memoryGB": 4,
-      "hourlyPrice": 0.101,
-      "monthlyPrice": 73.73,
-      "notes": "50 DTUs",
-      "status": "legacy"
+      "notes": "10 DTUs"
     },
     {
       "provider": "azure",
@@ -22140,1132 +23794,38 @@
       "memoryGB": 8,
       "hourlyPrice": 0.1343,
       "monthlyPrice": 98.04,
-      "notes": "100 DTUs",
-      "status": "legacy"
+      "notes": "100 DTUs"
     },
     {
       "provider": "azure",
-      "name": "Azure SQL Standard S4",
-      "type": "relational",
-      "engine": "SQL Server",
-      "vcpus": 4,
-      "memoryGB": 16,
-      "hourlyPrice": 0.268,
-      "monthlyPrice": 195.64,
-      "notes": "200 DTUs",
-      "status": "legacy"
-    },
-    {
-      "provider": "azure",
-      "name": "Azure SQL Premium P1",
-      "type": "relational",
-      "engine": "SQL Server",
-      "vcpus": 2,
-      "memoryGB": 8,
-      "hourlyPrice": 0.625,
-      "monthlyPrice": 456.25,
-      "notes": "125 DTUs",
-      "status": "legacy"
-    },
-    {
-      "provider": "azure",
-      "name": "Azure SQL Premium P2",
-      "type": "relational",
-      "engine": "SQL Server",
-      "vcpus": 4,
-      "memoryGB": 16,
-      "hourlyPrice": 1.25,
-      "monthlyPrice": 912.5,
-      "notes": "250 DTUs",
-      "status": "legacy"
-    },
-    {
-      "provider": "azure",
-      "name": "Azure SQL vCore GP 2",
-      "type": "relational",
-      "engine": "SQL Server",
-      "vcpus": 2,
-      "memoryGB": 10.2,
-      "hourlyPrice": 0.345,
-      "monthlyPrice": 251.85,
-      "notes": "General Purpose, 2 vCores",
-      "status": "active"
-    },
-    {
-      "provider": "azure",
-      "name": "Azure SQL vCore GP 4",
-      "type": "relational",
-      "engine": "SQL Server",
-      "vcpus": 4,
-      "memoryGB": 20.4,
-      "hourlyPrice": 0.69,
-      "monthlyPrice": 503.7,
-      "notes": "General Purpose, 4 vCores",
-      "status": "active"
-    },
-    {
-      "provider": "azure",
-      "name": "Azure SQL vCore GP 8",
-      "type": "relational",
-      "engine": "SQL Server",
-      "vcpus": 8,
-      "memoryGB": 40.8,
-      "hourlyPrice": 1.38,
-      "monthlyPrice": 1007.4,
-      "notes": "General Purpose, 8 vCores",
-      "status": "active"
-    },
-    {
-      "provider": "azure",
-      "name": "Azure SQL vCore BC 2",
-      "type": "relational",
-      "engine": "SQL Server",
-      "vcpus": 2,
-      "memoryGB": 10.2,
-      "hourlyPrice": 0.85,
-      "monthlyPrice": 620.5,
-      "notes": "Business Critical, 2 vCores",
-      "status": "active"
-    },
-    {
-      "provider": "azure",
-      "name": "Azure SQL vCore BC 4",
-      "type": "relational",
-      "engine": "SQL Server",
-      "vcpus": 4,
-      "memoryGB": 20.4,
-      "hourlyPrice": 1.7,
-      "monthlyPrice": 1241.0,
-      "notes": "Business Critical, 4 vCores",
-      "status": "active"
-    },
-    {
-      "provider": "azure",
-      "name": "Azure SQL Serverless",
-      "type": "serverless",
-      "engine": "SQL Server",
-      "hourlyPrice": 0.000145,
-      "monthlyPrice": 0.1058,
-      "notes": "Per vCore-second, auto-pause",
-      "status": "active"
-    },
-    {
-      "provider": "azure",
-      "name": "Azure PostgreSQL Burstable B1ms",
-      "type": "relational",
-      "engine": "PostgreSQL",
-      "vcpus": 1,
-      "memoryGB": 2,
-      "hourlyPrice": 0.022,
-      "monthlyPrice": 16.06,
-      "notes": "Flexible Server",
-      "status": "active"
-    },
-    {
-      "provider": "azure",
-      "name": "Azure PostgreSQL Burstable B2s",
-      "type": "relational",
-      "engine": "PostgreSQL",
-      "vcpus": 2,
-      "memoryGB": 4,
-      "hourlyPrice": 0.044,
-      "monthlyPrice": 32.12,
-      "notes": "Flexible Server",
-      "status": "active"
-    },
-    {
-      "provider": "azure",
-      "name": "Azure PostgreSQL GP D2s_v3",
+      "name": "Azure Database for PostgreSQL",
       "type": "relational",
       "engine": "PostgreSQL",
       "vcpus": 2,
       "memoryGB": 8,
       "hourlyPrice": 0.102,
       "monthlyPrice": 74.46,
-      "notes": "General Purpose",
-      "status": "active"
+      "notes": "Flexible Server"
     },
     {
       "provider": "azure",
-      "name": "Azure PostgreSQL GP D4s_v3",
-      "type": "relational",
-      "engine": "PostgreSQL",
-      "vcpus": 4,
-      "memoryGB": 16,
-      "hourlyPrice": 0.204,
-      "monthlyPrice": 148.92,
-      "notes": "General Purpose",
-      "status": "active"
-    },
-    {
-      "provider": "azure",
-      "name": "Azure PostgreSQL GP D8s_v3",
-      "type": "relational",
-      "engine": "PostgreSQL",
-      "vcpus": 8,
-      "memoryGB": 32,
-      "hourlyPrice": 0.408,
-      "monthlyPrice": 297.84,
-      "notes": "General Purpose",
-      "status": "active"
-    },
-    {
-      "provider": "azure",
-      "name": "Azure PostgreSQL MO E2s_v3",
-      "type": "relational",
-      "engine": "PostgreSQL",
-      "vcpus": 2,
-      "memoryGB": 16,
-      "hourlyPrice": 0.166,
-      "monthlyPrice": 121.18,
-      "notes": "Memory Optimized",
-      "status": "active"
-    },
-    {
-      "provider": "azure",
-      "name": "Azure PostgreSQL MO E4s_v3",
-      "type": "relational",
-      "engine": "PostgreSQL",
-      "vcpus": 4,
-      "memoryGB": 32,
-      "hourlyPrice": 0.332,
-      "monthlyPrice": 242.36,
-      "notes": "Memory Optimized",
-      "status": "active"
-    },
-    {
-      "provider": "azure",
-      "name": "Azure MySQL Burstable B1ms",
-      "type": "relational",
-      "engine": "MySQL",
-      "vcpus": 1,
-      "memoryGB": 2,
-      "hourlyPrice": 0.022,
-      "monthlyPrice": 16.06,
-      "notes": "Flexible Server",
-      "status": "active"
-    },
-    {
-      "provider": "azure",
-      "name": "Azure MySQL Burstable B2s",
-      "type": "relational",
-      "engine": "MySQL",
-      "vcpus": 2,
-      "memoryGB": 4,
-      "hourlyPrice": 0.044,
-      "monthlyPrice": 32.12,
-      "notes": "Flexible Server",
-      "status": "active"
-    },
-    {
-      "provider": "azure",
-      "name": "Azure MySQL GP D2s_v3",
+      "name": "Azure Database for MySQL",
       "type": "relational",
       "engine": "MySQL",
       "vcpus": 2,
       "memoryGB": 8,
       "hourlyPrice": 0.102,
       "monthlyPrice": 74.46,
-      "notes": "General Purpose",
-      "status": "active"
+      "notes": "Flexible Server"
     },
     {
       "provider": "azure",
-      "name": "Azure MySQL GP D4s_v3",
-      "type": "relational",
-      "engine": "MySQL",
-      "vcpus": 4,
-      "memoryGB": 16,
-      "hourlyPrice": 0.204,
-      "monthlyPrice": 148.92,
-      "notes": "General Purpose",
-      "status": "active"
-    },
-    {
-      "provider": "azure",
-      "name": "Azure MySQL GP D8s_v3",
-      "type": "relational",
-      "engine": "MySQL",
-      "vcpus": 8,
-      "memoryGB": 32,
-      "hourlyPrice": 0.408,
-      "monthlyPrice": 297.84,
-      "notes": "General Purpose",
-      "status": "active"
-    },
-    {
-      "provider": "azure",
-      "name": "Cosmos DB Serverless",
+      "name": "Cosmos DB",
       "type": "nosql",
       "engine": "CosmosDB",
-      "hourlyPrice": 0.0,
-      "monthlyPrice": 0.0,
-      "notes": "$0.25 per 1M RUs consumed",
-      "status": "active"
-    },
-    {
-      "provider": "azure",
-      "name": "Cosmos DB Provisioned 400 RU/s",
-      "type": "nosql",
-      "engine": "CosmosDB",
-      "hourlyPrice": 0.032,
-      "monthlyPrice": 23.36,
-      "notes": "Minimum 400 RU/s",
-      "status": "active"
-    },
-    {
-      "provider": "azure",
-      "name": "Cosmos DB Provisioned 1000 RU/s",
-      "type": "nosql",
-      "engine": "CosmosDB",
-      "hourlyPrice": 0.08,
-      "monthlyPrice": 58.4,
-      "notes": "1000 RU/s provisioned",
-      "status": "active"
-    },
-    {
-      "provider": "azure",
-      "name": "Cosmos DB Provisioned 10000 RU/s",
-      "type": "nosql",
-      "engine": "CosmosDB",
-      "hourlyPrice": 0.8,
-      "monthlyPrice": 584.0,
-      "notes": "10000 RU/s provisioned",
-      "status": "active"
-    },
-    {
-      "provider": "azure",
-      "name": "Azure Cache for Redis Basic C0",
-      "type": "cache",
-      "engine": "Redis",
-      "memoryGB": 0.25,
-      "hourlyPrice": 0.022,
-      "monthlyPrice": 16.06,
-      "notes": "250MB, no SLA",
-      "status": "legacy"
-    },
-    {
-      "provider": "azure",
-      "name": "Azure Cache for Redis Basic C1",
-      "type": "cache",
-      "engine": "Redis",
-      "memoryGB": 1,
-      "hourlyPrice": 0.055,
-      "monthlyPrice": 40.15,
-      "notes": "1GB, no SLA",
-      "status": "legacy"
-    },
-    {
-      "provider": "azure",
-      "name": "Azure Cache for Redis Standard C0",
-      "type": "cache",
-      "engine": "Redis",
-      "memoryGB": 0.25,
-      "hourlyPrice": 0.034,
-      "monthlyPrice": 24.82,
-      "notes": "250MB, SLA",
-      "status": "active"
-    },
-    {
-      "provider": "azure",
-      "name": "Azure Cache for Redis Standard C1",
-      "type": "cache",
-      "engine": "Redis",
-      "memoryGB": 1,
-      "hourlyPrice": 0.101,
-      "monthlyPrice": 73.73,
-      "notes": "1GB, SLA",
-      "status": "active"
-    },
-    {
-      "provider": "azure",
-      "name": "Azure Cache for Redis Standard C2",
-      "type": "cache",
-      "engine": "Redis",
-      "memoryGB": 2.5,
-      "hourlyPrice": 0.202,
-      "monthlyPrice": 147.46,
-      "notes": "2.5GB, SLA",
-      "status": "active"
-    },
-    {
-      "provider": "azure",
-      "name": "Azure Cache for Redis Standard C3",
-      "type": "cache",
-      "engine": "Redis",
-      "memoryGB": 6,
-      "hourlyPrice": 0.404,
-      "monthlyPrice": 294.92,
-      "notes": "6GB, SLA",
-      "status": "active"
-    },
-    {
-      "provider": "azure",
-      "name": "Azure Cache for Redis Premium P1",
-      "type": "cache",
-      "engine": "Redis",
-      "memoryGB": 6,
-      "hourlyPrice": 0.56,
-      "monthlyPrice": 408.8,
-      "notes": "6GB, clustering, persistence",
-      "status": "active"
-    },
-    {
-      "provider": "azure",
-      "name": "Azure Cache for Redis Premium P2",
-      "type": "cache",
-      "engine": "Redis",
-      "memoryGB": 13,
-      "hourlyPrice": 1.12,
-      "monthlyPrice": 817.6,
-      "notes": "13GB, clustering, persistence",
-      "status": "active"
-    },
-    {
-      "provider": "azure",
-      "name": "Azure Cache for Redis Enterprise E10",
-      "type": "cache",
-      "engine": "Redis",
-      "memoryGB": 12,
-      "hourlyPrice": 0.92,
-      "monthlyPrice": 671.6,
-      "notes": "Enterprise, active geo-replication",
-      "status": "active"
-    },
-    {
-      "provider": "azure",
-      "name": "Azure Synapse DW100c",
-      "type": "data-warehouse",
-      "engine": "Synapse",
-      "hourlyPrice": 1.2,
-      "monthlyPrice": 876.0,
-      "notes": "100 cDWU",
-      "status": "active"
-    },
-    {
-      "provider": "azure",
-      "name": "Azure Synapse DW200c",
-      "type": "data-warehouse",
-      "engine": "Synapse",
-      "hourlyPrice": 2.4,
-      "monthlyPrice": 1752.0,
-      "notes": "200 cDWU",
-      "status": "active"
-    },
-    {
-      "provider": "azure",
-      "name": "Azure Synapse DW500c",
-      "type": "data-warehouse",
-      "engine": "Synapse",
-      "hourlyPrice": 6.0,
-      "monthlyPrice": 4380.0,
-      "notes": "500 cDWU",
-      "status": "active"
-    },
-    {
-      "provider": "azure",
-      "name": "Azure Synapse Serverless",
-      "type": "serverless",
-      "engine": "Synapse",
-      "hourlyPrice": 0.0,
-      "monthlyPrice": 0.0,
-      "notes": "$5 per TB scanned",
-      "status": "active"
-    },
-    {
-      "provider": "azure",
-      "name": "Azure AI Search Free",
-      "type": "search",
-      "engine": "AI Search",
-      "hourlyPrice": 0.0,
-      "monthlyPrice": 0.0,
-      "notes": "Free tier, 50MB",
-      "status": "active"
-    },
-    {
-      "provider": "azure",
-      "name": "Azure AI Search Basic",
-      "type": "search",
-      "engine": "AI Search",
-      "hourlyPrice": 0.101,
-      "monthlyPrice": 73.73,
-      "notes": "2GB, 3 replicas max",
-      "status": "active"
-    },
-    {
-      "provider": "azure",
-      "name": "Azure AI Search Standard S1",
-      "type": "search",
-      "engine": "AI Search",
-      "hourlyPrice": 0.336,
-      "monthlyPrice": 245.28,
-      "notes": "25GB per partition",
-      "status": "active"
-    },
-    {
-      "provider": "azure",
-      "name": "Azure AI Search Standard S2",
-      "type": "search",
-      "engine": "AI Search",
-      "hourlyPrice": 1.34,
-      "monthlyPrice": 978.2,
-      "notes": "100GB per partition",
-      "status": "active"
-    }
-  ],
-  "serverless": [
-    {
-      "service": "functions-consumption",
-      "name": "Azure Functions Consumption",
-      "pricePerMillion": 0.2,
-      "pricePerGBSecond": 1.6e-05,
-      "freeExecutions": 1000000,
-      "freeGBSeconds": 400000,
-      "status": "active",
-      "notes": "First 1M free"
-    },
-    {
-      "service": "functions-premium",
-      "name": "Azure Functions Premium EP1",
-      "pricePerHour": 0.173,
-      "status": "active",
-      "notes": "Always warm"
-    },
-    {
-      "service": "logic-apps-consumption",
-      "name": "Logic Apps Consumption",
-      "pricePerAction": 2.5e-05,
-      "pricePerConnector": 0.000125,
-      "status": "active",
-      "notes": "Per action"
-    },
-    {
-      "service": "logic-apps-standard",
-      "name": "Logic Apps Standard WS1",
-      "pricePerHour": 0.16,
-      "status": "active",
-      "notes": "Dedicated"
-    },
-    {
-      "service": "api-management-consumption",
-      "name": "API Management Consumption",
-      "pricePerMillion": 3.5,
-      "status": "active",
-      "notes": "First 1M free"
-    },
-    {
-      "service": "api-management-developer",
-      "name": "API Management Developer",
-      "pricePerHour": 0.07,
-      "status": "active",
-      "notes": "Dev/test"
-    },
-    {
-      "service": "api-management-basic",
-      "name": "API Management Basic",
-      "pricePerHour": 0.21,
-      "status": "active",
-      "notes": "Production entry"
-    },
-    {
-      "service": "api-management-standard",
-      "name": "API Management Standard",
-      "pricePerHour": 0.94,
-      "status": "active",
-      "notes": "Full features"
-    },
-    {
-      "service": "event-grid",
-      "name": "Event Grid",
-      "pricePerMillion": 0.6,
-      "status": "active",
-      "notes": "First 100K free"
-    },
-    {
-      "service": "durable-functions",
-      "name": "Durable Functions",
-      "pricePerOrchestration": 0.0,
-      "status": "active",
-      "notes": "Same as Functions"
-    }
-  ],
-  "messaging": [
-    {
-      "service": "service-bus-basic",
-      "name": "Service Bus Basic",
-      "pricePerMillion": 0.05,
-      "status": "active",
-      "notes": "Queues only"
-    },
-    {
-      "service": "service-bus-standard",
-      "name": "Service Bus Standard",
-      "pricePerHour": 0.0135,
-      "pricePerMillion": 0.8,
-      "status": "active",
-      "notes": "Topics + queues"
-    },
-    {
-      "service": "service-bus-premium",
-      "name": "Service Bus Premium",
-      "pricePerMU": 0.928,
-      "status": "active",
-      "notes": "Per messaging unit/hour"
-    },
-    {
-      "service": "event-hubs-basic",
-      "name": "Event Hubs Basic",
-      "pricePerTU": 0.015,
-      "status": "active",
-      "notes": "Per throughput unit/hour"
-    },
-    {
-      "service": "event-hubs-standard",
-      "name": "Event Hubs Standard",
-      "pricePerTU": 0.03,
-      "status": "active",
-      "notes": "Per throughput unit/hour"
-    },
-    {
-      "service": "event-hubs-premium",
-      "name": "Event Hubs Premium",
-      "pricePerPU": 1.386,
-      "status": "active",
-      "notes": "Per processing unit/hour"
-    },
-    {
-      "service": "event-hubs-dedicated",
-      "name": "Event Hubs Dedicated",
-      "pricePerCU": 7.8,
-      "status": "active",
-      "notes": "Per capacity unit/hour"
-    },
-    {
-      "service": "notification-hubs-free",
-      "name": "Notification Hubs Free",
-      "pricePerMonth": 0.0,
-      "status": "active",
-      "notes": "1M pushes"
-    },
-    {
-      "service": "notification-hubs-basic",
-      "name": "Notification Hubs Basic",
-      "pricePerUnit": 10.0,
-      "status": "active",
-      "notes": "10M pushes/month"
-    },
-    {
-      "service": "queue-storage",
-      "name": "Queue Storage",
-      "pricePerGB": 0.045,
-      "pricePerTransaction": 4e-06,
-      "status": "active",
-      "notes": "Per 10K transactions"
-    }
-  ],
-  "networking": [
-    {
-      "service": "front-door-classic",
-      "name": "Front Door Classic",
-      "pricePerGB": 0.21,
-      "pricePerRequest": 0.01,
-      "status": "active",
-      "notes": "Per GB + 10K requests"
-    },
-    {
-      "service": "front-door-standard",
-      "name": "Front Door Standard",
-      "pricePerHour": 0.035,
-      "pricePerRequest": 0.009,
-      "status": "active",
-      "notes": "Per profile/hour"
-    },
-    {
-      "service": "cdn-standard",
-      "name": "CDN Standard",
-      "pricePerGB": 0.081,
-      "status": "active",
-      "notes": "First 10TB"
-    },
-    {
-      "service": "cdn-premium",
-      "name": "CDN Premium Verizon",
-      "pricePerGB": 0.17,
-      "status": "active",
-      "notes": "Advanced features"
-    },
-    {
-      "service": "traffic-manager",
-      "name": "Traffic Manager",
-      "pricePerMillion": 0.54,
-      "status": "active",
-      "notes": "DNS queries"
-    },
-    {
-      "service": "load-balancer-basic",
-      "name": "Load Balancer Basic",
-      "pricePerHour": 0.0,
-      "status": "active",
-      "notes": "Free"
-    },
-    {
-      "service": "load-balancer-standard",
-      "name": "Load Balancer Standard",
-      "pricePerHour": 0.025,
-      "pricePerRule": 0.01,
-      "status": "active",
-      "notes": "Per rule/hour"
-    },
-    {
-      "service": "application-gateway-small",
-      "name": "Application Gateway Small",
-      "pricePerHour": 0.025,
-      "status": "active",
-      "notes": "Layer 7"
-    },
-    {
-      "service": "application-gateway-waf-v2",
-      "name": "Application Gateway WAF v2",
-      "pricePerHour": 0.36,
-      "pricePerCU": 0.008,
-      "status": "active",
-      "notes": "Per capacity unit"
-    },
-    {
-      "service": "vpn-gateway-basic",
-      "name": "VPN Gateway Basic",
-      "pricePerHour": 0.04,
-      "status": "active",
-      "notes": "Site-to-site"
-    },
-    {
-      "service": "vpn-gateway-vpngw1",
-      "name": "VPN Gateway VpnGw1",
-      "pricePerHour": 0.19,
-      "status": "active",
-      "notes": "650 Mbps"
-    },
-    {
-      "service": "expressroute-50mbps",
-      "name": "ExpressRoute 50 Mbps",
-      "pricePerMonth": 55.0,
-      "status": "active",
-      "notes": "Metered"
-    },
-    {
-      "service": "expressroute-1gbps",
-      "name": "ExpressRoute 1 Gbps",
-      "pricePerMonth": 436.0,
-      "status": "active",
-      "notes": "Metered"
-    },
-    {
-      "service": "nat-gateway",
-      "name": "NAT Gateway",
-      "pricePerHour": 0.045,
-      "pricePerGB": 0.045,
-      "status": "active",
-      "notes": "Outbound"
-    },
-    {
-      "service": "private-link",
-      "name": "Private Link",
-      "pricePerHour": 0.01,
-      "pricePerGB": 0.01,
-      "status": "active",
-      "notes": "Private endpoint"
-    },
-    {
-      "service": "bastion-basic",
-      "name": "Bastion Basic",
-      "pricePerHour": 0.19,
-      "status": "active",
-      "notes": "SSH/RDP"
-    },
-    {
-      "service": "bastion-standard",
-      "name": "Bastion Standard",
-      "pricePerHour": 0.35,
-      "status": "active",
-      "notes": "More features"
-    }
-  ],
-  "containers": [
-    {
-      "service": "aci-linux",
-      "name": "Container Instances Linux",
-      "pricePerVCPU": 1.3e-05,
-      "pricePerGB": 1.4e-06,
-      "status": "active",
-      "notes": "Per second"
-    },
-    {
-      "service": "aci-windows",
-      "name": "Container Instances Windows",
-      "pricePerVCPU": 1.7e-05,
-      "pricePerGB": 1.9e-06,
-      "status": "active",
-      "notes": "Per second"
-    },
-    {
-      "service": "aci-gpu",
-      "name": "Container Instances GPU",
-      "pricePerGPU": 0.00095,
-      "status": "active",
-      "notes": "Per second, K80"
-    },
-    {
-      "service": "aks",
-      "name": "AKS",
-      "pricePerCluster": 0.0,
-      "status": "active",
-      "notes": "Free control plane"
-    },
-    {
-      "service": "aks-uptime-sla",
-      "name": "AKS Uptime SLA",
-      "pricePerClusterHour": 0.1,
-      "status": "active",
-      "notes": "99.95% SLA"
-    },
-    {
-      "service": "acr-basic",
-      "name": "Container Registry Basic",
-      "pricePerDay": 0.167,
-      "status": "active",
-      "notes": "10GB included"
-    },
-    {
-      "service": "acr-standard",
-      "name": "Container Registry Standard",
-      "pricePerDay": 0.667,
-      "status": "active",
-      "notes": "100GB included"
-    },
-    {
-      "service": "acr-premium",
-      "name": "Container Registry Premium",
-      "pricePerDay": 1.667,
-      "status": "active",
-      "notes": "500GB, geo-rep"
-    },
-    {
-      "service": "app-service-free",
-      "name": "App Service Free",
-      "pricePerMonth": 0.0,
-      "status": "active",
-      "notes": "60 CPU min/day"
-    },
-    {
-      "service": "app-service-b1",
-      "name": "App Service Basic B1",
-      "pricePerHour": 0.018,
-      "status": "active",
-      "notes": "1 core, 1.75GB"
-    },
-    {
-      "service": "app-service-s1",
-      "name": "App Service Standard S1",
-      "pricePerHour": 0.1,
-      "status": "active",
-      "notes": "1 core, 1.75GB, autoscale"
-    },
-    {
-      "service": "app-service-p1v3",
-      "name": "App Service Premium P1V3",
-      "pricePerHour": 0.12,
-      "status": "active",
-      "notes": "2 core, 8GB"
-    }
-  ],
-  "aiml": [
-    {
-      "service": "azure-ml-basic",
-      "name": "Azure ML Basic",
-      "pricePerHour": 0.0,
-      "status": "active",
-      "notes": "Free tier"
-    },
-    {
-      "service": "azure-ml-enterprise",
-      "name": "Azure ML Enterprise",
-      "pricePerHour": 0.0,
-      "status": "active",
-      "notes": "Pay for compute"
-    },
-    {
-      "service": "azure-openai-gpt4-input",
-      "name": "Azure OpenAI GPT-4 Input",
-      "pricePerToken": 3e-05,
-      "status": "active",
-      "notes": "Per 1K tokens"
-    },
-    {
-      "service": "azure-openai-gpt4-output",
-      "name": "Azure OpenAI GPT-4 Output",
-      "pricePerToken": 6e-05,
-      "status": "active",
-      "notes": "Per 1K tokens"
-    },
-    {
-      "service": "azure-openai-gpt35-input",
-      "name": "Azure OpenAI GPT-3.5 Input",
-      "pricePerToken": 1.5e-06,
-      "status": "active",
-      "notes": "Per 1K tokens"
-    },
-    {
-      "service": "azure-openai-gpt35-output",
-      "name": "Azure OpenAI GPT-3.5 Output",
-      "pricePerToken": 2e-06,
-      "status": "active",
-      "notes": "Per 1K tokens"
-    },
-    {
-      "service": "azure-openai-embedding",
-      "name": "Azure OpenAI Embedding",
-      "pricePerToken": 1e-07,
-      "status": "active",
-      "notes": "Per 1K tokens"
-    },
-    {
-      "service": "cognitive-vision",
-      "name": "Cognitive Services Vision",
-      "pricePerTransaction": 0.001,
-      "status": "active",
-      "notes": "Per transaction"
-    },
-    {
-      "service": "cognitive-speech",
-      "name": "Cognitive Services Speech",
-      "pricePerHour": 1.0,
-      "status": "active",
-      "notes": "Speech-to-text"
-    },
-    {
-      "service": "cognitive-language",
-      "name": "Cognitive Services Language",
-      "pricePerRecord": 0.0001,
-      "status": "active",
-      "notes": "Text analytics"
-    },
-    {
-      "service": "cognitive-translator",
-      "name": "Cognitive Services Translator",
-      "pricePerMillion": 10.0,
-      "status": "active",
-      "notes": "Per million characters"
-    },
-    {
-      "service": "form-recognizer",
-      "name": "Form Recognizer",
-      "pricePerPage": 0.001,
-      "status": "active",
-      "notes": "Document extraction"
-    },
-    {
-      "service": "bot-service",
-      "name": "Bot Service",
-      "pricePerMessage": 0.0005,
-      "status": "active",
-      "notes": "Premium channels"
-    }
-  ],
-  "analytics": [
-    {
-      "service": "databricks-standard",
-      "name": "Databricks Standard",
-      "pricePerDBU": 0.07,
-      "status": "active",
-      "notes": "Per DBU-hour"
-    },
-    {
-      "service": "databricks-premium",
-      "name": "Databricks Premium",
-      "pricePerDBU": 0.22,
-      "status": "active",
-      "notes": "Per DBU-hour"
-    },
-    {
-      "service": "data-factory-orchestration",
-      "name": "Data Factory Orchestration",
-      "pricePerRun": 0.001,
-      "status": "active",
-      "notes": "Per activity run"
-    },
-    {
-      "service": "data-factory-data-movement",
-      "name": "Data Factory Data Movement",
-      "pricePerDIU": 0.25,
-      "status": "active",
-      "notes": "Per DIU-hour"
-    },
-    {
-      "service": "hdinsight-spark",
-      "name": "HDInsight Spark",
-      "pricePerCore": 0.03,
-      "status": "active",
-      "notes": "Per core-hour, plus VM"
-    },
-    {
-      "service": "hdinsight-hadoop",
-      "name": "HDInsight Hadoop",
-      "pricePerCore": 0.03,
-      "status": "active",
-      "notes": "Per core-hour, plus VM"
-    },
-    {
-      "service": "stream-analytics",
-      "name": "Stream Analytics",
-      "pricePerSU": 0.11,
-      "status": "active",
-      "notes": "Per streaming unit/hour"
-    },
-    {
-      "service": "power-bi-pro",
-      "name": "Power BI Pro",
-      "pricePerUser": 10.0,
-      "status": "active",
-      "notes": "Per user/month"
-    },
-    {
-      "service": "power-bi-premium",
-      "name": "Power BI Premium P1",
-      "pricePerMonth": 4995.0,
-      "status": "active",
-      "notes": "Capacity-based"
-    },
-    {
-      "service": "purview",
-      "name": "Microsoft Purview",
-      "pricePerRU": 0.4,
-      "status": "active",
-      "notes": "Per resource unit/hour"
-    }
-  ],
-  "security": [
-    {
-      "service": "key-vault-standard",
-      "name": "Key Vault Standard",
-      "pricePerOperation": 0.03,
-      "pricePerKey": 0.0,
-      "status": "active",
-      "notes": "Per 10K operations"
-    },
-    {
-      "service": "key-vault-premium",
-      "name": "Key Vault Premium HSM",
-      "pricePerKey": 1.0,
-      "pricePerOperation": 0.03,
-      "status": "active",
-      "notes": "HSM-backed"
-    },
-    {
-      "service": "app-config",
-      "name": "App Configuration",
-      "pricePerDay": 1.2,
-      "status": "active",
-      "notes": "Standard tier"
-    },
-    {
-      "service": "defender-servers",
-      "name": "Defender for Servers",
-      "pricePerServer": 15.0,
-      "status": "active",
-      "notes": "Plan 2, per month"
-    },
-    {
-      "service": "defender-storage",
-      "name": "Defender for Storage",
-      "pricePerTransaction": 0.0175,
-      "status": "active",
-      "notes": "Per 10K transactions"
-    },
-    {
-      "service": "defender-sql",
-      "name": "Defender for SQL",
-      "pricePerNode": 15.0,
-      "status": "active",
-      "notes": "Per node/month"
-    },
-    {
-      "service": "sentinel-ingestion",
-      "name": "Microsoft Sentinel",
-      "pricePerGB": 2.46,
-      "status": "active",
-      "notes": "Log ingestion"
-    },
-    {
-      "service": "active-directory-b2c",
-      "name": "Azure AD B2C",
-      "pricePerMAU": 0.00325,
-      "status": "active",
-      "notes": "First 50K MAU free"
-    },
-    {
-      "service": "ddos-protection",
-      "name": "DDoS Protection Standard",
-      "pricePerMonth": 2944.0,
-      "status": "active",
-      "notes": "Per protected resource"
-    }
-  ],
-  "monitoring": [
-    {
-      "service": "monitor-metrics",
-      "name": "Azure Monitor Metrics",
-      "pricePerMetric": 0.0,
-      "status": "active",
-      "notes": "Platform metrics free"
-    },
-    {
-      "service": "monitor-custom-metrics",
-      "name": "Azure Monitor Custom Metrics",
-      "pricePerMillion": 0.258,
-      "status": "active",
-      "notes": "Per million samples"
-    },
-    {
-      "service": "log-analytics-ingestion",
-      "name": "Log Analytics Ingestion",
-      "pricePerGB": 2.3,
-      "status": "active",
-      "notes": "Data ingestion"
-    },
-    {
-      "service": "log-analytics-retention",
-      "name": "Log Analytics Retention",
-      "pricePerGB": 0.1,
-      "status": "active",
-      "notes": "Beyond 31 days"
-    },
-    {
-      "service": "app-insights",
-      "name": "Application Insights",
-      "pricePerGB": 2.3,
-      "status": "active",
-      "notes": "Data ingestion"
-    },
-    {
-      "service": "app-insights-web-tests",
-      "name": "Application Insights Web Tests",
-      "pricePerTest": 5.0,
-      "status": "active",
-      "notes": "Multi-step per month"
-    },
-    {
-      "service": "alerts",
-      "name": "Azure Alerts",
-      "pricePerRule": 0.1,
-      "status": "active",
-      "notes": "Metric alert rule/month"
-    },
-    {
-      "service": "action-groups",
-      "name": "Action Groups",
-      "pricePerNotification": 0.0,
-      "status": "active",
-      "notes": "Email/SMS/webhook free"
+      "hourlyPrice": 0.008,
+      "monthlyPrice": 5.84,
+      "notes": "Per 100 RU/s provisioned"
     }
   ]
 }

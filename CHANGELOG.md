@@ -5,6 +5,24 @@ All notable changes to the Cloud Cost Comparison MCP will be documented in this 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.4.0] - 2026-06-03
+
+### Added
+- **MCP tool annotations** on all tools (`readOnlyHint`, `idempotentHint`, and `openWorldHint` for the live-fetch tools).
+- **Structured output** (`structuredContent`) returned alongside text for every tool.
+- **Test suite** (Vitest) covering comparison logic and bundled-data integrity, plus **GitHub Actions CI** (build + typecheck + test on Node 20/22).
+- **Weekly data-refresh GitHub Action** that re-fetches AWS/Azure/GCP pricing and opens a PR when it changes.
+
+### Changed
+- **Refreshed bundled pricing** from live upstream sources: AWS ~1,300 instances, Azure ~1,680 VMs (now via the official Azure Retail Prices API), GCP ~360 instances.
+- Server version is now read from `package.json` (previously hardcoded and stale at `1.2.2` in the MCP handshake).
+- `get_provider_details` no longer dumps the full (~800KB) provider object without a `category`; it returns metadata + available categories instead.
+- README data-freshness section rewritten to accurately describe the bundled-vs-live two-tier model.
+- Minimum Node bumped to 20; `@modelcontextprotocol/sdk` bumped to ^1.18.
+
+### Fixed
+- Malformed/foreign-schema entries are filtered out of the unified compute-instance list (OCI flex-shape rows no longer leak in).
+
 ## [1.3.8] - 2026-02-11
 
 ### Added

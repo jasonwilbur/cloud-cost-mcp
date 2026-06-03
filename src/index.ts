@@ -19,6 +19,7 @@
  * limitations under the License.
  */
 
+import { createRequire } from 'module';
 import { Server } from '@modelcontextprotocol/sdk/server/index.js';
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
 import {
@@ -27,6 +28,12 @@ import {
   ErrorCode,
   McpError,
 } from '@modelcontextprotocol/sdk/types.js';
+
+// Single source of truth for the version: read it from package.json at runtime
+// (dist/index.js -> ../package.json) so the MCP handshake can never drift from
+// the published package version.
+const require = createRequire(import.meta.url);
+const { version: VERSION } = require('../package.json') as { version: string };
 
 // Import comparison tools
 import {
@@ -90,7 +97,7 @@ import {
 const server = new Server(
   {
     name: 'cloud-cost-mcp',
-    version: '1.2.2',
+    version: VERSION,
   },
   {
     capabilities: {
@@ -673,10 +680,49 @@ const TOOLS = [
   },
 ];
 
-// Handle list tools request
+// Tools that reach out to the public internet (live pricing APIs). Everything
+// else reads bundled/cached data only. Used to set MCP `openWorldHint`.
+const OPEN_WORLD_TOOLS = new Set(
+  TOOLS.map((t) => t.name).filter(
+    (name) =>
+      name.startsWith('refresh_') ||
+      name === 'check_api_status' ||
+      name === 'list_oci_categories' ||
+      name === 'list_aws_regions' ||
+      name === 'list_aws_instance_families' ||
+      name === 'list_gcp_regions' ||
+      name === 'list_gcp_instance_families' ||
+      name === 'list_azure_regions' ||
+      name === 'list_azure_categories'
+  )
+);
+
+// Handle list tools request. Every tool here is read-only (none mutate state),
+// so we attach `readOnlyHint` to all and `openWorldHint` only to the ones that
+// hit live external pricing APIs.
 server.setRequestHandler(ListToolsRequestSchema, async () => {
-  return { tools: TOOLS };
+  return {
+    tools: TOOLS.map((tool) => ({
+      ...tool,
+      annotations: {
+        title: tool.name,
+        readOnlyHint: true,
+        destructiveHint: false,
+        idempotentHint: true,
+        openWorldHint: OPEN_WORLD_TOOLS.has(tool.name),
+      },
+    })),
+  };
 });
+
+// MCP `structuredContent` must be a JSON object. Wrap arrays/primitives so every
+// tool can return a machine-parseable result alongside the human-readable text.
+function toStructuredContent(result: unknown): Record<string, unknown> {
+  if (result !== null && typeof result === 'object' && !Array.isArray(result)) {
+    return result as Record<string, unknown>;
+  }
+  return { result };
+}
 
 // Handle tool calls
 server.setRequestHandler(CallToolRequestSchema, async (request) => {
@@ -744,7 +790,16 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
             [typedArgs.category]: data[typedArgs.category as keyof typeof data],
           };
         } else {
-          result = data;
+          // The full provider object can exceed ~800KB — far too large to dump
+          // into an LLM context. Without a category, return only the metadata
+          // plus the list of categories the caller can request next.
+          const categories = Object.keys(data).filter((k) => k !== 'metadata');
+          result = {
+            provider: typedArgs.provider,
+            metadata: data.metadata,
+            availableCategories: categories,
+            note: 'Full pricing data is large. Re-call get_provider_details with a `category` from availableCategories to retrieve that section.',
+          };
         }
         break;
       }
@@ -872,6 +927,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
           text: JSON.stringify(result, null, 2),
         },
       ],
+      structuredContent: toStructuredContent(result),
     };
   } catch (error) {
     if (error instanceof McpError) {
